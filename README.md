@@ -2,8 +2,7 @@ DOPA WORKFLOW
 
 ## EXECUTE IT AS ./z_do_it_all.sh > logs/z_do_it_all_log.txt 2>&1 &
 
-# TIMER START
-START_T1=$(date +%s)
+### [CEP sample](dopa_cep_sample.geojson)
 
 # set number of dedicated cores for all the subscripts
 ncores=7
