@@ -33,30 +33,22 @@ ncores=7
 # A-INPUT TABLES
 ## populates input tables
 ./a_input_country.sh ${ncores} > logs/a_input_country_log.txt 2>&1 wait
-./a_input_ecoregion.sh ${ncores} > logs/a_input_ecoregions_log.txt 2>&1 wait
-./a_input_wdpa.sh ${ncores} > logs/a_input_wdpa_log.txt 2>&1 wait
-
+...
 
 # B-CLIP TABLES
 ## populates clip tables
 ./b_clip_country.sh ${ncores} > logs/b_clip_country_log.txt 2>&1 wait
-./b_clip_ecoregion.sh ${ncores} > logs/b_clip_ecoregion_log.txt 2>&1 wait
-./b_clip_wdpa.sh ${ncores} > logs/b_clip_wdpa_log.txt 2>&1 wait
-
+...
 
 # C-RASTER TABLES
 ## populates raster tables
 ./c_rast_country.sh ${ncores} > logs/c_raster_country_log.txt 2>&1 wait
-./c_rast_ecoregion.sh ${ncores} > logs/c_raster_ecoregion_log.txt 2>&1 wait
-./c_rast_wdpa.sh ${ncores} > logs/c_raster_wdpa_log.txt 2>&1 wait
-
+...
 
 # D-TILED TABLES
 ## DA-populates tiled tables (in parallel)
 ./da_tiled_country.sh ${ncores} > logs/da_tiled_country_log.txt 2>&1 wait
-./da_tiled_ecoregion.sh ${ncores} > logs/da_tiled_ecoregion_log.txt 2>&1 wait
-./da_tiled_wdpa.sh ${ncores} > logs/da_tiled_wdpa_log.txt 2>&1 wait
-
+...
 
 ## FOR AGGREGATED INPUTS
 ##------------------------------------------------------------------------
@@ -92,11 +84,3 @@ ncores=7
 
 ### shows the end of the process
 # tail -n 30 e_flat_all_log.txt
-
-# stop timer
-END_T1=$(date +%s)
-TOTAL_DIFF=$(($END_T1 - $START_T1))
-echo "TOTAL SCRIPT TIME: $TOTAL_DIFF"
-echo "analysis end"
-exit
-
