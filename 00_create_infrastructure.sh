@@ -53,13 +53,13 @@ FLAT+=",''${!TOPIC}''"
 
 
 rm a_input_${!TOPIC}.sh
-cat ./templates/a_input_topic.sh > a_input_${!TOPIC}.sh
+cat ./templates/a_input_topic.template > a_input_${!TOPIC}.sh
 rm b_clip_${!TOPIC}.sh
-cat ./templates/b_clip_topic.sh > b_clip_${!TOPIC}.sh
+cat ./templates/b_clip_topic.template > b_clip_${!TOPIC}.sh
 rm c_rast_${!TOPIC}.sh
-cat ./templates/c_rast_topic.sh > c_rast_${!TOPIC}.sh
+cat ./templates/c_rast_topic.template > c_rast_${!TOPIC}.sh
 rm da_tiled_${!TOPIC}.sh
-cat ./templates/da_tiled_topic.sh > da_tiled_${!TOPIC}.sh
+cat ./templates/da_tiled_topic.template > da_tiled_${!TOPIC}.sh
 
 sed -i 's/THISTOPIC/'"${TOPIC}"'/' a_input_${!TOPIC}.sh
 sed -i 's/THISTOPIC/'"${TOPIC}"'/' b_clip_${!TOPIC}.sh
@@ -230,27 +230,27 @@ SELECT ('POLYGON((0 0, 0 '||\$4||', '||\$3||' '||\$4||', '||\$3||' 0,0 0))')::ge
 EOF
 )
 
-# FUNCTION POPULATE_Z_1_DEG_GRID PREPARATION
-sql_f_pop_z_1deg_grid=$(cat<<EOF
-DROP FUNCTION IF EXISTS ${SCH}.f_pop_z_1deg_grid();
-CREATE FUNCTION ${SCH}.f_pop_z_1deg_grid ()
+# FUNCTION POPULATE_Z_GRID PREPARATION
+sql_f_pop_z_grid=$(cat<<EOF
+DROP FUNCTION IF EXISTS ${SCH}.f_pop_z_grid();
+CREATE FUNCTION ${SCH}.f_pop_z_grid ()
     RETURNS void
     LANGUAGE 'plpgsql'
 AS \$BODY\$
 
 BEGIN
 
-INSERT INTO ${SCH}.z_1deg_grid(row,col,geom)
+INSERT INTO ${SCH}.z_grid(row,col,geom)
 SELECT
 row,
 col,
 geom
-FROM (SELECT row,col,ST_SetSrid(geom,4326) geom FROM ${SCH}.ST_CreateFishnet(180,360,1,1,-180,-90) cells
+FROM (SELECT row,col,ST_SetSrid(geom,4326) geom FROM ${SCH}.ST_CreateFishnet(${RWS},${CLS},${GS},${GS},-180,-90) cells
 ORDER BY row,col) v;
 END;
 \$BODY\$;
 
-COMMENT ON FUNCTION ${SCH}.f_pop_z_1deg_grid() IS
+COMMENT ON FUNCTION ${SCH}.f_pop_z_grid() IS
 'Populates grid table; no inputs parameters'
 EOF
 )
@@ -299,7 +299,7 @@ CREATE OR REPLACE FUNCTION ${SCH}.f_clip(
     LANGUAGE 'plpgsql'
 AS \$BODY\$
 DECLARE
-ttile GEOMETRY := (SELECT geom FROM ${SCH}.z_1deg_grid WHERE qid=iqid);
+ttile GEOMETRY := (SELECT geom FROM ${SCH}.z_grid WHERE qid=iqid);
 rec record;
 BEGIN
 DROP TABLE IF EXISTS iselect;
@@ -327,14 +327,14 @@ itbl - text - input table - ''schema_name.table_name'';
 otbl - text - output table - ''schema_name.table_name'';
 iqid - integer - unique id for the tile - number;
 eg: ''cep_processing.input_wdpa'',''cep_processing.output_wdpa'',44378 will:
-read from cep_processing.input_wdpa table - write to cep_processing.clip_wdpa table - clipping all wdpa geometries intersecting tile number 44378 from cep_processing.z_1deg_grid.';
+read from cep_processing.input_wdpa table - write to cep_processing.clip_wdpa table - clipping all wdpa geometries intersecting tile number 44378 from cep_processing.z_grid.';
 EOF
 )
 
 # FUNCTION RASTER_1_ARCSEC PREPARATION
-sql_f_raster_1_arcsec=$(cat<<EOF
-DROP FUNCTION IF EXISTS ${SCH}.f_raster_1_arcsec(integer,text,text);
-CREATE OR REPLACE FUNCTION ${SCH}.f_raster_1_arcsec(iqid integer,ischema text,itable text)
+sql_f_raster=$(cat<<EOF
+DROP FUNCTION IF EXISTS ${SCH}.f_raster(integer,text,text);
+CREATE OR REPLACE FUNCTION ${SCH}.f_raster(iqid integer,ischema text,itable text)
     RETURNS void
     LANGUAGE 'plpgsql'
 AS \$BODY\$
@@ -347,18 +347,18 @@ SELECT '||iqid||',fid,rast
 FROM (SELECT fid,ST_AsRaster(geom,rast,''1BB'',1,0) rast
 FROM (SELECT fid,ST_COLLECT(geom::geometry(Polygon,4326)) geom FROM '||ischema||'.b_clip_'||itable||' WHERE qid='||iqid||' AND valid IS NULL and st_geometrytype IS NULL
 GROUP BY fid ORDER BY fid) a,
-(SELECT ST_MakeEmptyRaster(3600,3600,-180,90,(1/3600::double precision),(-1/3600::double precision),0,0,4326) rast) b
+(SELECT ST_MakeEmptyRaster(${RCCT},${RCCT},-180,90,(1/${RCC}::double precision),(-1/${RCC}::double precision),0,0,4326) rast) b
 ORDER BY fid) c;
 UPDATE '||ischema||'.c_raster_'||itable||' SET geom = (SELECT ST_Polygon(rast) geom) WHERE qid='||iqid||';';
 EXECUTE sql USING iqid,ischema,itable;
 END;
 \$BODY\$;
-COMMENT ON FUNCTION ${SCH}.f_raster_1_arcsec(integer,text,text) IS
+COMMENT ON FUNCTION ${SCH}.f_raster(integer,text,text) IS
 'rasterize clip tables by tile/fid, then vectorize by tile/fid as MultiGeometry;inputs parameters are:
 iqid - integer - input qid: tile unique id - number;
 ischema - text - processing schema - ''schema_name'';
 itable - text - input table (actually country,ecoregion,wdpa, without the root ''clip'', which is automatically added by the function) - ''table_name'';
-eg: SELECT cep_processing.f_raster_1_arcsec(18001,''cep_processing'',''wdpa'') will:
+eg: SELECT cep_processing.f_raster(18001,''cep_processing'',''wdpa'') will:
 write to cep_processing.raster_wdpa table - read from cep_processing.clip_wdpa table,selecting all rows where qid=18001';
 EOF
 )
@@ -570,8 +570,8 @@ EOF
 psql ${dbpar2} -c "$sql_fishnet"
 wait
 
-# FUNCTION POPULATE_Z_1_DEG_GRID CREATION
-psql ${dbpar2} -c "$sql_f_pop_z_1deg_grid"
+# FUNCTION POPULATE_Z_GRID CREATION
+psql ${dbpar2} -c "$sql_f_pop_z_grid"
 
 # FUNCTION POPULATE INPUT CREATION
 psql ${dbpar2} -c "$sql_f_pop_input"
@@ -580,7 +580,7 @@ psql ${dbpar2} -c "$sql_f_pop_input"
 psql ${dbpar2} -c "$sql_f_clip"
 
 # FUNCTION RASTER CREATION
-psql ${dbpar2} -c "$sql_f_raster_1_arcsec"
+psql ${dbpar2} -c "$sql_f_raster"
 
 # FUNCTION POPULATE_TILED CREATION
 psql ${dbpar2} -c "$sql_f_pop_tiled"
@@ -614,16 +614,16 @@ psql ${dbpar2} -c "$sql_f_flat_recode"
 ####################################################################################################################################################
 
 # TABLE GRID PREPARATION
-sql_z_1deg_grid=$(cat<<EOF
-DROP TABLE IF EXISTS ${SCH}.z_1deg_grid;
-CREATE TABLE ${SCH}.z_1deg_grid (
+sql_z_grid=$(cat<<EOF
+DROP TABLE IF EXISTS ${SCH}.z_grid;
+CREATE TABLE ${SCH}.z_grid (
 qid serial PRIMARY KEY,
 col integer,
 row integer,
 geom geometry(Polygon,4326),
 sqkm double precision,
 qfilter boolean);
-CREATE INDEX ON ${SCH}.z_1deg_grid USING gist(geom);
+CREATE INDEX ON ${SCH}.z_grid USING gist(geom);
 EOF
 )
 
@@ -727,7 +727,7 @@ EOF
 ### START CREATING STATIC TABLES
 ####################################################################################################################################################
 # TABLE GRID CREATION
-psql ${dbpar2} -c "$sql_z_1deg_grid"
+psql ${dbpar2} -c "$sql_z_grid"
 wait
 
 # TABLE DB_TILED_TEMP CREATION
@@ -764,9 +764,9 @@ fi
 ### POPULATING GRID TABLE
 ####################################################################################################################################################
 
-psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_z_1deg_grid();"
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_z_grid();"
 wait
-psql ${dbpar2} -t -c "UPDATE ${SCH}.z_1deg_grid SET sqkm=(ST_Area(geom::geography)/1000000);" &
+psql ${dbpar2} -t -c "UPDATE ${SCH}.z_grid SET sqkm=(ST_Area(geom::geography)/1000000);" &
 wait
 ####################################################################################################################################################
 ### END STATIC TABLES
@@ -817,36 +817,45 @@ echo -e "REPOPS IS ALSO ${REPOPS}"
 
 # create script db_tiled_all.sh
 rm db_tiled_all.sh
-cat ./templates/db_tiled_all_a.sh > db_tiled_all.sh
+cat ./templates/db_tiled_all_a.template > db_tiled_all.sh
 sed -i 's/REUNIONS_T/'"${REUNIONS}"'/' db_tiled_all.sh
 echo -e " "${REPOPS} >> db_tiled_all.sh
-cat ./templates/db_tiled_all_b.sh >> db_tiled_all.sh
+cat ./templates/db_tiled_all_b.template >> db_tiled_all.sh
 
 chmod +x db_tiled_all.sh
 
 # create script e_flat_all.sh
 rm e_flat_all.sh
-cat ./templates/e_flat_all_a.sh > e_flat_all.sh
+cat ./templates/e_flat_all_a.template > e_flat_all.sh
 echo ${REFLAT} >> e_flat_all.sh
-cat ./templates/e_flat_all_b.sh >> e_flat_all.sh
+cat ./templates/e_flat_all_b.template >> e_flat_all.sh
 chmod +x e_flat_all.sh
 
 # create script f_attributes_all.sh
 rm f_attributes_all.sh
-cat ./templates/f_attributes_all.sh > f_attributes_all.sh
+cat ./templates/f_attributes_all.template > f_attributes_all.sh
 sed -i 's/REORDERS_T/'"${REORDERS}"'/' f_attributes_all.sh
 chmod +x f_attributes_all.sh
 
 # create script f_attributes_all.sh
 rm g_final_all.sh
-cat ./templates/g_final_all.sh > g_final_all.sh
+cat ./templates/g_final_all.template > g_final_all.sh
 chmod +x g_final_all.sh
 
 # create script f_attributes_all.sh
 rm h_output.sh
-cat ./templates/h_output.sh > h_output.sh
+cat ./templates/h_output.template > h_output.sh
 sed -i 's/REORDERS_T/'"${REORDERS}"'/' h_output.sh
 chmod +x h_output.sh
+
+echo "
+${GS} # GRID SIZE IN DEGREES
+${CS} # CELL SIZE IN ARCSEC
+${RWS} # NUMBER OF ROWS IN THE GRID
+${CLS} # NUMBER OF COLUMNS IN THE GRID
+${RCC} # NUMBER OF ROWS/COLUMNS FOR CELL
+${RCCT} # NUMBER OF ROWS/COLUMNS FOR TILE
+"
 
 echo "analysis done"
 # stop timer
