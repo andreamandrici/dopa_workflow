@@ -1,4 +1,4 @@
-#!/bin/bash
+DOPA WORKFLOW
 
 ## EXECUTE IT AS ./z_do_it_all.sh > logs/z_do_it_all_log.txt 2>&1 &
 
