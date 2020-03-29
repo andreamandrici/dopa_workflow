@@ -2,7 +2,11 @@ DOPA WORKFLOW
 
 ## EXECUTE IT AS ./z_do_it_all.sh > logs/z_do_it_all_log.txt 2>&1 &
 
-### [CEP sample](dopa_cep_sample.geojson)
+### [CEP sample output 30 arcsec - 41 seconds processing time](cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
+### [CEP sample1](https://github.com/andreamandrici/dopa_workflow/blob/master/cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
+son)
+### [CEP sample2](https://andreamandrici.github.io/dopa_workflow/cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
+
 
 # set number of dedicated cores for all the subscripts
 ncores=7
