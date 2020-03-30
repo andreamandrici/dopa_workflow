@@ -84,6 +84,9 @@ It works for me on Xubuntu 18.04 amd64, with installed:
 +  postgis/bionic,now 3.0.1+dfsg-2~bionic0
 +  gdal-bin/bionic,now 3.0.4+dfsg-1~bionic0
 
+A [.pgpass file](https://www.postgresql.org/docs/10/libpq-pgpass.html) is required.
+As alternative, postgres password for the user must defined as variable and passed to connection parameters in the env file. 
+
 #### 1.  Define the environment
 
 In **workflow_parameters.conf**
