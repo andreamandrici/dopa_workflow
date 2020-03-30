@@ -68,7 +68,7 @@ Some sample output deriving from [this 10 Mb sample inputs](./cep_sample/dopa_ce
 
 +  [CEP sample output 30 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
 
-<iframe height="260" width="620" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson" title="CEP sample output 30 arcsec - 41 seconds processing time"></iframe>
+
 
 +  [CEP output 10 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson)
 
