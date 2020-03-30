@@ -21,8 +21,8 @@ A few (but not cheap) steps have been identified as necessary to improve the pro
 
 +  a structured and standardised workflow: avoid desktop analysis conducted by different operators with different tools/methods/speeds/results
 +  reduce the number of runs needed, identifying:
-  +  a base layer (aggregation of country/ecoregions/wdpa), which provides the principal coverage indicators, and intersects
-  +  thematic datasets (aggregated too, when possible), providing the rest of the metrics
+    +  a base layer (aggregation of country/ecoregions/wdpa), which provides the principal coverage indicators, and intersects
+    +  thematic datasets (aggregated too, when possible), providing the rest of the metrics
 +  simplify complexity:
     +  reducing overlaps
     +  harmonizing boundaries
