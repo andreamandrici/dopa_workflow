@@ -56,10 +56,11 @@ The result is a spatial table, in which each box has a unique ID (qid) and conta
 
 Basically, the process consists of:
 
-+  one bash script which creates from scratch (according to few parameters passed through an env file) a series of
++  one bash script which creates from scratch (according to few parameters passed through an env file) a series of:
    +  bash scripts (a\_\*.sh, b\_\*.sh, etc... optimized for the input files) 
-   +  postgresql/postgis functions and tables
-   running in sequence the above scripts, will in turn run the postgis functions, which in turn fill fill the postgres tables.
+   +  postgresql/postgis functions and tables.
+ 
+ Running in sequence the above scripts, will in turn run the postgis functions, which in turn fill fill the postgres tables.
 
 It takes 27 hours to process the whole CEP (global country, ecoregion, protection) on 40 cores hardware.
 
