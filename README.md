@@ -142,3 +142,7 @@ EG:`z_do_it_all.sh` is the real life script to generate DOPA CEP (for instructio
 Further ancillary scripts for specific tasks should be self-explanatory:
 
 EG: `01_create_filter.sh` gives the option to filter only few tiles (EG: specific BIOPAMA needs).
+
+### Real life example
+
+
