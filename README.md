@@ -128,16 +128,16 @@ run **`./00_create_infrastructure.sh`** which will create from scratch the follo
 #### 3.  Run scripts
 
 1.  For each topic defined in **workflow_parameters.conf**
-  +  `a_input_topic_n.sh` populates input tables: copies, checks and cleans data inside the working schema
-  +  `b_clip_topic_n.sh` clips input data according to tiles defined in the grid
-  +  `c_rast_topic_n.sh` pseudo-rasterizes (rasterize 30 meters, then vectorize back) above clipped data
-  +  `da_tiled_topic_n.sh` populates tiled tables
-2.  For aggregated results from above steps
-  +  `db_tiled_all.sh` populates tiled tables
-  +  `e_flat_all.sh` populates flat_all table
-  +  `f_attributes_all.sh` populates atts_tile, THEN atts_all tables
-  +  `g_final_all.sh` populates flat_temp
-  +  `h_output.sh` populates the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
+  +  `a_input_topic_n.sh` populates input tables: copies data inside the working schema; dumps them as single Polygons (redundant by FID) and check geometries; 
+  +  `b_clip_topic_n.sh` clips input geometries according to grid tile size;
+  +  `c_rast_topic_n.sh` pseudo-rasterizes above clipped data: rasterize at cell size, then vectorize back collecting as MultiPolygons;
+  +  `da_tiled_topic_n.sh` dumps and checks above geometries to single part, by tile, by topic;
+2.  For aggregated results from above steps;
+  +  `db_tiled_all.sh` collects above geometries by tile in a single table;
+  +  `e_flat_all.sh` flat all above polygons by tile: breaks polygons at intersections, collects unique geometries;
+  +  `f_attributes_all.sh` calcultate and define numeric id (CID) for unique combinations of topics within the whole dataset; 
+  +  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes;
+  +  `h_output.sh` exports the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
 
 All the scripts from `a_*` to `g_*` must run in parallel, launching them in background.
 
