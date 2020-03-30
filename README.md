@@ -132,7 +132,7 @@ All the **scripts** (not the **resulting tables**, which are striclty interconne
 
 Still, all the commands could be collected and launched in a unique script.
 
-EG:`z_do_it_all.sh` (read inline comments for instructions).
+EG:`z_do_it_all.sh` is the real life script to generate DOPA CEP (read inline comments for instructions).
 
 Further ancillary scripts for specific tasks should be self-explanatory:
 
