@@ -27,8 +27,8 @@ A few (but not cheap) steps have been identified as necessary to improve the pro
     +  reducing overlaps
     +  harmonizing boundaries
 +  optimize the process
-  +  parallelizing calculations
-  +  reducing redundant processes.
+    +  parallelizing calculations
+    +  reducing redundant processes.
 
 Above targets are reached **scripting all the sequence of actions needed to build a pseudo-topology** (eg: merging information from countries, ecoregions and protected areas to build the base layer).
 
