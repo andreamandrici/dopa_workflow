@@ -85,7 +85,9 @@ It works for me on Xubuntu 18.04 amd64, with installed:
 +  gdal-bin/bionic,now 3.0.4+dfsg-1~bionic0
 
 A [.pgpass file](https://www.postgresql.org/docs/10/libpq-pgpass.html) is required.
-As alternative, postgres password for the user must defined as variable and passed to connection parameters in the env file. 
+As alternative, add the line:
+`export PGPASSWORD=<your password here>`
+to the `#database parameters` section in the env file. 
 
 #### 1.  Define the environment
 
