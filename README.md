@@ -66,9 +66,7 @@ It takes 27 hours to process the whole CEP (global country, ecoregion, protectio
 
 Some sample output deriving from [this 10 Mb sample inputs](./cep_sample/dopa_cep_input_sample.gpkg.tar.7z):
 
-<script src="https://embed.github.com/view/geojson/mappingandco/geojsonDB/master/word_countries/countries.json"></script>
-
-<script src="https://embed.github.com/view/geojson/andreamandrici/dopa_workflow/blob/master/cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson"></script>
+<iframe src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson" title="countries.json"></iframe>
 
 +  [CEP sample output 30 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
 +  [CEP output 10 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson)
