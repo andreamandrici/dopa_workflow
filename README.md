@@ -169,17 +169,17 @@ DOPA CEP has been generated using:
 |                        | b-clip tables             | b_clip_country.sh     | 72                  | 77261     | 215               |
 |                        |                           | b_clip_ecoregion.sh   | 72                  | 532073    | 626               |
 |                        |                           | b_clip_wdpa.sh        | 72                  | 1004269   | 1353              |
-|                        | c-raster tables           | c_rast_country.sh     | 72                  |           | 3120              |
-|                        |                           | c_rast_ecoregion.sh   | 72                  |           | 4022              |
-|                        |                           | c_rast_wdpa.sh        | 72                  |           | 1691              |
-|                        | da-tiled tables           | da_tiled_country.sh   | 72                  |           | 266               |
-|                        |                           | da_tiled_ecoregion.sh | 72                  |           | 780               |
-|                        |                           | da_tiled_wdpa.sh      | 72                  |           | 797               |
-| for aggregated results | db-tiled aggregated table | db_tiled_all.sh       | 72                  |           | 6514              |
-|                        | e-flat table              | e_flat_all.sh         | 36                  |           | 77273             |
-|                        | f-attributes table        | f_attributes_all.sh   | 36                  |           | 27294             |
-|                        | g-final table             | g_final_all.sh        | 36                  |           | 8524              |
-|                        | h-output                  | h_output.sh           | 1                   |           | 280               |
+|                        | c-raster tables           | c_rast_country.sh     | 72                  | 74235     | 3120              |
+|                        |                           | c_rast_ecoregion.sh   | 72                  | 103900    | 4022              |
+|                        |                           | c_rast_wdpa.sh        | 72                  | 278315    | 1691              |
+|                        | da-tiled tables           | da_tiled_country.sh   | 72                  | 78551     | 266               |
+|                        |                           | da_tiled_ecoregion.sh | 72                  | 651673    | 780               |
+|                        |                           | da_tiled_wdpa.sh      | 72                  | 2144176   | 797               |
+| for aggregated results | db-tiled aggregated table | db_tiled_all.sh       | 72                  | 2874400   | 6514              |
+|                        | e-flat table              | e_flat_all.sh         | 36                  | 7425625   | 77273             |
+|                        | f-attributes table        | f_attributes_all.sh   | 36                  | 424944    | 27294             |
+|                        | g-final table             | g_final_all.sh        | 36                  | 598264    | 8524              |
+|                        | h-output                  | h_output.sh           | 1                   | 598264    | 280               |
 |                        | total                     |                       |                     |           | 133763 (37 hours) |
 
 [Go to the code](https://github.com/andreamandrici/dopa_workflow)
