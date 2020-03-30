@@ -145,11 +145,11 @@ EG: `./a_input_country.sh Ncores > logs/a_input_country_log.txt 2>&1`
 
 where **Ncores** is the number of cores to assign to the process, and the following part of the command will write a detailed log.
 
-All the **scripts** (not the **resulting tables**, which are striclty interconnected) are independent from each other: this allows to debug (through the aforementioned logs) every step, and every input.
+All the **scripts** (not the **resulting tables**, which are striclty interconnected) are independent from each other: this allows to debug (through the aforementioned logs) every step, and check every output.
 
-Still, all the commands could be collected and launched in a unique script.
+Still, all the commands can be collected and launched in a unique script.
 
-EG:`z_do_it_all.sh` is the real life script to generate DOPA CEP (read inline comments for instructions), which will generate the infrastructure according to the provided **workflow_parameters.conf**, and will launch in sequence all the scripts generated.
+EG:`z_do_it_all.sh` is the real world script used to generate DOPA CEP (read inline comments for instructions), which will generate the infrastructure according to the provided **workflow_parameters.conf**, and will launch in sequence all the scripts generated.
 
 Further ancillary scripts for specific tasks should be self-explanatory:
 
