@@ -155,7 +155,32 @@ Further ancillary scripts for specific tasks should be self-explanatory:
 
 EG: `01_create_filter.sh` gives the option to filter only few tiles (EG: specific BIOPAMA needs).
 
+DOPA CEP has been generated using:
 
++  administrative_units.gaul_eez_dissolved_201912 (300 MultiPolygons)
++  habitats_and_biotopes.ecoregions_2019 (1097 MultiPolygons)
++  protected_sites.wdpa_202003 (238032 MultiPolygons)
+
+| loop                   | stage                     | script                | n dedicated threads | n objects | time (seconds)    |
+|------------------------|---------------------------|-----------------------|---------------------|-----------|-------------------|
+| for each input topic   | a-input tables            | a_input_country.sh    | 72                  | 2409      | 11                |
+|                        |                           | a_input_ecoregion.sh  | 72                  | 405496    | 83                |
+|                        |                           | a_input_wdpa.sh       | 72                  | 940614    | 914               |
+|                        | b-clip tables             | b_clip_country.sh     | 72                  | 77261     | 215               |
+|                        |                           | b_clip_ecoregion.sh   | 72                  | 532073    | 626               |
+|                        |                           | b_clip_wdpa.sh        | 72                  | 1004269   | 1353              |
+|                        | c-raster tables           | c_rast_country.sh     | 72                  |           | 3120              |
+|                        |                           | c_rast_ecoregion.sh   | 72                  |           | 4022              |
+|                        |                           | c_rast_wdpa.sh        | 72                  |           | 1691              |
+|                        | da-tiled tables           | da_tiled_country.sh   | 72                  |           | 266               |
+|                        |                           | da_tiled_ecoregion.sh | 72                  |           | 780               |
+|                        |                           | da_tiled_wdpa.sh      | 72                  |           | 797               |
+| for aggregated results | db-tiled aggregated table | db_tiled_all.sh       | 72                  |           | 6514              |
+|                        | e-flat table              | e_flat_all.sh         | 36                  |           | 77273             |
+|                        | f-attributes table        | f_attributes_all.sh   | 36                  |           | 27294             |
+|                        | g-final table             | g_final_all.sh        | 36                  |           | 8524              |
+|                        | h-output                  | h_output.sh           | 1                   |           | 280               |
+|                        | total                     |                       |                     |           | 133763 (37 hours) |
 
 
 
