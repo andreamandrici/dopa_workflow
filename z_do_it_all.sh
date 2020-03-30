@@ -6,7 +6,7 @@
 START_T1=$(date +%s)
 
 # set number of dedicated cores for all the subscripts
-ncores=7
+ncores=72
 
 # PRE RUN
 #------------------------------------------------------------------------
@@ -21,7 +21,7 @@ ncores=7
 
 # OPTIONAL - SETUP A FILTER ON TILE NUMBERS
 ## filters the grid by qid (setting FALSE qfilter field in the grid) - set parameters in THIS script!
-./01_create_filter.sh > logs/01_create_filter_log.txt 2>&1 wait
+#./01_create_filter.sh > logs/01_create_filter_log.txt 2>&1 wait
 
 # OPTIONAL - RESTORE A BACKUP
 ## MOVES tables from backup to working schema - set parameters in THIS script!
@@ -36,13 +36,11 @@ ncores=7
 ./a_input_ecoregion.sh ${ncores} > logs/a_input_ecoregions_log.txt 2>&1 wait
 ./a_input_wdpa.sh ${ncores} > logs/a_input_wdpa_log.txt 2>&1 wait
 
-
 # B-CLIP TABLES
 ## populates clip tables
 ./b_clip_country.sh ${ncores} > logs/b_clip_country_log.txt 2>&1 wait
 ./b_clip_ecoregion.sh ${ncores} > logs/b_clip_ecoregion_log.txt 2>&1 wait
 ./b_clip_wdpa.sh ${ncores} > logs/b_clip_wdpa_log.txt 2>&1 wait
-
 
 # C-RASTER TABLES
 ## populates raster tables
@@ -50,13 +48,11 @@ ncores=7
 ./c_rast_ecoregion.sh ${ncores} > logs/c_raster_ecoregion_log.txt 2>&1 wait
 ./c_rast_wdpa.sh ${ncores} > logs/c_raster_wdpa_log.txt 2>&1 wait
 
-
 # D-TILED TABLES
 ## DA-populates tiled tables (in parallel)
 ./da_tiled_country.sh ${ncores} > logs/da_tiled_country_log.txt 2>&1 wait
 ./da_tiled_ecoregion.sh ${ncores} > logs/da_tiled_ecoregion_log.txt 2>&1 wait
 ./da_tiled_wdpa.sh ${ncores} > logs/da_tiled_wdpa_log.txt 2>&1 wait
-
 
 ## FOR AGGREGATED INPUTS
 ##------------------------------------------------------------------------
