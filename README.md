@@ -135,7 +135,7 @@ All the **scripts** (not the **resulting tables**, which are striclty interconne
 
 Still, all the commands could be collected and launched in a unique script.
 
-EG:`z_do_it_all.sh` is the real life script to generate DOPA CEP (read inline comments for instructions), which will generate the infrastructure according to the current **workflow_parameters.conf**, and will launch in sequence all the scripts generated.
+EG:`z_do_it_all.sh` is the real life script to generate DOPA CEP (for instructions: read later in the text, and inline comments), which will generate the infrastructure according to the provided **workflow_parameters.conf**, and will launch in sequence all the scripts generated.
 
 Further ancillary scripts for specific tasks should be self-explanatory:
 
