@@ -43,10 +43,11 @@ Key parts of the process are:
 +  **tiling**: each input object is split in tiles (defaults to one degree).
 +  **parallelizing**: calculations are distributed to cores, by tile. Different cores calculates in parallel values for different tiles. The number of tiles calculated in series is dependant by the number of the available cores.
 +  **pseudo-rasterizing**: in every tile, every object is
-  +  temporary rasterized (defaults to 1 arcsec resolution: about 30 meters at equator), then
-  +  re-vectorized.
+   +  temporary rasterized (defaults to 1 arcsec resolution: about 30 meters at equator), then
+   +  re-vectorized.
 
-  This step, despite increasing the number of vector nodes participating to each tile, simplifies the overlapping geometries, in a more efficient way respect to other (tested) approaches: snap to grid; snap to other geometries; simplify; the already mentioned, unsustainable, real topology building.
+   This step, despite increasing the number of vector nodes participating to each tile, simplifies the overlapping geometries, in a more efficient way respect to other (tested) approaches: snap to grid; snap to other geometries; simplify; the already mentioned, unsustainable, real topology building.
+
 +  **flattening**: simplified geometries from previous step are intersected, by tile.
 +  **re-joining**: the attributes of the original objects are spatially joined to the new geometric objects. Multiple attributes related (coming from overlapping objects) become ordered arrays collected in a single row.
 +  **aggregating**:  objects (geometry and attributes) are aggregated by unique combinations of attributes.
