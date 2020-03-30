@@ -66,12 +66,24 @@ It takes 27 hours to process the whole CEP (global country, ecoregion, protectio
 
 Some sample output deriving from [this 10 Mb sample inputs](./cep_sample/dopa_cep_input_sample.gpkg.tar.7z):
 
-<iframe src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson" title="countries.json"></iframe>
+
 
 +  [CEP sample output 30 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_30arcsec_41sec.geojson)
+
+<iframe height="260" width="620" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/ddopa_cep_output_sample_30arcsec_41sec.geojson" title="CEP sample output 30 arcsec - 41 seconds processing time"></iframe>
+
 +  [CEP output 10 arcsec - 41 seconds processing time](./cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson)
+
+<iframe height="260" width="620" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_10arcsec_41sec.geojson" title="CEP output 10 arcsec - 41 seconds processing time"></iframe>
+
 +  [CEP sample output 3 arcsec - 53 seconds processing time](./cep_sample/dopa_cep_output_sample_3arcsec_53sec.geojson)
-+  [CEP output 1 arcsec - 151 seconds processing time](./cep_sample/dopa_cep_output_sample_1arcsec_151sec.geojson).
+
+<iframe height="260" width="620" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_3arcsec_53sec.geojson" title="CEP sample output 3 arcsec - 53 seconds processing time"></iframe>
+
++  [CEP output 1 arcsec - 151 seconds processing time](./cep_sample/dopa_cep_output_sample_1arcsec_151sec.geojson)
+
+<iframe height="260" width="620" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/andreamandrici/dopa_workflow/master/cep_sample/dopa_cep_output_sample_1arcsec_151sec.geojson" title="CEP output 1 arcsec - 151 seconds processing time"></iframe>
+.
 
 A lot of effort has been put in making the above task universal, and not exclusively targeted to the above objects (country/ecoregion/pa).
 It can be applied as-it-is to pre-process other datasets (eg IUCN species).
