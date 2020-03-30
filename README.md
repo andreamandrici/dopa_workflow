@@ -117,9 +117,9 @@ _... repeat the above for the NN number of the defined topics)..._
 
 `SCH="working schema name"` -- _this one defines the working schema, WHICH WILL BE DROPPED AND RECREATED!_
 
-`GS=x` --_defines grid tile size in degrees, integer submultiple of 180; default is 1 degree_
+`GS=x` -- _defines grid tile size in degrees, integer submultiple of 180; default is 1 degree_
 
-`CS=y` --_defines raster cell size in arcasec, integer submultiple of 3600; default is 1 arcsec_
+`CS=y` -- _defines raster cell size in arcasec, integer submultiple of 3600; default is 1 arcsec_
 
 #### 2.  Create the infrastructure
 
