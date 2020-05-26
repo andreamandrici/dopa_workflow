@@ -5,21 +5,15 @@
 ### COUNTRIES (2019)
 
 +  [COUNTRY CODES (ISO 3166-1 AND ISO 3166-3)](https://www.iso.org/obp/ui/#search).
-
 International Organization for Standardization (2019).
-
 Downloaded on 20191122.
 
 +  [Maritime Boundaries Geodatabase (EEZ)](http://www.marineregions.org/).
-
 Flanders Marine Institute (2019). Version 11. https://doi.org/10.14284/382.
-
 Downloaded on 20191122.
 
 +  [Global Administrative Unit Layers (GAUL)](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691).
-
 FAO-UN (2015).
-
 Downloaded on 2016. __This dataset is discontinued__.
 
 ### ECOREGIONS (V2019)
@@ -28,10 +22,7 @@ Downloaded on 2016. __This dataset is discontinued__.
 Bioscience 51(11):933-938.
 Downloaded on 201603.
 
-+  [Marine Ecoregions and Pelagic Provinces of the World](http://data.unep-wcmc.org/datasets/38).
-
-The Nature Conservancy (2012). GIS layers developed by The Nature Conservancy with multiple partners, combined from Spalding et al. (2007) and Spalding et al. (2012). Cambridge (UK): The Nature Conservancy.
-
++  [Marine Ecoregions and Pelagic Provinces of the World](http://data.unep-wcmc.org/datasets/38).The Nature Conservancy (2012). GIS layers developed by The Nature Conservancy with multiple partners, combined from Spalding et al. (2007) and Spalding et al. (2012). Cambridge (UK): The Nature Conservancy.
 Downloaded on 20160720.
 
 Version with complete coastline has been used (in previous versions NoCoast was used), because of the better coastline of MEOW/PPOW (eg: a stripe of about 1000x1 Km was missing from land on Adriatic sea), and to the fact that "Saint Pierre et Michelon" and "Tokealu" islands were obliterated by the NoCoast version.
