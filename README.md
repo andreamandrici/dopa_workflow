@@ -5,6 +5,8 @@ This is repo for [DOPA](https://dopa.jrc.ec.europa.eu/en) workflow.
 The following sections are currently present:
 
 +  [Flattening](./flattening/)
++  [Authors](./docs/Authors.md)
+
 
 [Go to the code](https://github.com/andreamandrici/dopa_workflow)
 
