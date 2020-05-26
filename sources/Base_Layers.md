@@ -1,14 +1,17 @@
-# COUNTRIES (2019)
+# Sources
 
-## Sources
+## Base Layers
 
-ISO CODES. ISO 3166 officially assigned country codes from International Organization for Standardization, Geneva.
-Available online at https://www.iso.org/obp/ui/#search.
+### COUNTRIES (2019)
+
++  [ISO CODES](https://www.iso.org/obp/ui/#search). ISO 3166 officially assigned country codes from International Organization for Standardization, Geneva.
 Downloaded on 20191122.
 
-[EEZ V11](http://www.marineregions.org/). Flanders Marine Institute (2019). Maritime Boundaries Geodatabase, version 11.
-https://doi.org/10.14284/382.
++  [EEZ](http://www.marineregions.org/). Flanders Marine Institute (2019). Maritime Boundaries Geodatabase, version 11. https://doi.org/10.14284/382.
 Downloaded on 20191122.
+
++  [GAUL](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691). Global Administrative Unit Layers (GAUL).
+Downloaded on 2016. This dataset is discontinued.
 
 # ECOREGIONS (V2019)
 
