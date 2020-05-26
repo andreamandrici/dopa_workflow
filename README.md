@@ -20,10 +20,10 @@ The following sections are currently present:
 ## Processing
 
 ### Ecoregions
-+  [Protection Coverages](./processing/ecoregions.md)
++  [Protection Coverages](./processing/ecoregions/)
 
 ### Species
-+  [Irreplaceability](./processing/irreplaceability.md)
++  [Irreplaceability](./processing/irreplaceability/)
 
 ## Authors
 
