@@ -8,5 +8,5 @@ The following sections are currently present:
 
 [Go to the code](https://github.com/andreamandrici/dopa_workflow)
 
-[Go to the webpage](https://andreamandrici/github.io/dopa_workflow)
+[Go to the webpage](https://andreamandrici.github.io/dopa_workflow/)
 
