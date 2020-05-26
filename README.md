@@ -6,7 +6,7 @@ The following sections are currently present:
 
 ## Data sources
 
-+  [Base Layers](./docs/Base Layers)
++  [Base Layers](./docs/Base_Layers.md)
 
 +  [Thematic Layers](./docs/)
 
