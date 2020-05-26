@@ -1,1 +1,1 @@
-Andrea Mandrici (flattening)
+*  flattening: Andrea Mandrici
