@@ -6,22 +6,25 @@ The following sections are currently present:
 
 ## Data sources
 
-+  [Base Layers](./docs/Base_Layers.md)
++  [Base Layers](./sources/Base_Layers.md)
 
-+  [Thematic Layers](./docs/)
++  [Thematic Layers](./sources/Thematic_Layers.md)
 
 ## Pre Processing
 
-+  Importing data 
++  [Data Import](.import/) 
 
 +  [Flattening](./flattening/)
 
 ## Processing
 
++  [Indicators](./processing/)
+
 ## Authors
 
-*  flattening: Andrea Mandrici. Many thanks to Luca Marletta, Lucy Bastin.
-*  processing: 
+*  Andrea Mandrici.
+
+Many thanks to Luca Marletta. 
 
 ____
 
