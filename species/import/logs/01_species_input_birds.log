@@ -1,0 +1,15 @@
+/spatial_data/Original_Datasets
+/RESTRICTED_BIRDLIFE/RESTRICTED_BIRDS/uncompressed/RL_2019
+/spatial_data/Original_Datasets/RESTRICTED_BIRDLIFE/RESTRICTED_BIRDS/uncompressed/RL_2019
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+
+real	7m48.049s
+user	4m49.581s
+sys	0m13.108s
+birds
+
+DONE!
+TOTAL SCRIPT TIME: 468

@@ -1,0 +1,122 @@
+NOTICE:  table "additional_tables_countries" does not exist, skipping
+NOTICE:  table "additional_tables_credits" does not exist, skipping
+DROP TABLE
+DROP TABLE
+NOTICE:  table "additional_tables_assessments" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_lme" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_all_other_fields" does not exist, skipping
+NOTICE:  table "additional_tables_habitats" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_taxonomy" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_research_needed" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_references" does not exist, skipping
+NOTICE:  table "additional_tables_simple_summary" does not exist, skipping
+NOTICE:  table "additional_tables_synonyms" does not exist, skipping
+DROP TABLE
+DROP TABLE
+DROP TABLE
+NOTICE:  table "additional_tables_fao" does not exist, skipping
+NOTICE:  table "additional_tables_dois" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_conservation_needed" does not exist, skipping
+DROP TABLE
+DROP TABLE
+DROP TABLE
+NOTICE:  table "additional_tables_threats" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_usetrade" does not exist, skipping
+DROP TABLE
+NOTICE:  table "additional_tables_common_names" does not exist, skipping
+DROP TABLE
+
+real	0m8.375s
+user	0m1.380s
+sys	0m0.211s
+lme
+
+real	0m8.858s
+user	0m1.596s
+sys	0m0.217s
+fao
+
+real	0m14.566s
+user	0m2.462s
+sys	0m0.396s
+usetrade
+
+real	0m16.102s
+user	0m2.920s
+sys	0m0.483s
+synonyms
+
+real	0m16.727s
+user	0m3.023s
+sys	0m0.447s
+conservation_needed
+
+real	0m16.893s
+user	0m2.972s
+sys	0m0.548s
+dois
+
+real	0m17.463s
+user	0m2.935s
+sys	0m0.436s
+research_needed
+
+real	0m18.076s
+user	0m3.290s
+sys	0m0.580s
+taxonomy
+
+real	0m18.099s
+user	0m3.368s
+sys	0m0.651s
+simple_summary
+
+real	0m18.244s
+user	0m3.208s
+sys	0m0.670s
+common_names
+
+real	0m18.286s
+user	0m3.762s
+sys	0m0.706s
+threats
+
+real	0m20.304s
+user	0m4.163s
+sys	0m0.909s
+all_other_fields
+
+real	0m20.573s
+user	0m3.789s
+sys	0m1.162s
+credits
+
+real	0m21.936s
+user	0m5.175s
+sys	0m0.935s
+assesments
+
+real	0m24.117s
+user	0m5.481s
+sys	0m1.355s
+references
+
+real	0m26.139s
+user	0m5.215s
+sys	0m2.082s
+habitats
+
+real	0m32.824s
+user	0m6.808s
+sys	0m2.922s
+countries
+
+DONE!
+TOTAL SCRIPT TIME: 33

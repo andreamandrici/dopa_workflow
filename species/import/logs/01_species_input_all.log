@@ -1,0 +1,30 @@
+NOTICE:  table "mammals" does not exist, skipping
+NOTICE:  table "chondrichthyes" does not exist, skipping
+NOTICE:  table "amphibians" does not exist, skipping
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+
+real	0m49.440s
+user	0m9.393s
+sys	0m1.726s
+amphibians
+
+real	1m35.051s
+user	0m54.795s
+sys	0m2.265s
+chondrichthyes
+
+real	1m49.105s
+user	0m42.451s
+sys	0m4.070s
+mammals
+
+real	5m47.229s
+user	3m19.487s
+sys	0m6.318s
+corals
+
+DONE!
+TOTAL SCRIPT TIME: 348
