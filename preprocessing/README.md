@@ -5,6 +5,8 @@ script eez_2019.sql.
 
 # ECOREGIONS (V2019)
 
+Version with complete coastline has been used (in previous versions NoCoast was used), because of the better coastline of MEOW/PPOW (eg: a stripe of about 1000x1 Km was missing from land on Adriatic sea), and to the fact that "Saint Pierre et Michelon" and "Tokealu" islands were obliterated by the NoCoast version.
+
 A flat topological corrected layer, integrating the 3 sources [teow+
 (meow+ppow)] has been obtained:
 1. assigning unique numeric id to each class in the original layers:

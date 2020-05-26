@@ -24,5 +24,3 @@ Downloaded on 201603.
 
 +  [Marine Ecoregions and Pelagic Provinces of the World](http://data.unep-wcmc.org/datasets/38).The Nature Conservancy (2012). GIS layers developed by The Nature Conservancy with multiple partners, combined from Spalding et al. (2007) and Spalding et al. (2012). Cambridge (UK): The Nature Conservancy.
 Downloaded on 20160720.
-
-Version with complete coastline has been used (in previous versions NoCoast was used), because of the better coastline of MEOW/PPOW (eg: a stripe of about 1000x1 Km was missing from land on Adriatic sea), and to the fact that "Saint Pierre et Michelon" and "Tokealu" islands were obliterated by the NoCoast version.
