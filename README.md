@@ -15,7 +15,6 @@ The following sections are currently present:
 
 ## Pre Processing
 
-+  [Data Import](.import/) 
 +  [Flattening](./flattening/)
 
 ## Processing
