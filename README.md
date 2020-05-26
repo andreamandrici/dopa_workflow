@@ -8,16 +8,18 @@ The following sections are currently present:
 
 ## Pre Processing
 
-+  importing data 
++  Importing data 
 
 +  [Flattening](./flattening/)
 
 ## Processing
 
-___
+## Authors
 
-+  [Authors](./docs/Authors.md)
+*  flattening: Andrea Mandrici. Many thanks to Luca Marletta, Lucy Bastin.
+*  processing: 
 
+____
 
 [Go to the code](https://github.com/andreamandrici/dopa_workflow)
 
