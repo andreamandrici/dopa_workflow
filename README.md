@@ -7,18 +7,24 @@ The following sections are currently present:
 ## Data sources
 
 +  [Base Layers](./sources/Base_Layers.md)
-
 +  [Thematic Layers](./sources/Thematic_Layers.md)
+
+## Data Import
+
++  [Species](.import/species/)   
 
 ## Pre Processing
 
 +  [Data Import](.import/) 
-
 +  [Flattening](./flattening/)
 
 ## Processing
 
-+  [Indicators](./processing/)
+### Ecoregions
++  [Protection Coverages](./processing/ecoregions.md)
+
+### Species
++  [Irreplaceability](./processing/irreplaceability.md)
 
 ## Authors
 
