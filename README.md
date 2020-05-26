@@ -4,7 +4,18 @@ This is repo for [DOPA](https://dopa.jrc.ec.europa.eu/en) workflow.
 
 The following sections are currently present:
 
+## Data sources
+
+## Pre Processing
+
++  importing data 
+
 +  [Flattening](./flattening/)
+
+## Processing
+
+___
+
 +  [Authors](./docs/Authors.md)
 
 
