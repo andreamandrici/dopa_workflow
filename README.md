@@ -6,6 +6,10 @@ The following sections are currently present:
 
 ## Data sources
 
++  [Base Layers](./docs/Base Layers)
+
++  [Thematic Layers](./docs/)
+
 ## Pre Processing
 
 +  Importing data 
