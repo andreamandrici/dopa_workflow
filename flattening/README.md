@@ -1,4 +1,4 @@
-# DOPA workflow
+# DOPA flattening workflow
 
 Calculating a [DOPA](https://dopa.jrc.ec.europa.eu/en) indicator means, in general, to do a spatial intersection within **at least** two layers. EG:
 
