@@ -14,7 +14,7 @@ Downloaded on 20191122.
 
 +  [Global Administrative Unit Layers (GAUL)](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691).
 FAO-UN (2015).
-Downloaded on 2016. __This dataset is discontinued__.
+Downloaded on 20160718. __This dataset is discontinued__.
 
 ### ECOREGIONS (V2019)
 
