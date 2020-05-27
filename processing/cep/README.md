@@ -2,7 +2,7 @@
 
 ## Country/Ecoregion/Protection (CEP)
 
-This is a specific application of [flattening](../flattening/).
+This is a specific application of [flattening](../../flattening/).
 
 DOPA CEP is made by:
 
