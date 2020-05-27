@@ -16,6 +16,8 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 
 +  base dataset: intersecting geometries with thematic data, to get further indicators.
 
+To obtain the above, the user is requested only to setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for version 202003), and to run a sequence of bash script ().
+
 The output is always contained in:
 
 ### cep.cep_last
