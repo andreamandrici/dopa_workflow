@@ -1,3 +1,0 @@
-# PROCESSING 
-
-## Ecoregion coverages
