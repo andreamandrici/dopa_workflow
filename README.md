@@ -26,8 +26,8 @@ The following sections are currently present:
 #### CEP derived
 
 +  [countries statistics](./processing/cep/country/)
-+  [ecoregions statistics](./processing/ecoregion/)
-+  [protected areas statistics](./processing/wpda/)
++  [ecoregions statistics](./processing/cep/ecoregion/)
++  [protected areas statistics](./processing/cep/wpda/)
 
 
 ### Species
