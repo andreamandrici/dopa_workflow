@@ -54,8 +54,11 @@ The code to (quickly) update the two above tables, after the (expensive) flatten
 ### Version 202003
 
 +  [workflow_parameters.conf](./202003_workflow_parameters.conf) env file.
-+  [z_do_it_all.sh](./202003_z_do_it_all.sh) bash script.
-+  patch: 100 cids (all single pixel, 30x30) resulted with multiple(2) country (1) or ecoregion (99), due to overlapping original geometries (which shouldn't). The total surface involved is non-significant, but to make the next steps (aggregations and disaggregations) process easier, they have been randomly assigned to one or the other original fid (it could also be fixed with rasterization at lower resolution: more expensive).
-  
++  [z_do_it_all.sh](./202003_z_do_it_all.sh) bash script. Runs in about 40 hours.
++  patch: 100 cids (all single pixel, 30x30) resulted with multiple(2) country (1) or ecoregion (99), due to overlapping original geometries (which shouldn't). The total surface involved is non-significant, but to make the next steps (aggregations and disaggregations) process easier, they have been randomly assigned to one or the other original fid (it could also be fixed with rasterization at lower resolution: more expensive). The sequence to get the above fixed is:
 
+  +  [patch sql sequence](./202003_fix_cep_overlaps.sql): to be manually executed, point by point. Fully commented.
+  +  [patch bash sequence](./202003_fix_cep_overlaps.sh): bash script. Can be executed in one step. Runs in about 4 hours.
+
++  [bash script](./cep.sh)
 
