@@ -3,7 +3,7 @@
 
 ### Countries statistics
 
-Protection Coverage
+Protection Coverage: [country protection coverage sql](./country_coverage.sql) to be manually executed. Fully commented.
 
 ### Ecoregions statistics
 
