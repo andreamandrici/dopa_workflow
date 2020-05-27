@@ -7,6 +7,7 @@ Protection Coverage
 
 ### Ecoregions statistics
 
+Protection Coverage
 
 ### Protected areas statistics
 

@@ -25,9 +25,9 @@ The following sections are currently present:
 
 #### [CEP derived indicators](./processing/cep/cep_derived_indicators/)
 
-+  [countries statistics](./processing/cep/cep_derived_indicators/README.md)
-+  [ecoregions statistics](./processing/cep/ecoregion/)
-+  [protected areas statistics](./processing/cep/wdpa/)
++  [countries statistics](./processing/cep/cep_derived_indicators/#countries-statistics)
++  [ecoregions statistics](./processing/cep/cep_derived_indicators/#ecoregions-statistics)
++  [protected areas statistics](./processing/cep/cep_derived_indicators/#protected-areas-statistics)
 
 
 ### Species
