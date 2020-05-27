@@ -446,7 +446,10 @@ EXECUTE FORMAT ('INSERT INTO tile_objects SELECT DISTINCT geom FROM %s WHERE qid
 DROP TABLE IF EXISTS flat_objects;
 CREATE TEMPORARY TABLE flat_objects (tid bigint,geom geometry,point geometry);
 
-IF ((SELECT COUNT(geom) FROM tile_objects)=1 AND (SELECT ST_AREA(geom::geography) FROM tile_objects) > 0)
+----NEXT IS BROKEN ON POSTGIS: BUG ON ST_AREA for GEOGRAPHY
+--IF ((SELECT COUNT(geom) FROM tile_objects)=1 AND (SELECT ST_AREA(geom::geography) FROM tile_objects) > 0)
+----NEXT REPLACE THE PREVIOUS UNTIL POSTGIS BUG ST_AREA FOR GEOGRAPHY IS FIXED
+IF ((SELECT COUNT(geom) FROM tile_objects)=1 AND (SELECT ST_AREA(ST_TRANSFORM(geom,54009))/1000000 FROM tile_objects) > 0)
 THEN
 	INSERT INTO flat_objects(tid,geom) SELECT 1::bigint tid,geom FROM tile_objects;
 ELSE
@@ -457,7 +460,9 @@ ELSE
 	FROM (SELECT (st_linemerge(st_union(ST_Boundary(geom)))) geom
 	FROM tile_objects
 	) a) b ) c
-	WHERE ST_AREA(geom::geography) > 0;
+----NEXT IS BROKEN ON POSTGIS: BUG ON ST_AREA for GEOGRAPHY
+--	WHERE ST_AREA(geom::geography) > 0;
+----NEXT REPLACE THE PREVIOUS UNTIL POSTGIS BUG ST_AREA FOR GEOGRAPHY IS FIXED
 END IF;
 
 UPDATE flat_objects SET point = ST_PointOnSurface(b.geom) FROM (SELECT tid,(ST_DUMP(ST_BUFFER(geom,-0.000001))).geom FROM flat_objects) b WHERE flat_objects.tid=b.tid;
@@ -494,7 +499,10 @@ DROP TABLE IF EXISTS atts_tile;
 CREATE TEMPORARY TABLE atts_tile AS
 SELECT qid,a.tid,source,fid FROM ${SCH}.e_flat_all a
 JOIN ${SCH}.dc_tiled_all b USING(qid)
-WHERE qid=iqid AND ST_CONTAINS(b.geom,a.geom)
+---- THE FOLLOWING IS REPLACED WITH THE NEXT
+-- WHERE qid=iqid AND ST_CONTAINS(b.geom,a.geom)
+---- THE FOLLOWING REPLACE THE PREVIOUS - SAME RESULT!?!
+WHERE qid=iqid AND ST_CONTAINS(b.geom,a.point)
 ORDER BY qid,source,tid;
 
 DROP TABLE IF EXISTS atts_tile_agg;
@@ -540,7 +548,13 @@ WHERE e_flat_all.qid=iqid AND e_flat_all.tid=a.tid;
 
 DROP TABLE IF EXISTS flat;
 CREATE TEMPORARY TABLE flat AS
-SELECT cid,ST_MULTI(ST_COLLECT(geom)) geom FROM ${SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid;
+----NEXT IS REPLACED
+--SELECT cid,ST_MULTI(ST_COLLECT(geom)) geom FROM ${SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid;
+----NEXT REPLACES THE PREVIOUS
+SELECT cid,ST_MULTI(ST_COLLECT(geom)) geom FROM
+(SELECT cid,(ST_DUMP(ST_UNION(geom))).geom FROM {SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid) a
+GROUP BY cid ORDER BY cid;
+----END O REPLACED lines
 INSERT INTO ${SCH}.g_flat_temp
 SELECT iqid,cid,geom,
 ${REORDERS}
