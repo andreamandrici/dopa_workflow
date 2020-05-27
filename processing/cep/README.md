@@ -10,5 +10,10 @@ DOPA CEP is made by:
 +  ecoregions: merge of Terrestrial, Marine and Pelagic, maintaining coastline information.
 +  protected areas: last wdpa version.
 
-The result is a pseudo-topology where each polygon keeps the information from the original sources which is 
+The resulting dataset is a pseudo-topology where each polygon keeps the information from the original sources, and is simultaneously used as:
+
++  indicator: pre-calculated areas can be summed according to different filters and aggregations (eg: protected ecoregion in country), to quickly get coverages.
+
++  base dataset: intersecting geometries with thematic data.
+
 
