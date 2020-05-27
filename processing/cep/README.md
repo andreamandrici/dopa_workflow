@@ -14,6 +14,10 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 
 +  indicator: pre-calculated areas can be summed according to different filters and aggregations (eg: protected ecoregion in country), to quickly get coverages.
 
-+  base dataset: intersecting geometries with thematic data.
++  base dataset: intersecting geometries with thematic data, to get further indicators.
 
+The output is always contained in:
+
+`cep.cep_last`: 
+`cep.cep_last_index`
 
