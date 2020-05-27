@@ -11,7 +11,7 @@ The following sections are currently present:
 
 ## Data Import
 
-+  [Species](.import/species/)   
++  [Species](./import/species/)   
 
 ## Pre Processing
 
