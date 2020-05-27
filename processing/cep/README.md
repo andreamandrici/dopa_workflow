@@ -42,3 +42,6 @@ non-geometric version of the above, with expanded arrays
 +  pa_name: text attribute joined from the original source
 +  is_protected: boolean, calculated if polygon (cid) is covered by a protected area.
 
+The code to (quickly) update the two above tables, after the (expensive) flattening step is a single [bash script](./cep.sh), where the user has just to setup few parameters before executing.
+
+  
