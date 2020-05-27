@@ -23,7 +23,7 @@ The following sections are currently present:
 
 +  [Country/Ecoregion/Protection (CEP)](./processing/cep/)
 
-#### CEP derived
+#### [CEP derived indicators](./processing/cep/cep_derived_indicators/)
 
 +  [countries statistics](./processing/cep/country/)
 +  [ecoregions statistics](./processing/cep/ecoregion/)
