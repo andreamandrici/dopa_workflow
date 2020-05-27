@@ -18,9 +18,9 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 
 To obtain the above, the user is requested only:
 
-1  to setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for **version 202003**), and
+1.  to setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for **version 202003**), and
 
-2  to run a sequence of bash script ([z_do_it_all.sh](./202003_z_do_it_all.sh) used for **version 202003**).
+2.  to run a sequence of bash script ([z_do_it_all.sh](./202003_z_do_it_all.sh) used for **version 202003**).
 
 The output is always exported in:
 
