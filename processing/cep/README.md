@@ -49,7 +49,13 @@ non-geometric version of the above, with expanded arrays
 +  is_protected: boolean, calculated if polygon (cid) is covered by a protected area.
 
 The code to (quickly) update the two above tables, after the (expensive) flattening step is a single [bash script](./cep.sh), where again the user is required to setup few parameters before executing it.
-
+The script:
++  create the tables (BOTH to be kept across DOPA releases):
+  +  cep.cep_yyyymm 
+  +  cep.cep_index_yyyymm
++  update the tables (used for current processing)  
+  +  cep.cep_last
+  +  cep.cep_last_index.
 
 ### Version 202003
 
@@ -58,13 +64,5 @@ The code to (quickly) update the two above tables, after the (expensive) flatten
 +  **patch**: 100 cids (all single pixel, 30x30) resulted with multiple (2) country (1) or ecoregion (99), due to overlapping original geometries (which shouldn't). The total surface involved is non-significant, but to make the next steps (aggregations and disaggregations) process easier, they have been randomly assigned to one or the other original fid (it could also be fixed with rasterization at lower resolution: more expensive). The sequence to get the above fixed is:
     +  [patch sql sequence](./202003_fix_cep_overlaps.sql): to be manually executed, point by point. Fully commented.
     +  [patch bash sequence](./202003_fix_cep_overlaps.sh): bash script. Can be executed in one step. Runs in about 4 hours.
-+  [cep_last](./cep.sh): bash script, executed at the end of the flattening script to:
-    +  create the tables (BOTH to be kept across DOPA releases):
-      +  cep.cep_202003 
-      +  cep.cep_index_202003
-    +  update the tables (used for current processing)  
-      +  cep.cep_last
-      +  cep.cep_last_index.
-
- update the tables cep_last and cep_last_index.
++  [cep_last](./cep.sh): bash script, executed at the end of the flattening script to create the tables cep.cep_202003,cep.cep_index_202003 and to update the tables cep.cep_last, cep.cep_last_index.
 
