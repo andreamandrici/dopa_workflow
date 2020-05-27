@@ -1,10 +1,12 @@
 WITH
+-- current ecoregions
+current_ecoregion AS (SELECT * FROM habitats_and_biotopes.ecoregions_2019),--this defines current attributes 
 -- raster total surface
 a1 AS (SELECT ecoregion fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(eco) ecoregion,sqkm FROM cep.cep_last) a GROUP BY ecoregion ORDER BY ecoregion),
 -- raster protected surface
 a2 AS (SELECT ecoregion fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(eco) ecoregion,sqkm FROM cep.cep_last WHERE NOT (ARRAY[0] && pa)) a GROUP BY ecoregion ORDER BY ecoregion),
 -- ecoregion attributes
-b AS (SELECT first_level_code fid,first_level "name","source",sqkm FROM habitats_and_biotopes.ecoregions_2019 ORDER BY fid),
+b AS (SELECT first_level_code fid,first_level "name","source",sqkm FROM current_ecoregion ORDER BY fid),
 -- objects assigned to multiple ecoregions (by qid) 
 c AS (SELECT qid,eco,cardinality(eco) AS cardinality FROM cep.cep_last WHERE cardinality(eco) <> 1),
 -- ecoregions assigned to multiple object (by ecoid)

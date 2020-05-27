@@ -7,9 +7,12 @@ Protection Coverage
 
 ### Ecoregions statistics
 
-Protection Coverage
+Protection Coverage: [ecoregion protection coverage sql](./ecoregion_coverage.sql) to be manually executed. Fully commented.
 
 ### Protected areas statistics
+
+Ecoregion Coverage
+
 
 
 
