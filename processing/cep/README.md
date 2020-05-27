@@ -49,4 +49,13 @@ non-geometric version of the above, with expanded arrays
 +  is_protected: boolean, calculated if polygon (cid) is covered by a protected area.
 
 The code to (quickly) update the two above tables, after the (expensive) flattening step is a single [bash script](./cep.sh), where again the user is required to setup few parameters before executing it.
+
+
+### Version 202003
+
++  [workflow_parameters.conf](./202003_workflow_parameters.conf) env file.
++  [z_do_it_all.sh](./202003_z_do_it_all.sh) bash script.
++  patch: 100 cids (all single pixel, 30x30) resulted with multiple(2) country (1) or ecoregion (99), due to overlapping original geometries (which shouldn't). The total surface involved is non-significant, but to make the next steps (aggregations and disaggregations) process easier, they have been randomly assigned to one or the other original fid (it could also be fixed with rasterization at lower resolution: more expensive).
   
+
+
