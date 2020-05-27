@@ -59,11 +59,12 @@ The code to (quickly) update the two above tables, after the (expensive) flatten
     +  [patch sql sequence](./202003_fix_cep_overlaps.sql): to be manually executed, point by point. Fully commented.
     +  [patch bash sequence](./202003_fix_cep_overlaps.sh): bash script. Can be executed in one step. Runs in about 4 hours.
 +  [cep_last](./cep.sh): bash script, executed at the end of the flattening script to:
-    +  create the tables:
-      +  cep.cep_202003 (to be kept across DOPA releases)
-      +  cep.cep_index_202003 (to be kept across DOPA releases)
-    +  cep.cep_last
-    +  cep.cep_last_index.
+    +  create the tables (BOTH to be kept across DOPA releases):
+      +  cep.cep_202003 
+      +  cep.cep_index_202003
+    +  update the tables (used for current processing)  
+      +  cep.cep_last
+      +  cep.cep_last_index.
 
  update the tables cep_last and cep_last_index.
 
