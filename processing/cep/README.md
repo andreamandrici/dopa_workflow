@@ -18,6 +18,25 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 
 The output is always contained in:
 
-`cep.cep_last`: 
-`cep.cep_last_index`
++  `cep.cep_last`: non-redundant geometry table where:
+  +  qid: tile id (doesn't change within versions: if wdpa was versioned, could be processed only tiles intersecting pas that are changed)
+  +  cid: unique combination of country/ecoregion/protection (does change within versions)
+  +  country: array of country ids covered by the polygon. Since countries should not overlap, ony one dimension is allowed 
+  +  eco: array of ecoregion ids covered by the polygon. Since ecoregions should not overlap, ony one dimension is allowed
+  +  pa: array of wdpa ids covered by the polygons. Overlaps are allowed
+  +  sqkm: Polygon extent
+  +  geom: Polygon geometry. 
+
++  `cep.cep_last_index`: non-geometric version of the above, with expanded arrays
+  +  qid: as above
+  +  cid: as above (redundant)
+  +  country: as above (expanded array)
+  +  country_name: text attribute joined from the original source
+  +  iso3: text attribute joined from the original source
+  +  eco: as above (expanded array)
+  +  eco_name: text attribute joined from the original source
+  +  is_marine: boolean, calculate if polygon (cid) is covered by marine/pelagic OR terrestrial ecoregion 
+  +  pa: as above (redundant: expanded array)
+  +  pa_name: text attribute joined from the original source
+  +  is_protected: boolean, calculated if polygon (cid) is covered by a protected area.
 
