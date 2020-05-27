@@ -16,11 +16,11 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 
 +  base dataset: intersecting geometries with thematic data, to get further indicators.
 
-To obtain the above, the user is requested only:
+To obtain the above, the user is requested only to:
 
-1.  Download [this](https://github.com/andreamandrici/dopa_workflow) code, move in the [flattening](../../flattening/) folder.
-2.  to setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for **version 202003**), and
-3.  to run a sequence of bash script ([z_do_it_all.sh](./202003_z_do_it_all.sh) used for **version 202003**).
+1.  download [this](https://github.com/andreamandrici/dopa_workflow) code, move in the [flattening](../../flattening/) folder.
+2.  setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for **version 202003**), and
+3.  run a sequence of bash script ([z_do_it_all.sh](./202003_z_do_it_all.sh) used for **version 202003**).
 
 The output is always exported in:
 
