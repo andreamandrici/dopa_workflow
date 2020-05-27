@@ -19,11 +19,17 @@ The following sections are currently present:
 
 ## Processing
 
-### Ecoregions
-+  [Protection Coverages](./processing/ecoregions/)
+### CEP
+
++  [Country/Ecoregion/Protection (CEP)](./processing/cep/)
+
+#### Ecoregions
+
++  [Ecoregions Coverages](./processing/ecoregions/)
 
 ### Species
-+  [Irreplaceability](./processing/irreplaceability/)
+
++  [Irreplaceability Index](./processing/irreplaceability/)
 
 ## Authors
 
