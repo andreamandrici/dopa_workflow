@@ -27,19 +27,23 @@ A flat topological corrected layer, integrating the 3 sources [teow+(meow+ppow)]
    6. few polygons (11 originally) have been manually split (20 polygons), then:
       *  the 14 parts adjoining TEOW and extremes have been assigned to the correspondent TEOW classes
       *  the other 6 parts have been left unchanged (EEOW).
+
 The result of the above is included in the final geopackage as ecoregions_2019_raw spatial layer as undissolved, single part polygons, where for each of them is reported:
-source (teow, meow, ppow, eeow) eco_id (first_level_code) notes:
-"originally teow/meow/ppow/eeow" = attribute unchanged
-"assigned to meow/ppow" = originally teow, assigned to meow/ppow
-"assigned to teow" = originally meow/ppow, assigned to teow (codes ppow-9 and meow-20073,20077; assigned to teow 61318-"St. Peter and St. Paul rocks" and 60172-"Trindade-Martin Vaz Islands tropical forests")
-h05-redmine.jrc.it/projects/dopa/wiki/DOPA_complete_workflow 4/82/28/2020
-DOPA complete workflow - DOPA - Redmine "reassigned to teow" = originally eeow, assigned to adjacent teow classes (eg: antarctic land adjoining south pole), some with with manual split (14 parts crossing ±180)
-"reassigned to eeow" = originally eeow, split in the previous step.
-Above object has been dissolved in ArcGIS PRO (returing the expect 1097
-classes) then exploded as single part polygons. NB: any correction to
-ecoregions should be applied to teow_meow_ppow_eeow_raw, then
-dissolve it again to get the final version.
-This version has been imported in PostGIS, then checked for geometry validity,
-fixed, finalized (single and multiparts) with the script http://h05-redmine.jrc.it/attachments/download/314/ecoregions_2019.sql, also available in /GLOBES/processing_current/ecoregions_2019.sql. The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, also available as http://h05-redmine.jrc.it/attachments/download/313/ecoregions_2019_statistics.xlsx, and http://h05-redmine.jrc.it/attachments/download/312/ecoregions_2019.sql, also available in /GLOBES/processing_current/ecoregions_2019_statistics.xlsx.
-The final version is included as geopackage in /spatial_data/Derived_Datasets/ecoregions_2019.gpkg, wich includes:
-ecoregions_2019 multipart ecoregions_2019_raw (undissolved, single part polygons) lookup_attribute_table (correspondence table within original fields and final attributes).
++  source (teow, meow, ppow, eeow)
++  eco_id (first_level_code)
++  notes:
+   +  "originally teow/meow/ppow/eeow" = attribute unchanged
+   +  "assigned to meow/ppow" = originally teow, assigned to meow/ppow
+   +  "assigned to teow" = originally meow/ppow, assigned to teow (codes ppow-9 and meow-20073,20077; assigned to teow 61318-"St. Peter and St. Paul rocks" and 60172-"Trindade-Martin Vaz Islands tropical forests")
+   +  "reassigned to teow" = originally eeow, assigned to adjacent teow classes (eg: antarctic land adjoining south pole), some with with manual split (14 parts crossing ±180)
+   +  "reassigned to eeow" = originally eeow, split in the previous step.
+
+Above object has been dissolved in ArcGIS PRO (returing the expect 1097 classes) then exploded as single part polygons. __NB: any correction to ecoregions should be applied to teow_meow_ppow_eeow_raw, then dissolve it again to get the final version.__
+
+This version has been imported in PostGIS, then checked for geometry validity, fixed, finalized (single and multiparts) with the script `http://h05-redmine.jrc.it/attachments/download/314/ecoregions_2019.sql`, also available in /GLOBES/processing_current/ecoregions_2019.sql.
+The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, also available as `http://h05-redmine.jrc.it/attachments/download/313/ecoregions_2019_statistics.xlsx`, and `http://h05-redmine.jrc.it/attachments/download/312/ecoregions_2019.sql`, also available in `/GLOBES/processing_current/ecoregions_2019_statistics.xlsx`.
+
+The final version is included as geopackage in `/spatial_data/Derived_Datasets/ecoregions_2019`.gpkg, wich includes:
++  ecoregions_2019 multipart
++  ecoregions_2019_raw (undissolved, single part polygons)
++  lookup_attribute_table (correspondence table within original fields and final attributes).
