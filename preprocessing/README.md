@@ -10,7 +10,7 @@ A flat topological corrected layer, integrating the 3 sources [teow+(meow+ppow)]
 1. assigning unique numeric id to each class in the original layers:
    +  for TEOW the original ECO_ID field has been used. The REALM info "AT" (Afrotropics) and "NT" (Neotropics) for ECO_IDs -9999 (Rock and Ice) and -9998 (Lake) is not included because, since for polar regions is NULL, it produces redundancy on the ECO_ID field (primary key in the final dataset).
    +  for MEOW and PPOW, for historical reasons, the same IDs previously assigned by JRC (reviewed with Bastian Bertzky in 2015) has been used, with a JOIN based on multiple fields (ECOREGION,PROVINC,BIOME or REALM, depending from the source), adapting original names when needed.
-   +  correspondence table within original fields and final attributes is saved in the final geopackage as "lookup_attribute_table", where the boolean fields "eco/pro/bio_is_mod" identify rows where ECOREGION/PROVINC/BIOME content has been modified (respect to "ORIGINAL_*" fields, included) to match the names in the final attributes (first_level, second_level, third_level), allowing this way the join.
+   +  correspondence table within original fields and final attributes is saved in the final output as "lookup_attribute_table", where the boolean fields "eco/pro/bio_is_mod" identify rows where ECOREGION/PROVINC/BIOME content has been modified (respect to "ORIGINAL_*" fields, included) to match the names in the final attributes (first_level, second_level, third_level), allowing this way the join.
       +  first_level corresponds to TEOW Ecoregion, MEOW Ecoregion, PPOW Province
       +  second_level corresponds to TEOW Biome, MEOW Province, PPOW Biome
       +  third_level corresponds to REALM for TEOW, MEOW and PPOW.
@@ -38,12 +38,12 @@ The result of the above is included in the final geopackage as ecoregions_2019_r
    +  "reassigned to teow" = originally eeow, assigned to adjacent teow classes (eg: antarctic land adjoining south pole), some with with manual split (14 parts crossing ±180)
    +  "reassigned to eeow" = originally eeow, split in the previous step.
 
-Above object has been dissolved in ArcGIS PRO (returing the expect 1097 classes) then exploded as single part polygons. __NB: any correction to ecoregions should be applied to teow_meow_ppow_eeow_raw, then dissolve it again to get the final version.__
+Above object has been dissolved in ArcGIS PRO (returing the expected 1097 classes) then exploded as single part polygons. __NB: any correction to ecoregions should be applied to teow_meow_ppow_eeow_raw, then dissolve it again to get the final version.__
 
-This version has been imported in PostGIS, then checked for geometry validity, fixed, finalized (single and multiparts) with the script `http://h05-redmine.jrc.it/attachments/download/314/ecoregions_2019.sql`, also available in /GLOBES/processing_current/ecoregions_2019.sql.
-The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, also available as `http://h05-redmine.jrc.it/attachments/download/313/ecoregions_2019_statistics.xlsx`, and `http://h05-redmine.jrc.it/attachments/download/312/ecoregions_2019.sql`, also available in `/GLOBES/processing_current/ecoregions_2019_statistics.xlsx`.
+This version has been imported in PostGIS, then checked for geometry validity, fixed, finalized (single and multiparts) with the SQL script `[ecoregions_2019](./ecoregions_2019.sql)`.
+The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, available in xlsx `[ecoregions_2019_statistics].(./ecoregions_2019_statistics.xlsx)`.
 
-The final version is included as geopackage in `/spatial_data/Derived_Datasets/ecoregions_2019`.gpkg, wich includes:
+The final version is exported as geopackage, wich includes:
 +  ecoregions_2019 multipart
 +  ecoregions_2019_raw (undissolved, single part polygons)
 +  lookup_attribute_table (correspondence table within original fields and final attributes).
