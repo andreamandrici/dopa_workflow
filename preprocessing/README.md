@@ -20,7 +20,8 @@ A flat topological corrected layer, integrating the 3 sources [teow+(meow+ppow)]
 5. assigning:
   1. TEOW, MEOW or PPOW only polygons to TEOW, MEOW or PPOW
   2. TEOW polygons intersecting EEOW to TEOW
-  3. TEOW polygons intersecting MEOW or PPOW to MEOW or PPOW. This is different from previous version, where TEOW overlapped MEOW/PPOW. This is due to the better MEOW/PPOW coastline. exception to the above: 5 polygons intersecting both meow/ppow (codes ppow-9 and meow-20073,20077) and teow have been assigned to teow, because they were the only polygons assigned to teow 61318-"St. Peter and St. Paul rocks" and 60172-"Trindade-Martin Vaz Islands tropical forests".
+  3. TEOW polygons intersecting MEOW or PPOW to MEOW or PPOW. __This is different from previous version, where TEOW overlapped MEOW/PPOW. This is due to the better MEOW/PPOW coastline.__
+     *  exception to the above: 5 polygons intersecting both meow/ppow (codes ppow-9 and meow-20073,20077) and teow have been assigned to teow, because they were the only polygons assigned to teow 61318-"St. Peter and St. Paul rocks" and 60172-"Trindade-Martin Vaz Islands tropical forests".
   4. To identify features not reaching ±180/90, EEOW only have been exploded to singlepart, then intersected with a multiline created at -0.5 arcsec (about 15 meters at equator) from extremes. This way:
   5. an unassigned stripe of 360dx15 Km has been flagged as real antarctic land (teow),
   6. few polygons (11 originally) have been manually split (20 polygons), then: the 14 parts adjoining TEOW and extremes have been assigned to the correspondent TEOW classes the other 6 parts have been left unchanged (EEOW).
