@@ -40,8 +40,8 @@ The result of the above is included in the final geopackage as ecoregions_2019_r
 
 Above object has been dissolved in ArcGIS PRO (returing the expected 1097 classes) then exploded as single part polygons. __NB: any correction to ecoregions should be applied to teow_meow_ppow_eeow_raw, then dissolve it again to get the final version.__
 
-This version has been imported in PostGIS, then checked for geometry validity, fixed, finalized (single and multiparts) with the SQL script `[ecoregions_2019](./ecoregions_2019.sql)`.
-The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, available in xlsx `[ecoregions_2019_statistics].(./ecoregions_2019_statistics.xlsx)`.
+This version has been imported in PostGIS, then checked for geometry validity, fixed, finalized (single and multiparts) with the SQL script [ecoregions_2019](./ecoregions_2019.sql).
+The same script contains also method to calculate statistics (source and ecoregions change), as discussed with Luca Battistella, available in xlsx [ecoregions_2019_statistics](./ecoregions_2019_statistics.xlsx).
 
 The final version is exported as geopackage, wich includes:
 +  ecoregions_2019 multipart
