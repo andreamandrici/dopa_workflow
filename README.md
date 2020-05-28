@@ -15,6 +15,7 @@ The following sections are currently present:
 
 ## Pre Processing
 
++  [Ecoregions](./preprocessing/)
 +  [Flattening](./flattening/)
 
 ## Processing
