@@ -10,7 +10,10 @@ A flat topological corrected layer, integrating the 3 sources [teow+(meow+ppow)]
 1. assigning unique numeric id to each class in the original layers:
    1. for TEOW the original ECO_ID field has been used. The REALM info "AT" (Afrotropics) and "NT" (Neotropics) for ECO_IDs -9999 (Rock and Ice) and -9998 (Lake) is not included because, since for polar regions is NULL, it produces redundancy on the ECO_ID field (primary key in the final dataset).
    2. for MEOW and PPOW, for historical reasons, the same IDs previously assigned by JRC (reviewed with Bastian Bertzky in 2015) has been used, with a JOIN based on multiple fields (ECOREGION,PROVINC,BIOME or REALM, depending from the source), adapting original names when needed.
-   3. correspondence table within original fields and final attributes is saved in the final geopackage as "lookup_attribute_table", where the boolean fields "eco/pro/bio_is_mod" identify rows where ECOREGION/PROVINC/BIOME content has been modified (respect to "ORIGINAL_*" fields, included) to match the names in the final attributes (first_level, second_level, third_level), allowing this way the join. first_level corresponds to TEOW Ecoregion, MEOW Ecoregion, PPOW Province second_level corresponds to TEOW Biome, MEOW Province, PPOW Biome third_level corresponds to REALM for TEOW, MEOW and PPOW.
+   3. correspondence table within original fields and final attributes is saved in the final geopackage as "lookup_attribute_table", where the boolean fields "eco/pro/bio_is_mod" identify rows where ECOREGION/PROVINC/BIOME content has been modified (respect to "ORIGINAL_*" fields, included) to match the names in the final attributes (first_level, second_level, third_level), allowing this way the join.
+   *  first_level corresponds to TEOW Ecoregion, MEOW Ecoregion, PPOW Province
+   *  second_level corresponds to TEOW Biome, MEOW Province, PPOW Biome
+   *  third_level corresponds to REALM for TEOW, MEOW and PPOW.
 2. overlapping (ArcGIS PRO UNION) MEOW_PPOW with a Bounding Box Polygon (±180/90) as EEOW source (Empty Ecoregions of the World!), with the code 100001-"unassigned land ecoregion"
 3. assigning MEOW/PPOW polygons intersecting EEOW to MEOW/PPOW. EEOW only polygons are left untouched
 4. overlapping (ArcGIS PRO UNION) the TEOW+MEOW_PPOW_EEOW from the previous step
