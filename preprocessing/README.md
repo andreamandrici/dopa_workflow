@@ -1,11 +1,10 @@
 # COUNTRIES (2019)
 
-A flat topological corrected layer for EEZ has been obtained in PostGIS, using the
-script eez_2019.sql.
+A flat topological corrected layer for EEZ has been obtained in PostGIS, using the script eez_2019.sql.
 
 # ECOREGIONS (V2019)
 
-Version with complete coastline has been used (in previous versions the NoCoast version was used), because of the better coastline of MEOW/PPOW (eg: a stripe of about 1000x1 Km was missing from land on Adriatic sea), and to the fact that "Saint Pierre et Michelon" and "Tokealu" islands were obliterated by the NoCoast version.
+MEOW/PPOW version with complete coastline has been used (previously the NoCoast one was used), because of the better coastline (eg: in previous versions a stripe of about 1000x1 Km was missing from the Adriatic coast), and because "Saint Pierre et Michelon" and "Tokealu" islands were obliterated by the NoCoast version.
 
 A flat topological corrected layer, integrating the 3 sources [teow+(meow+ppow)] has been obtained:
 1. assigning unique numeric id to each class in the original layers:
