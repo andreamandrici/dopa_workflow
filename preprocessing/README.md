@@ -1,6 +1,6 @@
-# COUNTRIES (2019)
+# COUNTRIES (V2019)
 
-A flat topological corrected layer for EEZ has been obtained in PostGIS, using the script eez_2019.sql.
+A flat topological corrected layer for EEZ has been obtained in PostGIS, using the SQL script [eez_2019](./eez_2019.sql).
 
 # ECOREGIONS (V2019)
 
