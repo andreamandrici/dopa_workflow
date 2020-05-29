@@ -463,6 +463,7 @@ ELSE
 ----NEXT IS BROKEN ON POSTGIS: BUG ON ST_AREA for GEOGRAPHY
 --	WHERE ST_AREA(geom::geography) > 0;
 ----NEXT REPLACE THE PREVIOUS UNTIL POSTGIS BUG ST_AREA FOR GEOGRAPHY IS FIXED
+	WHERE ST_AREA(ST_TRANSFORM(geom,54009))/1000000 > 0;
 END IF;
 
 UPDATE flat_objects SET point = ST_PointOnSurface(b.geom) FROM (SELECT tid,(ST_DUMP(ST_BUFFER(geom,-0.000001))).geom FROM flat_objects) b WHERE flat_objects.tid=b.tid;
@@ -552,7 +553,7 @@ CREATE TEMPORARY TABLE flat AS
 --SELECT cid,ST_MULTI(ST_COLLECT(geom)) geom FROM ${SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid;
 ----NEXT REPLACES THE PREVIOUS
 SELECT cid,ST_MULTI(ST_COLLECT(geom)) geom FROM
-(SELECT cid,(ST_DUMP(ST_UNION(geom))).geom FROM {SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid) a
+(SELECT cid,(ST_DUMP(ST_UNION(geom))).geom FROM ${SCH}.e_flat_all WHERE qid = iqid GROUP BY cid ORDER BY cid) a
 GROUP BY cid ORDER BY cid;
 ----END O REPLACED lines
 INSERT INTO ${SCH}.g_flat_temp
