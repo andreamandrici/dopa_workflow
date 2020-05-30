@@ -123,7 +123,9 @@ _... repeat the above for the NN number of the defined topics)..._
 
 #### 2.  Create the infrastructure
 
-`chmod +x` all pre-existing scripts, then run **`./00_create_infrastructure.sh`** which will create from scratch the following scripts:
+If needed, `chmod +x` all the pre-existing scripts.
+
+Run **`./00_create_infrastructure.sh`**, which will create from scratch the following scripts:
 
 #### 3.  Run scripts
 
