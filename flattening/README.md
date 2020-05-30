@@ -182,5 +182,4 @@ DOPA CEP has been generated using:
 |                        | h-output                  | h_output.sh           | 1                   | 598264    | 280               |
 |                        | total                     |                       |                     |           | 133763 (37 hours) |
 
-[Go to the code](https://github.com/andreamandrici/dopa_workflow/flattening)
 
