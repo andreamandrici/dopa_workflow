@@ -4,8 +4,9 @@ A flat topological corrected layer for EEZ has been obtained in PostGIS, using t
 Update of Countries is pending since November 2019, waiting for decision on Land dataset.
 
 # ECOREGIONS (V2020)
-Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the [original Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a [patch](../processing/cep/202003_fix_cep_overlaps.sql) in the process to correct the data.
-To avoid replicating the application of the above patch
+Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a pot-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
+To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problem.
+
 
 
 # ECOREGIONS (V2019)
