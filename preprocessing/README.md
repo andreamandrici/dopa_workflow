@@ -1,6 +1,10 @@
 # COUNTRIES (V2019)
 
 A flat topological corrected layer for EEZ has been obtained in PostGIS, using the SQL script [eez_2019](./eez_2019.sql).
+Update of Countries is pending since November 2019, waiting for decision on Land dataset.
+
+# ECOREGIONS (V2020)
+Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) 
 
 # ECOREGIONS (V2019)
 
