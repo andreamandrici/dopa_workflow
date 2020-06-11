@@ -1,15 +1,14 @@
 WITH
--- current country
-current_country AS (SELECT * FROM administrative_units.gaul_eez_dissolved_201912),-- change this only to update data sources
-ter_mar AS (SELECT fid,CASE WHEN "source" IN ('teow','eeow') THEN FALSE ELSE TRUE END is_marine FROM habitats_and_biotopes.ecoregions_atts),
-terr AS (SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) t FROM ter_mar WHERE is_marine IS FALSE),
-mari AS (SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) m FROM ter_mar WHERE is_marine IS TRUE),
-ter_cid AS (SELECT DISTINCT a.cid FROM cep.cep_last a,terr b WHERE b.t && a.eco ORDER BY a.cid),
-mar_cid AS (SELECT DISTINCT a.cid FROM cep.cep_last a,mari b WHERE b.m && a.eco ORDER BY a.cid),
+-- current country; change this one to update data sources
+current_country AS (SELECT * FROM administrative_units.gaul_eez_dissolved_201912),
 -- terrestrial
-ter AS (SELECT DISTINCT qid,cid FROM cep.cep_last_index NATURAL JOIN ter_cid),
+ter AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) f FROM habitats_and_biotopes.ecoregions_atts WHERE "source" IN ('teow','eeow')) b WHERE b.f && a.eco
+),
 -- marine
-mar AS (SELECT DISTINCT qid,cid FROM cep.cep_last_index NATURAL JOIN mar_cid),
+mar AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) f FROM habitats_and_biotopes.ecoregions_atts WHERE "source" IN ('meow','ppow')) b WHERE b.f && a.eco
+),
 -- raster total surface
 a1 AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last) a GROUP BY country ORDER BY country),
 -- raster protected surface
@@ -39,5 +38,6 @@ JOIN d USING(fid)
 LEFT JOIN d_ter USING(fid)
 LEFT JOIN d_mar USING(fid)
 ORDER BY d.fid)
---SELECT * FROM e -- WHERE fid IN (285,38,46)
-SELECT tot_sqkm-(ter_sqkm+mar_sqkm) FROM e WHERE fid IN (285,38,46)
+SELECT * FROM e
+--SELECT *,tot_sqkm-(ter_sqkm+mar_sqkm) d FROM e ORDER BY d DESC NULLS LAST
+
