@@ -7,11 +7,23 @@ Update of Countries is pending since November 2019, waiting for decision on Land
 Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a pot-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
 To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problems, abandoning ArcGIS and using the [flattening](../flattening/) scripts chain.
 
-General approach is the same of [Ecoregions 2019](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019) (please refer to that one for details):
+General approach is the same of [Ecoregions 2019](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019) (for further details please refer to it):
 +  dataset is given by intersection of TEOW/MEOW/PPOW
 +  the version of MEOW/PPOW with complete coastline version is used
 +  MEOW/PPOW is overlayed on topo of TEOW, and MEOW coastline substitutes TEOW's one
-+  "holes" are filled by an empty layer covering the whole globe, named EEOW source (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
++  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
+
+After the intersections, the results are:
+
++  MEOW⋂EEOW=MEOW
++  MEOW⋂TEOW=MEOW; exception: 2 MEOW objects in classes 20073,20077 have been respectively assigned to the intersecting TEOW classes 61318,60172
++  PPOW⋂EEOW=PPOW; exception: 1 PPOW object in class 9 has been assigned to the intersecting TEOW class 61318
++  PPOW⋂TEOW=PPOW
++  TEOW⋂EEOW=TEOW
++  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (differently from Ecoregions V2019) have not been partially assigned to adjoining TEOW classes.
+
+move ppow class code 0 to 37
+move teow -9998,-9999 to 9998,9999
 
 # ECOREGIONS (V2019)
 
