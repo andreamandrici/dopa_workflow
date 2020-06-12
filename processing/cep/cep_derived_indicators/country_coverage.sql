@@ -1,24 +1,43 @@
 WITH
--- current country
-current_country AS (SELECT * FROM administrative_units.gaul_eez_dissolved_201912),--this defines current attributes 
+-- current country; change this one to update data sources
+current_country AS (SELECT * FROM administrative_units.gaul_eez_dissolved_201912),
+-- terrestrial
+ter AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) f FROM habitats_and_biotopes.ecoregions_atts WHERE "source" IN ('teow','eeow')) b WHERE b.f && a.eco
+),
+-- marine
+mar AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT fid ORDER BY fid) f FROM habitats_and_biotopes.ecoregions_atts WHERE "source" IN ('meow','ppow')) b WHERE b.f && a.eco
+),
 -- raster total surface
 a1 AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last) a GROUP BY country ORDER BY country),
 -- raster protected surface
 a2 AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
+-- raster total terrestrial surface
+a1_ter AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN ter) a GROUP BY country ORDER BY country),
+-- raster protected terrestrial surface
+a2_ter AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN ter WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
+-- raster total marine surface
+a1_mar AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN mar) a GROUP BY country ORDER BY country),
+-- raster protected marine surface
+a2_mar AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN mar WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
 -- country attributes
 b AS (SELECT country_id fid,country_name "name",iso3,iso2,un_m49,status,sqkm FROM current_country ORDER BY fid),
--- objects assigned to multiple countries (by qid) 
-c AS (SELECT qid,country,cardinality(country) AS cardinality FROM cep.cep_last WHERE cardinality(country) <> 1),
--- countries assigned to multiple object (by ecoid)
-c1 AS (SELECT DISTINCT unnest(country) AS fid,'check_cardinality'::text AS note FROM c),
 -- raster statistics by country
-d AS (SELECT a1.fid,a1.rtotsqkm,a2.rprotsqkm,b.name,b.sqkm,round((a1.rtotsqkm / b.sqkm * 100::double precision)::numeric, 2) AS ratio_rv,round((a2.rprotsqkm / a1.rtotsqkm * 100::double precision)::numeric, 2) AS perc_prot FROM a1 LEFT JOIN a2 USING (fid) JOIN b USING (fid)),
--- difference within raster and vector total surface 
-d1 AS (SELECT d.fid,'check_ratio'::text AS note FROM d WHERE d.ratio_rv >= 100.5 OR d.ratio_rv <= 99.5),
--- vector and raster statistics by country
-e AS (SELECT d.fid,d.name,d.sqkm AS tot_vector_sqkm,d.rtotsqkm AS tot_raster_sqkm,d.ratio_rv,d.rprotsqkm AS prot_raster_sqkm,d.perc_prot FROM d),
--- notes by country
-notes AS (SELECT DISTINCT a.fid,a.note FROM (SELECT c1.fid,c1.note FROM c1 UNION ALL SELECT d1.fid,d1.note FROM d1) a),
--- complete statistics and notes
-f AS (SELECT DISTINCT e.fid,e.name,e.tot_vector_sqkm,e.tot_raster_sqkm,e.ratio_rv,e.prot_raster_sqkm,e.perc_prot,notes.note FROM e LEFT JOIN notes USING (fid) ORDER BY e.fid)
-SELECT f.fid,f.name,b.iso3,iso2,un_m49,status,f.tot_vector_sqkm,f.tot_raster_sqkm,f.ratio_rv,f.prot_raster_sqkm,f.perc_prot,f.note FROM f JOIN b USING(fid) ORDER BY f.fid;
+d AS (SELECT a1.fid,a1.rtotsqkm,a2.rprotsqkm,round((a2.rprotsqkm / a1.rtotsqkm * 100::double precision)::numeric, 2) AS perc_prot FROM a1 LEFT JOIN a2 USING (fid)),
+d_ter AS (SELECT a1_ter.fid,a1_ter.rtotsqkm,a2_ter.rprotsqkm,round((a2_ter.rprotsqkm / a1_ter.rtotsqkm * 100::double precision)::numeric, 2) AS perc_prot FROM a1_ter LEFT JOIN a2_ter USING (fid)),
+d_mar AS (SELECT a1_mar.fid,a1_mar.rtotsqkm,a2_mar.rprotsqkm,round((a2_mar.rprotsqkm / a1_mar.rtotsqkm * 100::double precision)::numeric, 2) AS perc_prot FROM a1_mar LEFT JOIN a2_mar USING (fid)),
+e AS (
+SELECT
+d.fid,b.name,b.iso3,b.iso2,b.un_m49,b.status,b.sqkm tot_vector_sqkm,
+d.rtotsqkm tot_sqkm,d.rprotsqkm tot_prot_sqkm,d.perc_prot tot_perc_prot,
+d_ter.rtotsqkm ter_sqkm,d_ter.rprotsqkm ter_prot_sqkm,d_ter.perc_prot ter_perc_prot,
+d_mar.rtotsqkm mar_sqkm,d_mar.rprotsqkm mar_prot_sqkm,d_mar.perc_prot mar_perc_prot
+FROM b
+JOIN d USING(fid)
+LEFT JOIN d_ter USING(fid)
+LEFT JOIN d_mar USING(fid)
+ORDER BY d.fid)
+SELECT * FROM e
+--SELECT *,tot_sqkm-(ter_sqkm+mar_sqkm) d FROM e ORDER BY d DESC NULLS LAST
+
