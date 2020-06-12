@@ -13,11 +13,12 @@ General approach is the same of [Ecoregions 2019](https://andreamandrici.github.
 +  MEOW/PPOW is overlayed on topo of TEOW, and MEOW coastline substitutes TEOW's one
 +  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
 
-To simplify the outputs and the next processing steps, few classes have been recoded:
+To simplify the outputs and the following processing steps, few classes have been recoded:
 
-PPOW code 0 reclassed to 37
++  PPOW code 0 reclassed to 37
++  TEOW code -9998 reclassed to 9998
++  TEOW code -9999 to 9999.
 
-TEOW codes -9998,-9999 to 9998,9999.
 
 After the intersections, the classes are assigned as:
 
