@@ -26,7 +26,7 @@ After the intersections, the classes are assigned as:
 +  PPOW⋂EEOW=PPOW; exception: 1 PPOW object in class 9 has been assigned to the intersecting TEOW class 61318
 +  PPOW⋂TEOW=PPOW
 +  TEOW⋂EEOW=TEOW
-+  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (differently from Ecoregions V2019) have not been partially assigned to adjoining TEOW classes.
++  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (*differently from Ecoregions V2019*) have not been partially assigned to adjoining TEOW classes.
 
 
 # ECOREGIONS (V2019)
