@@ -4,7 +4,7 @@ A flat topological corrected layer for EEZ has been obtained in PostGIS, using t
 Update of Countries is pending since November 2019, waiting for decision on Land dataset.
 
 # ECOREGIONS (V2020)
-Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a pot-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
+Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a post-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
 To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problems, abandoning ArcGIS and using the [flattening](../flattening/) scripts chain.
 
 General approach is the same of [Ecoregions 2019](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019) (for further details please refer to it):
@@ -18,7 +18,6 @@ To simplify the outputs and the following processing steps, few classes have bee
 +  PPOW code 0 reclassed to 37
 +  TEOW code -9998 reclassed to 9998
 +  TEOW code -9999 to 9999.
-
 
 After the intersections, the classes are assigned as:
 
