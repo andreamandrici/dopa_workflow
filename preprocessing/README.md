@@ -14,7 +14,9 @@ General approach is the same of [Ecoregions 2019](https://andreamandrici.github.
 +  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
 
 To simplify the outputs and the next processing steps, few classes have been recoded:
+
 PPOW code 0 reclassed to 37
+
 TEOW codes -9998,-9999 to 9998,9999.
 
 After the intersections, the classes are assigned as:
