@@ -13,7 +13,11 @@ General approach is the same of [Ecoregions 2019](https://andreamandrici.github.
 +  MEOW/PPOW is overlayed on topo of TEOW, and MEOW coastline substitutes TEOW's one
 +  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
 
-After the intersections, the results are:
+To simplify the outputs and the next processing steps, few classes have been recoded:
+PPOW code 0 reclassed to 37
+TEOW codes -9998,-9999 to 9998,9999.
+
+After the intersections, the classes are assigned as:
 
 +  MEOW⋂EEOW=MEOW
 +  MEOW⋂TEOW=MEOW; exception: 2 MEOW objects in classes 20073,20077 have been respectively assigned to the intersecting TEOW classes 61318,60172
@@ -22,8 +26,6 @@ After the intersections, the results are:
 +  TEOW⋂EEOW=TEOW
 +  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (differently from Ecoregions V2019) have not been partially assigned to adjoining TEOW classes.
 
-move ppow class code 0 to 37
-move teow -9998,-9999 to 9998,9999
 
 # ECOREGIONS (V2019)
 
