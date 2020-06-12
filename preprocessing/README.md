@@ -5,10 +5,16 @@ Update of Countries is pending since November 2019, waiting for decision on Land
 
 # ECOREGIONS (V2020)
 Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a pot-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
-To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problems, using the [flattening](../flattening/) scripts chain.
+To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problems, abandoning ArcGIS and using the [flattening](../flattening/) scripts chain.
 
 General approach is the same of [Ecoregions 2019](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019):
-+  MEOW/PPOW coastline version used
++  dataset is given by intersection of TEOW/MEOW/PPOW
++  MEOW/PPOW-coastline version is used
++  MEOW/PPOW is overlayed on topo of TEOW
++  MEOW coastline substitutes TEOW's one
++  "holes" are filled by an empty layer covering the whole globe, named EEOW source (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
+
+     
 
 
 # ECOREGIONS (V2019)
