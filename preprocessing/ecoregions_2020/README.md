@@ -1,4 +1,8 @@
-## IMPORT
+# dopa_workflow
+
+## ECOREGIONS (V2020) detailed
+
+### IMPORT
  
 Geometries have been imported as:
 
@@ -6,11 +10,11 @@ Geometries have been imported as:
 
 ogr2ogr and shp2pgsql scripts have been tested (`eco_input_time.txt` and `eco_input_compare.sql`): ogr2ogr import creating less invalid geometries in the output. 
 
-## JOIN ATTRIBUTES
+### JOIN ATTRIBUTES
 
 Original geometries have been joined to DOPA standardised attributes (meow_atts.csv, ppow_atts.csv, teow_atts.csv; imported in postgres) running `meow_geoms.sql`,`ppow_geoms.sql` and `teow_geoms.sql` scripts.
 
-##  FLATTENING
+###  FLATTENING
 
 Flattening sequence has been applied:
 
