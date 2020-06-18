@@ -28,6 +28,7 @@ After the intersections, the classes are assigned as:
 +  TEOW⋂EEOW=TEOW
 +  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (**differently from Ecoregions V2019**) have not been partially assigned to adjoining TEOW classes.
 
+Detailed step-by-step description is in [ecoregions_2020](./ecoregions_2020).
 
 # ECOREGIONS (V2019)
 
