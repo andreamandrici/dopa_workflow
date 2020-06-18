@@ -1,0 +1,7 @@
+wwf_terr_ecos.shp with ogr2ogr: 6
+wwf_terr_ecos.shp with shp2pgsql non-dump: 10
+wwf_terr_ecos.shp with shp2pgsql dump: 5
+
+WCMC-036-MEOW-PPOW-2007-2012.shp with ogr2ogr: 14
+WCMC-036-MEOW-PPOW-2007-2012.shp with shp2pgsql non-dump: 49
+WCMC-036-MEOW-PPOW-2007-2012.shp with shp2pgsql dump: 41
