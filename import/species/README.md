@@ -2,7 +2,8 @@
 
 ## Species
 
-Species are imported using ogr_fdw extension (shp2pgsql and ogr2ogr approaches have been also tested. Code used is temporary kept [here](./old/)).
+Species are imported using ogr_fdw extension.
+*shp2pgsql* and *ogr2ogr* approaches have been also tested: related code is temporary kept [here](./old/).
 
 ### IUCN
 
@@ -136,7 +137,7 @@ IMPORT FOREIGN SCHEMA ogr_all
   INTO species_iucn_non_spatial_only_passeriformes_202001;
 ```
 
-### Birdlife (spatial)
+### Birdlife
 
 #### Birdlife spatial
 
@@ -186,7 +187,7 @@ IMPORT FOREIGN SCHEMA ogr_all
   INTO species_birdlife_non_spatial_201903;
 ```
 
-
+The final code used for import all the species is kept [here](./current/)
 
 
 
