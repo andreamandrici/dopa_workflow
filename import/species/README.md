@@ -14,7 +14,17 @@ Check supported Formats:
 
 Check layers in path: 
 
-`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_iucn_spatial_202001/`
+```
+/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_iucn_spatial_202001/
+
+Layers:
+  MAMMALS
+  REEF_FORMING_CORALS_PART1
+  AMPHIBIANS
+  REEF_FORMING_CORALS_PART3
+  SHARKS_RAYS_CHIMAERAS
+  REEF_FORMING_CORALS_PART2
+```
 
 Check fields for specific layer (this also shows the code to create server and import one single table):
 
