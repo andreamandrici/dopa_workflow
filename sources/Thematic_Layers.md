@@ -17,15 +17,4 @@
    +  Amphibians
    +  Mammals.
 
-+  [BirdLife's species distribution data](http://datazone.birdlife.org/species/requestdis). BirdLife International, Version 2019-1.
-Received on 20200131 
-
-
-
-
-  2.  [NON-spatial tables](https://www.iucnredlist.org/search/list) for:
-
-2. Birdlife 2019-1 (downloaded on demand from partner)
-  1. spatial tables for birds
-  2. non-spatial tables for birds
-
++  [BirdLife's species distribution data](http://datazone.birdlife.org/species/requestdis). BirdLife International, Version 2019-1. Received on 20200131. Spatial and non-spatial tables for birds.
