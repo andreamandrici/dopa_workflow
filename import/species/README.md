@@ -2,7 +2,7 @@
 
 ## Species
 
-Species are imported using **ogr_fdw** PostGIS extension.
+Since fields in the original sources change often, has always been very difficult to script the import task. But importing species using **ogr_fdw** PostGIS extension, automates the import process.
 **shp2pgsql** and **ogr2ogr** approaches have been also tested: related code is temporary kept [here](./old/).
 
 ### IUCN
