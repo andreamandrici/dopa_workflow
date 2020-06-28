@@ -2,11 +2,11 @@
 
 ## Species
 
+Species are imported using ogr_fdw extension (shp2pgsql and ogr2ogr approaches have been also tested).
+
 ### IUCN
 
 #### IUCN spatial
-
-Using ogr_fdw:
 
 Check supported Formats:
 
