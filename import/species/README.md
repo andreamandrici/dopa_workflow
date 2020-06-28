@@ -28,7 +28,48 @@ Layers:
 
 Check fields for specific layer (this also shows the code to create server and import one single table):
 
-`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_iucn_spatial_202001/ -l MAMMALS`
+```
+/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_iucn_spatial_202001/ -l MAMMALS
+
+CREATE SERVER myserver
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/home/felixwolf/wip/data/species_iucn_spatial_202001/',
+	format 'ESRI Shapefile' );
+
+CREATE FOREIGN TABLE mammals (
+  fid bigint,
+  geom Geometry(Polygon,4326),
+  id_no bigint,
+  binomial varchar(254),
+  presence integer,
+  origin integer,
+  seasonal integer,
+  compiler varchar(254),
+  yrcompiled integer,
+  citation varchar(254),
+  source varchar(254),
+  dist_comm varchar(254),
+  island varchar(100),
+  subspecies varchar(100),
+  subpop varchar(100),
+  legend varchar(100),
+  tax_comm varchar(254),
+  kingdom varchar(20),
+  phylum varchar(20),
+  class varchar(20),
+  order_ varchar(30),
+  family varchar(30),
+  genus varchar(30),
+  category varchar(5),
+  marine varchar(5),
+  terrestial varchar(5),
+  freshwater varchar(5),
+  shape_leng double precision,
+  shape_area double precision
+) SERVER "myserver"
+OPTIONS (layer 'MAMMALS');
+```
 
 Create server and import ALL the tables at once:
 ```
