@@ -2,7 +2,9 @@
 
 ## Species
 
-### IUCN spatial
+### IUCN
+
+#### IUCN spatial
 
 Using ogr_fdw:
 
@@ -31,11 +33,11 @@ IMPORT FOREIGN SCHEMA ogr_all
   INTO species_iucn_spatial_202001;
 ```
 
-### IUCN non-spatial
+#### IUCN non-spatial
 
 This dataset is split due to the 10000 download limit of IUCN Redlist site.
 
-#### Non passeriformes
+##### Non passeriformes
 
 Check layers in path:
 
@@ -59,7 +61,7 @@ IMPORT FOREIGN SCHEMA ogr_all
   INTO species_iucn_non_spatial_non_passeriformes_202001;
 ```
 
-#### Only passeriformes
+##### Only passeriformes
 
 Check layers in path:
 
@@ -82,3 +84,34 @@ IMPORT FOREIGN SCHEMA ogr_all
   FROM SERVER species_iucn_non_spatial_only_passeriformes_202001
   INTO species_iucn_non_spatial_only_passeriformes_202001;
 ```
+
+### Birdlife (spatial)
+
+Check layers in path:
+
+`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_birdlife_201903/RL_2019.gdb/`
+
+Shows the code to create server (using a single table as example):
+
+`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_birdlife_201903/RL_2019.gdb/ -l All_Species`
+
+Create server and import ALL the tables at once:
+
+```
+CREATE SERVER species_birdlife_201903
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/home/felixwolf/wip/data/species_birdlife_201903/RL_2019.gdb/',
+	format 'OpenFileGDB' );
+CREATE SCHEMA species_birdlife_201903;
+IMPORT FOREIGN SCHEMA ogr_all
+  FROM SERVER species_birdlife_201903
+  INTO species_birdlife_201903;
+```
+
+
+
+
+
+
+
