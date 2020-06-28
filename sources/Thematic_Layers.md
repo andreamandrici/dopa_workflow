@@ -5,12 +5,12 @@
 ### Species
 
 +  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). Non-spatial attributes for:
-  +  Corals (Hydrozoa and Anthozoa)
-  +  Sharks and Rays (Chondrichthyes)    
-  +  Amphibians
-  +  Birds
-  +  Mammals
- IUCN, Version 2020-1. Downloaded on 20200408. 
+   +  Corals (Hydrozoa and Anthozoa)
+   +  Sharks and Rays (Chondrichthyes)    
+   +  Amphibians
+   +  Birds
+   +  Mammals
+IUCN, Version 2020-1. Downloaded on 20200408. 
 
 +  [IUCN Red List of Threatened Species Spatial Data](https://www.iucnredlist.org/resources/spatial-data-download) for:
   +  Reef-forming Corals (_Hydrozoa_ and _Anthozoa_)
