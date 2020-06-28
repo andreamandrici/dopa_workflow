@@ -2,7 +2,7 @@
 
 ## Species
 
-Species are imported using ogr_fdw extension (shp2pgsql and ogr2ogr approaches have been also tested).
+Species are imported using ogr_fdw extension (shp2pgsql and ogr2ogr approaches have been also tested. Code used is temporary kept [here](./old/)).
 
 ### IUCN
 
