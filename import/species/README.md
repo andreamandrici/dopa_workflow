@@ -6,16 +6,19 @@
 
 Using ogr_fdw:
 
-Check supported Formats: 
+Check supported Formats:
+
 `/usr/lib/postgresql/12/bin/ogr_fdw_info -f`
 
 Check layers in path: 
+
 `/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_202001/`
 
 Check fields for specific layer (this also shows the code to create server and import one single table):
+
 `/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_202001/ -l MAMMALS`
 
-Create server and import ALL the tables:
+Create server and import ALL the tables at once:
 ```
 CREATE SERVER species_iucn_spatial_202001
   FOREIGN DATA WRAPPER ogr_fdw
