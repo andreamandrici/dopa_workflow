@@ -2,6 +2,6 @@
 
 ## Species
 
-'/usr/lib/postgresql/12/bin/ogr_fdw_info -f'
+`/usr/lib/postgresql/12/bin/ogr_fdw_info -f`
 
 
