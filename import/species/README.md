@@ -87,6 +87,8 @@ IMPORT FOREIGN SCHEMA ogr_all
 
 ### Birdlife (spatial)
 
+#### Birdlife spatial
+
 Check layers in path:
 
 `/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_birdlife_201903/RL_2019.gdb/`
@@ -107,6 +109,30 @@ CREATE SCHEMA species_birdlife_201903;
 IMPORT FOREIGN SCHEMA ogr_all
   FROM SERVER species_birdlife_201903
   INTO species_birdlife_201903;
+```
+
+#### Birdlife non spatial
+
+Check layers in path:
+
+`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_birdlife_201903/SpeciesWithoutBiomes.xlsx`
+
+Shows the code to create server (using a single table as example):
+
+`/usr/lib/postgresql/12/bin/ogr_fdw_info -s /home/felixwolf/wip/data/species_birdlife_201903/SpeciesWithoutBiomes.xlsx -l Sheet1`
+
+Create server and import ALL the tables at once:
+
+```
+CREATE SERVER species_birdlife_non_spatial_201903
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/home/felixwolf/wip/data/species_birdlife_201903/SpeciesWithoutBiomes.xlsx',
+	format 'XLSX' );
+CREATE SCHEMA species_birdlife_non_spatial_201903;
+IMPORT FOREIGN SCHEMA ogr_all
+  FROM SERVER species_birdlife_non_spatial_201903
+  INTO species_birdlife_non_spatial_201903;
 ```
 
 
