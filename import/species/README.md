@@ -2,8 +2,8 @@
 
 ## Species
 
-Species are imported using ogr_fdw extension.
-*shp2pgsql* and *ogr2ogr* approaches have been also tested: related code is temporary kept [here](./old/).
+Species are imported using **ogr_fdw** PostGIS extension.
+**shp2pgsql** and **ogr2ogr** approaches have been also tested: related code is temporary kept [here](./old/).
 
 ### IUCN
 
