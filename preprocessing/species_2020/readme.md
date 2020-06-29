@@ -7,11 +7,10 @@ Each foreign table is converted to real table (geometric or non-geometric) insid
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
 
-
 ## BIRDLIFE tables
 Spatial and non-spatial data for **birds** are available as foreign tables pointing at gdb file in schema **species_birdlife_201903**, and they contain the fields (relevants in **bold**):
 
-### spatial table "All_species"
+### Birdlife: spatial table "All_species"
 
 +  fid bigint,
 +  **shape geometry(MultiPolygon,4326)**,
@@ -35,7 +34,7 @@ Spatial and non-spatial data for **birds** are available as foreign tables point
 +  filename character varying,
 +  vxcount integer
 
-### non-spatial table "SppListAdditional"
+### Birdlife: non-spatial table "SppListAdditional"
 
 +  fid bigint,
 +  **id_no** integer,
@@ -57,7 +56,7 @@ Spatial and non-spatial data for **birds** are available as foreign tables point
 +  publication_yr smallint,
 +  population_trend character varying
 
-### non-spatial table "BirdLife_HBW_Taxonomic_Checklist_V4"
+### Birdlife: non-spatial table "BirdLife_HBW_Taxonomic_Checklist_V4"
 
 +  fid bigint,
 +  sequence integer,
@@ -122,9 +121,7 @@ These fields are (partially?) described on [Mapping and Distribution Data Attrib
 
 **fid** is a weak, temporary, serial field (is not unique in case of appended corals). The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
 
-## IUCN non-spatial tables
-
-Current importing script is `processing_current/species/01_species_input_additional_tables.sh`.
+### IUCN non-spatial tables
 
 Because of limits (10K records) of the IUCN website, downloads are split in:
 
@@ -151,27 +148,6 @@ All the non-spatial tables are:
 *  threats.csv
 *  usetrade.csv
                                         
-They are imported in Postgres as:
-
-*  "species.additional_tables_all_other_fields",
-*  "species.additional_tables_assessments",
-*  "species.additional_tables_common_names",
-*  "species.additional_tables_conservation_needed",
-*  "species.additional_tables_countries",
-*  "species.additional_tables_credits",
-*  "species.additional_tables_dois",
-*  "species.additional_tables_fao",
-*  "species.additional_tables_habitats",
-*  "species.additional_tables_lme",
-*  "species.additional_tables_references",
-*  "species.additional_tables_research_needed",
-*  "species.additional_tables_simple_summary",
-*  "species.additional_tables_synonyms",
-*  "species.additional_tables_taxonomy",
-*  "species.additional_tables_threats",
-*  "species.additional_tables_usetrade".
-
-The final tables contain the following fields:
 
 *  "species.additional_tables_all_other_fields.assessmentid character varying",
 *  "species.additional_tables_all_other_fields.scientificname character varying",
