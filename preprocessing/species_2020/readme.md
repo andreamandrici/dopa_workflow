@@ -42,6 +42,7 @@ Each foreign table is converted to real geometric table (and/or appended, as for
 
 `
 ---(SAME FOR AMPHIBIANS, SHARKS AND RAYS, ETC...)
+
 SELECT * FROM MAMMALS WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
