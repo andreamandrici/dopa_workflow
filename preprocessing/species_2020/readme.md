@@ -1,51 +1,5 @@
 # Species 2020
 
-## IUCN tables
-
-### IUCN spatial tables for *corals, chondrichthyes, amphibians, mammals*
-
-Spatial data are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
-
-+  fid bigint,
-+  **geom geometry(Polygon,4326)**,
-+  **id_no** bigint,
-+  **binomial** character varying,
-+  **presence** integer,
-+  **origin** integer,
-+  **seasonal** integer,
-+  compiler character varying,
-+  yrcompiled integer,
-+  citation character varying,
-+  source character varying,
-+  dist_comm character varying,
-+  island character varying,
-+  subspecies character varying,
-+  subpop character varying,
-+  legend character varying,
-+  tax_comm character varying,
-+  **kingdom** character varying,
-+  **phylum** character varying,
-+  **class** character varying,
-+  **order_** character varying,
-+  **family** character varying,
-+  **genus** character varying,
-+  **category** character varying,
-+  **marine** character varying,
-+  **terrestial** character varying,
-+  **freshwater** character varying,
-+  shape_leng double precision,
-+  shape_area double precision
-
-These fields are (partially?) described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards)
-
-Each foreign table is converted to real geometric table (and/or appended, as for corals) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters:
-
-`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
-
-which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
-
-**fid** is a weak, temporary, serial field (is not unique in case of appended corals). The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
-
 ## BIRDLIFE tables
 Spatial and non-spatial data for **birds** are available as foreign tables pointing at gdb file in schema **species_birdlife_201903**, and they contain the fields (relevants in **bold**):
 
@@ -125,6 +79,54 @@ Each foreign table is converted to real table (geometric and non-geometric) insi
 `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
+
+## IUCN tables
+
+### IUCN spatial tables for *corals, chondrichthyes, amphibians, mammals*
+
+Spatial data are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
+
++  fid bigint,
++  **geom geometry(Polygon,4326)**,
++  **id_no** bigint,
++  **binomial** character varying,
++  **presence** integer,
++  **origin** integer,
++  **seasonal** integer,
++  compiler character varying,
++  yrcompiled integer,
++  citation character varying,
++  source character varying,
++  dist_comm character varying,
++  island character varying,
++  subspecies character varying,
++  subpop character varying,
++  legend character varying,
++  tax_comm character varying,
++  **kingdom** character varying,
++  **phylum** character varying,
++  **class** character varying,
++  **order_** character varying,
++  **family** character varying,
++  **genus** character varying,
++  **category** character varying,
++  **marine** character varying,
++  **terrestial** character varying,
++  **freshwater** character varying,
++  shape_leng double precision,
++  shape_area double precision
+
+These fields are (partially?) described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards)
+
+Each foreign table is converted to real geometric table (and/or appended, as for corals) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters:
+
+`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
+
+which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
+
+**fid** is a weak, temporary, serial field (is not unique in case of appended corals). The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
+
+
 
 
 ## IUCN non-spatial tables
