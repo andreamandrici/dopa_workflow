@@ -1,8 +1,10 @@
 # Species 2020
 
-## IUCN spatial tables
+## IUCN tables
 
-Spatial data for **corals, chondrichthyes, amphibians, mammals** are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
+Spatial data are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
+
+### IUCN spatial tables for *corals, chondrichthyes, amphibians, mammals*
 
 +  fid bigint,
 +  **geom geometry(Polygon,4326)**,
