@@ -1,5 +1,13 @@
 # Species 2020
 
+Spatial and non-spatial data are available as foreign tables pointing at external files (shp, gdb, csv, xlsx) files in different schemas.
+Each foreign table is converted to real table (geometric or non-geometric) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters (where they apply):
+
+`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
+
+which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
+
+
 ## BIRDLIFE tables
 Spatial and non-spatial data for **birds** are available as foreign tables pointing at gdb file in schema **species_birdlife_201903**, and they contain the fields (relevants in **bold**):
 
@@ -74,12 +82,6 @@ Spatial and non-spatial data for **birds** are available as foreign tables point
 
 An additional non spatial table is available as foreign table pointing at xlsx file in schema/table **species_birdlife_non_spatial_201903.sheet1**, and contains just a list with five species ( **22712690, 22716650, 22732350, 103774724, 103878817**) missing information related to ecosystems.
 
-Each foreign table is converted to real table (geometric and non-geometric) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters (where they apply):
-
-`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
-
-which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
-
 ## IUCN tables
 
 ### IUCN spatial tables for *corals, chondrichthyes, amphibians, mammals*
@@ -118,16 +120,7 @@ Spatial data are available as foreign tables pointing at shps files in schema **
 
 These fields are (partially?) described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards)
 
-Each foreign table is converted to real geometric table (and/or appended, as for corals) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters:
-
-`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
-
-which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
-
 **fid** is a weak, temporary, serial field (is not unique in case of appended corals). The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
-
-
-
 
 ## IUCN non-spatial tables
 
