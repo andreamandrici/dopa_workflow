@@ -125,30 +125,32 @@ These fields are (partially?) described on [Mapping and Distribution Data Attrib
 
 Because of limits (10K records) of the IUCN website, downloads are split in:
 
-*  redlist_species_data_all_except_passeriformes
-*  redlist_species_data_only_passeriformes
++  **species_iucn_non_spatial_non_passeriformes_202001**
++  **species_iucn_non_spatial_only_passeriformes_202001**
 
 All the non-spatial tables are:
 
-*  all_other_fields.csv
-*  assessments.csv
-*  common_names.csv
-*  conservation_needed.csv
-*  countries.csv
-*  credits.csv
-*  dois.csv **(only non-birds)**
-*  fao.csv
-*  habitats.csv
-*  lme.csv **(only non-birds)**
-*  references.csv
-*  research_needed.csv
-*  simple_summary.csv
-*  synonyms.csv
-*  taxonomy.csv
-*  threats.csv
-*  usetrade.csv
-                                        
++  all_other_fields	
++  assessments	
++  common_names	
++  conservation_needed	
++  countries	
++  credits	
++  dois	
++  fao	(not available for all the groups)
++  habitats	
++  lme	(not available for all the groups)
++  plant_specific	(not available for all the groups)
++  references	
++  research_needed	
++  simple_summary	
++  synonyms	
++  taxonomy	
++  threats	
++  usetrade	
 
+
+                                      
 *  "species.additional_tables_all_other_fields.assessmentid character varying",
 *  "species.additional_tables_all_other_fields.scientificname character varying",
 *  "species.additional_tables_all_other_fields.internaltaxonid character varying",

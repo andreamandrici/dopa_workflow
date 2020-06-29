@@ -67,6 +67,11 @@ SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.credits
 UNION 
 SELECT * FROM species_iucn_non_spatial_only_passeriformes_202001.credits
 ) a;
+SELECT * INTO species_202001.dois FROM (
+SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.dois
+UNION 
+SELECT * FROM species_iucn_non_spatial_only_passeriformes_202001.dois
+) a;
 SELECT * INTO species_202001.habitats FROM (
 SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.habitats
 UNION 
@@ -108,7 +113,6 @@ UNION
 SELECT * FROM species_iucn_non_spatial_only_passeriformes_202001.usetrade
 ) a;
 ---- NON-PASSERIFORMES ONLY
-SELECT * INTO species_202001.dois FROM species_iucn_non_spatial_non_passeriformes_202001.dois;
 SELECT * INTO species_202001.fao FROM species_iucn_non_spatial_non_passeriformes_202001.fao;
 SELECT * INTO species_202001.lme FROM species_iucn_non_spatial_non_passeriformes_202001.lme;
 SELECT * INTO species_202001.plant_specific FROM species_iucn_non_spatial_non_passeriformes_202001.plant_specific;
