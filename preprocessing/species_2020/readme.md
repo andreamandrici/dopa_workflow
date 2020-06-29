@@ -2,9 +2,9 @@
 
 ## IUCN tables
 
-Spatial data are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
-
 ### IUCN spatial tables for *corals, chondrichthyes, amphibians, mammals*
+
+Spatial data are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
 
 +  fid bigint,
 +  **geom geometry(Polygon,4326)**,
