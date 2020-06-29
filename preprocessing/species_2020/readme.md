@@ -149,201 +149,224 @@ All the non-spatial tables are:
 +  threats	
 +  usetrade	
 
-
+The available fields (by table) are:
                                       
-*  "species.additional_tables_all_other_fields.assessmentid character varying",
-*  "species.additional_tables_all_other_fields.scientificname character varying",
-*  "species.additional_tables_all_other_fields.internaltaxonid character varying",
-*  "species.additional_tables_all_other_fields.aoo.range character varying",
-*  "species.additional_tables_all_other_fields.eoo.range character varying",
-*  "species.additional_tables_all_other_fields.depthlower.limit character varying",
-*  "species.additional_tables_all_other_fields.depthupper.limit character varying",
-*  "species.additional_tables_all_other_fields.congregatory.value character varying",
-*  "species.additional_tables_all_other_fields.nothreats.nothreats character varying",
-*  "species.additional_tables_all_other_fields.elevationlower.limit character varying",
-*  "species.additional_tables_all_other_fields.elevationupper.limit character varying",
-*  "species.additional_tables_all_other_fields.populationsize.range character varying",
-*  "species.additional_tables_all_other_fields.threatsunknown.value character varying",
-*  "species.additional_tables_all_other_fields.locationsnumber.range character varying",
-*  "species.additional_tables_all_other_fields.generationlength.range character varying",
-*  "species.additional_tables_all_other_fields.movementpatterns.pattern character varying",
-*  "species.additional_tables_all_other_fields.subpopulationnumber.range character varying",
-*  "species.additional_tables_all_other_fields.arearestricted.isrestricted character varying",
-*  "species.additional_tables_all_other_fields.cropwildrelative.isrelative character varying",
-*  "species.additional_tables_all_other_fields.yearofpopulationestimate.value character varying",
-*  "species.additional_tables_all_other_fields.inplaceeducationcontrolled.value character varying",
-*  "species.additional_tables_all_other_fields.severefragmentation.isfragmented character varying",
-*  "species.additional_tables_all_other_fields.inplaceresearchrecoveryplan.value character varying",
-*  "species.additional_tables_all_other_fields.inplacelandwaterprotectioninpa.value character varying",
-*  "species.additional_tables_all_other_fields.inplacespeciesmanagementexsitu.value character varying",
-*  "species.additional_tables_all_other_fields.inplaceresearchmonitoringscheme.value character varying",
-*  "species.additional_tables_all_other_fields.inplaceeducationsubjecttoprograms.value character varying",
-*  "species.additional_tables_all_other_fields.inplacespeciesmanagementharvestplan.value character varying",
-*  "species.additional_tables_all_other_fields.inplacelandwaterprotectionareaplanned.value character varying",
-*  "species.additional_tables_all_other_fields.inplaceeducationinternationallegislation.value character varying",
-*  "species.additional_tables_all_other_fields.inplacelandwaterprotectioninvasivecontrol.value character varying",
-*  "species.additional_tables_all_other_fields.inplacelandwaterprotectionsitesidentified.value character varying",
-*  "species.additional_tables_all_other_fields.inplacelandwaterprotectionpercentprotected.value character varying",
-*  "species.additional_tables_assessments.assessmentid character varying",
-*  "species.additional_tables_assessments.internaltaxonid character varying",
-*  "species.additional_tables_assessments.scientificname character varying",
-*  "species.additional_tables_assessments.redlistcategory character varying",
-*  "species.additional_tables_assessments.redlistcriteria character varying",
-*  "species.additional_tables_assessments.yearpublished character varying",
-*  "species.additional_tables_assessments.assessmentdate character varying",
-*  "species.additional_tables_assessments.criteriaversion character varying",
-*  "species.additional_tables_assessments.language character varying",
-*  "species.additional_tables_assessments.rationale character varying",
-*  "species.additional_tables_assessments.habitat character varying",
-*  "species.additional_tables_assessments.threats character varying",
-*  "species.additional_tables_assessments.population character varying",
-*  "species.additional_tables_assessments.populationtrend character varying",
-*  "species.additional_tables_assessments.range character varying",
-*  "species.additional_tables_assessments.usetrade character varying",
-*  "species.additional_tables_assessments.systems character varying",
-*  "species.additional_tables_assessments.conservationactions character varying",
-*  "species.additional_tables_assessments.realm character varying",
-*  "species.additional_tables_assessments.yearlastseen character varying",
-*  "species.additional_tables_assessments.possiblyextinct character varying",
-*  "species.additional_tables_assessments.possiblyextinctinthewild character varying",
-*  "species.additional_tables_assessments.scopes character varying",
-*  "species.additional_tables_common_names.internaltaxonid character varying",
-*  "species.additional_tables_common_names.scientificname character varying",
-*  "species.additional_tables_common_names.name character varying",
-*  "species.additional_tables_common_names.language character varying",
-*  "species.additional_tables_common_names.main character varying",
-*  "species.additional_tables_conservation_needed.assessmentid character varying",
-*  "species.additional_tables_conservation_needed.internaltaxonid character varying",
-*  "species.additional_tables_conservation_needed.scientificname character varying",
-*  "species.additional_tables_conservation_needed.code character varying",
-*  "species.additional_tables_conservation_needed.name character varying",
-*  "species.additional_tables_conservation_needed.note character varying",
-*  "species.additional_tables_countries.assessmentid character varying",
-*  "species.additional_tables_countries.internaltaxonid character varying",
-*  "species.additional_tables_countries.scientificname character varying",
-*  "species.additional_tables_countries.code character varying",
-*  "species.additional_tables_countries.name character varying",
-*  "species.additional_tables_countries.presence character varying",
-*  "species.additional_tables_countries.origin character varying",
-*  "species.additional_tables_countries.seasonality character varying",
-*  "species.additional_tables_countries.formerlybred character varying",
-*  "species.additional_tables_credits.assessmentid character varying",
-*  "species.additional_tables_credits.internaltaxonid character varying",
-*  "species.additional_tables_credits.scientificname character varying",
-*  "species.additional_tables_credits.type character varying",
-*  "species.additional_tables_credits.text character varying",
-*  "species.additional_tables_credits.full character varying",
-*  "species.additional_tables_credits.value character varying",
-*  "species.additional_tables_credits.order character varying",
-*  "species.additional_tables_dois.assessmentid character varying",
-*  "species.additional_tables_dois.scientificname character varying",
-*  "species.additional_tables_dois.internaltaxonid character varying",
-*  "species.additional_tables_dois.doi character varying",
-*  "species.additional_tables_fao.assessmentid character varying",
-*  "species.additional_tables_fao.internaltaxonid character varying",
-*  "species.additional_tables_fao.scientificname character varying",
-*  "species.additional_tables_fao.code character varying",
-*  "species.additional_tables_fao.name character varying",
-*  "species.additional_tables_fao.formerlybred character varying",
-*  "species.additional_tables_fao.origin character varying",
-*  "species.additional_tables_fao.presence character varying",
-*  "species.additional_tables_fao.seasonality character varying",
-*  "species.additional_tables_habitats.assessmentid character varying",
-*  "species.additional_tables_habitats.internaltaxonid character varying",
-*  "species.additional_tables_habitats.scientificname character varying",
-*  "species.additional_tables_habitats.code character varying",
-*  "species.additional_tables_habitats.name character varying",
-*  "species.additional_tables_habitats.majorimportance character varying",
-*  "species.additional_tables_habitats.season character varying",
-*  "species.additional_tables_habitats.suitability character varying",
-*  "species.additional_tables_lme.assessmentid character varying",
-*  "species.additional_tables_lme.internaltaxonid character varying",
-*  "species.additional_tables_lme.scientificname character varying",
-*  "species.additional_tables_lme.code character varying",
-*  "species.additional_tables_lme.name character varying",
-*  "species.additional_tables_lme.formerlybred character varying",
-*  "species.additional_tables_lme.origin character varying",
-*  "species.additional_tables_lme.presence character varying",
-*  "species.additional_tables_lme.seasonality character varying",
-*  "species.additional_tables_references.assessmentid character varying",
-*  "species.additional_tables_references.internaltaxonid character varying",
-*  "species.additional_tables_references.scientificname character varying",
-*  "species.additional_tables_references.author character varying",
-*  "species.additional_tables_references.citation character varying",
-*  "species.additional_tables_references.year character varying",
-*  "species.additional_tables_references.title character varying",
-*  "species.additional_tables_research_needed.assessmentid character varying",
-*  "species.additional_tables_research_needed.internaltaxonid character varying",
-*  "species.additional_tables_research_needed.scientificname character varying",
-*  "species.additional_tables_research_needed.code character varying",
-*  "species.additional_tables_research_needed.name character varying",
-*  "species.additional_tables_research_needed.note character varying",
-*  "species.additional_tables_simple_summary.assessmentid character varying",
-*  "species.additional_tables_simple_summary.internaltaxonid character varying",
-*  "species.additional_tables_simple_summary.scientificname character varying",
-*  "species.additional_tables_simple_summary.kingdomname character varying",
-*  "species.additional_tables_simple_summary.phylumname character varying",
-*  "species.additional_tables_simple_summary.ordername character varying",
-*  "species.additional_tables_simple_summary.classname character varying",
-*  "species.additional_tables_simple_summary.familyname character varying",
-*  "species.additional_tables_simple_summary.genusname character varying",
-*  "species.additional_tables_simple_summary.speciesname character varying",
-*  "species.additional_tables_simple_summary.infratype character varying",
-*  "species.additional_tables_simple_summary.infraname character varying",
-*  "species.additional_tables_simple_summary.infraauthority character varying",
-*  "species.additional_tables_simple_summary.authority character varying",
-*  "species.additional_tables_simple_summary.redlistcategory character varying",
-*  "species.additional_tables_simple_summary.redlistcriteria character varying",
-*  "species.additional_tables_simple_summary.criteriaversion character varying",
-*  "species.additional_tables_simple_summary.populationtrend character varying",
-*  "species.additional_tables_simple_summary.scopes character varying",
-*  "species.additional_tables_synonyms.internaltaxonid character varying",
-*  "species.additional_tables_synonyms.scientificname character varying",
-*  "species.additional_tables_synonyms.name character varying",
-*  "species.additional_tables_synonyms.genusname character varying",
-*  "species.additional_tables_synonyms.speciesname character varying",
-*  "species.additional_tables_synonyms.speciesauthor character varying",
-*  "species.additional_tables_synonyms.infratype character varying",
-*  "species.additional_tables_synonyms.infrarankauthor character varying",
-*  "species.additional_tables_taxonomy.internaltaxonid character varying",
-*  "species.additional_tables_taxonomy.scientificname character varying",
-*  "species.additional_tables_taxonomy.kingdomname character varying",
-*  "species.additional_tables_taxonomy.phylumname character varying",
-*  "species.additional_tables_taxonomy.ordername character varying",
-*  "species.additional_tables_taxonomy.classname character varying",
-*  "species.additional_tables_taxonomy.familyname character varying",
-*  "species.additional_tables_taxonomy.genusname character varying",
-*  "species.additional_tables_taxonomy.speciesname character varying",
-*  "species.additional_tables_taxonomy.infratype character varying",
-*  "species.additional_tables_taxonomy.infraname character varying",
-*  "species.additional_tables_taxonomy.infraauthority character varying",
-*  "species.additional_tables_taxonomy.subpopulationname character varying",
-*  "species.additional_tables_taxonomy.authority character varying",
-*  "species.additional_tables_taxonomy.taxonomicnotes character varying",
-*  "species.additional_tables_threats.assessmentid character varying",
-*  "species.additional_tables_threats.internaltaxonid character varying",
-*  "species.additional_tables_threats.scientificname character varying",
-*  "species.additional_tables_threats.code character varying",
-*  "species.additional_tables_threats.name character varying",
-*  "species.additional_tables_threats.stresscode character varying",
-*  "species.additional_tables_threats.stressname character varying",
-*  "species.additional_tables_threats.ancestry character varying",
-*  "species.additional_tables_threats.ias character varying",
-*  "species.additional_tables_threats.internationaltrade character varying",
-*  "species.additional_tables_threats.scope character varying",
-*  "species.additional_tables_threats.severity character varying",
-*  "species.additional_tables_threats.text character varying",
-*  "species.additional_tables_threats.timing character varying",
-*  "species.additional_tables_threats.virus character varying",
-*  "species.additional_tables_usetrade.assessmentid character varying",
-*  "species.additional_tables_usetrade.internaltaxonid character varying",
-*  "species.additional_tables_usetrade.scientificname character varying",
-*  "species.additional_tables_usetrade.code character varying",
-*  "species.additional_tables_usetrade.name character varying",
-*  "species.additional_tables_usetrade.international character varying",
-*  "species.additional_tables_usetrade.national character varying",
-*  "species.additional_tables_usetrade.other character varying",
-*  "species.additional_tables_usetrade.subsistence character varying".
++  all_other_fields.aoo_range
++  all_other_fields.arearestricted_isrestricted
++  all_other_fields.assessmentid
++  all_other_fields.congregatory_value
++  all_other_fields.cropwildrelative_isrelative
++  all_other_fields.depthlower_limit
++  all_other_fields.depthupper_limit
++  all_other_fields.elevationlower_limit
++  all_other_fields.elevationupper_limit
++  all_other_fields.eoo_range
++  all_other_fields.fid
++  all_other_fields.generationlength_range
++  all_other_fields.inplaceeducationcontrolled_value
++  all_other_fields.inplaceeducationinternationallegislation_value
++  all_other_fields.inplaceeducationsubjecttoprograms_value
++  all_other_fields.inplacelandwaterprotectionareaplanned_value
++  all_other_fields.inplacelandwaterprotectioninpa_value
++  all_other_fields.inplacelandwaterprotectioninvasivecontrol_value
++  all_other_fields.inplacelandwaterprotectionpercentprotected_value
++  all_other_fields.inplacelandwaterprotectionsitesidentified_value
++  all_other_fields.inplaceresearchmonitoringscheme_value
++  all_other_fields.inplaceresearchrecoveryplan_value
++  all_other_fields.inplacespeciesmanagementexsitu_value
++  all_other_fields.inplacespeciesmanagementharvestplan_value
++  all_other_fields.internaltaxonid
++  all_other_fields.locationsnumber_range
++  all_other_fields.movementpatterns_pattern
++  all_other_fields.nothreats_nothreats
++  all_other_fields.populationsize_range
++  all_other_fields.scientificname
++  all_other_fields.severefragmentation_isfragmented
++  all_other_fields.subpopulationnumber_range
++  all_other_fields.threatsunknown_value
++  all_other_fields.yearofpopulationestimate_value
++  assessments.assessmentdate
++  assessments.assessmentid
++  assessments.conservationactions
++  assessments.criteriaversion
++  assessments.fid
++  assessments.habitat
++  assessments.internaltaxonid
++  assessments.language
++  assessments.population
++  assessments.populationtrend
++  assessments.possiblyextinct
++  assessments.possiblyextinctinthewild
++  assessments.range
++  assessments.rationale
++  assessments.realm
++  assessments.redlistcategory
++  assessments.redlistcriteria
++  assessments.scientificname
++  assessments.scopes
++  assessments.systems
++  assessments.threats
++  assessments.usetrade
++  assessments.yearlastseen
++  assessments.yearpublished
++  common_names.fid
++  common_names.internaltaxonid
++  common_names.language
++  common_names.main
++  common_names.name
++  common_names.scientificname
++  conservation_needed.assessmentid
++  conservation_needed.code
++  conservation_needed.fid
++  conservation_needed.internaltaxonid
++  conservation_needed.name
++  conservation_needed.note
++  conservation_needed.scientificname
++  countries.assessmentid
++  countries.code
++  countries.fid
++  countries.formerlybred
++  countries.internaltaxonid
++  countries.name
++  countries.origin
++  countries.presence
++  countries.scientificname
++  countries.seasonality
++  credits.assessmentid
++  credits.fid
++  credits.full
++  credits.internaltaxonid
++  credits.order
++  credits.scientificname
++  credits.text
++  credits.type
++  credits.value
++  dois.assessmentid
++  dois.doi
++  dois.fid
++  dois.internaltaxonid
++  dois.scientificname
++  fao.assessmentid
++  fao.code
++  fao.fid
++  fao.formerlybred
++  fao.internaltaxonid
++  fao.name
++  fao.origin
++  fao.presence
++  fao.scientificname
++  fao.seasonality
++  habitats.assessmentid
++  habitats.code
++  habitats.fid
++  habitats.internaltaxonid
++  habitats.majorimportance
++  habitats.name
++  habitats.scientificname
++  habitats.season
++  habitats.suitability
++  lme.assessmentid
++  lme.code
++  lme.fid
++  lme.formerlybred
++  lme.internaltaxonid
++  lme.name
++  lme.origin
++  lme.presence
++  lme.scientificname
++  lme.seasonality
++  plant_specific.assessmentid
++  plant_specific.code
++  plant_specific.fid
++  plant_specific.internaltaxonid
++  plant_specific.name
++  plant_specific.scientificname
++  references.assessmentid
++  references.author
++  references.citation
++  references.fid
++  references.internaltaxonid
++  references.scientificname
++  references.title
++  references.year
++  research_needed.assessmentid
++  research_needed.code
++  research_needed.fid
++  research_needed.internaltaxonid
++  research_needed.name
++  research_needed.note
++  research_needed.scientificname
++  simple_summary.assessmentid
++  simple_summary.authority
++  simple_summary.classname
++  simple_summary.criteriaversion
++  simple_summary.familyname
++  simple_summary.fid
++  simple_summary.genusname
++  simple_summary.infraauthority
++  simple_summary.infraname
++  simple_summary.infratype
++  simple_summary.internaltaxonid
++  simple_summary.kingdomname
++  simple_summary.ordername
++  simple_summary.phylumname
++  simple_summary.populationtrend
++  simple_summary.redlistcategory
++  simple_summary.redlistcriteria
++  simple_summary.scientificname
++  simple_summary.scopes
++  simple_summary.speciesname
++  synonyms.fid
++  synonyms.genusname
++  synonyms.infrarankauthor
++  synonyms.infratype
++  synonyms.internaltaxonid
++  synonyms.name
++  synonyms.scientificname
++  synonyms.speciesauthor
++  synonyms.speciesname
++  taxonomy.authority
++  taxonomy.classname
++  taxonomy.familyname
++  taxonomy.fid
++  taxonomy.genusname
++  taxonomy.infraauthority
++  taxonomy.infraname
++  taxonomy.infratype
++  taxonomy.internaltaxonid
++  taxonomy.kingdomname
++  taxonomy.ordername
++  taxonomy.phylumname
++  taxonomy.scientificname
++  taxonomy.speciesname
++  taxonomy.subpopulationname
++  taxonomy.taxonomicnotes
++  threats.ancestry
++  threats.assessmentid
++  threats.code
++  threats.fid
++  threats.ias
++  threats.internaltaxonid
++  threats.internationaltrade
++  threats.name
++  threats.scientificname
++  threats.scope
++  threats.severity
++  threats.stresscode
++  threats.stressname
++  threats.text
++  threats.timing
++  threats.virus
++  usetrade.assessmentid
++  usetrade.code
++  usetrade.fid
++  usetrade.internaltaxonid
++  usetrade.international
++  usetrade.name
++  usetrade.national
++  usetrade.other
++  usetrade.scientificname
++  usetrade.subsistence
 
-**The analysis and selection of the relevant fields out of the total (193) is one of the target of this task.**
+**The analysis and selection of the relevant fields out of the total (216) is one of the target of the preprocessing task.**
 
