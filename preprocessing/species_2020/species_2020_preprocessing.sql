@@ -1,6 +1,22 @@
 -- SCHEMA
 DROP SCHEMA IF EXISTS species_202001 CASCADE; CREATE SCHEMA species_202001;
 
+-- BIRDLIFE
+
+---- SPATIAL
+SELECT * INTO species_202001.birds_all_species
+FROM species_birdlife_201903.all_species WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
+
+---- NON-SPATIAL
+SELECT * INTO species_202001.birds_taxonomic
+FROM species_birdlife_201903.birdlife_hbw_taxonomic_checklist_v4;
+
+SELECT * INTO species_202001.birds_additional_atts
+FROM species_birdlife_201903.spplistadditional;
+
+SELECT * INTO species_202001.birds_non_spatial
+FROM species_birdlife_non_spatial_201903.sheet1;
+
 -- SPATIAL IUCN
 ---- APPEND CORALS
 SELECT * INTO species_202001.reef_forming_corals FROM
@@ -20,7 +36,6 @@ SELECT * INTO species_202001.amphibians FROM species_iucn_spatial_202001.amphibi
 SELECT * INTO species_202001.mammals FROM species_iucn_spatial_202001.mammals WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
 
 -- NON SPATIAL IUCN
-
 ---- APPEND NON-PASSERIFORMES AND PASSERIFORMES-ONLY
 SELECT * INTO species_202001.all_other_fields FROM (
 SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.all_other_fields
