@@ -10,7 +10,7 @@ Spatial data for **corals, chondrichthyes, amphibians, mammals** are available a
 +  **binomial** character varying,
 +  **presence** integer,
 +  **origin** integer,
-+  seasonal integer,
++  **seasonal** integer,
 +  compiler character varying,
 +  yrcompiled integer,
 +  citation character varying,
