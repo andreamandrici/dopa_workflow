@@ -42,9 +42,7 @@ Each foreign table is converted to real geometric table (and/or appended, as for
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
 
-The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon.
-
-The spatial processing in next steps will merge/dissolve these polygons by id_no, making this field unique, Primary Key.
+The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. Fid is a weak temporary serial (is not unique in case of appended corals).
 
 ### 1.2 non-spatial tables
 
