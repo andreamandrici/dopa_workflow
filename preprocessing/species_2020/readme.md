@@ -44,7 +44,93 @@ which will include: **Extant** and **Probably Extant** (IUCN will discontinue th
 
 **fid** is a weak temporary serial (is not unique in case of appended corals).The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. The next steps in spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
 
-### 1.2 non-spatial tables
+## BIRDLIFE tables
+Current importing script for both spatial and non-spatial birds tables is `processing_current/species/01_species_input_birds.sh`.
+
+All spatial and non-spatial birds data are available inside ESRI filegeodb "RL_2019.gdb". 
+
+### spatial tables
+
+The spatial table "All_species" is imported in PostGIS as "species.birds_geom".
+
+The final table contains the fields (relevants in **bold**):
+
+*  **sisid** integer **(corresponds to IUCN spatial table field: id_no)**,
+*  **sciname** character varying  **(corresponds to IUCN spatial table field: binomial)**,
+*  date_ character varying,
+*  source character varying,
+*  **presence** integer,
+*  **origin** integer,
+*  **seasonal** integer,
+*  data_sens character varying,
+*  sens_comm character varying,
+*  compiler character varying,
+*  tax_com character varying,
+*  dist_com character varying,
+*  reviewers character varying,
+*  citation character varying,
+*  version character varying,
+*  shape_length double precision,
+*  shape_area double precision,
+*  filename character varying,
+*  vxcount integer,
+*  **wkb_geometry** geometry(MultiPolygon,4326)
+
+### non-spatial tables
+
+The non spatial table "SppListAdditional" is imported in Postgres as "species.birds_additional_atts".
+
+The final table contains the fields (relevants in **bold**):
+
+*  **id_no** integer,
+*  **binomial** character varying,
+*  common_name character varying,
+*  **kingdom** character varying,
+*  **phylum** character varying,
+*  **class** character varying,
+*  **order_** character varying,
+*  **family** character varying,
+*  **genus** character varying,
+*  **category** character varying,
+*  criteria character varying,
+*  assessor character varying,
+*  assessment_date timestamp with time zone,
+*  **biome_marine** character varying **(corresponds to IUCN spatial table field: marine)**,
+*  **biome_terrestrial** character varying **(corresponds to IUCN spatial table field: terrestrial)**,
+*  **biome_freshwater** character varying **(corresponds to IUCN spatial table field: freshwater)**,
+*  publication_yr smallint,
+*  population_trend character varying
+
+The non spatial table "BirdLife_HBW_Taxonomic_Checklist_V4" is imported in Postgres as "species.birds_taxonomic".
+
+The final table contains the fields (relevants in **bold**):
+
+*  sequence integer,
+*  **order_** character varying,
+*  **family_name** character varying **(corresponds to IUCN spatial table field: family)**,
+*  family character varying,
+*  subfamily_name character varying,
+*  tribe_name character varying,
+*  common_name character varying,
+*  **scientific_name** character varying **(corresponds to IUCN spatial table field: binomial)**,
+*  authority character varying,
+*  birdlife_taxonomic_treatment character varying,
+*  **f2019_iucn_red_list_category** character varying **(corresponds to IUCN spatial table field: category)**,
+*  synonyms character varying,
+*  alternative_common_names character varying,
+*  taxonomic_notes character varying,
+*  taxonomic_source character varying,
+*  **sisrecid** integer **(corresponds to IUCN spatial table field: id_no)**,
+*  **marine character varying**,
+*  **freshwater character varying**,
+*  **terrestrial character varying**
+
+An additional non spatial excel table "SpeciesWithoutBiomes.xlsx" contains just a list with five species (22712690, 22716650, 22732350, 103774724, 103878817) missing information related to ecosystems.
+
+It is imported in Postgres as "species.birds_species_wo_biomes".
+
+
+## IUCN non-spatial tables
 
 Current importing script is `processing_current/species/01_species_input_additional_tables.sh`.
 
@@ -291,93 +377,3 @@ The final tables contain the following fields:
 
 **The analysis and selection of the relevant fields out of the total (193) is one of the target of this task.**
 
-## 2.1 BIRDLIFE
-Current importing script for both spatial and non-spatial birds tables is `processing_current/species/01_species_input_birds.sh`.
-
-All spatial and non-spatial birds data are available inside ESRI filegeodb "RL_2019.gdb". 
-
-### 2.1 spatial tables
-
-The spatial table "All_species" is imported in PostGIS as "species.birds_geom".
-
-The final table contains the fields (relevants in **bold**):
-
-*  **sisid** integer **(corresponds to IUCN spatial table field: id_no)**,
-*  **sciname** character varying  **(corresponds to IUCN spatial table field: binomial)**,
-*  date_ character varying,
-*  source character varying,
-*  **presence** integer,
-*  **origin** integer,
-*  **seasonal** integer,
-*  data_sens character varying,
-*  sens_comm character varying,
-*  compiler character varying,
-*  tax_com character varying,
-*  dist_com character varying,
-*  reviewers character varying,
-*  citation character varying,
-*  version character varying,
-*  shape_length double precision,
-*  shape_area double precision,
-*  filename character varying,
-*  vxcount integer,
-*  **wkb_geometry** geometry(MultiPolygon,4326)
-
-### 2.2 non-spatial tables
-
-The non spatial table "SppListAdditional" is imported in Postgres as "species.birds_additional_atts".
-
-The final table contains the fields (relevants in **bold**):
-
-*  **id_no** integer,
-*  **binomial** character varying,
-*  common_name character varying,
-*  **kingdom** character varying,
-*  **phylum** character varying,
-*  **class** character varying,
-*  **order_** character varying,
-*  **family** character varying,
-*  **genus** character varying,
-*  **category** character varying,
-*  criteria character varying,
-*  assessor character varying,
-*  assessment_date timestamp with time zone,
-*  **biome_marine** character varying **(corresponds to IUCN spatial table field: marine)**,
-*  **biome_terrestrial** character varying **(corresponds to IUCN spatial table field: terrestrial)**,
-*  **biome_freshwater** character varying **(corresponds to IUCN spatial table field: freshwater)**,
-*  publication_yr smallint,
-*  population_trend character varying
-
-The non spatial table "BirdLife_HBW_Taxonomic_Checklist_V4" is imported in Postgres as "species.birds_taxonomic".
-
-The final table contains the fields (relevants in **bold**):
-
-*  sequence integer,
-*  **order_** character varying,
-*  **family_name** character varying **(corresponds to IUCN spatial table field: family)**,
-*  family character varying,
-*  subfamily_name character varying,
-*  tribe_name character varying,
-*  common_name character varying,
-*  **scientific_name** character varying **(corresponds to IUCN spatial table field: binomial)**,
-*  authority character varying,
-*  birdlife_taxonomic_treatment character varying,
-*  **f2019_iucn_red_list_category** character varying **(corresponds to IUCN spatial table field: category)**,
-*  synonyms character varying,
-*  alternative_common_names character varying,
-*  taxonomic_notes character varying,
-*  taxonomic_source character varying,
-*  **sisrecid** integer **(corresponds to IUCN spatial table field: id_no)**,
-*  **marine character varying**,
-*  **freshwater character varying**,
-*  **terrestrial character varying**
-
-An additional non spatial excel table "SpeciesWithoutBiomes.xlsx" contains just a list with five species (22712690, 22716650, 22732350, 103774724, 103878817) missing information related to ecosystems.
-
-It is imported in Postgres as "species.birds_species_wo_biomes".
-
-# Harmonization
-
-## spatial tables
-
-## non-spatial tables
