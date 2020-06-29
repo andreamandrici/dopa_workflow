@@ -40,7 +40,9 @@ These fields are (partially?) described on [Mapping and Distribution Data Attrib
 
 Each foreign table is converted to real geometric table (and/or appended, as for corals) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters:
 
-`SELECT * FROM MAMMALS WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
+`
+---(SAME FOR AMPHIBIANS, SHARKS AND RAYS, ETC...)
+SELECT * FROM MAMMALS WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
 
