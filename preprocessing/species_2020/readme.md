@@ -2,20 +2,15 @@
 
 ## IUCN spatial tables
 
-Spatial tables are available as shp files and are imported in PostGIS as:
+Spatial data for **corals, chondrichthyes, amphibians, mammals** are available as foreign tables pointing at shps files in schema **species_iucn_spatial_202001**, and they all contain the fields (relevants in **bold**):
 
-*  "species.corals"
-*  "species.chondrichthyes"
-*  "species.amphibians"
-*  "species.mammals"
-
-The final tables contains the fields (the relevants in **bold**):
-
++  fid bigint,
++  geom geometry(Polygon,4326),
 *  **id_no** bigint,
 *  **binomial** character varying,
 *  **presence** integer,
 *  **origin** integer,
-*  vseasonal integer,
+*  seasonal integer,
 *  compiler character varying,
 *  yrcompiled integer,
 *  citation character varying,
@@ -37,19 +32,19 @@ The final tables contains the fields (the relevants in **bold**):
 *  **terrestial** character varying,
 *  **freshwater** character varying,
 *  shape_leng double precision,
-*  shape_area double precision,
-*  **wkb_geometry** geometry(MultiPolygon,4326)
+*  shape_area double precision
 
 These fields are (partially?) described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards)
 
-Each shp file is imported in PostGIS (and/or appended, as for corals) using ogr2ogr, with following parameters:
+Each foreign table is converted to real geometric table (and/or appended, as for corals) inside the schema **species_202001** using [this sql script](./species_2020_preprocessing.sql), with following parameters:
 
 `SELECT * FROM MAMMALS WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
 
 The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon.
-The spatial processing will merge/dissolve these polygons by id_no, making this field unique, Primary Key.
+
+The spatial processing in next steps will merge/dissolve these polygons by id_no, making this field unique, Primary Key.
 
 ### 1.2 non-spatial tables
 

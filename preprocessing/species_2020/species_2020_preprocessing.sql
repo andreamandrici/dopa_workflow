@@ -2,6 +2,7 @@
 DROP SCHEMA IF EXISTS species_202001 CASCADE; CREATE SCHEMA species_202001;
 
 -- SPATIAL IUCN
+---- APPEND CORALS
 SELECT * INTO species_202001.reef_forming_corals FROM
 (SELECT * FROM species_iucn_spatial_202001.reef_forming_corals_part1 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
  UNION
@@ -11,11 +12,16 @@ SELECT * INTO species_202001.reef_forming_corals FROM
 ORDER BY id_no,fid
 ) a
 ORDER BY id_no,fid;
+---- SHARKS RAYS
 SELECT * INTO species_202001.sharks_rays_chimaeras FROM species_iucn_spatial_202001.sharks_rays_chimaeras WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
+---- AMPHIBIANS
 SELECT * INTO species_202001.amphibians FROM species_iucn_spatial_202001.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
+---- MAMMALS
 SELECT * INTO species_202001.mammals FROM species_iucn_spatial_202001.mammals WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
 
 -- NON SPATIAL IUCN
+
+---- APPEND NON-PASSERIFORMES AND PASSERIFORMES-ONLY
 SELECT * INTO species_202001.all_other_fields FROM (
 SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.all_other_fields
 UNION 
@@ -86,6 +92,7 @@ SELECT * FROM species_iucn_non_spatial_non_passeriformes_202001.usetrade
 UNION 
 SELECT * FROM species_iucn_non_spatial_only_passeriformes_202001.usetrade
 ) a;
+---- NON-PASSERIFORMES ONLY
 SELECT * INTO species_202001.dois FROM species_iucn_non_spatial_non_passeriformes_202001.dois;
 SELECT * INTO species_202001.fao FROM species_iucn_non_spatial_non_passeriformes_202001.fao;
 SELECT * INTO species_202001.lme FROM species_iucn_non_spatial_non_passeriformes_202001.lme;
