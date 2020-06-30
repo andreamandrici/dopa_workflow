@@ -18,7 +18,7 @@ The following sections are currently present:
 +  [Countries](./preprocessing/#countries-v2019)
 +  [Ecoregions](./preprocessing/#ecoregions-v2020)
 +  [Flattening](./flattening/)
-+  [Species](./species_2020/)
++  [Species](./preprocessing/species_2020/)
 
 ## Processing
 
