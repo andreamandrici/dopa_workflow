@@ -35,6 +35,7 @@ The following sections are currently present:
 
 ### Species
 
++  [data harmonization](./processing/species/#harmonization)
 +  [spatial workflow](./processing/species/#spatial)
 +  [non-spatial workflow](./processing/species/#non_spatial)
 +  [Irreplaceability Index](./processing/species/irreplaceability/)

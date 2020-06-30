@@ -2,6 +2,8 @@
 
 ## SPECIES
 
+### harmonization
+
 Since dataset is made by different sources (IUCN and Birdlife) and data models (spatial and non-spatial tables), harmonization of the objects is needed.
 
 +  Some selected information is extracted from IUCN geometric data
