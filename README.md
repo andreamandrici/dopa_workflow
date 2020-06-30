@@ -34,7 +34,9 @@ The following sections are currently present:
 
 ### Species
 
-+  [Irreplaceability Index](./processing/irreplaceability/)
++  [spatial workflow](./processing/species/#spatial)
++  [non-spatial workflow](./processing/species/#non_spatial_workflow)
++  [Irreplaceability Index](./processing/species/irreplaceability/)
 
 ## Authors
 
