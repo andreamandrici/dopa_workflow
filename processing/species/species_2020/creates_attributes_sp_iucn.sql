@@ -1,6 +1,6 @@
 -- creates table IUCN_SPATIAL_ATTRIBUTES as selection of attributes from spatial data
---DROP TABLE IF EXISTS species_202001.iucn_sp_attributes; 
-CREATE TABLE species_202001.iucn_sp_attributes;
+DROP TABLE IF EXISTS species_202001.attributes_sp_iucn; 
+CREATE TABLE species_202001.attributes_sp_iucn AS
 SELECT DISTINCT
 id_no,
 binomial::text,
