@@ -8,17 +8,17 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 
 +  In Birdlife Version 2019-1 information on Ecosystems for few species is missing. This information is recovered from IUCN non-spatial dataset. [fix_missing_ecosystems.sql](./species_2020/fix_missing_ecosystems.sql)
 +  Some **selected attributes** are extracted and transformed from IUCN **geometric** data:
-  +  id_no (bigint),
-  +  binomial (text),
-  +  legend (text),
-  +  kingdom (text),
-  +  phylum (text),
-  +  class (text),
-  +  order_ (text),
-  +  family (text),
-  +  genus (text),
-  +  category (text),
-  +  ecosystem_mtf (text)
+   +  id_no (bigint),
+   +  binomial (text),
+   +  legend (text),
+   +  kingdom (text),
+   +  phylum (text),
+   +  class (text),
+   +  order_ (text),
+   +  family (text),
+   +  genus (text),
+   +  category (text),
+   +  ecosystem_mtf (text)
 
 	-- aggregates marine,terrestRial and freshwater ecosystems in ecosystem_mtf (marine,terrestrial,freshwater). IUCN field name "terrestial" is wrong at origin: it misses an R in the name.
 
