@@ -4,7 +4,6 @@ CREATE TABLE species_202001.attributes_sp_iucn AS
 SELECT DISTINCT
 id_no,
 binomial::text,
-legend::text,
 kingdom::text,
 phylum::text,
 class::text,
