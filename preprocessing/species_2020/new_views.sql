@@ -1,201 +1,101 @@
-CREATE TABLE species.mt_categories (
-    code text,
-    redlistcategory character varying
-);
-
-CREATE TABLE species.mt_conservation_needed (
-    conservation_needed_cl1 integer,
-    conservation_needed_cl2 integer,
-    conservation_needed_cl3 integer,
-    code character varying,
-    name character varying
-);
-
-
-CREATE TABLE species.mt_countries (
-    code character varying,
-    name character varying
-);
-
-CREATE TABLE species.mt_habitats (
-    habitats_cl1 integer,
-    habitats_cl2 integer,
-    habitats_cl3 integer,
-    code character varying,
-    name character varying
-);
-
-
-CREATE TABLE species.mt_research_needed (
-    research_needed_cl1 integer,
-    research_needed_cl2 integer,
-    research_needed_cl3 integer,
-    code character varying,
-    name character varying
-);
-
-CREATE TABLE species.mt_stresses (
-    stress_cl1 integer,
-    stress_cl2 integer,
-    stress_cl3 integer,
-    code text,
-    name text
-);
-
-CREATE TABLE species.mt_taxonomy (
-    phylumname text,
-    ordername text,
-    classname text,
-    familyname text,
-    genusname text,
-    speciesname text,
-    scientificname text,
-    internaltaxonid bigint,
-    taxonomicnotes text
-);
-
-CREATE TABLE species.mt_threats (
-    threats_cl1 integer,
-    threats_cl2 integer,
-    threats_cl3 integer,
-    code character varying,
-    name character varying
-);
-
-
-CREATE TABLE species.mt_usetrade (
-    code integer,
-    name text
-);
-
-
-CREATE TABLE species.mtg_birdlife_all (
-    id_no bigint,
-    binomial character varying,
-    common_name character varying,
-    kingdom character varying,
-    phylum character varying,
-    class character varying,
-    order_ character varying,
-    family character varying,
-    genus character varying,
-    category character varying,
-    marine character varying,
-    terrestrial character varying,
-    freshwater character varying
-);
-
-
-CREATE TABLE species.mtg_redlist_all (
-    id_no bigint,
-    binomial character varying,
-    presence integer,
-    origin integer,
-    seasonal integer,
-    legend character varying,
-    kingdom character varying,
-    phylum character varying,
-    class character varying,
-    order_ character varying,
-    family character varying,
-    genus character varying,
-    category character varying,
-    marine character varying,
-    terrestial character varying,
-    freshwater character varying
-);
-
-CREATE VIEW species.v_birdlife_all AS
- WITH birds_geoms AS (
-         SELECT DISTINCT (birds_geom.sisid)::bigint AS id_no,
-            birds_geom.sciname AS binomial,
-            birds_geom.presence,
-            birds_geom.origin,
-            birds_geom.seasonal
-           FROM species.birds_geom
-        ), birds_taxonomic AS (
-         SELECT DISTINCT (birds_taxonomic.sisrecid)::bigint AS id_no,
-            birds_taxonomic.order_,
-            birds_taxonomic.family_name,
-            birds_taxonomic.family,
-            birds_taxonomic.subfamily_name,
-            birds_taxonomic.tribe_name,
-            birds_taxonomic.common_name,
-            birds_taxonomic.scientific_name,
-            birds_taxonomic.f2019_iucn_red_list_category,
-            birds_taxonomic.marine,
-            birds_taxonomic.freshwater,
-            birds_taxonomic.terrestrial
-           FROM species.birds_taxonomic
-        ), birds_additional_atts AS (
-         SELECT DISTINCT birds_geoms.id_no,
-            birds_additional_atts.binomial,
-            birds_additional_atts.common_name,
-            birds_additional_atts.kingdom,
-            birds_additional_atts.phylum,
-            birds_additional_atts.class,
-            birds_additional_atts.order_,
-            birds_additional_atts.family,
-            birds_additional_atts.genus,
-            birds_additional_atts.category,
-            birds_additional_atts.biome_marine AS marine,
-            birds_additional_atts.biome_terrestrial AS terrestrial,
-            birds_additional_atts.biome_freshwater AS freshwater
-           FROM (species.birds_additional_atts
-             JOIN birds_geoms USING (id_no, binomial))
-        ), missing_species AS (
-         SELECT DISTINCT birds_geoms.id_no
-           FROM birds_geoms
-          WHERE (NOT (birds_geoms.id_no IN ( SELECT DISTINCT birds_additional_atts.id_no
-                   FROM birds_additional_atts)))
-        ), missing_systems AS (
-         SELECT birds_taxonomic.id_no,
-            birds_taxonomic.scientific_name AS binomial,
-            birds_taxonomic.common_name,
-            'ANIMALIA'::character varying AS kingdom,
-            'CHORDATA'::character varying AS phylum,
-            'AVES'::character varying AS class,
-            birds_taxonomic.order_,
-            upper((birds_taxonomic.family_name)::text) AS family,
-            (split_part((birds_taxonomic.scientific_name)::text, ' '::text, 1))::character varying AS genus,
-            birds_taxonomic.f2019_iucn_red_list_category AS category,
-            'false'::text AS marine,
-            'true'::text AS terrestrial,
-            'false'::text AS freshwater
-           FROM birds_taxonomic
-          WHERE (birds_taxonomic.id_no IN ( SELECT missing_species.id_no
-                   FROM missing_species))
-        )
- SELECT birds_additional_atts.id_no,
-    birds_additional_atts.binomial,
-    birds_additional_atts.common_name,
-    birds_additional_atts.kingdom,
-    birds_additional_atts.phylum,
-    birds_additional_atts.class,
-    birds_additional_atts.order_,
-    birds_additional_atts.family,
-    birds_additional_atts.genus,
-    birds_additional_atts.category,
-    birds_additional_atts.marine,
-    birds_additional_atts.terrestrial,
-    birds_additional_atts.freshwater
-   FROM birds_additional_atts
+WITH birds_geoms AS (
+WITH
+birds_geoms AS (
+SELECT
+DISTINCT sisid::bigint AS id_no,
+sciname AS binomial,
+presence,
+origin,
+seasonal
+FROM species_202001.birds_all_species birds_geom
+),
+birds_taxonomic AS (
+SELECT DISTINCT
+sisrecid::bigint AS id_no,
+order_,
+family_name,
+family,
+subfamily_name,
+tribe_name,
+common_name,
+scientific_name,
+f2019_iucn_red_list_category,
+marine,
+freshwater,
+terrestrial
+FROM species_202001.birds_taxonomic
+),
+birds_additional_atts AS (
+SELECT DISTINCT
+id_no,
+binomial,
+common_name,
+kingdom,
+phylum,
+class,
+order_,
+family,
+genus,
+category,
+biome_marine AS marine,
+biome_terrestrial AS terrestrial,
+biome_freshwater AS freshwater
+FROM (species_202001.birds_additional_atts
+ JOIN birds_geoms USING (id_no, binomial))
+),
+missing_species AS (
+SELECT DISTINCT id_no
+FROM birds_geoms
+WHERE (NOT (id_no IN ( SELECT DISTINCT id_no
+	   FROM birds_additional_atts)))
+), missing_systems AS (
+SELECT id_no,
+scientific_name AS binomial,
+common_name,
+'ANIMALIA'::character varying AS kingdom,
+'CHORDATA'::character varying AS phylum,
+'AVES'::character varying AS class,
+order_,
+upper((family_name)::text) AS family,
+(split_part((scientific_name)::text, ' '::text, 1))::character varying AS genus,
+f2019_iucn_red_list_category AS category,
+'false'::text AS marine,
+'true'::text AS terrestrial,
+'false'::text AS freshwater
+FROM birds_taxonomic
+WHERE (id_no IN ( SELECT missing_species.id_no
+	   FROM missing_species))
+)
+SELECT id_no,
+binomial,
+common_name,
+kingdom,
+phylum,
+class,
+order_,
+family,
+genus,
+category,
+marine,
+terrestrial,
+freshwater
+FROM birds_additional_atts
 UNION
- SELECT missing_systems.id_no,
-    missing_systems.binomial,
-    missing_systems.common_name,
-    missing_systems.kingdom,
-    missing_systems.phylum,
-    missing_systems.class,
-    missing_systems.order_,
-    missing_systems.family,
-    missing_systems.genus,
-    missing_systems.category,
-    missing_systems.marine,
-    missing_systems.terrestrial,
-    missing_systems.freshwater
-   FROM missing_systems
-  ORDER BY 1;
+SELECT missing_systems.id_no,
+missing_systems.binomial,
+missing_systems.common_name,
+missing_systems.kingdom,
+missing_systems.phylum,
+missing_systems.class,
+missing_systems.order_,
+missing_systems.family,
+missing_systems.genus,
+missing_systems.category,
+missing_systems.marine,
+missing_systems.terrestrial,
+missing_systems.freshwater
+FROM missing_systems
+ORDER BY 1;
 
 CREATE VIEW species.v_mt_categories AS
  SELECT
