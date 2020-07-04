@@ -4,7 +4,7 @@
 
 ### Species
 
-+  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2020-1. Downloaded on 20200408. Non-spatial attributes for:
++  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2020-1. Downloaded on 20200408. Non-spatial attributes (**only species selected**) for:
    +  Reef-forming Corals (_Hydrozoa_ and _Anthozoa_)
    +  Sharks, rays and chimaeras (_Chondrichthyes_)    
    +  Amphibians
