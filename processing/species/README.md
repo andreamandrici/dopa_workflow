@@ -29,7 +29,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 
     Code is: [creates_attributes_sp.sql](./species_2020/creates_attributes_sp.sql), output table is: **species_202001.attributes_sp**;
  
-+  not all the geometric information is used (geometries are imported only WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3); which include: Extant and Probably Extant; Native and Reintroduced; Resident, Breeding Season and Non-breeding Season. Therefore, only correspondant species are included from non-spatial dataset.
++  not all the geometric information is used (geometries are imported only WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3); which include: Extant and Probably Extant; Native and Reintroduced; Resident, Breeding Season and Non-breeding Season. Therefore, **only correspondant species are included from non-spatial dataset**.
 
 +  The flattening workflow get rid of:
    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
