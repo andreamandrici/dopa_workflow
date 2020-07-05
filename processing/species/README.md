@@ -19,7 +19,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
    +  category (text),
    +  ecosystem_mtf (text): this field aggregates the three fields marine, terrestrial and freshwater ecosystems (true/false) in one text field ecosystem_mtf (marine, terrestrial, freshwater; 0/1-0/1-/01). **IUCN field name "terrestial" is wrong at origin**: it misses R in the name (terrestial != terrest**R**ial).
 
-    Code is: [creates_attributes_sp_iucn.sql](./species_2020/creates_attributes_sp_iucn.sql), output table is: **species_202001.attributes_sp_iucn**;
+   Code is: [creates_attributes_sp_iucn.sql](./species_2020/creates_attributes_sp_iucn.sql), output table is: **species_202001.attributes_sp_iucn**;
 
 3.  Birdlife **geometric** data are processed, and **selected attributes** are extracted, in the way to get the **same structure** of processed IUCN data. 
 
