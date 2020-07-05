@@ -60,6 +60,21 @@ Here are reported the scripts and environment files:
 
 #### input dataset
 
+Geometries of all groups are filtered to include only species (selected in the previous "harmonization - step 5".
+
+Code is: [creates_geoms.sql](./species_2020/creates_geoms.sql).
+Output tables are:
+
++  **species_202001.geom_corals**
++  **species_202001.geom_sharks_rays_chimaeras**
++  **species_202001.geom_amphibians**
++  **species_202001.geom_mammals**
++  **species_202001.geom_birds**
+
+#### groups flattening
+
+[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group:
+
 
 
 ### non-spatial
