@@ -35,9 +35,9 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
  
 5.  There are different _taxa_ contained in spatial and non-spatial tables:
 	+  spatial tables:
-	   +  include species,subspecies,subpopulations (with redundant geometries):
-	   +  are filtered at import on: 
-	      +  Extant and Probably Extant (**presence** IN (1,2)); 
+	   +  include species, subspecies, subpopulations (with redundant geometries):
+	   +  are filtered at import on fields:
+	      +  **presence**: 1-Extant,2-Probably Extant are imported; 3-Possibly Extant, 4-Possibly Extinct, 5-Extinct, 6-Presence Uncertain are not imported
 	      +  Native and Reintroduced (**origin** IN (1,2)); 
 	      +  Resident, Breeding Season and Non-breeding Season (**seasonal** IN (1,2,3))
 	
