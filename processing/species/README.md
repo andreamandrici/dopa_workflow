@@ -49,9 +49,9 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 	Code is: [creates_attributes.sql](./species_2020/creates_attributes.sql).
     Output table is: **species_202001.attributes**.
 
-+  The flattening workflow get rid of:
-   +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
-   +  IDs (id_no and sisrecid) are redundant (by presence, origin, seasonality).
+6.  Spatial tables present other differences which need harmonization, which will be solved with a specific flattening workflow: 
+    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
+    +  IDs (id_no and sisrecid) are redundant (by presence, origin, seasonality).
 
 ### spatial
 
