@@ -6,8 +6,8 @@
 
 Since dataset is made by different sources (IUCN and Birdlife) and data models (spatial and non-spatial tables), harmonization of the objects is needed.
 
-+  In Birdlife Version 2019-1 information on Ecosystems for few species is missing. This information is recovered from IUCN non-spatial dataset. [fix_missing_ecosystems.sql](./species_2020/fix_missing_ecosystems.sql)
-+  Some **selected attributes** are extracted and transformed from IUCN **geometric** data:
+1.  In Birdlife Version 2019-1 information on Ecosystems for few species is missing. This information is recovered from IUCN non-spatial dataset. [fix_missing_ecosystems.sql](./species_2020/fix_missing_ecosystems.sql)
+2.  Some **selected attributes** are extracted and transformed from IUCN **geometric** data:
    +  id_no (bigint),
    +  binomial (text),
    +  kingdom (text),
@@ -21,15 +21,15 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 
     Code is: [creates_attributes_sp_iucn.sql](./species_2020/creates_attributes_sp_iucn.sql), output table is: **species_202001.attributes_sp_iucn**;
 
-+  Birdlife **geometric** data are processed, and **selected attributes** are extracted, in the way to get the **same structure** of processed IUCN data. 
+3.  Birdlife **geometric** data are processed, and **selected attributes** are extracted, in the way to get the **same structure** of processed IUCN data. 
 
     Code is: [creates_attributes_sp_birdlife.sql](./species_2020/creates_attributes_sp_birdlife.sql), output table is: **species_202001.attributes_sp_birdlife**;
 
-+  IUCN and Birdlife **selected attributes from geometric** data are appended each other.
+4.  IUCN and Birdlife **selected attributes from geometric** data are appended each other.
 
     Code is: [creates_attributes_sp.sql](./species_2020/creates_attributes_sp.sql), output table is: **species_202001.attributes_sp**;
  
-+  not all the geometric information is used (geometries are imported only WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3); which include: Extant and Probably Extant; Native and Reintroduced; Resident, Breeding Season and Non-breeding Season. Therefore, **only correspondant species are included from non-spatial dataset**.
+5.  not all the geometric information is used (geometries are imported only WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3); which include: Extant and Probably Extant; Native and Reintroduced; Resident, Breeding Season and Non-breeding Season. Therefore, **only correspondant species are included from non-spatial dataset**.
 
 +  The flattening workflow get rid of:
    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
