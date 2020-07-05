@@ -9,7 +9,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 1.  In Birdlife Version 2019-1 information on Ecosystems for few species is missing. This information is recovered from IUCN non-spatial dataset. [fix_missing_ecosystems.sql](./species_2020/fix_missing_ecosystems.sql)
 2.  Some **selected attributes** are extracted and transformed from IUCN **geometric** data:
     
-    +  id_no (bigint),
+  +  id_no (bigint),
     +  binomial (text),
     +  kingdom (text),
     +  phylum (text),
