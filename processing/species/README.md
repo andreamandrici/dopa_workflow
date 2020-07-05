@@ -33,11 +33,13 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
     Code is: [creates_attributes_sp.sql](./species_2020/creates_attributes_sp.sql).
     Output table is: **species_202001.attributes_sp**.
  
-5.  There is some difference between _taxa_ contained in spatial and non-spatial tables:
-	+  geometries include only:
-	   +  Extant and Probably Extant (**presence** IN (1,2)); 
-	   +  Native and Reintroduced (**origin** IN (1,2)); 
-	   +  Resident, Breeding Season and Non-breeding Season (**seasonal** IN (1,2,3))
+5.  There are different _taxa_ contained in spatial and non-spatial tables:
+	+  spatial tables:
+	   +  include species,subspecies,subpopulations (with redundant geometries):
+	   +  are filtered at import on: 
+	      +  Extant and Probably Extant (**presence** IN (1,2)); 
+	      +  Native and Reintroduced (**origin** IN (1,2)); 
+	      +  Resident, Breeding Season and Non-breeding Season (**seasonal** IN (1,2,3))
 	
 	Therefore, **only correspondant species are included from non-spatial dataset**.
 
