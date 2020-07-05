@@ -45,16 +45,17 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 	   +  include _possibly extinct_ and _possibly extinct in the wild_ species.
 	
 	**Only species present in both datasets are included in the final selection**.
+	
+	Code is: [creates_attributes.sql](./species_2020/creates_attributes.sql).
+    Output table is: **species_202001.attributes**.
 
 +  The flattening workflow get rid of:
    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
    +  IDs (id_no and sisrecid) are redundant (by presence, origin, seasonality).
 
-
-
 ### spatial
 
-"Sytematic" groups (corals, sharks, rays and chimaeras, amphibians, birds, mammals) are processed independently using the flattening workflow (fully described in another section).
+"Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently using the flattening workflow (fully described in another section).
 Here are reported the scripts and environment files:
 
 ### non-spatial
