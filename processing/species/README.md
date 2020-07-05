@@ -42,7 +42,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 	      +  **seasonal** 1-Resident, 2-Breeding Season and 3-Non-breeding Season are imported; 4-Passage, 5-Seasonal Occurrence Uncertain are not imported
 	+  **non-spatial tables**:
 	   +  are filtered at download in the way to include species only
-	   +  include _possibly extinct_ and _possibly extinct_ in the way species.
+	   +  include _possibly extinct_ and _possibly extinct in the wild_ species.
 	
 	**Only species present in both datasets are included in the final selection**.
 
