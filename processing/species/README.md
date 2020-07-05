@@ -40,8 +40,9 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 	      +  **presence**: 1-Extant, 2-Probably Extant are imported; 3-Possibly Extant, 4-Possibly Extinct, 5-Extinct, 6-Presence Uncertain are not imported
 	      +  **origin**: 1-Native, 2-Reintroduced are imported; 3-Introduced, 4-Vagrant, 5-Origin Uncertain, 6-Assisted Colonisation are not imported
 	      +  **seasonal** 1-Resident, 2-Breeding Season and 3-Non-breeding Season are imported; 4-Passage, 5-Seasonal Occurrence Uncertain are not imported
+	+  non-spatial tables are filtered at import in the way to include species only.
 	
-	Therefore, **only correspondant species are included from non-spatial dataset**.
+	**Only species present in both datasets are included in the final selection**.
 
 +  The flattening workflow get rid of:
    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
