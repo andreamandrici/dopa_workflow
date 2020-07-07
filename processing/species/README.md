@@ -56,7 +56,6 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 ### spatial
 
 "Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently using the flattening workflow (fully described in another section).
-Here are reported the scripts and environment files:
 
 #### input dataset
 
@@ -73,8 +72,6 @@ Output tables are:
 
 #### groups flattening
 
-[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group:
-
-
+[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. [Environment](./conf) and [log](./logs/) files are reported.
 
 ### non-spatial

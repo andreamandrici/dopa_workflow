@@ -1,0 +1,37 @@
+-- CREATE SCHEMA forest;
+------------------------------------------
+-- -- EXTRACT year 2015 from esa
+-- CREATE TABLE forest.cep_esa AS
+-- SELECT qid,cid,val,sqkm FROM results.cep_esa_cci_ll WHERE band = 5 ORDER BY qid,cid,val;
+------------------------------------------
+-- -- EXTRACT N2K from wdpa
+-- CREATE TABLE forest.n2k AS
+-- SELECT DISTINCT wdpaid FROM protected_sites.wdpa_201905 WHERE metadataid=1832 ORDER BY wdpaid;
+------------------------------------------
+-- -- EXTRACT effective protection from wdpa
+-- CREATE TABLE forest.pas AS
+-- SELECT DISTINCT wdpaid FROM protected_sites.wdpa_201905 WHERE iucn_cat IN ('Ia','Ib','II') ORDER BY wdpaid;
+------------------------------------------
+-- -- EXTRACT PAs FROM cep
+-- CREATE TABLE forest.cep AS
+-- SELECT qid,cid,pa,sqkm FROM cep.cep_201905 WHERE pa IS NOT NULL ORDER BY qid,cid,pa;
+------------------------------------------
+-- -- FIND CIDs containing N2K sites
+-- CREATE TABLE forest.n2k_cid AS
+-- WITH
+-- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep)
+-- SELECT DISTINCT cid FROM a NATURAL JOIN forest.n2k ORDER BY cid;
+-- -- THE SAME ABOVE CAN BE OBTAINED ALSO WITH THE FOLLOWING, BUT IF THERE IS NO INDEX ON THE ARRAY IT IS 95 TIMES SLOWER!!!
+---- SELECT DISTINCT a.cid FROM forest.cep a,(SELECT ARRAY_AGG(DISTINCT wdpaid) n2k FROM forest.n2k) b WHERE b.n2k && a.pa ORDER BY cid;
+------------------------------------------
+-- -- FIND CIDs containing N2K sites covered by effective protection areas
+-- CREATE TABLE forest.n2k_pa_cid AS
+-- WITH
+-- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep WHERE cid IN (SELECT cid FROM forest.n2k_cid))
+-- SELECT DISTINCT cid FROM a NATURAL JOIN forest.pas ORDER BY cid;
+------------------------------------------
+-- -- List N2K sites by cid (redundant). Overlaps with n2k_cid...
+-- CREATE TABLE forest.cid_n2k AS
+-- WITH
+-- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep)
+-- SELECT DISTINCT wdpaid,cid FROM a NATURAL JOIN forest.n2k ORDER BY wdpaid,cid;
