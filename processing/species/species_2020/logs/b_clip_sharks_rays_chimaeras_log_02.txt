@@ -1,0 +1,160 @@
+TRUNCATE TABLE
+NOTICE:  table "clip_sharks_rays_chimaeras_onprocess" does not exist, skipping
+number of elements: 25
+number of objects in each step: 3
+number of dedicated threads: 7
+start processing tile 29096
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 29816
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 30178
+start processing tile 30181
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 30543
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 30905
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 32345
+start processing tile 32707
+NOTICE:  table "iselect" does not exist, skipping
+start processing tile 43293
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 43293 in 9115
+ 
+
+end processing tile 32707 in 21403
+start processing tile 33066
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30543 in 21572
+start processing tile 30544
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30905 in 21910
+start processing tile 31625
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 32345 in 22118
+start processing tile 32346
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30178 in 22282
+start processing tile 30179
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 29096 in 22320
+start processing tile 29456
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30181 in 22349
+start processing tile 30182
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 29816 in 23083
+start processing tile 29817
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 33066 in 15536
+start processing tile 33067
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 32346 in 15067
+start processing tile 32706
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30544 in 15826
+start processing tile 30904
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 31625 in 15717
+start processing tile 31985
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30179 in 15779
+start processing tile 30180
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 30182 in 15836
+start processing tile 30183
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 29456 in 16377
+start processing tile 29457
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 29817 in 16024
+start processing tile 30177
+NOTICE:  table "iselect" does not exist, skipping
+NOTICE:  table "iout" does not exist, skipping
+ 
+
+end processing tile 33067 in 15285
+ 
+
+end processing tile 32706 in 15534
+ 
+
+end processing tile 30904 in 15506
+ 
+
+end processing tile 31985 in 15329
+ 
+
+end processing tile 30183 in 15252
+ 
+
+end processing tile 30180 in 15530
+ 
+
+end processing tile 29457 in 15076
+ 
+
+end processing tile 30177 in 14795
+UPDATE 0
+UPDATE 0
+DROP TABLE
+analysis done
+TOTAL SCRIPT TIME: 53903

@@ -1,37 +1,41 @@
 -- CREATE SCHEMA forest;
-------------------------------------------
--- -- EXTRACT year 2015 from esa
+-- ------------------------------------------
+-- -- EXTRACT year 2018 from esa
 -- CREATE TABLE forest.cep_esa AS
--- SELECT qid,cid,val,sqkm FROM results.cep_esa_cci_ll WHERE band = 5 ORDER BY qid,cid,val;
-------------------------------------------
+-- SELECT qid,cid,val,sqkm FROM results.cep_esa_cci_ll_2018 WHERE band=1 ORDER BY qid,cid,val;
+-- ------------------------------------------
 -- -- EXTRACT N2K from wdpa
 -- CREATE TABLE forest.n2k AS
--- SELECT DISTINCT wdpaid FROM protected_sites.wdpa_201905 WHERE metadataid=1832 ORDER BY wdpaid;
+-- SELECT DISTINCT wdpaid,name,iso3,area_geo v_sqkm FROM protected_sites.wdpa_oecm_202003 WHERE metadataid=1832 ORDER BY wdpaid;
 ------------------------------------------
 -- -- EXTRACT effective protection from wdpa
 -- CREATE TABLE forest.pas AS
--- SELECT DISTINCT wdpaid FROM protected_sites.wdpa_201905 WHERE iucn_cat IN ('Ia','Ib','II') ORDER BY wdpaid;
+-- SELECT DISTINCT
+-- wdpaid,
+-- name,
+-- CASE WHEN iucn_cat IN ('Ia','Ib') THEN 'I' ELSE 'II' END iucn_cat
+-- FROM protected_sites.wdpa_201905
+-- WHERE iucn_cat IN ('Ia','Ib','II')
+-- ORDER BY wdpaid;
 ------------------------------------------
 -- -- EXTRACT PAs FROM cep
 -- CREATE TABLE forest.cep AS
--- SELECT qid,cid,pa,sqkm FROM cep.cep_201905 WHERE pa IS NOT NULL ORDER BY qid,cid,pa;
-------------------------------------------
--- -- FIND CIDs containing N2K sites
--- CREATE TABLE forest.n2k_cid AS
--- WITH
--- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep)
--- SELECT DISTINCT cid FROM a NATURAL JOIN forest.n2k ORDER BY cid;
--- -- THE SAME ABOVE CAN BE OBTAINED ALSO WITH THE FOLLOWING, BUT IF THERE IS NO INDEX ON THE ARRAY IT IS 95 TIMES SLOWER!!!
----- SELECT DISTINCT a.cid FROM forest.cep a,(SELECT ARRAY_AGG(DISTINCT wdpaid) n2k FROM forest.n2k) b WHERE b.n2k && a.pa ORDER BY cid;
-------------------------------------------
--- -- FIND CIDs containing N2K sites covered by effective protection areas
--- CREATE TABLE forest.n2k_pa_cid AS
--- WITH
--- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep WHERE cid IN (SELECT cid FROM forest.n2k_cid))
--- SELECT DISTINCT cid FROM a NATURAL JOIN forest.pas ORDER BY cid;
-------------------------------------------
--- -- List N2K sites by cid (redundant). Overlaps with n2k_cid...
+-- SELECT qid,cid,wdpa pa,sqkm FROM cep202003_delli.h_flat WHERE wdpa != ARRAY[0] ORDER BY qid,cid,wdpa;
+----------------------------------------------
+-- -- FIND N2K sites by cid
 -- CREATE TABLE forest.cid_n2k AS
 -- WITH
 -- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep)
 -- SELECT DISTINCT wdpaid,cid FROM a NATURAL JOIN forest.n2k ORDER BY wdpaid,cid;
+----------------------------------------------
+-- -- FIND CIDs containing N2K sites covered by effective protection areas
+-- CREATE TABLE forest.cid_n2k_pa AS
+-- WITH
+-- a AS (SELECT DISTINCT cid,UNNEST(pa) wdpaid FROM forest.cep WHERE cid IN (SELECT DISTINCT cid FROM forest.cid_n2k)),
+-- b AS (SELECT DISTINCT wdpaid,iucn_cat,cid FROM a NATURAL JOIN forest.pas ORDER BY wdpaid,cid),
+-- c AS (SELECT DISTINCT cid,ARRAY_AGG(DISTINCT wdpaid ORDER BY wdpaid) wdpaid_I FROM b WHERE iucn_cat = 'I' GROUP BY cid ORDER BY cid),
+-- d AS (SELECT DISTINCT cid,ARRAY_AGG(DISTINCT wdpaid ORDER BY wdpaid) wdpaid_II FROM b WHERE iucn_cat = 'II' GROUP BY cid ORDER BY cid)
+-- SELECT DISTINCT cid,wdpaid_I,wdpaid_II FROM b
+-- LEFT JOIN c USING(cid)
+-- LEFT JOIN d USING(cid)
+-- ORDER BY cid;

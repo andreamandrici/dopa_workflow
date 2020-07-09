@@ -1,3 +1,0 @@
-INSERT 0 74152
-analysis done
-TOTAL SCRIPT TIME: 15

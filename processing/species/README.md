@@ -72,6 +72,9 @@ Output tables are:
 
 #### groups flattening
 
-[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. [Environment](./conf) and [log](./logs/) files are reported.
+[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. STEP 0 (create infrastructure) and A (import input tables) are executed independently. If needed, geometry fix is applied after step A. All the other steps are executed inside `z_do_it_all.sh` script.
+[Environment](./species_2020/conf/) and [log](./species_2020/logs/) files are reported.
+[SQL](./species_2020/sql/) files are also reported, when geometry fix was needed (at step a of flattening).
+
 
 ### non-spatial
