@@ -4,6 +4,27 @@
 
 ### Landcover
 
+#### Land cover classification gridded maps from 1992 to present derived from satellite observations
+
++  [CCI](https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover). 
+
+VERSION 2.1. Publication date: 2019-10-24. Downloaded (only 2018) on 20191209 FROM 
+
+
+Global maps describing the land surface into 22 classes, which have been defined using the United Nations Food and Agriculture Organization’s (UN FAO) Land Cover Classification System (LCCS).
+
+In order to ensure continuity, these land cover maps are consistent with the series of global annual LC maps from the 1990s to 2015 produced by the European Space Agency (ESA) Climate Change Initiative (CCI), which are also available on the ESA CCI LC viewer.
+
+
+Extracted as tiff with:
+
+gdalwarp -of Gtiff -co COMPRESS=LZW -co TILED=YES -ot Byte -te -180.0000000 -90.0000000 180.0000000 90.0000000 -tr 0.002777777777778 0.002777777777778 -t_srs EPSG:4326 NETCDF:C3S-LC-L4-LCCS-Map-300m-P1Y-2018-v2.1.1.nc:lccs_class C3S-LC-L4-LCCS-Map-300m-P1Y-2018-v2.1.1.tif
+
+
+
+Andrea
+
+
 +  [CCI-LC](http://www.esa-landcover-cci.org). Global land cover maps 1992-2015 at 300m spatial resolution. Last updated (version 1.6.1) on 201601.
 First download on 201511 from [ftp://geo10.elie.ucl.ac.be/CCI/](ftp://geo10.elie.ucl.ac.be/CCI/).
 
