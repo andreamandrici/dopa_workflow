@@ -7,6 +7,8 @@
 +  [CCI-LC](http://www.esa-landcover-cci.org). Global land cover maps 1992-2015 at 300m spatial resolution. Last updated (version 1.6.1) on 201601.
 First download on 201511 from [ftp a](ftp://geo10.elie.ucl.ac.be/CCI/).
 
+<a href="ftp://ftp.example.com">link description</a>
+
 ### Species
 
 +  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2020-1. Downloaded on 20200408. Non-spatial attributes (**only species selected**) for:
