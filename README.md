@@ -31,8 +31,7 @@ The following sections are currently present:
 +  [countries statistics](./processing/cep/cep_derived_indicators/#countries-statistics)
 +  [ecoregions statistics](./processing/cep/cep_derived_indicators/#ecoregions-statistics)
 +  [protected areas statistics](./processing/cep/cep_derived_indicators/#protected-areas-statistics)
-
-##### [CEP+Thematic datasets derived indicators](./processing/cep/cep_derived_indicators/LC)
++  [CEP+Landcover derived indicators](./processing/cep/cep_derived_indicators/LC)
 
 ### Species
 
