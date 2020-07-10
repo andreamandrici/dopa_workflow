@@ -29,7 +29,8 @@ ORDER BY id_no;
 --create table geom_birds
 DROP TABLE IF EXISTS species_202001.geom_birds;
 CREATE TABLE species_202001.geom_birds AS
-SELECT sisid::bigint id_no,geom
+-- SELECT sisid::bigint id_no,shape geom -- use this only if the field has been already renamed
+SELECT sisid::bigint id_no,shape geom
 FROM species_202001.birds_all_species
 WHERE sisid::bigint IN (SELECT DISTINCT id_no FROM species_202001.attributes)
 ORDER BY id_no;
