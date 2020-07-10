@@ -1,0 +1,1098 @@
+"first_level_code"|"first_level"|"second_level_code"|"second_level"|"third_level_code"|"third_level"|"source"|"v_sqkm"|"r_sqkm"|"old_first_level_code"|"geom"
+1|"Antarctic"|5|"Polar"|4|"Southern Cold Water"|"ppow"|"29404119.0291487"|"29404055.3346948"|1|NULL
+2|"Antarctic Polar Front"|5|"Polar"|4|"Southern Cold Water"|"ppow"|"14126896.3033871"|"14126890.9076274"|2|NULL
+3|"Arctic"|5|"Polar"|3|"Northern Cold Water"|"ppow"|"7868145.44008342"|"7868257.92170766"|3|NULL
+4|"Benguela Current"|1|"Eastern Boundary"|1|"Atlantic Warm Water"|"ppow"|"1332369.744798"|"1332367.98579378"|4|NULL
+5|"Black Sea"|6|"Semi-enclosed sea"|1|"Atlantic Warm Water"|"ppow"|"292026.87320196"|"292026.870036053"|5|NULL
+6|"California Current"|1|"Eastern Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"1471738.37065357"|"1471740.78407564"|6|NULL
+7|"Canary Current"|1|"Eastern Boundary"|1|"Atlantic Warm Water"|"ppow"|"1796888.2139643"|"1796886.4647585242"|7|NULL
+8|"Eastern Tropical Pacific"|3|"Equatorial"|2|"Indo-Pacific Warm Water"|"ppow"|"11745021.5614558"|"11745020.237839654"|8|NULL
+9|"Equatorial Atlantic"|3|"Equatorial"|1|"Atlantic Warm Water"|"ppow"|"15997730.5714041"|"15997733.4983095"|9|NULL
+10|"Equatorial Pacific"|3|"Equatorial"|2|"Indo-Pacific Warm Water"|"ppow"|"9135515.30092993"|"9135517.954123057"|10|NULL
+11|"Guinea Current"|1|"Eastern Boundary"|1|"Atlantic Warm Water"|"ppow"|"626180.066422259"|"626180.195588832"|11|NULL
+12|"Gulf Stream"|2|"Western Boundary"|1|"Atlantic Warm Water"|"ppow"|"1189350.20652084"|"1189348.9607448"|12|NULL
+13|"Humboldt Current"|1|"Eastern Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"3120585.81633777"|"3120584.55725579"|13|NULL
+14|"Southern Indian Ocean"|4|"Gyre"|2|"Indo-Pacific Warm Water"|"ppow"|"18465761.1189532"|"18465769.493641693"|14|NULL
+15|"Northern Indian Ocean"|4|"Gyre"|2|"Indo-Pacific Warm Water"|"ppow"|"19034975.9541631"|"19034986.869037"|15|NULL
+16|"Indonesian Through-Flow"|6|"Semi-enclosed sea"|2|"Indo-Pacific Warm Water"|"ppow"|"3571583.60854051"|"3571583.76209216"|16|NULL
+17|"Inter American Seas"|6|"Semi-enclosed sea"|1|"Atlantic Warm Water"|"ppow"|"3321487.62451429"|"3321487.99135838"|17|NULL
+18|"Kuroshio-Oyashio Current"|2|"Western Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"1063250.55215549"|"1063252.55678329"|18|NULL
+19|"Leeuwin Current"|1|"Eastern Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"1357488.85181503"|"1357488.36722541"|19|NULL
+20|"Malvinas Current"|2|"Western Boundary"|1|"Atlantic Warm Water"|"ppow"|"686580.210509263"|"686582.511681257"|20|NULL
+21|"Mediterranean"|6|"Semi-enclosed sea"|1|"Atlantic Warm Water"|"ppow"|"1840882.79971444"|"1840882.84767659"|21|NULL
+22|"Southwest Pacific"|7|"Transitional"|2|"Indo-Pacific Warm Water"|"ppow"|"7788312.41481744"|"7788312.01335117"|22|NULL
+23|"North Atlantic Current"|7|"Transitional"|1|"Atlantic Warm Water"|"ppow"|"6188664.15053872"|"6188629.67239847"|23|NULL
+24|"North Central Atlantic"|4|"Gyre"|1|"Atlantic Warm Water"|"ppow"|"12139373.8858798"|"12139399.3976566"|24|NULL
+25|"North Central Pacific"|4|"Gyre"|2|"Indo-Pacific Warm Water"|"ppow"|"36145247.0424045"|"36145240.42683743"|25|NULL
+26|"North Pacific Current"|7|"Transitional"|2|"Indo-Pacific Warm Water"|"ppow"|"7390564.43496222"|"7390619.86024644"|26|NULL
+27|"Red Sea"|6|"Semi-enclosed sea"|2|"Indo-Pacific Warm Water"|"ppow"|"229820.298003534"|"229820.869259182"|27|NULL
+28|"Sea of Japan/East Sea"|6|"Semi-enclosed sea"|2|"Indo-Pacific Warm Water"|"ppow"|"740969.392321724"|"740969.565820335"|28|NULL
+29|"Somali Current"|2|"Western Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"2596014.98426064"|"2596016.31307836"|29|NULL
+30|"South Central Atlantic"|4|"Gyre"|1|"Atlantic Warm Water"|"ppow"|"14714997.9833178"|"14715177.474055"|30|NULL
+31|"South Central Pacific"|4|"Gyre"|2|"Indo-Pacific Warm Water"|"ppow"|"41391304.1869507"|"41391368.91076297"|31|NULL
+32|"South China Sea"|6|"Semi-enclosed sea"|2|"Indo-Pacific Warm Water"|"ppow"|"1586356.49920014"|"1586356.48647686"|32|NULL
+33|"Subantarctic"|5|"Polar"|4|"Southern Cold Water"|"ppow"|"16861212.2311208"|"16861221.4155813"|33|NULL
+34|"Subarctic Pacific"|4|"Gyre"|3|"Northern Cold Water"|"ppow"|"8235034.54115708"|"8234986.46529212"|34|NULL
+35|"Southern Subtropical Front"|7|"Transitional"|4|"Southern Cold Water"|"ppow"|"21860100.7096819"|"21859819.1745488"|35|NULL
+36|"Subarctic Atlantic"|4|"Gyre"|3|"Northern Cold Water"|"ppow"|"4337706.36299101"|"4337706.88004335"|36|NULL
+37|"Agulhas Current"|2|"Western Boundary"|2|"Indo-Pacific Warm Water"|"ppow"|"2110448.70489344"|"2110446.72402275"|0|NULL
+9998|"Lake"|98|"Lake"|NULL|NULL|"teow"|"1038861.50771337"|"1038862.88079596"|-9998|NULL
+9999|"Rock and Ice"|99|"Rock and ice"|NULL|NULL|"teow"|"11094753.7919267"|"11094367.5206902"|-9999|NULL
+10101|"Admiralty Islands lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"2025.00995713259"|"2025.01971987668"|10101|NULL
+10102|"Banda Sea Islands moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"7235.201753872"|"7234.70636177727"|10102|NULL
+10103|"Biak-Numfoor rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"2728.22748977918"|"2728.30188485162"|10103|NULL
+10104|"Buru rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"8500.22649598717"|"8500.50986808766"|10104|NULL
+10105|"Central Range montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"171229.570354813"|"171229.640800245"|10105|NULL
+10106|"Halmahera rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"26062.5624828966"|"26063.0367968232"|10106|NULL
+10107|"Huon Peninsula montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"16414.965760569"|"16414.4186871353"|10107|NULL
+10108|"Yapen rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"2333.89532973362"|"2334.09335865092"|10108|NULL
+10109|"Lord Howe Island subtropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"11.1922087315235"|"11.2067810587212"|10109|NULL
+10110|"Louisiade Archipelago rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"1360.72823307071"|"1360.30879074895"|10110|NULL
+10111|"New Britain-New Ireland lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"34329.6174342064"|"34328.3827766812"|10111|NULL
+10112|"New Britain-New Ireland montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"12081.1850535697"|"12081.1728474652"|10112|NULL
+10113|"New Caledonia rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"14144.7610780747"|"14143.7448082458"|10113|NULL
+10114|"Norfolk Island subtropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"27.70860913566"|"27.7144270668564"|10114|NULL
+10115|"Northern New Guinea lowland rain and freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"134473.941955924"|"134472.785624938"|10115|NULL
+10116|"Northern New Guinea montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"23164.5423609967"|"23164.4657527992"|10116|NULL
+10117|"Queensland tropical rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"32419.0420133599"|"32418.1656366122"|10117|NULL
+10118|"Seram rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"18803.6349068302"|"18805.0232401463"|10118|NULL
+10119|"Solomon Islands rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"34112.8033937075"|"34113.1469474096"|10119|NULL
+10120|"Southeastern Papuan rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"76452.208544369"|"76451.2385542619"|10120|NULL
+10121|"Southern New Guinea freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"99041.3577251332"|"99041.4319126055"|10121|NULL
+10122|"Southern New Guinea lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"122326.767751863"|"122326.479867868"|10122|NULL
+10123|"Sulawesi lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"113329.335756015"|"113332.012881086"|10123|NULL
+10124|"Sulawesi montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"75471.6862537556"|"75471.6739631715"|10124|NULL
+10125|"Trobriand Islands rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"3690.83764219386"|"3690.7590852445"|10125|NULL
+10126|"Vanuatu rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"11810.9232118722"|"11809.8123392733"|10126|NULL
+10127|"Vogelkop montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"21646.6941831393"|"21646.7637536313"|10127|NULL
+10128|"Vogelkop-Aru lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|1|"Australasia"|"teow"|"74697.2292744484"|"74698.036558621"|10128|NULL
+10201|"Lesser Sundas deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|1|"Australasia"|"teow"|"38653.548941011"|"38652.071359543"|10201|NULL
+10202|"New Caledonia dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|1|"Australasia"|"teow"|"4256.5202080272"|"4256.73563603036"|10202|NULL
+10203|"Sumba deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|1|"Australasia"|"teow"|"10634.2701927475"|"10634.7000597649"|10203|NULL
+10204|"Timor and Wetar deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|1|"Australasia"|"teow"|"32984.2004732532"|"32983.6581395061"|10204|NULL
+10401|"Chatham Island temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"635.553045485408"|"635.509342135898"|10401|NULL
+10402|"Eastern Australian temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"221227.722309231"|"221228.54076863"|10402|NULL
+10403|"Fiordland temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"10741.7295421046"|"10741.7981190847"|10403|NULL
+10404|"Nelson Coast temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"14521.2220785251"|"14520.8822089206"|10404|NULL
+10405|"North Island temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"83234.7520899227"|"83234.9360011265"|10405|NULL
+10406|"Northland temperate kauri forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"28328.0889458661"|"28327.6089951984"|10406|NULL
+10407|"Rakiura Island temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"1415.96448743062"|"1415.80901283303"|10407|NULL
+10408|"Richmond temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"12596.5099936833"|"12596.2906978276"|10408|NULL
+10409|"Southeast Australia temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"271992.668668479"|"271991.887251235"|10409|NULL
+10410|"South Island temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"11376.217951719"|"11376.8717601563"|10410|NULL
+10411|"Tasmanian Central Highland forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"18698.4450982143"|"18698.4197075988"|10411|NULL
+10412|"Tasmanian temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"17937.1535976932"|"17935.7392971614"|10412|NULL
+10413|"Tasmanian temperate rain forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"31097.7901863424"|"31097.1230884157"|10413|NULL
+10414|"Westland temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|1|"Australasia"|"teow"|"5186.3434280692"|"5185.96593737117"|10414|NULL
+10701|"Arnhem Land tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"156925.792065456"|"156922.061906226"|10701|NULL
+10702|"Brigalow tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"341457.111860923"|"341456.243100231"|10702|NULL
+10703|"Cape York Peninsula tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"115669.8787484"|"115668.178101584"|10703|NULL
+10704|"Carpentaria tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"358294.361980793"|"358292.916394403"|10704|NULL
+10705|"Einasleigh upland savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"128067.431170961"|"128067.563978031"|10705|NULL
+10706|"Kimberly tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"345913.695116611"|"345911.893381974"|10706|NULL
+10707|"Mitchell grass downs"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"459495.913233895"|"459495.969335655"|10707|NULL
+10708|"Trans Fly savanna and grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"26461.7300840785"|"26461.6772130769"|10708|NULL
+10709|"Victoria Plains tropical savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"224881.53998414"|"224881.426418718"|10709|NULL
+10801|"Cantebury-Otago tussock grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"52305.3581078074"|"52306.5009539944"|10801|NULL
+10802|"Eastern Australia mulga shrublands"|8|"Temperate Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"253515.374977399"|"253515.427563137"|10802|NULL
+10803|"Southeast Australia temperate savanna"|8|"Temperate Grasslands, Savannas & Shrublands"|1|"Australasia"|"teow"|"321998.862012343"|"321998.851135603"|10803|NULL
+11001|"Australian Alps montane grasslands"|10|"Montane Grasslands & Shrublands"|1|"Australasia"|"teow"|"11999.4183307892"|"11999.3973595704"|11001|NULL
+11002|"Central Range sub-alpine grasslands"|10|"Montane Grasslands & Shrublands"|1|"Australasia"|"teow"|"15502.7597020885"|"15502.8026203408"|11002|NULL
+11003|"South Island montane grasslands"|10|"Montane Grasslands & Shrublands"|1|"Australasia"|"teow"|"39990.4707209634"|"39990.5058378806"|11003|NULL
+11101|"Antipodes Subantarctic Islands tundra"|11|"Tundra"|1|"Australasia"|"teow"|"643.841757857042"|"643.674094226034"|11101|NULL
+11201|"Coolgardie woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"137255.050222869"|"137255.020964829"|11201|NULL
+11202|"Esperance mallee"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"115276.977018275"|"115279.491960445"|11202|NULL
+11203|"Eyre and York mallee"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"60638.6107240927"|"60637.4377165489"|11203|NULL
+11204|"Jarrah-Karri forest and shrublands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"10338.7914625674"|"10339.7957824973"|11204|NULL
+11205|"Swan Coastal Plain Scrub and Woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"15158.009626023"|"15157.8854062118"|11205|NULL
+11206|"Mount Lofty woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"23658.3704851498"|"23657.4908279719"|11206|NULL
+11207|"Murray-Darling woodlands and mallee"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"197880.063298255"|"197875.096850029"|11207|NULL
+11208|"Naracoorte woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"27327.1796104058"|"27326.9762606053"|11208|NULL
+11209|"Southwest Australia savanna"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"168563.786143483"|"168563.786356309"|11209|NULL
+11210|"Southwest Australia woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|1|"Australasia"|"teow"|"46009.3515791042"|"46009.2268040109"|11210|NULL
+11301|"Carnarvon xeric shrublands"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"89970.29233694"|"89970.0301175399"|11301|NULL
+11302|"Central Ranges xeric scrub"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"281050.878901391"|"281050.734931419"|11302|NULL
+11303|"Gibson desert"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"155523.721844309"|"155523.501993394"|11303|NULL
+11304|"Great Sandy-Tanami desert"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"820766.086429679"|"820766.969073775"|11304|NULL
+11305|"Great Victoria desert"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"423734.038151536"|"423733.989451953"|11305|NULL
+11306|"Nullarbor Plains xeric shrublands"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"195002.935204223"|"195003.056512516"|11306|NULL
+11307|"Pilbara shrublands"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"179135.221776371"|"179135.126158125"|11307|NULL
+11308|"Simpson desert"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"583394.408259905"|"583394.267685867"|11308|NULL
+11309|"Tirari-Sturt stony desert"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"376478.030704401"|"376478.160280569"|11309|NULL
+11310|"Western Australian Mulga shrublands"|13|"Deserts & Xeric Shrublands"|1|"Australasia"|"teow"|"459615.982979258"|"459615.981414624"|11310|NULL
+11401|"New Guinea mangroves"|14|"Mangroves"|1|"Australasia"|"teow"|"25049.1519118616"|"25049.4099660226"|11401|NULL
+20001|"North Greenland"|1|"Arctic"|1|"Arctic"|"meow"|"188155.81499002"|"188098.3157969654"|20001|NULL
+20002|"North and East Iceland"|1|"Arctic"|1|"Arctic"|"meow"|"39431.639913308"|"39445.00697081967"|20002|NULL
+20003|"East Greenland Shelf"|1|"Arctic"|1|"Arctic"|"meow"|"146394.500114634"|"146384.74336732161"|20003|NULL
+20004|"West Greenland Shelf"|1|"Arctic"|1|"Arctic"|"meow"|"198213.565334917"|"198219.79983187222"|20004|NULL
+20005|"Northern Grand Banks - Southern Labrador"|1|"Arctic"|1|"Arctic"|"meow"|"158985.07714922"|"158995.54365909708"|20005|NULL
+20006|"Northern Labrador"|1|"Arctic"|1|"Arctic"|"meow"|"135047.130919478"|"135049.84659356746"|20006|NULL
+20008|"Hudson Complex"|1|"Arctic"|1|"Arctic"|"meow"|"1126604.41401612"|"1126604.4763548607"|20008|NULL
+20011|"Beaufort-Amundsen-Viscount Melville-Queen Maud"|1|"Arctic"|1|"Arctic"|"meow"|"309497.365297718"|"309453.4536771431"|20011|NULL
+20012|"Beaufort Sea - continental coast and shelf"|1|"Arctic"|1|"Arctic"|"meow"|"128742.580435692"|"128741.23243839006"|20012|NULL
+20013|"Chukchi Sea"|1|"Arctic"|1|"Arctic"|"meow"|"591882.663334197"|"591785.9296880781"|20013|NULL
+20015|"East Siberian Sea"|1|"Arctic"|1|"Arctic"|"meow"|"911917.260316381"|"911736.5687412843"|20015|NULL
+20016|"Laptev Sea"|1|"Arctic"|1|"Arctic"|"meow"|"516093.545565488"|"516110.7415809042"|20016|NULL
+20017|"Kara Sea"|1|"Arctic"|1|"Arctic"|"meow"|"807392.185341971"|"807563.7679834828"|20017|NULL
+20018|"North and East Barents Sea"|1|"Arctic"|1|"Arctic"|"meow"|"905543.491413853"|"905648.2857632457"|20018|NULL
+20019|"White Sea"|1|"Arctic"|1|"Arctic"|"meow"|"84834.4304916083"|"84826.60970520195"|20019|NULL
+20020|"South and West Iceland"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"103268.483516604"|"103254.41884380743"|20020|NULL
+20021|"Faroe Plateau"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"34189.61323155"|"34190.337439432515"|20021|NULL
+20022|"Southern Norway"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"69708.7462400812"|"69718.80667058784"|20022|NULL
+20023|"Northern Norway and Finnmark"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"108796.322807003"|"108703.31100595222"|20023|NULL
+20024|"Baltic Sea"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"372848.844914507"|"372859.9164827785"|20024|NULL
+20025|"North Sea"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"621732.967908413"|"621728.371743518"|20025|NULL
+20026|"Celtic Seas"|2|"Northern European Seas"|2|"Temperate Northern Atlantic"|"meow"|"440967.367557966"|"441098.1596739888"|20026|NULL
+20027|"South European Atlantic Shelf"|3|"Lusitanian"|2|"Temperate Northern Atlantic"|"meow"|"155056.712949315"|"154931.4147616176"|20027|NULL
+20028|"Saharan Upwelling"|3|"Lusitanian"|2|"Temperate Northern Atlantic"|"meow"|"128528.919347047"|"128536.06510297154"|20028|NULL
+20029|"Azores Canaries Madeira"|3|"Lusitanian"|2|"Temperate Northern Atlantic"|"meow"|"23414.7431478335"|"23414.80908538884"|20029|NULL
+20030|"Adriatic Sea"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"107271.251005632"|"107272.283536006"|20030|NULL
+20037|"Gulf of St. Lawrence - Eastern Scotian Shelf"|5|"Cold Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"239408.070297613"|"239453.86886552878"|20037|NULL
+20038|"Southern Grand Banks - South Newfoundland"|5|"Cold Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"248870.385441773"|"248890.77452593745"|20038|NULL
+20039|"Scotian Shelf"|5|"Cold Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"108790.417496141"|"108718.11362804224"|20039|NULL
+20041|"Virginian"|5|"Cold Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"156558.966544659"|"156559.73567722534"|20041|NULL
+20043|"Northern Gulf of Mexico"|6|"Warm Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"263962.175331892"|"264047.1107235273"|20043|NULL
+20044|"Black Sea"|7|"Black Sea"|2|"Temperate Northern Atlantic"|"meow"|"170309.369518721"|"170312.05052091257"|20044|NULL
+20045|"Sea of Okhotsk"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"666110.659204967"|"666112.4417883002"|20045|NULL
+20047|"Oyashio Current"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"80304.5093182806"|"80295.82030038598"|20047|NULL
+20048|"Northeastern Honshu"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"38468.2708907391"|"38468.156996411235"|20048|NULL
+20049|"Sea of Japan"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"247423.477522952"|"247442.58762667226"|20049|NULL
+20050|"Yellow Sea"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"437308.652224664"|"437314.39649278653"|20050|NULL
+20051|"Central Kuroshio Current"|9|"Warm Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"93445.5141100671"|"93441.36204349731"|20051|NULL
+20052|"East China Sea"|9|"Warm Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"570339.657663196"|"570348.1192587963"|20052|NULL
+20053|"Aleutian Islands"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"84766.4396381575"|"84765.44945628595"|20053|NULL
+20054|"Gulf of Alaska"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"258051.879936723"|"258051.86468350436"|20054|NULL
+20060|"Cortezian"|11|"Warm Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"109674.098709853"|"109673.98273669208"|20060|NULL
+20061|"Magdalena Transition"|11|"Warm Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"28676.3717537852"|"28676.392395788407"|20061|NULL
+20062|"Bermuda"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"915.978727882197"|"916.0579395016538"|20062|NULL
+20063|"Bahamian"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"163314.474724713"|"163314.1892007494"|20063|NULL
+20064|"Eastern Caribbean"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"44456.8459237311"|"44456.99148778845"|20064|NULL
+20065|"Greater Antilles"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"126732.369232138"|"126730.80544382018"|20065|NULL
+20066|"Southern Caribbean"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"119975.846840714"|"119981.40051599604"|20066|NULL
+20067|"Southwestern Caribbean"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"172946.628605025"|"172947.5545396201"|20067|NULL
+20068|"Western Caribbean"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"40864.2748124979"|"40862.41213433625"|20068|NULL
+20069|"Southern Gulf of Mexico"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"216908.253817526"|"216908.75727985884"|20069|NULL
+20070|"Floridian"|12|"Tropical Northwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"128228.791709004"|"128145.39028439195"|20070|NULL
+20071|"Guianan"|13|"North Brazil Shelf"|4|"Tropical Atlantic"|"meow"|"201930.082885565"|"201933.5880806398"|20071|NULL
+20072|"Amazonia"|13|"North Brazil Shelf"|4|"Tropical Atlantic"|"meow"|"304281.574531081"|"304281.38102704356"|20072|NULL
+20073|"Sao Pedro and Sao Paulo Islands"|14|"Tropical Southwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"77.7972355418155"|"77.7992722975381"|20073|NULL
+20074|"Fernando de Naronha and Atoll das Rocas"|14|"Tropical Southwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"435.918351133949"|"435.94877354911154"|20074|NULL
+20075|"Northeastern Brazil"|14|"Tropical Southwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"83749.616129981"|"83755.65652575728"|20075|NULL
+20076|"Eastern Brazil"|14|"Tropical Southwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"112524.070058289"|"112522.33912095177"|20076|NULL
+20077|"Trindade and Martin Vaz Islands"|14|"Tropical Southwestern Atlantic"|4|"Tropical Atlantic"|"meow"|"563.886847531984"|"563.85866733587"|20077|NULL
+20078|"St. Helena and Ascension Islands"|15|"St. Helena and Ascension Islands"|4|"Tropical Atlantic"|"meow"|"1255.43513209003"|"1255.4204678436827"|20078|NULL
+20079|"Cape Verde"|16|"West African Transition"|4|"Tropical Atlantic"|"meow"|"10648.3444401261"|"10648.516358681434"|20079|NULL
+20082|"Gulf of Guinea Upwelling"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"36959.9161453485"|"36956.3535325897"|20082|NULL
+20083|"Gulf of Guinea Central"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"93066.0493554712"|"93060.8333549239"|20083|NULL
+20084|"Gulf of Guinea Islands"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"3720.03459037898"|"3719.906848509453"|20084|NULL
+20087|"Northern and Central Red Sea"|18|"Red Sea and Gulf of Aden"|5|"Western Indo-Pacific"|"meow"|"66694.3984431865"|"66695.84957424483"|20087|NULL
+20088|"Southern Red Sea"|18|"Red Sea and Gulf of Aden"|5|"Western Indo-Pacific"|"meow"|"157112.538238232"|"157113.0507823421"|20088|NULL
+20089|"Gulf of Aden"|18|"Red Sea and Gulf of Aden"|5|"Western Indo-Pacific"|"meow"|"61174.949169872"|"61174.62197983408"|20089|NULL
+20090|"Arabian (Persian) Gulf"|19|"Somali/Arabian"|5|"Western Indo-Pacific"|"meow"|"239412.667315399"|"239413.74056650876"|20090|NULL
+20091|"Gulf of Oman"|19|"Somali/Arabian"|5|"Western Indo-Pacific"|"meow"|"51442.1908559645"|"51439.316186828146"|20091|NULL
+20092|"Western Arabian Sea"|19|"Somali/Arabian"|5|"Western Indo-Pacific"|"meow"|"62332.0460468265"|"62329.25307602467"|20092|NULL
+20093|"Central Somali Coast"|19|"Somali/Arabian"|5|"Western Indo-Pacific"|"meow"|"38200.2060577227"|"38201.65748091927"|20093|NULL
+20094|"Northern Monsoon Current Coast"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"13324.9990400944"|"13325.074389363683"|20094|NULL
+20095|"East African Coral Coast"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"45299.4893462401"|"45301.99977346798"|20095|NULL
+20096|"Seychelles"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"64832.8386642835"|"64833.00724501551"|20096|NULL
+20097|"Cargados Carajos/Tromelin Island"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"103661.134310785"|"103661.228771938"|20097|NULL
+20098|"Mascarene Islands"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"8497.87927210607"|"8497.753498923468"|20098|NULL
+20099|"Southeast Madagascar"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"34064.8449101113"|"34067.452667860765"|20099|NULL
+20100|"Western and Northern Madagascar"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"133452.904547116"|"133453.5194061294"|20100|NULL
+20101|"Bight of Sofala/Swamp Coast"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"58992.3290388153"|"58992.19714391582"|20101|NULL
+20102|"Delagoa"|20|"Western Indian Ocean"|5|"Western Indo-Pacific"|"meow"|"27827.374749186"|"27828.009795191443"|20102|NULL
+20103|"Western India"|21|"West and South Indian Shelf"|5|"Western Indo-Pacific"|"meow"|"309726.081012389"|"309721.1487270305"|20103|NULL
+20104|"South India and Sri Lanka"|21|"West and South Indian Shelf"|5|"Western Indo-Pacific"|"meow"|"77693.2539683465"|"77691.46974862927"|20104|NULL
+20105|"Maldives"|22|"Central Indian Ocean Islands"|5|"Western Indo-Pacific"|"meow"|"53111.1567729262"|"53111.60608257787"|20105|NULL
+20106|"Chagos"|22|"Central Indian Ocean Islands"|5|"Western Indo-Pacific"|"meow"|"25731.9623511939"|"25732.086663532114"|20106|NULL
+20107|"Eastern India"|23|"Bay of Bengal"|5|"Western Indo-Pacific"|"meow"|"52098.7851893222"|"52099.26605290238"|20107|NULL
+20108|"Northern Bay of Bengal"|23|"Bay of Bengal"|5|"Western Indo-Pacific"|"meow"|"236097.647886165"|"236099.70817757817"|20108|NULL
+20109|"Andaman and Nicobar Islands"|24|"Andaman"|5|"Western Indo-Pacific"|"meow"|"54431.3785016321"|"54430.33337887709"|20109|NULL
+20110|"Andaman Sea Coral Coast"|24|"Andaman"|5|"Western Indo-Pacific"|"meow"|"154367.299279619"|"154366.7678942351"|20110|NULL
+20111|"Western Sumatra"|24|"Andaman"|5|"Western Indo-Pacific"|"meow"|"104360.309833327"|"104360.14931844329"|20111|NULL
+20112|"Gulf of Tonkin"|25|"South China Sea"|6|"Central Indo-Pacific"|"meow"|"242333.54492996"|"242317.07907186885"|20112|NULL
+20113|"Southern China"|25|"South China Sea"|6|"Central Indo-Pacific"|"meow"|"231783.096181532"|"231767.68789144309"|20113|NULL
+20114|"South China Sea Oceanic Islands"|25|"South China Sea"|6|"Central Indo-Pacific"|"meow"|"67963.0369393074"|"67963.76153255261"|20114|NULL
+20115|"Gulf of Thailand"|26|"Sunda Shelf"|6|"Central Indo-Pacific"|"meow"|"269454.619923273"|"269528.2755537053"|20115|NULL
+20116|"Southern Vietnam"|26|"Sunda Shelf"|6|"Central Indo-Pacific"|"meow"|"115860.573240156"|"115847.82132477796"|20116|NULL
+20117|"Sunda Shelf/Java Sea"|26|"Sunda Shelf"|6|"Central Indo-Pacific"|"meow"|"1313004.3448323"|"1312904.9920500473"|20117|NULL
+20118|"Malacca Strait"|26|"Sunda Shelf"|6|"Central Indo-Pacific"|"meow"|"136099.532244278"|"136095.95592778487"|20118|NULL
+20119|"Southern Java"|27|"Java Transitional"|6|"Central Indo-Pacific"|"meow"|"65383.2876907988"|"65378.91440168604"|20119|NULL
+20120|"Cocos-Keeling/Christmas Island"|27|"Java Transitional"|6|"Central Indo-Pacific"|"meow"|"1445.67739897535"|"1445.5932790207464"|20120|NULL
+20121|"South Kuroshio"|28|"South Kuroshio"|6|"Central Indo-Pacific"|"meow"|"42496.901688845"|"42495.80940384265"|20121|NULL
+20122|"Ogasawara Islands"|29|"Tropical Northwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"7312.48632159018"|"7312.523289926476"|20122|NULL
+20123|"Mariana Islands"|29|"Tropical Northwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"7601.40812956229"|"7601.476448592449"|20123|NULL
+20124|"East Caroline Islands"|29|"Tropical Northwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"35358.7359250536"|"35359.291872995746"|20124|NULL
+20125|"West Caroline Islands"|29|"Tropical Northwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"7828.52883543109"|"7828.75676147355"|20125|NULL
+20126|"Palawan/North Borneo"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"259207.161034736"|"259209.72566083982"|20126|NULL
+20127|"Eastern Philippines"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"171018.752485936"|"171020.8899840283"|20127|NULL
+20128|"Sulawesi Sea/Makassar Strait"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"200476.703050068"|"200509.93642156702"|20128|NULL
+20129|"Halmahera"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"34238.294819228"|"34237.19593674439"|20129|NULL
+20130|"Papua"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"117929.993756209"|"117931.88241304504"|20130|NULL
+20131|"Banda Sea"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"119104.883133146"|"119104.4465130604"|20131|NULL
+20132|"Lesser Sunda"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"60877.1256298202"|"60878.0129957359"|20132|NULL
+20133|"Northeast Sulawesi"|30|"Western Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"16173.3251604794"|"16172.755771574532"|20133|NULL
+20134|"Bismarck Sea"|31|"Eastern Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"57570.7412092429"|"57574.75982426024"|20134|NULL
+20135|"Solomon Archipelago"|31|"Eastern Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"78492.3806228468"|"78493.51876675218"|20135|NULL
+20136|"Solomon Sea"|31|"Eastern Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"83561.1833659848"|"83560.28786905155"|20136|NULL
+20137|"Southeast Papua New Guinea"|31|"Eastern Coral Triangle"|6|"Central Indo-Pacific"|"meow"|"10149.6737571548"|"10148.504820679329"|20137|NULL
+20138|"Gulf of Papua"|32|"Sahul Shelf"|6|"Central Indo-Pacific"|"meow"|"50952.3669520396"|"50949.643857482"|20138|NULL
+20139|"Arafura Sea"|32|"Sahul Shelf"|6|"Central Indo-Pacific"|"meow"|"357153.186302421"|"357043.5066925386"|20139|NULL
+20140|"Arnhem Coast to Gulf of Carpenteria"|32|"Sahul Shelf"|6|"Central Indo-Pacific"|"meow"|"574593.271944382"|"574694.7092070205"|20140|NULL
+20141|"Bonaparte Coast"|32|"Sahul Shelf"|6|"Central Indo-Pacific"|"meow"|"331728.184122453"|"331732.3654628548"|20141|NULL
+20142|"Torres Strait Northern Great Barrier Reef"|33|"Northeast Australian Shelf"|6|"Central Indo-Pacific"|"meow"|"101198.114887709"|"101210.38514784815"|20142|NULL
+20143|"Central and Southern Great Barrier Reef"|33|"Northeast Australian Shelf"|6|"Central Indo-Pacific"|"meow"|"189617.913897377"|"189622.9468692306"|20143|NULL
+20144|"Exmouth to Broome"|34|"Northwest Australian Shelf"|6|"Central Indo-Pacific"|"meow"|"295923.174969276"|"295927.23460012383"|20144|NULL
+20145|"Ningaloo"|34|"Northwest Australian Shelf"|6|"Central Indo-Pacific"|"meow"|"8872.11363587129"|"8870.671350718187"|20145|NULL
+20146|"Tonga Islands"|35|"Tropical Southwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"12061.3577619874"|"12061.748991989325"|20146|NULL
+20148|"Vanuatu"|35|"Tropical Southwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"29776.1040153089"|"29775.75436790877"|20148|NULL
+20149|"New Caledonia"|35|"Tropical Southwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"87771.8616639049"|"87772.21854051722"|20149|NULL
+20150|"Coral Sea"|35|"Tropical Southwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"26457.3102501208"|"26453.7130489036"|20150|NULL
+20151|"Lord Howe and Norfolk Islands"|36|"Lord Howe and Norfolk Islands"|6|"Central Indo-Pacific"|"meow"|"9277.17258107263"|"9277.090996261086"|20151|NULL
+20153|"Marshall Islands"|38|"Marshall, Gilbert and Ellis Islands"|7|"Eastern Indo-Pacific"|"meow"|"30194.3651572392"|"30195.161486955065"|20153|NULL
+20155|"Line Islands"|39|"Central Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"4472.73012162502"|"4472.831063903023"|20155|NULL
+20156|"Phoenix/Tokelau/Northern Cook Islands"|39|"Central Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"5023.35425706554"|"5023.284770261654"|20156|NULL
+20157|"Samoa Islands"|39|"Central Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"7365.72813302006"|"7365.679959185184"|20157|NULL
+20158|"Tuamotus"|40|"Southeast Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"37104.4383694525"|"37104.809945882786"|20158|NULL
+20159|"Rapa-Pitcairn"|40|"Southeast Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"1354.69309394376"|"1354.7006035098518"|20159|NULL
+20160|"Southern Cook/Austral Islands"|40|"Southeast Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"3681.094043731"|"3681.085450077519"|20160|NULL
+20161|"Society Islands"|40|"Southeast Polynesia"|7|"Eastern Indo-Pacific"|"meow"|"5474.05136603822"|"5474.323160234153"|20161|NULL
+20162|"Marquesas"|41|"Marquesas"|7|"Eastern Indo-Pacific"|"meow"|"4628.79755758102"|"4628.765135475705"|20162|NULL
+20163|"Easter Island"|42|"Easter Island"|7|"Eastern Indo-Pacific"|"meow"|"712.154785808082"|"712.1513009448422"|20163|NULL
+20164|"Revillagigedos"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"969.49798908912"|"969.4918657742386"|20164|NULL
+20165|"Clipperton"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"151.394824905105"|"151.3828988226822"|20165|NULL
+20166|"Mexican Tropical Pacific"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"17493.256166581"|"17493.230211267877"|20166|NULL
+20167|"Chiapas-Nicaragua"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"92138.7322665569"|"92139.2994904511"|20167|NULL
+20168|"Nicoya"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"31225.3714681267"|"31224.852147092657"|20168|NULL
+20169|"Cocos Islands"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"261.359485464152"|"261.3347187949848"|20169|NULL
+20170|"Panama Bight"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"64281.3831732559"|"64281.32120317084"|20170|NULL
+20171|"Guayaquil"|43|"Tropical East Pacific"|8|"Tropical Eastern Pacific"|"meow"|"31025.5661867501"|"31025.554508507368"|20171|NULL
+20172|"Northern Galapagos Islands"|44|"Galapagos"|8|"Tropical Eastern Pacific"|"meow"|"445.13977302113"|"445.147518229897"|20172|NULL
+20173|"Eastern Galapagos Islands"|44|"Galapagos"|8|"Tropical Eastern Pacific"|"meow"|"13318.0012960637"|"13317.99241801981"|20173|NULL
+20174|"Western Galapagos Islands"|44|"Galapagos"|8|"Tropical Eastern Pacific"|"meow"|"2819.09429930092"|"2818.8341928569735"|20174|NULL
+20175|"Central Peru"|45|"Warm Temperate Southeastern Pacific"|9|"Temperate South America"|"meow"|"62985.4027415236"|"62983.468330933734"|20175|NULL
+20176|"Humboldtian"|45|"Warm Temperate Southeastern Pacific"|9|"Temperate South America"|"meow"|"36017.8920448069"|"36013.74381535046"|20176|NULL
+20177|"Central Chile"|45|"Warm Temperate Southeastern Pacific"|9|"Temperate South America"|"meow"|"12667.0410017849"|"12664.611773449395"|20177|NULL
+20178|"Araucanian"|45|"Warm Temperate Southeastern Pacific"|9|"Temperate South America"|"meow"|"38110.0851196589"|"38107.80722876887"|20178|NULL
+20179|"Juan Fernández and Desventuradas"|46|"Juan Fernández and Desventuradas"|9|"Temperate South America"|"meow"|"1816.5848486627"|"1816.6132367168498"|20179|NULL
+20180|"Southeastern Brazil"|47|"Warm Temperate Southwestern Atlantic"|9|"Temperate South America"|"meow"|"156556.586630202"|"156553.57960890548"|20180|NULL
+20181|"Rio Grande"|47|"Warm Temperate Southwestern Atlantic"|9|"Temperate South America"|"meow"|"115196.572780151"|"115158.10283933974"|20181|NULL
+20182|"Rio de la Plata"|47|"Warm Temperate Southwestern Atlantic"|9|"Temperate South America"|"meow"|"31878.5543101661"|"31768.805978513563"|20182|NULL
+20183|"Uruguay-Buenos Aires Shelf"|47|"Warm Temperate Southwestern Atlantic"|9|"Temperate South America"|"meow"|"259085.071514297"|"258210.4162010988"|20183|NULL
+20186|"Malvinas/Falklands"|48|"Magellanic"|9|"Temperate South America"|"meow"|"174754.971275422"|"175117.05994435263"|20186|NULL
+20187|"Channels and Fjords of Southern Chile"|48|"Magellanic"|9|"Temperate South America"|"meow"|"142039.702215003"|"142055.48485495994"|20187|NULL
+20188|"Chiloense"|48|"Magellanic"|9|"Temperate South America"|"meow"|"61635.6187099043"|"61636.21359967686"|20188|NULL
+20189|"Tristan Gough"|49|"Tristan Gough"|9|"Temperate South America"|"meow"|"1885.24382759523"|"1885.197279097236"|20189|NULL
+20191|"Namaqua"|50|"Benguela"|10|"Temperate Southern Africa"|"meow"|"88388.9574201087"|"88392.71037245324"|20191|NULL
+20192|"Agulhas Bank"|51|"Agulhas"|10|"Temperate Southern Africa"|"meow"|"99623.726916733"|"99620.62523784974"|20192|NULL
+20193|"Natal"|51|"Agulhas"|10|"Temperate Southern Africa"|"meow"|"22824.5477948958"|"22822.782208741253"|20193|NULL
+20194|"Amsterdam-St Paul"|52|"Amsterdam-St Paul"|10|"Temperate Southern Africa"|"meow"|"932.062059540234"|"932.0624124559752"|20194|NULL
+20197|"Three Kings-North Cape"|53|"Northern New Zealand"|11|"Temperate Australasia"|"meow"|"7015.55336690927"|"7015.3565310564845"|20197|NULL
+20200|"South New Zealand"|54|"Southern New Zealand"|11|"Temperate Australasia"|"meow"|"43588.4709571143"|"43581.01474137829"|20200|NULL
+20201|"Snares Island"|54|"Southern New Zealand"|11|"Temperate Australasia"|"meow"|"19093.7970373149"|"19102.21026921556"|20201|NULL
+20202|"Tweed-Moreton"|55|"East Central Australian Shelf"|11|"Temperate Australasia"|"meow"|"45993.0172284924"|"45994.01563106681"|20202|NULL
+20203|"Manning-Hawkesbury"|55|"East Central Australian Shelf"|11|"Temperate Australasia"|"meow"|"22846.3620486452"|"22845.855370272373"|20203|NULL
+20204|"Cape Howe"|56|"Southeast Australian Shelf"|11|"Temperate Australasia"|"meow"|"65402.19472725"|"65399.2915728933"|20204|NULL
+20205|"Bassian"|56|"Southeast Australian Shelf"|11|"Temperate Australasia"|"meow"|"102291.173021542"|"102293.13603726981"|20205|NULL
+20206|"Western Bassian"|56|"Southeast Australian Shelf"|11|"Temperate Australasia"|"meow"|"73439.540504202"|"73474.41358353331"|20206|NULL
+20207|"South Australian Gulfs"|57|"Southwest Australian Shelf"|11|"Temperate Australasia"|"meow"|"102352.79944487"|"102398.89217648875"|20207|NULL
+20208|"Great Australian Bight"|57|"Southwest Australian Shelf"|11|"Temperate Australasia"|"meow"|"150881.220042747"|"150791.98987150105"|20208|NULL
+20209|"Leeuwin"|57|"Southwest Australian Shelf"|11|"Temperate Australasia"|"meow"|"81400.0076382168"|"81399.5088543679"|20209|NULL
+20210|"Shark Bay"|58|"West Central Australian Shelf"|11|"Temperate Australasia"|"meow"|"55606.4292377879"|"55605.726891657396"|20210|NULL
+20211|"Houtman"|58|"West Central Australian Shelf"|11|"Temperate Australasia"|"meow"|"34977.7597732911"|"34978.501436287625"|20211|NULL
+20212|"Macquarie Island"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"4201.80992590311"|"4201.840927653224"|20212|NULL
+20213|"Heard and Macdonald Islands"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"8192.32278721694"|"8192.75945128648"|20213|NULL
+20214|"Kerguelen Islands"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"69895.8102296085"|"69895.8282288673"|20214|NULL
+20215|"Crozet Islands"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"8078.37370930821"|"8078.454121780424"|20215|NULL
+20216|"Prince Edward Islands"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"1492.91578599928"|"1492.9833128697655"|20216|NULL
+20217|"Bouvet Island"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"526.078770662812"|"526.0435780029951"|20217|NULL
+20218|"Peter the First Island"|59|"Subantarctic Islands"|12|"Southern Ocean"|"meow"|"838.08578348329"|"838.0915525577572"|20218|NULL
+20219|"South Sandwich Islands"|60|"Scotia Sea"|12|"Southern Ocean"|"meow"|"2698.28979242103"|"2698.3402005852763"|20219|NULL
+20220|"South Georgia"|60|"Scotia Sea"|12|"Southern Ocean"|"meow"|"33755.5378754249"|"33755.42944051362"|20220|NULL
+20221|"South Orkney Islands"|60|"Scotia Sea"|12|"Southern Ocean"|"meow"|"9195.73477251066"|"9195.745311795585"|20221|NULL
+20222|"South Shetland Islands"|60|"Scotia Sea"|12|"Southern Ocean"|"meow"|"27257.0059047199"|"27256.82168278247"|20222|NULL
+20223|"Antarctic Peninsula"|60|"Scotia Sea"|12|"Southern Ocean"|"meow"|"151538.287845435"|"151453.0148688533"|20223|NULL
+20224|"East Antarctic Wilkes Land"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"320219.977280379"|"320223.7424355936"|20224|NULL
+20225|"East Antarctic Enderby Land"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"19858.225532251"|"19858.91674086988"|20225|NULL
+20226|"East Antarctic Dronning Maud Land"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"123612.882419818"|"123615.2538685781"|20226|NULL
+20227|"Weddell Sea"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"652357.964806272"|"652364.6075210829"|20227|NULL
+20228|"Amundsen/Bellingshausen Sea"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"315274.606380797"|"315390.70355781226"|20228|NULL
+20229|"Ross Sea"|61|"Continental High Antarctic"|12|"Southern Ocean"|"meow"|"581135.981573406"|"581185.1709812103"|20229|NULL
+20231|"Campbell Island"|62|"Subantarctic New Zealand"|12|"Southern Ocean"|"meow"|"12060.1408458126"|"12060.165827791727"|20231|NULL
+20232|"Auckland Island"|62|"Subantarctic New Zealand"|12|"Southern Ocean"|"meow"|"17631.330635911"|"17631.501091426588"|20232|NULL
+21101|"Marielandia Antarctic tundra"|11|"Tundra"|2|"Antarctic"|"teow"|"1081132.29020484"|"1081123.68388347"|21101|NULL
+21102|"Maudlandia Antarctic desert"|11|"Tundra"|2|"Antarctic"|"teow"|"1979908.06338664"|"1979847.05477332"|21102|NULL
+21103|"Scotia Sea Islands tundra"|11|"Tundra"|2|"Antarctic"|"teow"|"3744.71540321754"|"3744.11190331414"|21103|NULL
+21104|"Southern Indian Ocean Islands tundra"|11|"Tundra"|2|"Antarctic"|"teow"|"7538.45820096766"|"7537.61775364191"|21104|NULL
+25007|"Baffin Bay - Davis Strait"|1|"Arctic"|1|"Arctic"|"meow"|"78175.5045343592"|"78172.1532480844"|25007|NULL
+25009|"Lancaster Sound"|1|"Arctic"|1|"Arctic"|"meow"|"191355.153337657"|"191387.1426876549"|25009|NULL
+25010|"High Arctic Archipelago"|1|"Arctic"|1|"Arctic"|"meow"|"223688.245038515"|"223770.94758371916"|25010|NULL
+25014|"Eastern Bering Sea"|1|"Arctic"|1|"Arctic"|"meow"|"918688.241914838"|"918687.1475153241"|25014|NULL
+25031|"Aegean Sea"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"126292.151050636"|"126288.87608362865"|25031|NULL
+25032|"Levantine Sea"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"76748.6470270989"|"76752.27998729532"|25032|NULL
+25033|"Tunisian Plateau/Gulf of Sidra"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"131868.544560139"|"131874.03268440484"|25033|NULL
+25034|"Ionian Sea"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"60202.4501916224"|"60199.49787347463"|25034|NULL
+25035|"Western Mediterranean"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"159306.714562999"|"159309.07899773866"|25035|NULL
+25036|"Alboran Sea"|4|"Mediterranean Sea"|2|"Temperate Northern Atlantic"|"meow"|"20740.7654535196"|"20741.516399843706"|25036|NULL
+25040|"Gulf of Maine/Bay of Fundy"|5|"Cold Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"136202.37732609"|"136202.1365489445"|25040|NULL
+25042|"Carolinian"|6|"Warm Temperate Northwest Atlantic"|2|"Temperate Northern Atlantic"|"meow"|"106791.468922321"|"106791.48797862025"|25042|NULL
+25046|"Kamchatka Shelf and Coast"|8|"Cold Temperate Northwest Pacific"|3|"Temperate Northern Pacific"|"meow"|"150704.898090412"|"150703.32037688146"|25046|NULL
+25055|"North American Pacific Fijordland"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"118777.967793615"|"118779.51519279447"|25055|NULL
+25056|"Puget Trough/Georgia Basin"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"15306.4339788053"|"15306.640394036503"|25056|NULL
+25057|"Oregon, Washington, Vancouver Coast and Shelf"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"57030.1378140449"|"57029.63010557789"|25057|NULL
+25058|"Northern California"|10|"Cold Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"25054.9689548887"|"25054.603780732672"|25058|NULL
+25059|"Southern California Bight"|11|"Warm Temperate Northeast Pacific"|3|"Temperate Northern Pacific"|"meow"|"47873.5816983187"|"47873.64198245807"|25059|NULL
+25080|"Sahelian Upwelling"|16|"West African Transition"|4|"Tropical Atlantic"|"meow"|"62714.8188957502"|"62702.82762640888"|25080|NULL
+25081|"Gulf of Guinea West"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"142497.80187548"|"142494.50771493666"|25081|NULL
+25085|"Gulf of Guinea South"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"52254.4595639779"|"52255.35168833329"|25085|NULL
+25086|"Angolan"|17|"Gulf of Guinea"|4|"Tropical Atlantic"|"meow"|"45828.3342560365"|"45826.527788963744"|25086|NULL
+25147|"Fiji Islands"|35|"Tropical Southwestern Pacific"|6|"Central Indo-Pacific"|"meow"|"53335.592118544"|"53336.26441695368"|25147|NULL
+25152|"Hawaii"|37|"Hawaii"|7|"Eastern Indo-Pacific"|"meow"|"31542.9626059569"|"31543.173144372886"|25152|NULL
+25154|"Gilbert/Ellis Islands"|38|"Marshall, Gilbert and Ellis Islands"|7|"Eastern Indo-Pacific"|"meow"|"19045.2218133415"|"19044.87128087663"|25154|NULL
+25184|"North Patagonian Gulfs"|48|"Magellanic"|9|"Temperate South America"|"meow"|"207587.313497627"|"208563.43512730626"|25184|NULL
+25185|"Patagonian Shelf"|48|"Magellanic"|9|"Temperate South America"|"meow"|"402120.586662592"|"401790.0906045332"|25185|NULL
+25190|"Namib"|50|"Benguela"|10|"Temperate Southern Africa"|"meow"|"72490.3735718213"|"72482.39806663585"|25190|NULL
+25195|"Kermadec Island"|53|"Northern New Zealand"|11|"Temperate Australasia"|"meow"|"1673.15178646765"|"1673.107730166235"|25195|NULL
+25196|"Northeastern New Zealand"|53|"Northern New Zealand"|11|"Temperate Australasia"|"meow"|"40562.4076782762"|"40563.9989146876"|25196|NULL
+25198|"Chatham Island"|54|"Southern New Zealand"|11|"Temperate Australasia"|"meow"|"15576.9786420337"|"15577.342261315394"|25198|NULL
+25199|"Central New Zealand"|54|"Southern New Zealand"|11|"Temperate Australasia"|"meow"|"162637.058176972"|"162636.70011915936"|25199|NULL
+25230|"Bounty and Antipodes Islands"|62|"Subantarctic New Zealand"|12|"Southern Ocean"|"meow"|"6745.6225529963"|"6745.478550046275"|25230|NULL
+30101|"Albertine Rift montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"103403.58326829"|"103403.426073438"|30101|NULL
+30102|"Atlantic Equatorial coastal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"188609.914128679"|"188609.860166273"|30102|NULL
+30103|"Cameroonian Highlands forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"37879.4684532424"|"37879.2042595393"|30103|NULL
+30104|"Central Congolian lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"412881.754148526"|"412881.610958079"|30104|NULL
+30105|"Comoros forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"2003.4942083587"|"2003.52121821295"|30105|NULL
+30106|"Cross-Niger transition forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"20628.6110560753"|"20628.7257366153"|30106|NULL
+30107|"Cross-Sanaga-Bioko coastal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"51798.6155535972"|"51798.553567967"|30107|NULL
+30108|"East African montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"65198.8358498184"|"65198.636289448"|30108|NULL
+30109|"Eastern Arc forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"23556.1045065483"|"23556.2883138977"|30109|NULL
+30110|"Eastern Congolian swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"92315.1906886334"|"92315.0775371303"|30110|NULL
+30111|"Eastern Guinean forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"188766.086693696"|"188766.858209315"|30111|NULL
+30112|"Ethiopian montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"247734.342729169"|"247734.45040318"|30112|NULL
+30113|"Granitic Seychelles forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"171.929130557486"|"171.749620165509"|30113|NULL
+30114|"Guinean montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"30923.5433104413"|"30923.4431732506"|30114|NULL
+30115|"Knysna-Amatole montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"3007.35192873284"|"3008.16960762163"|30115|NULL
+30116|"KwaZulu-Cape coastal forest mosaic"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"17552.771916839"|"17553.8371150782"|30116|NULL
+30117|"Madagascar lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"111368.657419416"|"111366.432527666"|30117|NULL
+30118|"Madagascar subhumid forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"198889.786036846"|"198889.537938328"|30118|NULL
+30119|"Maputaland coastal forest mosaic"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"29980.446298167"|"29980.3387166558"|30119|NULL
+30120|"Mascarene forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"4089.06078618742"|"4089.23256584637"|30120|NULL
+30121|"Mount Cameroon and Bioko montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"1141.1126249976"|"1141.16574276951"|30121|NULL
+30122|"Niger Delta swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"14343.2884333175"|"14343.2667288379"|30122|NULL
+30123|"Nigerian lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"66775.4020175475"|"66775.349290947"|30123|NULL
+30124|"Northeastern Congolian lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"531067.801579119"|"531067.598441811"|30124|NULL
+30125|"Northern Zanzibar-Inhambane coastal forest mosaic"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"111874.253742793"|"111874.323057664"|30125|NULL
+30126|"Northwestern Congolian lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"432189.965198527"|"432190.125109311"|30126|NULL
+30127|"Sao Tome, Principe and Annobon moist lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"937.834564219648"|"937.857688564801"|30127|NULL
+30128|"Southern Zanzibar-Inhambane coastal forest mosaic"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"145820.329889892"|"145819.180817356"|30128|NULL
+30129|"Western Congolian swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"128060.209976526"|"128060.228846404"|30129|NULL
+30130|"Western Guinean lowland forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|3|"Afrotropics"|"teow"|"203975.842527866"|"203977.170191366"|30130|NULL
+30201|"Cape Verde Islands dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|3|"Afrotropics"|"teow"|"3665.9260523909"|"3666.26709301918"|30201|NULL
+30202|"Madagascar dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|3|"Afrotropics"|"teow"|"150993.893458357"|"150993.538636062"|30202|NULL
+30203|"Zambezian Cryptosepalum dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|3|"Afrotropics"|"teow"|"38084.6779514974"|"38084.7803864913"|30203|NULL
+30701|"Angolan Miombo woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"657494.216243281"|"657494.200477569"|30701|NULL
+30702|"Angolan Mopane woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"133028.840661457"|"133028.296778332"|30702|NULL
+30703|"Ascension scrub and grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"80.7324659336686"|"80.7204162986545"|30703|NULL
+30704|"Central Zambezian Miombo woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"1179321.25031678"|"1179320.11533703"|30704|NULL
+30705|"East Sudanian savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"913711.406362859"|"913705.664660153"|30705|NULL
+30706|"Eastern Miombo woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"482013.396225972"|"482012.64461927"|30706|NULL
+30707|"Guinean forest-savanna mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"670019.181894423"|"670017.909406252"|30707|NULL
+30708|"Itigi-Sumbu thicket"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"7809.18690783042"|"7809.12511862204"|30708|NULL
+30709|"Kalahari Acacia-Baikiaea woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"334546.964795566"|"334544.812437494"|30709|NULL
+30710|"Mandara Plateau mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"7478.52669257691"|"7478.55459235702"|30710|NULL
+30711|"Northern Acacia-Commiphora bushlands and thickets"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"324481.994826307"|"324481.543470787"|30711|NULL
+30712|"Northern Congolian forest-savanna mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"705016.328719231"|"705006.621401743"|30712|NULL
+30713|"Sahelian Acacia savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"3042332.43390974"|"3042347.38082324"|30713|NULL
+30714|"Serengeti volcanic grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"17947.5968455431"|"17947.5430201065"|30714|NULL
+30715|"Somali Acacia-Commiphora bushlands and thickets"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"1049112.49525934"|"1049108.89865587"|30715|NULL
+30716|"Southern Acacia-Commiphora bushlands and thickets"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"226769.606971113"|"226769.681368078"|30716|NULL
+30717|"Southern Africa bushveld"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"222539.149807966"|"222541.266675878"|30717|NULL
+30718|"Southern Congolian forest-savanna mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"567187.814789248"|"567186.941467041"|30718|NULL
+30719|"Southern Miombo woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"406922.853809952"|"406915.036253308"|30719|NULL
+30720|"St. Helena scrub and woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"113.053807847753"|"113.021731962562"|30720|NULL
+30721|"Victoria Basin forest-savanna mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"165041.918696399"|"165042.164724705"|30721|NULL
+30722|"West Sudanian savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"1631827.59383685"|"1631819.76572948"|30722|NULL
+30723|"Western Congolian forest-savanna mosaic"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"411570.597263728"|"411570.722569771"|30723|NULL
+30724|"Western Zambezian grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"33889.822008033"|"33889.6721569567"|30724|NULL
+30725|"Zambezian and Mopane woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"471864.803469188"|"471871.94607265"|30725|NULL
+30726|"Zambezian Baikiaea woodlands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"263553.469430041"|"263554.085215295"|30726|NULL
+30801|"Al Hajar montane woodlands"|8|"Temperate Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"25486.4425269349"|"25485.5775529579"|30801|NULL
+30802|"Amsterdam and Saint-Paul Islands temperate grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"50.9684083763837"|"50.9773591228988"|30802|NULL
+30803|"Tristan Da Cunha-Gough Islands shrub and grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|3|"Afrotropics"|"teow"|"69.4362677120385"|"69.4312635084401"|30803|NULL
+30901|"East African halophytics"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"2625.76501724138"|"2625.8337134155"|30901|NULL
+30902|"Etosha Pan halophytics"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"7208.25175040002"|"7208.2485795181"|30902|NULL
+30903|"Inner Niger Delta flooded savanna"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"45868.1157072646"|"45868.1978598588"|30903|NULL
+30904|"Lake Chad flooded savanna"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"18761.2079220004"|"18761.0478942354"|30904|NULL
+30905|"Saharan flooded grasslands"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"178952.036056318"|"178951.554367782"|30905|NULL
+30906|"Zambezian coastal flooded savanna"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"19467.6165653174"|"19467.5379572785"|30906|NULL
+30907|"Zambezian flooded grasslands"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"152878.248671592"|"152878.274569256"|30907|NULL
+30908|"Zambezian halophytics"|9|"Flooded Grasslands & Savannas"|3|"Afrotropics"|"teow"|"30289.1012337915"|"30289.141955224"|30908|NULL
+31001|"Angolan montane forest-grassland mosaic"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"25418.4764145533"|"25418.5420800356"|31001|NULL
+31002|"Angolan scarp savanna and woodlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"73976.7255704166"|"73976.8127350694"|31002|NULL
+31003|"Drakensberg alti-montane grasslands and woodlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"11893.5661188751"|"11893.5852550193"|31003|NULL
+31004|"Drakensberg montane grasslands, woodlands and forests"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"201961.833621748"|"201959.867159202"|31004|NULL
+31005|"East African montane moorlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"3273.29311314901"|"3273.35451986068"|31005|NULL
+31006|"Eastern Zimbabwe montane forest-grassland mosaic"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"7804.06985936274"|"7803.97033896539"|31006|NULL
+31007|"Ethiopian montane grasslands and woodlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"244349.255926362"|"244349.068248766"|31007|NULL
+31008|"Ethiopian montane moorlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"25049.1266240648"|"25049.2323613778"|31008|NULL
+31009|"Highveld grasslands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"185863.223570365"|"185863.223123337"|31009|NULL
+31010|"Jos Plateau forest-grassland mosaic"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"13281.3484112629"|"13281.3928008826"|31010|NULL
+31011|"Madagascar ericoid thickets"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"1273.46825754255"|"1273.46818539032"|31011|NULL
+31012|"Maputaland-Pondoland bushland and thickets"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"19498.5772703966"|"19498.8175343185"|31012|NULL
+31013|"Rwenzori-Virunga montane moorlands"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"2661.31076616024"|"2661.21870878003"|31013|NULL
+31014|"South Malawi montane forest-grassland mosaic"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"10191.3507696809"|"10191.4161140524"|31014|NULL
+31015|"Southern Rift montane forest-grassland mosaic"|10|"Montane Grasslands & Shrublands"|3|"Afrotropics"|"teow"|"33360.4278064147"|"33360.3531636549"|31015|NULL
+31201|"Albany thickets"|12|"Mediterranean Forests, Woodlands & Scrub"|3|"Afrotropics"|"teow"|"17028.4594047403"|"17028.8812813372"|31201|NULL
+31202|"Lowland fynbos and renosterveld"|12|"Mediterranean Forests, Woodlands & Scrub"|3|"Afrotropics"|"teow"|"32334.1693795602"|"32337.1287869836"|31202|NULL
+31203|"Montane fynbos and renosterveld"|12|"Mediterranean Forests, Woodlands & Scrub"|3|"Afrotropics"|"teow"|"45744.6347999058"|"45744.9037217835"|31203|NULL
+31301|"Aldabra Island xeric scrub"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"36.0977749683099"|"36.0202483691659"|31301|NULL
+31302|"Arabian Peninsula coastal fog desert"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"80537.3046695681"|"80511.4427619966"|31302|NULL
+31303|"East Saharan montane xeric woodlands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"27774.6035700135"|"27774.5213514745"|31303|NULL
+31304|"Eritrean coastal desert"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"4529.66375128633"|"4529.96751921524"|31304|NULL
+31305|"Ethiopian xeric grasslands and shrublands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"152067.661662664"|"152073.015002019"|31305|NULL
+31306|"Gulf of Oman desert and semi-desert"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"61443.3041202506"|"61444.428514625"|31306|NULL
+31307|"Hobyo grasslands and shrublands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"25177.3888137895"|"25176.0446681968"|31307|NULL
+31308|"Ile Europa and Bassas da India xeric scrub"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"20.1681695755988"|"20.1520417001614"|31308|NULL
+31309|"Kalahari xeric savanna"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"586844.851799642"|"586846.105976778"|31309|NULL
+31310|"Kaokoveld desert"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"45025.1184846246"|"45028.2702573831"|31310|NULL
+31311|"Madagascar spiny thickets"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"42825.6532441395"|"42826.5964348309"|31311|NULL
+31312|"Madagascar succulent woodlands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"79470.8227807233"|"79471.122208496"|31312|NULL
+31313|"Masai xeric grasslands and shrublands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"100505.021500551"|"100504.965358287"|31313|NULL
+31314|"Nama Karoo"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"350725.3986053"|"350725.682769738"|31314|NULL
+31315|"Namib desert"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"80602.7436790434"|"80602.677265021"|31315|NULL
+31316|"Namibian savanna woodlands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"224903.27431386"|"224902.880191992"|31316|NULL
+31318|"Socotra Island xeric shrublands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"3732.43171602349"|"3732.45440556467"|31318|NULL
+31319|"Somali montane xeric woodlands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"62258.3993995146"|"62258.3802094014"|31319|NULL
+31320|"Southwestern Arabian foothills savanna"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"273726.212853998"|"273743.504982419"|31320|NULL
+31321|"Southwestern Arabian montane woodlands"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"86632.657572206"|"86628.8531295672"|31321|NULL
+31322|"Succulent Karoo"|13|"Deserts & Xeric Shrublands"|3|"Afrotropics"|"teow"|"102396.56519332"|"102396.964186668"|31322|NULL
+31401|"Central African mangroves"|14|"Mangroves"|3|"Afrotropics"|"teow"|"29043.269860947"|"29044.0056527933"|31401|NULL
+31402|"East African mangroves"|14|"Mangroves"|3|"Afrotropics"|"teow"|"15335.9843976725"|"15337.5588976163"|31402|NULL
+31403|"Guinean mangroves"|14|"Mangroves"|3|"Afrotropics"|"teow"|"22334.9014882073"|"22336.6325811758"|31403|NULL
+31404|"Madagascar mangroves"|14|"Mangroves"|3|"Afrotropics"|"teow"|"5098.56819582141"|"5098.66111854989"|31404|NULL
+31405|"Southern Africa mangroves"|14|"Mangroves"|3|"Afrotropics"|"teow"|"969.321663228238"|"969.246539704006"|31405|NULL
+40101|"Andaman Islands rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"5383.50500349126"|"5383.98064423184"|40101|NULL
+40102|"Borneo lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"425079.086151594"|"425079.311175657"|40102|NULL
+40103|"Borneo montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"115078.364784379"|"115078.835285775"|40103|NULL
+40104|"Borneo peat swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"66924.184612907"|"66924.2206395718"|40104|NULL
+40105|"Brahmaputra Valley semi-evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"56613.0965267652"|"56612.7852815631"|40105|NULL
+40106|"Cardamom Mountains rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"43927.4797267411"|"43928.2307815302"|40106|NULL
+40107|"Chao Phraya freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"38858.3036424004"|"38858.4090306483"|40107|NULL
+40108|"Chao Phraya lowland moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"20257.0502805835"|"20257.5437914783"|40108|NULL
+40109|"Chin Hills-Arakan Yoma montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"29615.7760358236"|"29617.7852087753"|40109|NULL
+40110|"Christmas and Cocos Islands tropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"40.191892770185"|"40.1547228065662"|40110|NULL
+40111|"Eastern highlands moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"340111.696947274"|"340112.182082902"|40111|NULL
+40112|"Eastern Java-Bali montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"15810.5883236155"|"15810.2327231811"|40112|NULL
+40113|"Eastern Java-Bali rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"53199.2363494991"|"53198.9620895278"|40113|NULL
+40114|"Greater Negros-Panay rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"34190.2427544331"|"34190.9025379459"|40114|NULL
+40115|"Himalayan subtropical broadleaf forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"38124.2292207372"|"38124.9731735792"|40115|NULL
+40116|"Irrawaddy freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"15107.0700308217"|"15106.7773248416"|40116|NULL
+40117|"Irrawaddy moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"137909.792196247"|"137910.208333936"|40117|NULL
+40118|"Jian Nan subtropical evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"661262.599451695"|"661264.101434565"|40118|NULL
+40119|"Kayah-Karen montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"119158.242078552"|"119158.778656188"|40119|NULL
+40120|"Lower Gangetic Plains moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"253159.306051631"|"253156.719361409"|40120|NULL
+40121|"Luang Prabang montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"71585.0698432958"|"71585.2390381331"|40121|NULL
+40122|"Luzon montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"8272.79028291194"|"8272.76604712142"|40122|NULL
+40123|"Luzon rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"94142.7138741633"|"94145.7978215553"|40123|NULL
+40124|"Malabar Coast moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"34591.690434294"|"34594.0464412458"|40124|NULL
+40125|"Maldives-Lakshadweep-Chagos Archipelago tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"289.112039319642"|"289.099987187386"|40125|NULL
+40126|"Meghalaya subtropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"41629.2169089633"|"41629.2901156176"|40126|NULL
+40127|"Mentawai Islands rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"6233.76670846062"|"6233.97167999669"|40127|NULL
+40128|"Mindanao montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"18120.2337387579"|"18120.2449770432"|40128|NULL
+40129|"Mindanao-Eastern Visayas rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"103568.853486497"|"103570.063361801"|40129|NULL
+40130|"Mindoro rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"10011.8259324673"|"10011.890631894"|40130|NULL
+40131|"Mizoram-Manipur-Kachin rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"135245.695977631"|"135245.852817765"|40131|NULL
+40132|"Myanmar coastal rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"65602.9426014336"|"65601.7478278425"|40132|NULL
+40133|"Nicobar Islands rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"1312.75009622355"|"1312.91106956459"|40133|NULL
+40134|"North Western Ghats moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"48039.7571593763"|"48039.7765808688"|40134|NULL
+40135|"North Western Ghats montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"30824.6365544909"|"30824.778704294"|40135|NULL
+40136|"Northern Annamites rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"47052.5654342048"|"47052.6142672598"|40136|NULL
+40137|"Northern Indochina subtropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"435869.776626239"|"435869.16140837"|40137|NULL
+40138|"Northern Khorat Plateau moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"16794.2982922101"|"16794.2561112252"|40138|NULL
+40139|"Northern Thailand-Laos moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"42010.1248190195"|"42009.8799470325"|40139|NULL
+40140|"Northern Triangle subtropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"53773.5349735981"|"53773.9297381684"|40140|NULL
+40141|"Northern Vietnam lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"22422.6891050042"|"22422.6845271697"|40141|NULL
+40142|"Orissa semi-evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"22154.8442492154"|"22155.0259755687"|40142|NULL
+40143|"Palawan rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"13889.4108150889"|"13890.2156973345"|40143|NULL
+40144|"Peninsular Malaysian montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"17097.4947525249"|"17097.5456153154"|40144|NULL
+40145|"Peninsular Malaysian peat swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"3609.77065634659"|"3609.79449857407"|40145|NULL
+40146|"Peninsular Malaysian rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"123916.68530552"|"123919.727618187"|40146|NULL
+40147|"Red River freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"10705.9060711038"|"10705.9596185817"|40147|NULL
+40148|"South China Sea Islands"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"2.94878779687718"|"2.92700612738646"|40148|NULL
+40149|"South China-Vietnam subtropical evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"222076.3531573"|"222080.106772102"|40149|NULL
+40150|"South Western Ghats moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"23675.7127141728"|"23675.6531994872"|40150|NULL
+40151|"South Western Ghats montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"22545.080861918"|"22545.1028634357"|40151|NULL
+40152|"Southern Annamites montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"46308.2974476235"|"46307.9601537838"|40152|NULL
+40153|"Southwest Borneo freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"36548.6100451553"|"36548.4822859663"|40153|NULL
+40154|"Sri Lanka lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"12494.7268013639"|"12494.7555255036"|40154|NULL
+40155|"Sri Lanka montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"3065.68511035224"|"3065.6652261045"|40155|NULL
+40156|"Sulu Archipelago rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"2161.77466644647"|"2161.88949853064"|40156|NULL
+40157|"Sumatran freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"17914.3864110677"|"17913.9407464967"|40157|NULL
+40158|"Sumatran lowland rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"257035.759670387"|"257037.730194147"|40158|NULL
+40159|"Sumatran montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"72617.8325194346"|"72617.8397650861"|40159|NULL
+40160|"Sumatran peat swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"86965.5909975951"|"86965.7505761924"|40160|NULL
+40161|"Sundaland heath forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"76044.3328920196"|"76044.4137564919"|40161|NULL
+40162|"Sundarbans freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"14482.5951450911"|"14482.6794036097"|40162|NULL
+40163|"Tenasserim-South Thailand semi-evergreen rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"96517.4058441312"|"96517.9998101722"|40163|NULL
+40164|"Tonle Sap freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"25699.3698500579"|"25699.1359873797"|40164|NULL
+40165|"Tonle Sap-Mekong peat swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"29226.4786105939"|"29226.5249294881"|40165|NULL
+40166|"Upper Gangetic Plains moist deciduous forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"262642.53995201"|"262642.409255657"|40166|NULL
+40167|"Western Java montane rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"26170.9512517514"|"26170.4190031291"|40167|NULL
+40168|"Western Java rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"41283.6608938555"|"41284.9502802833"|40168|NULL
+40169|"Hainan Island monsoon rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"15486.2207938506"|"15486.2505271751"|40169|NULL
+40170|"Nansei Islands subtropical evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"3649.45489158274"|"3649.83153475482"|40170|NULL
+40171|"South Taiwan monsoon rain forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"2502.66483713285"|"2502.71068874927"|40171|NULL
+40172|"Taiwan subtropical evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|4|"IndoMalay"|"teow"|"32938.769115184"|"32939.1222248232"|40172|NULL
+40201|"Central Deccan Plateau dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"239408.668762222"|"239407.136041521"|40201|NULL
+40202|"Central Indochina dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"318934.101965801"|"318934.250200746"|40202|NULL
+40203|"Chhota-Nagpur dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"122134.332662645"|"122133.885117993"|40203|NULL
+40204|"East Deccan dry-evergreen forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"25280.9298816824"|"25280.2132007278"|40204|NULL
+40205|"Irrawaddy dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"34987.3851002856"|"34987.1786082343"|40205|NULL
+40206|"Khathiar-Gir dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"266129.613943422"|"266129.702681905"|40206|NULL
+40207|"Narmada Valley dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"169457.114733244"|"169458.166604062"|40207|NULL
+40208|"Northern dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"58154.1542838019"|"58154.0745757776"|40208|NULL
+40209|"South Deccan Plateau dry deciduous forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"81925.4582474219"|"81925.4460903042"|40209|NULL
+40210|"Southeastern Indochina dry evergreen forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"123784.007907784"|"123784.083328208"|40210|NULL
+40211|"Southern Vietnam lowland dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"34639.1552589216"|"34639.9954867234"|40211|NULL
+40212|"Sri Lanka dry-zone dry evergreen forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|4|"IndoMalay"|"teow"|"47950.8862301204"|"47950.6401184242"|40212|NULL
+40301|"Himalayan subtropical pine forests"|3|"Tropical & Subtropical Coniferous Forests"|4|"IndoMalay"|"teow"|"76125.5303636217"|"76125.5929254505"|40301|NULL
+40302|"Luzon tropical pine forests"|3|"Tropical & Subtropical Coniferous Forests"|4|"IndoMalay"|"teow"|"7052.43926742168"|"7052.35688766362"|40302|NULL
+40303|"Northeast India-Myanmar pine forests"|3|"Tropical & Subtropical Coniferous Forests"|4|"IndoMalay"|"teow"|"9685.54297346535"|"9685.5094368555"|40303|NULL
+40304|"Sumatran tropical pine forests"|3|"Tropical & Subtropical Coniferous Forests"|4|"IndoMalay"|"teow"|"2748.01918691465"|"2748.03766867765"|40304|NULL
+40401|"Eastern Himalayan broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|4|"IndoMalay"|"teow"|"82915.4256402936"|"82916.0054887092"|40401|NULL
+40402|"Northern Triangle temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|4|"IndoMalay"|"teow"|"10708.5346695292"|"10708.2899214442"|40402|NULL
+40403|"Western Himalayan broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|4|"IndoMalay"|"teow"|"55824.844978266"|"55824.8082629475"|40403|NULL
+40501|"Eastern Himalayan subalpine conifer forests"|5|"Temperate Conifer Forests"|4|"IndoMalay"|"teow"|"27435.852616667"|"27435.9080612971"|40501|NULL
+40502|"Western Himalayan subalpine conifer forests"|5|"Temperate Conifer Forests"|4|"IndoMalay"|"teow"|"39649.9518970402"|"39650.002622045"|40502|NULL
+40701|"Terai-Duar savanna and grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|4|"IndoMalay"|"teow"|"34518.4353327046"|"34522.6175521318"|40701|NULL
+40901|"Rann of Kutch seasonal salt marsh"|9|"Flooded Grasslands & Savannas"|4|"IndoMalay"|"teow"|"27511.7754618975"|"27511.7106654823"|40901|NULL
+41001|"Kinabalu montane alpine meadows"|10|"Montane Grasslands & Shrublands"|4|"IndoMalay"|"teow"|"4320.0503536915"|"4320.12143981454"|41001|NULL
+41301|"Deccan thorn scrub forests"|13|"Deserts & Xeric Shrublands"|4|"IndoMalay"|"teow"|"338574.885417813"|"338575.269940178"|41301|NULL
+41302|"Indus Valley desert"|13|"Deserts & Xeric Shrublands"|4|"IndoMalay"|"teow"|"19479.3844546356"|"19479.4017152547"|41302|NULL
+41303|"Northwestern thorn scrub forests"|13|"Deserts & Xeric Shrublands"|4|"IndoMalay"|"teow"|"487205.98247357"|"487206.503861716"|41303|NULL
+41304|"Thar desert"|13|"Deserts & Xeric Shrublands"|4|"IndoMalay"|"teow"|"238253.783279554"|"238253.719931756"|41304|NULL
+41401|"Goadavari-Krishna mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"6706.98871248306"|"6706.73821406169"|41401|NULL
+41402|"Indochina mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"25991.1825548653"|"25993.7430213468"|41402|NULL
+41403|"Indus River Delta-Arabian Sea mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"5444.11467822187"|"5444.54720547353"|41403|NULL
+41404|"Myanmar Coast mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"20261.3136357649"|"20263.5899137239"|41404|NULL
+41405|"Sunda Shelf mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"35196.848306974"|"35197.7637670765"|41405|NULL
+41406|"Sundarbans mangroves"|14|"Mangroves"|4|"IndoMalay"|"teow"|"19296.934587997"|"19297.0260804622"|41406|NULL
+50201|"Sonoran-Sinaloan transition subtropical dry forest"|2|"Tropical & Subtropical Dry Broadleaf Forests"|5|"Nearctic"|"teow"|"50644.7517117757"|"50644.9571742741"|50201|NULL
+50301|"Bermuda subtropical conifer forests"|3|"Tropical & Subtropical Coniferous Forests"|5|"Nearctic"|"teow"|"27.1590884444467"|"27.1211850543497"|50301|NULL
+50302|"Sierra Madre Occidental pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|5|"Nearctic"|"teow"|"222333.98533169"|"222333.814071391"|50302|NULL
+50303|"Sierra Madre Oriental pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|5|"Nearctic"|"teow"|"65496.3954986857"|"65496.2847924775"|50303|NULL
+50401|"Allegheny Highlands forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"84010.8957733159"|"84010.8456888802"|50401|NULL
+50402|"Appalachian mixed mesophytic forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"192263.360251403"|"192263.587613896"|50402|NULL
+50403|"Appalachian-Blue Ridge forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"159342.535814732"|"159342.600864642"|50403|NULL
+50404|"Central U.S. hardwood forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"296135.268387596"|"296135.380061179"|50404|NULL
+50405|"East Central Texas forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"52583.1450255738"|"52583.203873904"|50405|NULL
+50406|"Eastern forest-boreal transition"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"348527.4225877"|"348527.421609072"|50406|NULL
+50407|"Eastern Great Lakes lowland forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"116632.32472396"|"116632.572327708"|50407|NULL
+50408|"Gulf of St. Lawrence lowland forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"39017.9749198382"|"39018.4414934545"|50408|NULL
+50409|"Mississippi lowland forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"112006.425990559"|"112006.333809952"|50409|NULL
+50410|"New England-Acadian forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"236116.290293959"|"236117.935093561"|50410|NULL
+50411|"Northeastern coastal forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"88871.0131634479"|"88871.0423975532"|50411|NULL
+50412|"Ozark Mountain forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"62008.3484971405"|"62008.2443810597"|50412|NULL
+50413|"Southeastern mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"347537.036257289"|"347537.653610504"|50413|NULL
+50414|"Southern Great Lakes forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"244828.110210565"|"244828.137537159"|50414|NULL
+50415|"Upper Midwest forest-savanna transition"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"166476.717615893"|"166476.715967607"|50415|NULL
+50416|"Western Great Lakes forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"274721.325316218"|"274721.302984107"|50416|NULL
+50417|"Willamette Valley forests"|4|"Temperate Broadleaf & Mixed Forests"|5|"Nearctic"|"teow"|"14883.0225863745"|"14882.9911963828"|50417|NULL
+50501|"Alberta Mountain forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"39932.6049023252"|"39932.6020669435"|50501|NULL
+50502|"Alberta-British Columbia foothills forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"121016.928305631"|"121016.767037832"|50502|NULL
+50503|"Arizona Mountains forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"109051.721476739"|"109051.901159585"|50503|NULL
+50504|"Atlantic coastal pine barrens"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"8698.76839979319"|"8699.04879680872"|50504|NULL
+50505|"Blue Mountains forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"64844.1650259789"|"64844.0600931418"|50505|NULL
+50506|"British Columbia mainland coastal forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"136955.0818355"|"136959.932269467"|50506|NULL
+50507|"Cascade Mountains leeward forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"46451.415253346"|"46451.4322889632"|50507|NULL
+50508|"Central and Southern Cascades forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"44950.2797936674"|"44950.2374855939"|50508|NULL
+50509|"Central British Columbia Mountain forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"72089.9104680145"|"72089.9411630836"|50509|NULL
+50510|"Central Pacific coastal forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"73400.3551513371"|"73402.3429264409"|50510|NULL
+50511|"Colorado Rockies forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"132840.820860487"|"132840.807985781"|50511|NULL
+50512|"Eastern Cascades forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"55298.7173884935"|"55298.767562237"|50512|NULL
+50513|"Florida sand pine scrub"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"3871.29534140337"|"3871.28686227752"|50513|NULL
+50514|"Fraser Plateau and Basin complex"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"137635.853705509"|"137635.780978228"|50514|NULL
+50515|"Great Basin montane forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"5788.19962976146"|"5788.07081098967"|50515|NULL
+50516|"Klamath-Siskiyou forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"50369.6051666682"|"50369.8583059781"|50516|NULL
+50517|"Middle Atlantic coastal forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"132385.868151272"|"132386.012455894"|50517|NULL
+50518|"North Central Rockies forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"246513.310611578"|"246514.278799876"|50518|NULL
+50519|"Northern California coastal forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"13267.2995020444"|"13267.0857770515"|50519|NULL
+50520|"Northern Pacific coastal forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"59445.4233512456"|"59450.5370091106"|50520|NULL
+50521|"Northern transitional alpine forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"25783.0572273902"|"25783.0877578139"|50521|NULL
+50522|"Okanagan dry forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"53496.2184498967"|"53495.8198887183"|50522|NULL
+50523|"Piney Woods forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"140797.40101371"|"140797.580212827"|50523|NULL
+50524|"Puget lowland forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"22007.4372458323"|"22010.5345640429"|50524|NULL
+50525|"Queen Charlotte Islands"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"9810.63965183013"|"9811.13113326644"|50525|NULL
+50526|"Sierra Juarez and San Pedro Martir pine-oak forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"4001.95700588981"|"4001.92278122628"|50526|NULL
+50527|"Sierra Nevada forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"52871.5649871541"|"52871.5935996418"|50527|NULL
+50528|"South Central Rockies forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"159693.611259186"|"159692.994173125"|50528|NULL
+50529|"Southeastern conifer forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"235609.346022802"|"235609.369628539"|50529|NULL
+50530|"Wasatch and Uinta montane forests"|5|"Temperate Conifer Forests"|5|"Nearctic"|"teow"|"41508.5295186535"|"41508.5332594873"|50530|NULL
+50601|"Alaska Peninsula montane taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"47461.6161358099"|"47460.5710471462"|50601|NULL
+50602|"Central Canadian Shield forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"463345.321475157"|"463345.139569099"|50602|NULL
+50603|"Cook Inlet taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"27951.5709434481"|"27951.9449956197"|50603|NULL
+50604|"Copper Plateau taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"17275.0944907537"|"17275.1353328215"|50604|NULL
+50605|"Eastern Canadian forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"485546.167842833"|"485555.476767457"|50605|NULL
+50606|"Eastern Canadian Shield taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"756247.938730929"|"756249.043616883"|50606|NULL
+50607|"Interior Alaska-Yukon lowland taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"446230.013785992"|"446231.859499159"|50607|NULL
+50608|"Mid-Continental Canadian forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"369628.407429922"|"369628.508069395"|50608|NULL
+50609|"Midwestern Canadian Shield forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"548394.250456538"|"548394.375150293"|50609|NULL
+50610|"Muskwa-Slave Lake forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"263805.376476662"|"263805.412399731"|50610|NULL
+50611|"Newfoundland Highland forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"16342.0821406503"|"16342.0995665234"|50611|NULL
+50612|"Northern Canadian Shield taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"617318.699434561"|"617318.809217632"|50612|NULL
+50613|"Northern Cordillera forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"264233.890259898"|"264233.980532525"|50613|NULL
+50614|"Northwest Territories taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"348142.037758927"|"348142.019854602"|50614|NULL
+50615|"South Avalon-Burin oceanic barrens"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"1950.32659274393"|"1950.29424523019"|50615|NULL
+50616|"Southern Hudson Bay taiga"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"374313.929044065"|"374314.154847073"|50616|NULL
+50617|"Yukon Interior dry forests"|6|"Boreal Forests/Taiga"|5|"Nearctic"|"teow"|"62742.2183551925"|"62742.2077243588"|50617|NULL
+50701|"Western Gulf coastal grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"77374.3845829314"|"77374.3312765373"|50701|NULL
+50801|"California Central Valley grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"55090.8942258547"|"55086.310451834"|50801|NULL
+50802|"Canadian Aspen forests and parklands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"399038.361185146"|"399038.778683142"|50802|NULL
+50803|"Central and Southern mixed grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"282267.423502097"|"282267.478491248"|50803|NULL
+50804|"Central forest-grasslands transition"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"407235.628776143"|"407235.584764542"|50804|NULL
+50805|"Central tall grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"248865.336566467"|"248866.679005354"|50805|NULL
+50806|"Edwards Plateau savanna"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"61733.6941521063"|"61733.6448208399"|50806|NULL
+50807|"Flint Hills tall grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"29632.2747484212"|"29632.1301201499"|50807|NULL
+50808|"Montana Valley and Foothill grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"81929.0730740932"|"81929.1084120202"|50808|NULL
+50809|"Nebraska Sand Hills mixed grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"61212.4010054271"|"61212.4936209879"|50809|NULL
+50810|"Northern mixed grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"219615.433820436"|"219614.64247757"|50810|NULL
+50811|"Northern short grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"640108.514498656"|"640108.592211622"|50811|NULL
+50812|"Northern tall grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"76259.4462405563"|"76259.3224372058"|50812|NULL
+50813|"Palouse grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"46992.7238459418"|"46992.7950817049"|50813|NULL
+50814|"Texas blackland prairies"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"50214.7973042352"|"50214.7211092644"|50814|NULL
+50815|"Western short grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|5|"Nearctic"|"teow"|"435312.90819149"|"435312.950482184"|50815|NULL
+51101|"Alaska-St. Elias Range tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"152679.216750432"|"152679.444718873"|51101|NULL
+51102|"Aleutian Islands tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"11344.4169411347"|"11346.9678638005"|51102|NULL
+51103|"Arctic coastal tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"97927.7103103172"|"97936.6553384729"|51103|NULL
+51104|"Arctic foothills tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"129907.665303787"|"129904.690197025"|51104|NULL
+51105|"Baffin coastal tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"8931.39356279007"|"8931.41185593538"|51105|NULL
+51106|"Beringia lowland tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"150212.390812836"|"150213.596056752"|51106|NULL
+51107|"Beringia upland tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"97817.6116774636"|"97816.6170209664"|51107|NULL
+51108|"Brooks-British Range tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"160641.57254902"|"160646.355522928"|51108|NULL
+51109|"Davis Highlands tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"87111.4711406203"|"87111.7537039782"|51109|NULL
+51110|"High Arctic tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"461769.252734827"|"461769.526871838"|51110|NULL
+51111|"Interior Yukon-Alaska alpine tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"234142.157631161"|"234133.341125818"|51111|NULL
+51112|"Kalaallit Nunaat high arctic tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"289119.955152902"|"289126.9605077"|51112|NULL
+51113|"Kalaallit Nunaat low arctic tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"163526.410629771"|"163520.657003195"|51113|NULL
+51114|"Low Arctic tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"799155.434521142"|"799154.00684082"|51114|NULL
+51115|"Middle Arctic tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"1031941.5961483"|"1031944.60294438"|51115|NULL
+51116|"Ogilvie-MacKenzie alpine tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"209805.723593785"|"209806.997952066"|51116|NULL
+51117|"Pacific Coastal Mountain icefields and tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"107114.63067222"|"107118.284712679"|51117|NULL
+51118|"Torngat Mountain tundra"|11|"Tundra"|5|"Nearctic"|"teow"|"32077.0031277009"|"32076.000582462"|51118|NULL
+51201|"California coastal sage and chaparral"|12|"Mediterranean Forests, Woodlands & Scrub"|5|"Nearctic"|"teow"|"35965.3670979116"|"35965.3713712892"|51201|NULL
+51202|"California interior chaparral and woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|5|"Nearctic"|"teow"|"64465.1152383269"|"64469.5139846864"|51202|NULL
+51203|"California montane chaparral and woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|5|"Nearctic"|"teow"|"20384.7632277109"|"20384.8222312386"|51203|NULL
+51301|"Baja California desert"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"77316.1589020273"|"77316.1230329198"|51301|NULL
+51302|"Central Mexican matorral"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"59194.8300747776"|"59194.6813821891"|51302|NULL
+51303|"Chihuahuan desert"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"508891.618818035"|"508891.772211411"|51303|NULL
+51304|"Colorado Plateau shrublands"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"326501.006003894"|"326500.990019883"|51304|NULL
+51305|"Great Basin shrub steppe"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"336212.323501132"|"336212.434804399"|51305|NULL
+51306|"Gulf of California xeric scrub"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"23177.2225338514"|"23177.004325835"|51306|NULL
+51307|"Meseta Central matorral"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"124975.134856452"|"124974.819011983"|51307|NULL
+51308|"Mojave desert"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"130647.029143929"|"130647.17437291"|51308|NULL
+51309|"Snake-Columbia shrub steppe"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"218532.688405777"|"218532.926738629"|51309|NULL
+51310|"Sonoran desert"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"222598.317240033"|"222598.144825082"|51310|NULL
+51311|"Tamaulipan matorral"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"16236.7682906947"|"16236.7343527133"|51311|NULL
+51312|"Tamaulipan mezquital"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"141196.047953088"|"141196.031738433"|51312|NULL
+51313|"Wyoming Basin shrub steppe"|13|"Deserts & Xeric Shrublands"|5|"Nearctic"|"teow"|"132577.084176765"|"132576.988432682"|51313|NULL
+60101|"Araucaria moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"215673.20989588"|"215673.009417209"|60101|NULL
+60102|"Atlantic Coast restingas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"7393.3904112713"|"7392.22843719959"|60102|NULL
+60103|"Bahia coastal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"108888.085412853"|"108887.299097725"|60103|NULL
+60104|"Bahia interior forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"229213.45214082"|"229216.887974543"|60104|NULL
+60105|"Bolivian Yungas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"90229.2075147743"|"90229.2582041475"|60105|NULL
+60106|"Caatinga Enclaves moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"4776.2655134345"|"4776.27175622773"|60106|NULL
+60107|"Caqueta moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"183358.314232651"|"183358.45938648"|60107|NULL
+60108|"Catatumbo moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"22752.7508512091"|"22752.9231895601"|60108|NULL
+60109|"Cauca Valley montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"31915.2719222887"|"31915.3158468225"|60109|NULL
+60110|"Cayos Miskitos-San Andrés and Providencia moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"68.5222580584197"|"68.5979888702889"|60110|NULL
+60111|"Central American Atlantic moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"89356.4044583831"|"89356.4426453834"|60111|NULL
+60112|"Central American montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"13251.1043670163"|"13251.3930564596"|60112|NULL
+60113|"Chiapas montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"5758.9388858806"|"5759.02419512068"|60113|NULL
+60114|"Chimalapas montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"2076.65997972544"|"2076.66226612825"|60114|NULL
+60115|"Chocó-Darién moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"72965.1531950747"|"72965.1834949106"|60115|NULL
+60116|"Cocos Island moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"22.3167533198459"|"22.3206535748207"|60116|NULL
+60117|"Cordillera La Costa montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"14273.0914462845"|"14273.0433452577"|60117|NULL
+60118|"Cordillera Oriental montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"67577.15043501"|"67576.8878179288"|60118|NULL
+60119|"Costa Rican seasonal moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"10601.5622984715"|"10601.470354015"|60119|NULL
+60120|"Cuban moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"21190.5862192025"|"21190.0683420121"|60120|NULL
+60121|"Eastern Cordillera real montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"102062.357197882"|"102062.179095054"|60121|NULL
+60122|"Eastern Panamanian montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"3031.21048868152"|"3031.12810619573"|60122|NULL
+60123|"Fernando de Noronha-Atol das Rocas moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"16.1253045344869"|"16.1171801771245"|60123|NULL
+60124|"Guianan Highlands moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"145961.142078929"|"145960.98868612"|60124|NULL
+60125|"Guianan moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"475593.205604881"|"475592.904762694"|60125|NULL
+60126|"Gurupa varzeá"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"9849.41722583663"|"9849.45869188242"|60126|NULL
+60127|"Hispaniolan moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"45578.3050391233"|"45577.3449502332"|60127|NULL
+60128|"Iquitos varzeá"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"114506.36336904"|"114506.731568952"|60128|NULL
+60129|"Isthmian-Atlantic moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"57791.1287467238"|"57791.0280390253"|60129|NULL
+60130|"Isthmian-Pacific moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"28903.4691664423"|"28903.538876403"|60130|NULL
+60131|"Jamaican moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"8258.77317737105"|"8258.67378724816"|60131|NULL
+60132|"Japurá-Solimoes-Negro moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"268444.405061638"|"268444.392779375"|60132|NULL
+60133|"Juruá-Purus moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"241492.722819591"|"241492.688153465"|60133|NULL
+60134|"Leeward Islands moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"941.297839111154"|"941.269777832175"|60134|NULL
+60135|"Madeira-Tapajós moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"716681.866716617"|"716681.936219779"|60135|NULL
+60136|"Magdalena Valley montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"104598.325161697"|"104598.144220376"|60136|NULL
+60137|"Magdalena-Urabá moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"76430.65993769"|"76431.1113148109"|60137|NULL
+60138|"Marajó varzeá"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"82142.4810744369"|"82141.3166403216"|60138|NULL
+60139|"Maranhăo Babaçu forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"141570.163309517"|"141570.091861248"|60139|NULL
+60140|"Mato Grosso seasonal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"412314.049706949"|"412313.696760543"|60140|NULL
+60141|"Monte Alegre varzeá"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"66506.1770057419"|"66506.2336532343"|60141|NULL
+60142|"Napo moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"250590.94139399"|"250590.80539239"|60142|NULL
+60143|"Negro-Branco moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"200931.924141143"|"200932.403638655"|60143|NULL
+60144|"Northeastern Brazil restingas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"9914.42542488551"|"9913.95443908015"|60144|NULL
+60145|"Northwestern Andean montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"80806.0672485092"|"80806.1541151725"|60145|NULL
+60146|"Oaxacan montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"7576.91788863815"|"7576.84755021574"|60146|NULL
+60147|"Orinoco Delta swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"28005.0741111333"|"28005.1527687244"|60147|NULL
+60148|"Pantanos de Centla"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"17099.8748870877"|"17099.9812735187"|60148|NULL
+60149|"Guianan freshwater swamp forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"7657.64092757451"|"7657.60029223427"|60149|NULL
+60150|"Alto Paraná Atlantic forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"482868.262643264"|"482868.443847227"|60150|NULL
+60151|"Pernambuco coastal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"17371.9008360988"|"17371.5604829936"|60151|NULL
+60152|"Pernambuco interior forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"22462.0357940907"|"22461.3002194339"|60152|NULL
+60153|"Peruvian Yungas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"185961.878892744"|"185961.613283149"|60153|NULL
+60154|"Petén-Veracruz moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"148388.328369149"|"148387.878284777"|60154|NULL
+60155|"Puerto Rican moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"7411.60165850252"|"7411.13366978641"|60155|NULL
+60156|"Purus varzeá"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"176760.369925434"|"176760.311408399"|60156|NULL
+60157|"Purus-Madeira moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"173261.397480097"|"173261.466960722"|60157|NULL
+60158|"Rio Negro campinarana"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"95986.1470249635"|"95985.7681922729"|60158|NULL
+60159|"Santa Marta montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"4765.52425451762"|"4765.78502443046"|60159|NULL
+60160|"Serra do Mar coastal forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"103878.00219098"|"103878.896318248"|60160|NULL
+60161|"Sierra de los Tuxtlas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"3872.19099212586"|"3872.17752586655"|60161|NULL
+60162|"Sierra Madre de Chiapas moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"11217.8466496036"|"11217.8952802634"|60162|NULL
+60163|"Solimőes-Japurá moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"166931.181258744"|"166930.924013939"|60163|NULL
+60164|"South Florida rocklands"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"1975.10364683884"|"1974.8843373936"|60164|NULL
+60165|"Southern Andean Yungas"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"75157.2866689844"|"75151.8503910823"|60165|NULL
+60166|"Southwest Amazon moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"746652.78730757"|"746652.415265436"|60166|NULL
+60167|"Talamancan montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"16274.4434733911"|"16274.372332423"|60167|NULL
+60168|"Tapajós-Xingu moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"335099.353817296"|"335099.223672636"|60168|NULL
+60169|"Pantepui"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"50675.1835790793"|"50675.5952333295"|60169|NULL
+60170|"Tocantins/Pindare moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"191832.554647107"|"191832.781446901"|60170|NULL
+60171|"Trinidad and Tobago moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"4617.65783168657"|"4618.04409743517"|60171|NULL
+60172|"Trindade-Martin Vaz Islands tropical forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"9.25542897985172"|"9.25496454693666"|60172|NULL
+60173|"Uatuma-Trombetas moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"469073.791625613"|"469073.73539083"|60173|NULL
+60174|"Ucayali moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"114442.969456549"|"114443.083733222"|60174|NULL
+60175|"Venezuelan Andes montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"29268.8995429905"|"29268.9390443938"|60175|NULL
+60176|"Veracruz moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"68792.8115781237"|"68792.9644793846"|60176|NULL
+60177|"Veracruz montane forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"4942.45309381806"|"4942.50049306844"|60177|NULL
+60178|"Western Ecuador moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"33840.3598091263"|"33840.1438026599"|60178|NULL
+60179|"Windward Islands moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"1989.10978467262"|"1989.20768945106"|60179|NULL
+60180|"Xingu-Tocantins-Araguaia moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"264704.260431741"|"264704.290321789"|60180|NULL
+60181|"Yucatán moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"69318.0131381533"|"69318.0429816853"|60181|NULL
+60182|"Guianan piedmont and lowland moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|6|"Neotropics"|"teow"|"229835.856050084"|"229835.468020379"|60182|NULL
+60201|"Apure-Villavicencio dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"68245.4046440685"|"68245.536992935"|60201|NULL
+60202|"Atlantic dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"114660.154859543"|"114660.083675716"|60202|NULL
+60204|"Bajío dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"37383.7680757452"|"37383.746698012"|60204|NULL
+60205|"Balsas dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"62246.598462091"|"62246.6325282818"|60205|NULL
+60206|"Bolivian montane dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"72779.5726627083"|"72779.7232852718"|60206|NULL
+60207|"Cauca Valley dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"7312.79652428914"|"7312.73516449318"|60207|NULL
+60209|"Central American dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"67543.6577802108"|"67543.1227261852"|60209|NULL
+60210|"Dry Chaco"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"786789.490217629"|"786789.473026098"|60210|NULL
+60211|"Chiapas Depression dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"13973.6324522533"|"13973.6709226598"|60211|NULL
+60212|"Chiquitano dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"229765.954056098"|"229766.485502759"|60212|NULL
+60213|"Cuban dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"65488.8467063328"|"65488.3230751645"|60213|NULL
+60214|"Ecuadorian dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"21050.3106971907"|"21050.1807892493"|60214|NULL
+60215|"Hispaniolan dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"15354.3121826504"|"15353.6389457088"|60215|NULL
+60216|"Islas Revillagigedo dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"154.274325317165"|"154.26285380689"|60216|NULL
+60217|"Jalisco dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"25451.3463175206"|"25451.256437085"|60217|NULL
+60218|"Jamaican dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"2235.63381253152"|"2236.35832938199"|60218|NULL
+60219|"Lara-Falcón dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"16868.4704956305"|"16868.5189266233"|60219|NULL
+60220|"Lesser Antillean dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"836.088643597254"|"836.084595592569"|60220|NULL
+60221|"Magdalena Valley dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"19548.734105958"|"19548.6494198111"|60221|NULL
+60222|"Maracaibo dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"30052.8848517537"|"30052.6387511325"|60222|NULL
+60223|"Marańón dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"11322.2997885976"|"11322.3802144092"|60223|NULL
+60224|"Panamanian dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"5065.13702205993"|"5065.18069514758"|60224|NULL
+60225|"Patía Valley dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"2260.58036992706"|"2260.63557770384"|60225|NULL
+60226|"Puerto Rican dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"1225.89079899391"|"1225.63610141763"|60226|NULL
+60227|"Sierra de la Laguna dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"3953.71777032478"|"3953.77662652473"|60227|NULL
+60228|"Sinaloan dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"77318.2715920897"|"77317.3057416683"|60228|NULL
+60229|"Sinú Valley dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"24878.2911948405"|"24878.4321972647"|60229|NULL
+60230|"Southern Pacific dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"42039.3030657253"|"42039.5511294547"|60230|NULL
+60232|"Tumbes-Piura dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"41085.9835321899"|"41085.8897799957"|60232|NULL
+60233|"Veracruz dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"6605.43199433592"|"6605.43168423331"|60233|NULL
+60235|"Yucatán dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|6|"Neotropics"|"teow"|"49601.4608498621"|"49601.5731742868"|60235|NULL
+60301|"Bahamian pine mosaic"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"6244.04770305001"|"6243.52229009509"|60301|NULL
+60302|"Belizian pine forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"2815.30866040558"|"2815.32550982015"|60302|NULL
+60303|"Central American pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"110941.506783089"|"110941.317741618"|60303|NULL
+60304|"Cuban pine forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"6359.86282179283"|"6359.4853821982"|60304|NULL
+60305|"Hispaniolan pine forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"11560.0434019384"|"11560.0174180803"|60305|NULL
+60306|"Miskito pine forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"18236.7388676742"|"18236.6473665323"|60306|NULL
+60307|"Sierra de la Laguna pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"1061.07359388229"|"1061.04513261594"|60307|NULL
+60308|"Sierra Madre de Oaxaca pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"14298.3100389388"|"14298.3203431086"|60308|NULL
+60309|"Sierra Madre del Sur pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"60973.4879621311"|"60973.5681320837"|60309|NULL
+60310|"Trans-Mexican Volcanic Belt pine-oak forests"|3|"Tropical & Subtropical Coniferous Forests"|6|"Neotropics"|"teow"|"92025.5294662454"|"92025.1645477885"|60310|NULL
+60401|"Juan Fernández Islands temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|6|"Neotropics"|"teow"|"90.2785620054394"|"90.2393016423456"|60401|NULL
+60402|"Magellanic subpolar forests"|4|"Temperate Broadleaf & Mixed Forests"|6|"Neotropics"|"teow"|"155990.759424825"|"155989.244709485"|60402|NULL
+60403|"San Félix-San Ambrosio Islands temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|6|"Neotropics"|"teow"|"1.72595469069982"|"1.72596818753769"|60403|NULL
+60404|"Valdivian temperate forests"|4|"Temperate Broadleaf & Mixed Forests"|6|"Neotropics"|"teow"|"245295.168051005"|"245289.740476826"|60404|NULL
+60702|"Beni savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"125589.145829282"|"125589.591794159"|60702|NULL
+60703|"Campos Rupestres montane savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"26312.9381028115"|"26312.936948571"|60703|NULL
+60704|"Cerrado"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"1910038.90362639"|"1910037.55710603"|60704|NULL
+60705|"Clipperton Island shrub and grasslands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"0.889756386721052"|"0.887232494678445"|60705|NULL
+60707|"Guianan savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"104397.552402529"|"104397.754178203"|60707|NULL
+60708|"Humid Chaco"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"291595.254614638"|"291591.541662534"|60708|NULL
+60709|"Llanos"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"375786.605781521"|"375786.463136194"|60709|NULL
+60710|"Uruguayan savanna"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"351670.442443422"|"351671.238241891"|60710|NULL
+60801|"Espinal"|8|"Temperate Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"298632.7803908"|"298633.904336131"|60801|NULL
+60802|"Low Monte"|8|"Temperate Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"353572.917953184"|"353575.948477383"|60802|NULL
+60803|"Humid Pampas"|8|"Temperate Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"398391.902363882"|"398386.107345346"|60803|NULL
+60805|"Patagonian steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|6|"Neotropics"|"teow"|"574936.047912471"|"574942.420967706"|60805|NULL
+60902|"Cuban wetlands"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"5629.94459781535"|"5629.77220225414"|60902|NULL
+60903|"Enriquillo wetlands"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"627.647238634891"|"627.652202382006"|60903|NULL
+60904|"Everglades"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"19944.7898405747"|"19944.5910913253"|60904|NULL
+60905|"Guayaquil flooded grasslands"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"2923.87733902795"|"2923.90106083209"|60905|NULL
+60906|"Orinoco wetlands"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"5988.43661741819"|"5988.27835178757"|60906|NULL
+60907|"Pantanal"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"170501.126040079"|"170501.434422178"|60907|NULL
+60908|"Paraná flooded savanna"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"37024.8232634073"|"37030.8494691192"|60908|NULL
+60909|"Southern Cone Mesopotamian savanna"|9|"Flooded Grasslands & Savannas"|6|"Neotropics"|"teow"|"26865.3690620356"|"26866.2864583936"|60909|NULL
+61001|"Central Andean dry puna"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"254932.081281823"|"254929.643022742"|61001|NULL
+61002|"Central Andean puna"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"211479.65202407"|"211478.27244754"|61002|NULL
+61003|"Central Andean wet puna"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"116873.794334742"|"116873.581107046"|61003|NULL
+61004|"Cordillera Central páramo"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"12119.7037345972"|"12119.7977559822"|61004|NULL
+61005|"Cordillera de Merida páramo"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"2797.59997202992"|"2797.59056972665"|61005|NULL
+61006|"Northern Andean páramo"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"29810.4990753159"|"29810.7539396828"|61006|NULL
+61007|"Santa Marta páramo"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"1238.65916658945"|"1238.68952298689"|61007|NULL
+61008|"Southern Andean steppe"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"124778.26186237"|"124778.65763591"|61008|NULL
+61010|"High Monte"|10|"Montane Grasslands & Shrublands"|6|"Neotropics"|"teow"|"116566.891970168"|"116568.57309407"|61010|NULL
+61201|"Chilean matorral"|12|"Mediterranean Forests, Woodlands & Scrub"|6|"Neotropics"|"teow"|"148168.252959567"|"148168.757878736"|61201|NULL
+61301|"Araya and Paria xeric scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"5138.38416518882"|"5138.89102686073"|61301|NULL
+61303|"Atacama desert"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"104887.177934773"|"104887.274466546"|61303|NULL
+61304|"Caatinga"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"731086.064666682"|"731085.034618328"|61304|NULL
+61305|"Caribbean shrublands"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"2872.34605102046"|"2872.28619494281"|61305|NULL
+61306|"Cuban cactus scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"3115.84480520326"|"3114.84190542778"|61306|NULL
+61307|"Galápagos Islands scrubland mosaic"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"7846.47443570492"|"7845.89787021915"|61307|NULL
+61308|"Guajira-Barranquilla xeric scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"31368.1560771785"|"31368.1948603358"|61308|NULL
+61309|"La Costa xeric shrublands"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"68160.99695459"|"68161.0243236642"|61309|NULL
+61311|"Malpelo Island xeric scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"0.848656880457809"|"0.839518998045363"|61311|NULL
+61312|"Motagua Valley thornscrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"2328.41308026977"|"2328.38056054776"|61312|NULL
+61313|"Paraguana xeric scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"15871.1333192033"|"15871.1635748789"|61313|NULL
+61314|"San Lucan xeric scrub"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"3657.00064337654"|"3656.96446751173"|61314|NULL
+61315|"Sechura desert"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"183096.064389096"|"183098.955310105"|61315|NULL
+61316|"Tehuacán Valley matorral"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"9861.77513125184"|"9861.75070360658"|61316|NULL
+61318|"St. Peter and St. Paul rocks"|13|"Deserts & Xeric Shrublands"|6|"Neotropics"|"teow"|"6.04222161532579"|"6.03981808491351"|61318|NULL
+61401|"Amazon-Orinoco-Southern Caribbean mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"36342.1841069363"|"36342.3268931667"|61401|NULL
+61402|"Bahamian-Antillean mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"16143.967995152"|"16140.4621304037"|61402|NULL
+61403|"Mesoamerican Gulf-Caribbean mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"24809.3379499283"|"24809.1994922333"|61403|NULL
+61404|"Northern Mesoamerican Pacific mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"7068.91379699441"|"7069.03256820367"|61404|NULL
+61405|"South American Pacific mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"12612.9930404759"|"12613.0414241704"|61405|NULL
+61406|"Southern Atlantic mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"9247.27599948357"|"9245.20967057497"|61406|NULL
+61407|"Southern Mesoamerican Pacific mangroves"|14|"Mangroves"|6|"Neotropics"|"teow"|"7070.59566344395"|"7070.47590853997"|61407|NULL
+70101|"Carolines tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"521.46017175811"|"521.41668794336"|70101|NULL
+70102|"Central Polynesian tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"60.7184284623606"|"60.6414856124095"|70102|NULL
+70103|"Cook Islands tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"171.404756144527"|"171.315766658367"|70103|NULL
+70104|"Eastern Micronesia tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"151.446053681408"|"151.489271783833"|70104|NULL
+70105|"Fiji tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"11110.2579318151"|"11102.7314859155"|70105|NULL
+70106|"Hawaii tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"6696.01171930196"|"6696.05665994203"|70106|NULL
+70107|"Kermadec Islands subtropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"29.8833223260745"|"29.8695079486929"|70107|NULL
+70108|"Marquesas tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"936.307575603184"|"936.222741051059"|70108|NULL
+70109|"Ogasawara subtropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"71.315235644912"|"71.2727230800057"|70109|NULL
+70110|"Palau tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"422.263567510812"|"422.225430813959"|70110|NULL
+70111|"Rapa Nui subtropical broadleaf forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"162.983362226302"|"163.05912253265"|70111|NULL
+70112|"Samoan tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"2715.0722183123"|"2714.81738129299"|70112|NULL
+70113|"Society Islands tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"1507.38490934182"|"1507.10312643143"|70113|NULL
+70114|"Tongan tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"829.677567945933"|"829.22292580197"|70114|NULL
+70115|"Tuamotu tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"289.614340243648"|"289.421032095925"|70115|NULL
+70116|"Tubuai tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"100.379274196087"|"100.292916128237"|70116|NULL
+70117|"Western Polynesian tropical moist forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|7|"Oceania"|"teow"|"34.6496617705767"|"34.6210181518735"|70117|NULL
+70201|"Fiji tropical dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|7|"Oceania"|"teow"|"6846.55708450834"|"6846.12491982382"|70201|NULL
+70202|"Hawaii tropical dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|7|"Oceania"|"teow"|"6575.85431687218"|"6575.84269637608"|70202|NULL
+70203|"Marianas tropical dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|7|"Oceania"|"teow"|"949.181624497814"|"949.366437040287"|70203|NULL
+70204|"Yap tropical dry forests"|2|"Tropical & Subtropical Dry Broadleaf Forests"|7|"Oceania"|"teow"|"67.7475565688631"|"67.7788201677057"|70204|NULL
+70701|"Hawaii tropical high shrublands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|7|"Oceania"|"teow"|"1847.59039128463"|"1847.5775283532"|70701|NULL
+70702|"Hawaii tropical low shrublands"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|7|"Oceania"|"teow"|"1465.14627409162"|"1465.00605746752"|70702|NULL
+70703|"Northwestern Hawaii scrub"|7|"Tropical & Subtropical Grasslands, Savannas & Shrublands"|7|"Oceania"|"teow"|"6.99533714731303"|"6.98225187644786"|70703|NULL
+80101|"Guizhou Plateau broadleaf and mixed forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|8|"Palearctic"|"teow"|"269131.877883428"|"269132.065077002"|80101|NULL
+80102|"Yunnan Plateau subtropical evergreen forests"|1|"Tropical & Subtropical Moist Broadleaf Forests"|8|"Palearctic"|"teow"|"239854.425661301"|"239854.575166479"|80102|NULL
+80401|"Appenine deciduous montane forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"16147.1813803048"|"16147.1795622627"|80401|NULL
+80402|"Atlantic mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"394610.361162668"|"394609.575515136"|80402|NULL
+80403|"Azores temperate mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"2253.35793797694"|"2253.59133079131"|80403|NULL
+80404|"Balkan mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"224435.075307113"|"224438.636656572"|80404|NULL
+80405|"Baltic mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"113872.862655583"|"113871.246648364"|80405|NULL
+80406|"Cantabrian mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"79516.9796956751"|"79516.9293803372"|80406|NULL
+80407|"Caspian Hyrcanian mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"55125.0094647305"|"55130.9051982413"|80407|NULL
+80408|"Caucasus mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"170292.054215406"|"170293.396919249"|80408|NULL
+80409|"Celtic broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"206506.640930076"|"206506.941010397"|80409|NULL
+80410|"Central Anatolian steppe and woodlands"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"101492.508724945"|"101492.464030605"|80410|NULL
+80411|"Central China loess plateau mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"359866.705858536"|"359866.957534452"|80411|NULL
+80412|"Central European mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"733098.866958155"|"733097.969819877"|80412|NULL
+80413|"Central Korean deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"103561.316145471"|"103563.610984413"|80413|NULL
+80414|"Changbai Mountains mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"93437.7384028195"|"93437.5614416252"|80414|NULL
+80415|"Changjiang Plain evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"437097.301208135"|"437098.581773449"|80415|NULL
+80416|"Crimean Submediterranean forest complex"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"29758.2901613547"|"29758.2666798315"|80416|NULL
+80417|"Daba Mountains evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"168169.924962906"|"168169.563541982"|80417|NULL
+80418|"Dinaric Mountains mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"58285.7830033619"|"58285.3714581832"|80418|NULL
+80419|"East European forest steppe"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"730114.029297025"|"730097.838265096"|80419|NULL
+80420|"Eastern Anatolian deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"81627.573341252"|"81627.5287070054"|80420|NULL
+80421|"English Lowlands beech forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"45005.0407818514"|"45005.8493001246"|80421|NULL
+80422|"Euxine-Colchic broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"73783.9949195054"|"73779.4009548862"|80422|NULL
+80423|"Hokkaido deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"24909.1576677197"|"24909.7258020393"|80423|NULL
+80424|"Huang He Plain mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"433590.028129997"|"433591.507422231"|80424|NULL
+80425|"Madeira evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"771.350251303134"|"771.158309159258"|80425|NULL
+80426|"Manchurian mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"504562.966768802"|"504562.476616054"|80426|NULL
+80427|"Nihonkai evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"21281.7555529182"|"21282.3310744511"|80427|NULL
+80428|"Nihonkai montane deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"81937.8063841888"|"81938.6721575341"|80428|NULL
+80429|"North Atlantic moist mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"36809.2735213683"|"36809.9650795674"|80429|NULL
+80430|"Northeast China Plain deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"232217.615430413"|"232219.888360814"|80430|NULL
+80431|"Pannonian mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"307716.651103835"|"307716.232626117"|80431|NULL
+80432|"Po Basin mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"42232.804151826"|"42232.5768107878"|80432|NULL
+80433|"Pyrenees conifer and mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"25930.0854288827"|"25930.1756463055"|80433|NULL
+80434|"Qin Ling Mountains deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"123278.574274659"|"123278.547597434"|80434|NULL
+80435|"Rodope montane mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"31688.290510345"|"31685.6928678204"|80435|NULL
+80436|"Sarmatic mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"847052.917098753"|"847073.063763717"|80436|NULL
+80437|"Sichuan Basin evergreen broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"98008.3798239563"|"98008.751671037"|80437|NULL
+80438|"South Sakhalin-Kurile mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"11012.8513750298"|"11011.9359240133"|80438|NULL
+80439|"Southern Korea evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"13674.7088719829"|"13676.2656293868"|80439|NULL
+80440|"Taiheiyo evergreen forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"133640.927659808"|"133648.69713584"|80440|NULL
+80441|"Taiheiyo montane deciduous forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"41838.1724693426"|"41838.0798150021"|80441|NULL
+80442|"Tarim Basin deciduous forests and steppe"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"54533.0457739056"|"54532.4945267822"|80442|NULL
+80443|"Ussuri broadleaf and mixed forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"197292.814137661"|"197288.166985498"|80443|NULL
+80444|"Western Siberian hemiboreal forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"224503.918119977"|"224490.247059123"|80444|NULL
+80445|"Western European broadleaf forests"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"493836.145844463"|"493836.704785712"|80445|NULL
+80446|"Zagros Mountains forest steppe"|4|"Temperate Broadleaf & Mixed Forests"|8|"Palearctic"|"teow"|"397556.881131676"|"397566.219378605"|80446|NULL
+80501|"Alps conifer and mixed forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"149870.190602608"|"149871.217813551"|80501|NULL
+80502|"Altai montane forest and forest steppe"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"142873.848949787"|"142874.894011373"|80502|NULL
+80503|"Caledon conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"21728.2413589261"|"21728.6877465875"|80503|NULL
+80504|"Carpathian montane forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"125335.555756579"|"125335.162050954"|80504|NULL
+80505|"Da Hinggan-Dzhagdy Mountains conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"249275.786455916"|"249274.322048352"|80505|NULL
+80506|"East Afghan montane conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"20071.1440834559"|"20071.1689108105"|80506|NULL
+80507|"Elburz Range forest steppe"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"63289.5324758257"|"63287.5033272795"|80507|NULL
+80508|"Helanshan montane conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"24704.0226987579"|"24703.9434804251"|80508|NULL
+80509|"Hengduan Mountains subalpine conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"99290.8431384823"|"99290.7919080373"|80509|NULL
+80510|"Hokkaido montane conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"45410.2801611972"|"45411.0209238526"|80510|NULL
+80511|"Honshu alpine conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"11488.4271221656"|"11488.4572858801"|80511|NULL
+80512|"Khangai Mountains conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"2902.01770397569"|"2901.89904219958"|80512|NULL
+80513|"Mediterranean conifer and mixed forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"23037.0819073722"|"23036.5357076766"|80513|NULL
+80514|"Northeastern Himalayan subalpine conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"46220.2594800283"|"46220.5252165917"|80514|NULL
+80515|"Northern Anatolian conifer and deciduous forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"101409.647032124"|"101409.852868868"|80515|NULL
+80516|"Nujiang Langcang Gorge alpine conifer and mixed forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"82699.1880961622"|"82699.0010082056"|80516|NULL
+80517|"Qilian Mountains conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"16653.006795055"|"16653.1658651017"|80517|NULL
+80518|"Qionglai-Minshan conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"80134.0218320207"|"80133.8294955777"|80518|NULL
+80519|"Sayan montane conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"358805.283412751"|"358832.406685683"|80519|NULL
+80520|"Scandinavian coastal conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"16989.3555487582"|"16989.3238473429"|80520|NULL
+80521|"Tian Shan montane conifer forests"|5|"Temperate Conifer Forests"|8|"Palearctic"|"teow"|"27569.0459512575"|"27568.0361580287"|80521|NULL
+80601|"East Siberian taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"3922501.84195722"|"3922533.52971429"|80601|NULL
+80602|"Iceland boreal birch forests and alpine tundra"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"90920.5213827175"|"90921.5276690256"|80602|NULL
+80603|"Kamchatka-Kurile meadows and sparse forests"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"140451.06492339"|"140452.087836966"|80603|NULL
+80604|"Kamchatka-Kurile taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"15294.8303908287"|"15294.1066732066"|80604|NULL
+80605|"Northeast Siberian taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"1131239.07257751"|"1131205.77705787"|80605|NULL
+80606|"Okhotsk-Manchurian taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"400555.689931593"|"400520.530305497"|80606|NULL
+80607|"Sakhalin Island taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"65115.5149775227"|"65116.8718237915"|80607|NULL
+80608|"Scandinavian and Russian taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"2164548.48978118"|"2164549.80002371"|80608|NULL
+80609|"Trans-Baikal conifer forests"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"201180.823628953"|"201183.566653461"|80609|NULL
+80610|"Ural montane forests and tundra"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"175549.321918242"|"175548.421522251"|80610|NULL
+80611|"West Siberian taiga"|6|"Boreal Forests/Taiga"|8|"Palearctic"|"teow"|"1679972.09603611"|"1680018.04259192"|80611|NULL
+80801|"Alai-Western Tian Shan steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"127682.745113045"|"127683.180381812"|80801|NULL
+80802|"Altai steppe and semi-desert"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"83193.3848118819"|"83191.8661321582"|80802|NULL
+80803|"Central Anatolian steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"24934.2167211253"|"24934.2767195406"|80803|NULL
+80804|"Daurian forest steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"209637.311249608"|"209634.690924502"|80804|NULL
+80805|"Eastern Anatolian montane steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"168381.534982031"|"168381.749336238"|80805|NULL
+80806|"Emin Valley steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"65134.7363649596"|"65134.6798504408"|80806|NULL
+80807|"Faroe Islands boreal grasslands"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"1233.05404417941"|"1232.86441290389"|80807|NULL
+80808|"Gissaro-Alai open woodlands"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"168202.035376969"|"168202.220734202"|80808|NULL
+80809|"Kazakh forest steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"422383.013630221"|"422318.892700528"|80809|NULL
+80810|"Kazakh steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"807566.518896877"|"807558.397878343"|80810|NULL
+80811|"Kazakh upland"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"72199.3168473048"|"72199.3632894558"|80811|NULL
+80812|"Middle East steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"132286.328098649"|"132289.745430482"|80812|NULL
+80813|"Mongolian-Manchurian grassland"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"889459.734479713"|"889460.027424641"|80813|NULL
+80814|"Pontic steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"994436.72823481"|"994438.706810176"|80814|NULL
+80815|"Sayan Intermontane steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"34084.5367275289"|"34058.8479852146"|80815|NULL
+80816|"Selenge-Orkhon forest steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"228370.181459524"|"228369.818368631"|80816|NULL
+80817|"South Siberian forest steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"162595.632370319"|"162599.056555704"|80817|NULL
+80818|"Tian Shan foothill arid steppe"|8|"Temperate Grasslands, Savannas & Shrublands"|8|"Palearctic"|"teow"|"129229.703168157"|"129231.206507336"|80818|NULL
+80901|"Amur meadow steppe"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"123625.589964044"|"123620.343307548"|80901|NULL
+80902|"Bohai Sea saline meadow"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"11508.7849099225"|"11508.4693324473"|80902|NULL
+80903|"Nenjiang River grassland"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"23259.8302014583"|"23259.8122003051"|80903|NULL
+80904|"Nile Delta flooded savanna"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"50696.0115759672"|"50696.0437207584"|80904|NULL
+80905|"Saharan halophytics"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"53844.466247897"|"53844.1532928655"|80905|NULL
+80906|"Tigris-Euphrates alluvial salt marsh"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"35572.0444021803"|"35573.0103283412"|80906|NULL
+80907|"Suiphun-Khanka meadows and forest meadows"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"33813.5407275772"|"33818.1110205428"|80907|NULL
+80908|"Yellow Sea saline meadow"|9|"Flooded Grasslands & Savannas"|8|"Palearctic"|"teow"|"5102.21974128489"|"5102.77623813346"|80908|NULL
+81001|"Altai alpine meadow and tundra"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"90439.1960484064"|"90435.0958675196"|81001|NULL
+81002|"Central Tibetan Plateau alpine steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"629200.459727326"|"629191.75879471"|81002|NULL
+81003|"Eastern Himalayan alpine shrub and meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"121013.999822795"|"121013.620454561"|81003|NULL
+81004|"Ghorat-Hazarajat alpine meadow"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"66482.1027635237"|"66481.9772306578"|81004|NULL
+81005|"Hindu Kush alpine meadow"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"28268.555799819"|"28268.4991035846"|81005|NULL
+81006|"Karakoram-West Tibetan Plateau alpine steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"143267.470442116"|"143264.871814125"|81006|NULL
+81007|"Khangai Mountains alpine meadow"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"37167.6336124141"|"37167.6283563236"|81007|NULL
+81008|"Kopet Dag woodlands and forest steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"58316.732528786"|"58318.4234126262"|81008|NULL
+81009|"Kuh Rud and Eastern Iran montane woodlands"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"126224.75329209"|"126223.928130001"|81009|NULL
+81010|"Mediterranean High Atlas juniper steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"6327.64948090647"|"6327.64639237285"|81010|NULL
+81011|"North Tibetan Plateau-Kunlun Mountains alpine desert"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"374489.017541507"|"374493.574876754"|81011|NULL
+81012|"Northwestern Himalayan alpine shrub and meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"49389.9113889145"|"49389.9474920473"|81012|NULL
+81013|"Ordos Plateau steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"215604.420039392"|"215604.371672475"|81013|NULL
+81014|"Pamir alpine desert and tundra"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"118039.149731136"|"118039.621986687"|81014|NULL
+81015|"Qilian Mountains subalpine meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"73284.1230003677"|"73285.1789131674"|81015|NULL
+81016|"Sayan Alpine meadows and tundra"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"81209.3955758441"|"81211.8715889395"|81016|NULL
+81017|"Southeast Tibet shrublands and meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"460547.625115695"|"460543.294987422"|81017|NULL
+81018|"Sulaiman Range alpine meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"23849.7828564734"|"23849.4423324571"|81018|NULL
+81019|"Tian Shan montane steppe and meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"280611.548203605"|"280611.295902811"|81019|NULL
+81020|"Tibetan Plateau alpine shrublands and meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"272009.720210917"|"271999.573011004"|81020|NULL
+81021|"Western Himalayan alpine shrub and Meadows"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"70090.4480316028"|"70090.3913330027"|81021|NULL
+81022|"Yarlung Tsangpo arid steppe"|10|"Montane Grasslands & Shrublands"|8|"Palearctic"|"teow"|"59380.7312044646"|"59380.8890933856"|81022|NULL
+81101|"Arctic desert"|11|"Tundra"|8|"Palearctic"|"teow"|"148494.191581208"|"148495.799166387"|81101|NULL
+81102|"Bering tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"474110.465445493"|"473754.447060699"|81102|NULL
+81103|"Cherskii-Kolyma mountain tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"560271.673465964"|"560242.165388029"|81103|NULL
+81104|"Chukchi Peninsula tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"296344.802623916"|"296083.101548682"|81104|NULL
+81105|"Kamchatka Mountain tundra and forest tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"118664.202221484"|"118664.047605273"|81105|NULL
+81106|"Kola Peninsula tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"56225.6028971411"|"56224.0820311565"|81106|NULL
+81107|"Northeast Siberian coastal tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"221181.847214476"|"221233.649487266"|81107|NULL
+81108|"Northwest Russian-Novaya Zemlya tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"273957.348834102"|"273955.000745423"|81108|NULL
+81109|"Novosibirsk Islands arctic desert"|11|"Tundra"|8|"Palearctic"|"teow"|"35145.1613525953"|"35145.0447467193"|81109|NULL
+81110|"Scandinavian Montane Birch forest and grasslands"|11|"Tundra"|8|"Palearctic"|"teow"|"238025.670224089"|"238025.838681478"|81110|NULL
+81111|"Taimyr-Central Siberian tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"953456.530275922"|"953482.172384979"|81111|NULL
+81112|"Trans-Baikal Bald Mountain tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"218604.452804641"|"218608.283879492"|81112|NULL
+81113|"Wrangel Island arctic desert"|11|"Tundra"|8|"Palearctic"|"teow"|"7442.94526628025"|"7385.53685098145"|81113|NULL
+81114|"Yamal-Gydan tundra"|11|"Tundra"|8|"Palearctic"|"teow"|"407928.817948018"|"407966.90610697"|81114|NULL
+81201|"Aegean and Western Turkey sclerophyllous and mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"129495.486669014"|"129495.059566275"|81201|NULL
+81202|"Anatolian conifer and deciduous mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"86139.0512373877"|"86137.484551721"|81202|NULL
+81203|"Canary Islands dry woodlands and forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"4747.73474862545"|"4748.09651182963"|81203|NULL
+81204|"Corsican montane broadleaf and mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"3633.64549026626"|"3633.66202154195"|81204|NULL
+81205|"Crete Mediterranean forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"7840.13710024832"|"7841.35593404521"|81205|NULL
+81206|"Cyprus Mediterranean forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"9136.64954916895"|"9137.21477484493"|81206|NULL
+81207|"Eastern Mediterranean conifer-sclerophyllous-broadleaf forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"143735.567634264"|"143736.664372577"|81207|NULL
+81208|"Iberian conifer forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"34461.0379481914"|"34461.0009587959"|81208|NULL
+81209|"Iberian sclerophyllous and semi-deciduous forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"297906.683321258"|"297906.898048854"|81209|NULL
+81210|"Illyrian deciduous forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"39604.7757421465"|"39606.4455208962"|81210|NULL
+81211|"Italian sclerophyllous and semi-deciduous forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"101174.305683305"|"101176.105630179"|81211|NULL
+81212|"Mediterranean acacia-argania dry woodlands and succulent thickets"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"99802.8432538338"|"99804.9833514817"|81212|NULL
+81213|"Mediterranean dry woodlands and steppe"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"291833.781604979"|"291841.361083849"|81213|NULL
+81214|"Mediterranean woodlands and forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"357390.193984888"|"357386.243150509"|81214|NULL
+81215|"Northeastern Spain and Southern France Mediterranean forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"89981.2656828974"|"89982.522593289"|81215|NULL
+81216|"Northwest Iberian montane forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"57405.9089364277"|"57405.8149303892"|81216|NULL
+81217|"Pindus Mountains mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"39583.6162000426"|"39583.8779885859"|81217|NULL
+81218|"South Appenine mixed montane forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"13094.795155426"|"13094.7746031955"|81218|NULL
+81219|"Southeastern Iberian shrubs and woodlands"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"2729.15765283257"|"2729.68475194381"|81219|NULL
+81220|"Southern Anatolian montane conifer and deciduous forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"76450.4373179044"|"76451.3865796053"|81220|NULL
+81221|"Southwest Iberian Mediterranean sclerophyllous and mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"70611.149032473"|"70612.54352298"|81221|NULL
+81222|"Tyrrhenian-Adriatic Sclerophyllous and mixed forests"|12|"Mediterranean Forests, Woodlands & Scrub"|8|"Palearctic"|"teow"|"81326.9044238615"|"81331.2839771368"|81222|NULL
+81301|"Afghan Mountains semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"13682.4732312781"|"13682.4701888872"|81301|NULL
+81302|"Alashan Plateau semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"674349.237216199"|"674351.633762969"|81302|NULL
+81303|"Arabian Desert and East Sahero-Arabian xeric shrublands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"1847255.51947988"|"1847249.38674219"|81303|NULL
+81304|"Atlantic coastal desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"39681.1403975335"|"39683.0677113889"|81304|NULL
+81305|"Azerbaijan shrub desert and steppe"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"64090.2207212439"|"64089.7244379208"|81305|NULL
+81306|"Badghyz and Karabil semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"133644.186607198"|"133646.403518239"|81306|NULL
+81307|"Baluchistan xeric woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"288419.811083713"|"288420.296268209"|81307|NULL
+81308|"Caspian lowland desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"267974.99708195"|"267975.326413529"|81308|NULL
+81309|"Central Afghan Mountains xeric woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"139335.719865353"|"139333.471511622"|81309|NULL
+81310|"Central Asian northern desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"663852.048097263"|"663852.812371191"|81310|NULL
+81311|"Central Asian riparian woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"88800.8203164757"|"88800.1485446972"|81311|NULL
+81312|"Central Asian southern desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"567375.362158347"|"567375.696837607"|81312|NULL
+81313|"Central Persian desert basins"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"580658.128178137"|"580655.322365362"|81313|NULL
+81314|"Eastern Gobi desert steppe"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"282369.312130361"|"282367.595550652"|81314|NULL
+81315|"Gobi Lakes Valley desert steppe"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"139708.313550079"|"139713.048020974"|81315|NULL
+81316|"Great Lakes Basin desert steppe"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"157712.376354487"|"157705.828370346"|81316|NULL
+81317|"Junggar Basin semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"304949.952181422"|"304940.811466529"|81317|NULL
+81318|"Kazakh semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"680440.649476156"|"680441.664383014"|81318|NULL
+81319|"Kopet Dag semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"26284.4486646022"|"26285.3033243417"|81319|NULL
+81320|"Mesopotamian shrub desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"210906.543357348"|"210908.129040582"|81320|NULL
+81321|"North Saharan steppe and woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"1673397.97050389"|"1673404.26188043"|81321|NULL
+81322|"Paropamisus xeric woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"92610.0398895426"|"92608.9895088759"|81322|NULL
+81323|"Persian Gulf desert and semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"71855.2663848305"|"71856.0847235727"|81323|NULL
+81324|"Qaidam Basin semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"192126.794260568"|"192144.470069188"|81324|NULL
+81325|"Red Sea Nubo-Sindian tropical desert and semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"649149.672954753"|"649157.989752183"|81325|NULL
+81326|"Registan-North Pakistan sandy desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"276998.661628866"|"276998.942251405"|81326|NULL
+81327|"Sahara desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"4629419.16846305"|"4629415.47654288"|81327|NULL
+81328|"South Iran Nubo-Sindian desert and semi-desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"349056.010629191"|"349051.255756479"|81328|NULL
+81329|"South Saharan steppe and woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"1098260.66954041"|"1098255.02808363"|81329|NULL
+81330|"Taklimakan desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"742656.320182443"|"742657.015167728"|81330|NULL
+81331|"Tibesti-Jebel Uweinat montane xeric woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"82009.3103014856"|"82009.3160627312"|81331|NULL
+81332|"West Saharan montane xeric woodlands"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"257450.079718413"|"257450.334341897"|81332|NULL
+81333|"Red Sea coastal desert"|13|"Deserts & Xeric Shrublands"|8|"Palearctic"|"teow"|"58941.2334931323"|"58941.5150688543"|81333|NULL
+100001|"unassigned_land"|NULL|NULL|NULL|NULL|"eeow"|"598624.012521097"|"599232.080967727"|100001|NULL
