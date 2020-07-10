@@ -11,7 +11,10 @@ Protection Coverage: [ecoregion protection coverage sql](./ecoregion_coverage.sq
 
 ### Protected areas statistics
 
-Ecoregion Coverage
+### OTHER STATISTICS
+
++  [CEP+Landcover derived indicators](./LC)
++  [CEP+OECM derived indicators](./OECM)
 
 
 
