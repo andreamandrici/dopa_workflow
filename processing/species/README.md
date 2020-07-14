@@ -59,7 +59,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
 
 #### input dataset
 
-Geometries of all groups are filtered to include only species (selected in the previous "harmonization - step 5".
+Geometries of all groups are filtered to include only species (selected in the previous "harmonization - step 5").
 
 Code is: [creates_geoms.sql](./species_2020/creates_geoms.sql).
 Output tables are:
