@@ -89,11 +89,8 @@ Non-spatial data are normalized:
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
 	+  v_mt_categories; v_lt_species_categories
 	+  v_mt_conservation_needed; v_lt_species_conservation_needed
-	+  v_mt_countries;
-	   +  v_lt_species_countries; **lt_species_countries is filtered on fieldsWHERE presence::text IN ('Extant','Possibly Extant')
-AND origin::text IN ('Native','Reintroduced')
-AND (seasonality::text IS NULL OR seasonality::text ILIKE '%Resident%' OR seasonality::text ILIKE '%Breeding Season%')
-** ;
+	+  v_mt_countries; v_lt_species_countries;
+	   +  **v_lt_species_countries is filtered on fields `presence` ('Extant','Possibly Extant'), `origin` ('Native','Reintroduced'),`seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 	+  v_mt_habitats; v_lt_species_habitats
 	+  v_mt_research_needed; v_lt_species_research_needed
 	+  v_mt_stresses; v_lt_species_stresses
