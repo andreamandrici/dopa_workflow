@@ -84,13 +84,13 @@ Non-spatial data are normalized:
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
    +  lookup tables (lt_): tables which put in relation species (through id_no) with category tables (through code).
-The result is:
-+  8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
-   +  v_mt_categories; v_lt_species_categories
-   +  v_mt_conservation_needed;v_lt_species_conservation_needed
-   +  v_mt_countries;v_lt_species_countries
-   +  v_mt_habitats;v_lt_species_habitats
-   +  v_mt_research_needed;v_lt_species_research_needed
-   +  v_mt_stresses;v_lt_species_stresses
-   +  v_mt_threats;v_lt_species_threats
-   +  v_mt_usetrade;v_lt_species_usetrade
+
+The result is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
++  v_mt_categories; v_lt_species_categories
++  v_mt_conservation_needed; v_lt_species_conservation_needed
++  v_mt_countries; v_lt_species_countries
++  v_mt_habitats; v_lt_species_habitats
++  v_mt_research_needed; v_lt_species_research_needed
++  v_mt_stresses; v_lt_species_stresses
++  v_mt_threats; v_lt_species_threats
++  v_mt_usetrade; v_lt_species_usetrade
