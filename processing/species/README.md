@@ -80,10 +80,10 @@ Some of the species distribution ranges are too small to be (psuedo)rasterised a
 ### non-spatial
 
 Non-spatial data are normalized:
-+  creating views where fields are extracted and normalized (eg: each table contains a unique id=code and a category=name)
++  creating views where fields are extracted and normalized (eg: each table contains a unique id=`code` and a category=`name`)
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
-   +  lookup tables (lt_): tables which put in relation species (through id_no) with category tables (through code).
+   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`).
    
 	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
