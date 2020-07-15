@@ -29,7 +29,8 @@ DROP VIEW IF EXISTS species_202001.v_mt_conservation_needed CASCADE;
 CREATE VIEW species_202001.v_mt_conservation_needed AS
 WITH
 a AS (
-SELECT DISTINCT code, name
+SELECT DISTINCT
+code, name
 FROM species_202001.conservation_needed
 ORDER BY code
 ),
@@ -281,12 +282,76 @@ CREATE VIEW species_202001.v_lt_species_categories AS
 WITH
 a AS (
 SELECT DISTINCT
-assessments.internaltaxonid,
-assessments.redlistcategory
+internaltaxonid,
+redlistcategory
 FROM species_202001.assessments
 )
 SELECT (
-a.internaltaxonid)::bigint AS internaltaxonid,
-v_mt_categories.code
+a.internaltaxonid)::bigint AS id_no,
+code
 FROM (a JOIN species_202001.v_mt_categories USING (redlistcategory))
-ORDER BY (a.internaltaxonid)::bigint, v_mt_categories.code;
+ORDER BY (a.internaltaxonid)::bigint, code;
+
+------ LT_CONSERVATION NEEDED ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_conservation_needed CASCADE;
+CREATE VIEW species_202001.v_lt_species_conservation_needed AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+(code)::text AS code
+FROM species_202001.conservation_needed
+ORDER BY (conservation_needed.internaltaxonid)::bigint, (conservation_needed.code)::text;
+
+------ LT_COUNTRIES ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_countries CASCADE;
+CREATE VIEW species_202001.v_lt_species_countries AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+code
+FROM species_202001.countries
+ORDER BY (internaltaxonid)::bigint,code;
+
+------ LT_HABITATS ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_habitats CASCADE;
+CREATE VIEW species_202001.v_lt_species_habitats AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+(code)::text AS code
+FROM species_202001.habitats
+ORDER BY (internaltaxonid)::bigint, (code)::text;
+
+------ LT_RESEARCH NEEDED ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_research_needed CASCADE;
+CREATE VIEW species_202001.v_lt_species_research_needed AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+(code)::text AS code
+FROM species_202001.research_needed
+ORDER BY (internaltaxonid)::bigint, (code)::text;
+
+------ LT_STRESSES ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_stresses CASCADE;
+CREATE VIEW species_202001.v_lt_species_stresses AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+unnest(string_to_array((stresscode)::text, '|'::text)) AS code
+FROM species_202001.threats
+ORDER BY (internaltaxonid)::bigint, (unnest(string_to_array((stresscode)::text, '|'::text)));
+
+------ LT_THREATS ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_threats CASCADE;
+CREATE VIEW species_202001.v_lt_species_threats AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+(code)::text AS code
+FROM species_202001.threats
+ORDER BY (internaltaxonid)::bigint, (code)::text;
+
+------ LT_USETRADE ---------------------------------------------
+DROP VIEW IF EXISTS species_202001.v_lt_species_usetrade CASCADE;
+CREATE VIEW species_202001.v_lt_species_usetrade AS
+SELECT DISTINCT
+(internaltaxonid)::bigint AS id_no,
+(code)::text AS code
+FROM species_202001.usetrade
+ORDER BY (internaltaxonid)::bigint, (code)::text;
+
