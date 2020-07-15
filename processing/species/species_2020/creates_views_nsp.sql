@@ -22,8 +22,7 @@ WHEN 'Not Applicable'::text THEN 'NA'::text
 ELSE NULL::text
 END AS code,
 a.redlistcategory
-FROM ( SELECT DISTINCT assessments.redlistcategory
-FROM species_202001.assessments) a;
+FROM (SELECT DISTINCT redlistcategory::text FROM species_202001.assessments) a;
 ------ MT_CONSERVATION_NEEDED --------------------------------------------
 DROP VIEW IF EXISTS species_202001.v_mt_conservation_needed CASCADE;
 CREATE VIEW species_202001.v_mt_conservation_needed AS
@@ -44,12 +43,14 @@ END AS conservation_needed_cl3,
 a.code,
 a.name
 FROM a
-), conservation_needed AS (
-SELECT b.conservation_needed_cl1,
+),
+conservation_needed AS (
+SELECT
+b.conservation_needed_cl1,
 b.conservation_needed_cl2,
 b.conservation_needed_cl3,
-b.code,
-b.name
+b.code::text,
+b.name::text
 FROM b
 ORDER BY b.conservation_needed_cl1, b.conservation_needed_cl2, b.conservation_needed_cl3
 )
@@ -64,20 +65,16 @@ FROM conservation_needed;
 DROP VIEW IF EXISTS species_202001.v_mt_countries CASCADE;
 CREATE VIEW species_202001.v_mt_countries AS
 WITH
-a AS (
-SELECT DISTINCT
-code,
-name
-FROM species_202001.countries
-ORDER BY code
-),
 countries AS (
-SELECT a.code,a.name
-FROM a
+SELECT DISTINCT
+code::text,
+name::text
+FROM species_202001.countries
+ORDER BY code::text
 )
 SELECT
 code,name
-FROM countries;
+FROM countries ORDER BY code;
 
 ------ MT_HABITATS --------------------------------------------
 DROP VIEW IF EXISTS species_202001.v_mt_habitats CASCADE;
@@ -85,10 +82,10 @@ CREATE VIEW species_202001.v_mt_habitats AS
 WITH
 a AS (
 SELECT DISTINCT
-code,
-name
+code::text,
+name::text
 FROM species_202001.habitats
-ORDER BY code
+ORDER BY code::text
 ),
 b AS (
 SELECT (split_part((a.code)::text, '.'::text, 1))::integer AS habitats_cl1,
@@ -128,10 +125,10 @@ CREATE VIEW species_202001.v_mt_research_needed AS
 WITH
 a AS (
 SELECT DISTINCT
-code,
-name
+code::text,
+name::text
 FROM species_202001.research_needed
-ORDER BY code
+ORDER BY code::text
 ),
 b AS (
 SELECT (split_part((a.code)::text, '.'::text, 1))::integer AS research_needed_cl1,
@@ -228,10 +225,10 @@ CREATE VIEW species_202001.v_mt_threats AS
 WITH
 a AS (
 SELECT DISTINCT
-code,
-name
+code::text,
+name::text
 FROM species_202001.threats
-ORDER BY code
+ORDER BY code::text
 ),
 b AS (
 SELECT
@@ -306,9 +303,12 @@ DROP VIEW IF EXISTS species_202001.v_lt_species_countries CASCADE;
 CREATE VIEW species_202001.v_lt_species_countries AS
 SELECT DISTINCT
 (internaltaxonid)::bigint AS id_no,
-code
+code::text
 FROM species_202001.countries
-ORDER BY (internaltaxonid)::bigint,code;
+WHERE presence::text IN ('Extant','Possibly Extant')
+AND origin::text IN ('Native','Reintroduced')
+AND (seasonality::text IS NULL OR seasonality::text ILIKE '%Resident%' OR seasonality::text ILIKE '%Breeding Season%')
+ORDER BY (internaltaxonid)::bigint,code::text;
 
 ------ LT_HABITATS ---------------------------------------------
 DROP VIEW IF EXISTS species_202001.v_lt_species_habitats CASCADE;

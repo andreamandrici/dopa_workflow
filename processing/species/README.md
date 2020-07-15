@@ -84,12 +84,16 @@ Non-spatial data are normalized:
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
    +  lookup tables (lt_): tables which put in relation species (through id_no) with category tables (through code).
-
+   
 	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
 	+  v_mt_categories; v_lt_species_categories
 	+  v_mt_conservation_needed; v_lt_species_conservation_needed
-	+  v_mt_countries; v_lt_species_countries
+	+  v_mt_countries;
+	   +  v_lt_species_countries; **lt_species_countries is filtered on fieldsWHERE presence::text IN ('Extant','Possibly Extant')
+AND origin::text IN ('Native','Reintroduced')
+AND (seasonality::text IS NULL OR seasonality::text ILIKE '%Resident%' OR seasonality::text ILIKE '%Breeding Season%')
+** ;
 	+  v_mt_habitats; v_lt_species_habitats
 	+  v_mt_research_needed; v_lt_species_research_needed
 	+  v_mt_stresses; v_lt_species_stresses
