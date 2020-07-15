@@ -78,3 +78,20 @@ Output tables are:
 Some of the species distribution ranges are too small to be (psuedo)rasterised at 1 Km (EG: 8 amphibians are left out, of which 3 are Data Deficient, 4 are Critically Endangered). They can be recovered assigning an artificial minimum range of 1 sqkm (the single pixel intersecting the centroid), then calculating the "boost" applied as ratio artificial/original. **This goes in the todo-list**
 
 ### non-spatial
+
+Non-spatial data are normalized:
++  creating views where fields are extracted and normalized (eg: each table contains a unique id=code and a category=name)
++  splitting data in:
+   +  main tables (mt_): tables which contains static lists of categories
+   +  lookup tables (lt_): tables which put in relation species (through id_no) with category tables (through code).
+The result is:
++  8 views for main tables (v_mt_):
+   +  v_mt_categories
+   +  v_mt_conservation_needed
+   +  v_mt_countries
+   +  v_mt_habitats
+   +  v_mt_research_needed
+   +  v_mt_stresses
+   +  v_mt_threats
+   +  v_mt_usetrade
++  x views for lookup tables (v_lt)
