@@ -87,15 +87,14 @@ Non-spatial data are normalized:
    
 	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
-
-	1.  v_mt_categories; v_lt_species_categories
-	2.  v_mt_conservation_needed; v_lt_species_conservation_needed
-	3.  v_mt_countries; v_lt_species_countries;
-	4.  v_mt_habitats; v_lt_species_habitats
-	5.  v_mt_research_needed; v_lt_species_research_needed
-	6.  v_mt_stresses; v_lt_species_stresses
-	7.  v_mt_threats; v_lt_species_threats
-	8.  v_mt_usetrade; v_lt_species_usetrade
+1.  v_mt_categories; v_lt_species_categories
+2.  v_mt_conservation_needed; v_lt_species_conservation_needed
+3.  v_mt_countries; v_lt_species_countries;
+4.  v_mt_habitats; v_lt_species_habitats
+5.  v_mt_research_needed; v_lt_species_research_needed
+6.  v_mt_stresses; v_lt_species_stresses
+7.  v_mt_threats; v_lt_species_threats
+8.  v_mt_usetrade; v_lt_species_usetrade
 
 3 - Options for country filters are (**bold**=used;_italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _Possibly Extinct_, _Presence Uncertain_
