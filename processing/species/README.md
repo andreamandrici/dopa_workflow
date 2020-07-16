@@ -17,8 +17,8 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
     +  family (text),
     +  genus (text),
     +  category (text),
-    +  ecosystem_mtf (text): this field aggregates the three fields marine, terrestrial and freshwater ecosystems (true/false) in one text field ecosystem_mtf (marine, terrestrial, freshwater; 0/1-0/1-0/1). **IUCN field name "terrestial" is wrong at origin**: it misses R in the name (terrestial != terrest**R**ial).
-
+    +  ecosystem_mtf (text): this field aggregates the three fields marine, terrestrial and freshwater ecosystems (true/false) in one text field ecosystem_mtf (marine, terrestrial, freshwater; 0/1-0/1-0/1). **IUCN field name "terrestial" is wrong at origin**: it misses R in the name (terrestial != terrest**R**ial); ecosystems for corals are Capitalized! 
+    
     Code is: [creates_attributes_sp_iucn.sql](./species_2020/creates_attributes_sp_iucn.sql).
     Output table is: **species_202001.attributes_sp_iucn**.
 
@@ -84,10 +84,9 @@ Non-spatial data are normalized **directly in the final, output schema (species)
 +  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
-   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**.
+   +  lookup tables (lt_): intermediate tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These table are propaedeutic for the next category (derived tables; dt_), and exist only to facilitate the filtering of the input tables. In the next future, they could be deleted, moving the related code in the derived tables sections.
 	 
-   
-	Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
+   Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
 
 Output schema contains
 
@@ -111,13 +110,21 @@ Output schema contains
    +  lt_species_threats
    +  lt_species_usetrade
 
-+  derived tables (dt_):
-   +  dt_species_country_endemics
-   +  dt_species_threatened
-
 Options for country filters are (**bold**=used; _italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
-Above impacts the calculation of endemicity!
+Above impacts the calculation of endemicity [check_countries.sql](./species_2020/check_countries.sql)!
+
++  derived tables (dt_):
+   +  dt_species_conservation_needed
+   +  dt_species_country_endemics
+   +  dt_species_ecosystems
+   +  dt_species_habitats
+   +  dt_species_research_needed
+   +  dt_species_stresses
+   +  dt_species_threatened
+   +  dt_species_threats
+   +  dt_species_usetrade
+
 

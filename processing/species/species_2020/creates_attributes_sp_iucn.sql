@@ -13,9 +13,9 @@ genus::text,
 category::text,
 -- aggregates marine,terrestRial and freshwater ecosystems in ecosystem_mtf (marine,terrestrial,freshwater). IUCN field name "terrestial" is wrong at origin: it misses an R in the name.
 CONCAT(
-(CASE WHEN marine = 'true' THEN 1 ELSE 0 END),
-(CASE WHEN terrestial = 'true' THEN 1 ELSE 0 END),
-(CASE WHEN freshwater = 'true' THEN 1 ELSE 0 END)) ecosystem_mtf
+(CASE WHEN LOWER(marine) = 'true' THEN 1 ELSE 0 END),
+(CASE WHEN LOWER(terrestial) = 'true' THEN 1 ELSE 0 END),
+(CASE WHEN LOWER(freshwater) = 'true' THEN 1 ELSE 0 END)) ecosystem_mtf
 FROM
 
 (
