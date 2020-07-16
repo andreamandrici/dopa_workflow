@@ -117,3 +117,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     `{ my code }`
 
     Add as many paragraphs as you like.
+    
+ <span style="color:blue"> This text is blue.</span>
+<span style="color:red"> This text is red.</span>
+<span style="color:#59afe1"> This text is colored.</span>
