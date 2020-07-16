@@ -122,7 +122,7 @@ Options for country filters are (**used**;_to be reviewed_):
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
 ```css
-- text in red
+<red>text in red</red>
 + text in green
 ! text in orange
 # text in gray
