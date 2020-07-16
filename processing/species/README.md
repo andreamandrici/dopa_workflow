@@ -98,23 +98,11 @@ Non-spatial data are normalized:
 
 Options for country filters are (**bold**=used;_italic_=to be reviewed):
 +  presence: **Extant**, Extinct Post-1500, **Possibly Extant**, _Possibly Extinct_, _Presence Uncertain_
-+  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
-+  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
++  origin: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
++  seasonality: **NULL**, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
 
 **v_lt_species_countries is filtered on fields:
 +  `presence` ('Extant','Possibly Extant')(to review: 'Possibly Extinct','Presence Uncertain')
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
-Here's a simple footnote,[^1] and here's a longer one.[^2]
-
-[^1]: This is the first footnote.
-
-[^2]: This is the first footnote.
-
-
-Testing <sub>subscript</sub> and <sup>superscript</sup>
-
-Testing <sub>subscript <sub>subscript level 2</sub></sub>
-
-Testing <sup>superscript <sup>superscript level 2</sup></sup>
