@@ -17,7 +17,7 @@ Since dataset is made by different sources (IUCN and Birdlife) and data models (
     +  family (text),
     +  genus (text),
     +  category (text),
-    +  ecosystem_mtf (text): this field aggregates the three fields marine, terrestrial and freshwater ecosystems (true/false) in one text field ecosystem_mtf (marine, terrestrial, freshwater; 0/1-0/1-0/1). **IUCN field name "terrestial" is wrong at origin**: it misses R in the name (terrestial != terrest**R**ial); ecosystems for corals are Capitalized! 
+    +  ecosystem_mtf (text): this field aggregates the three fields marine, terrestrial and freshwater ecosystems (true/false) in one text field ecosystem_mtf (marine, terrestrial, freshwater; 0/1-0/1-0/1). **IUCN field name "terrestial" is wrong at origin**: it misses R in the name (terrestial != terrest**R**ial); ecosystems for corals are Capitalized, for the other groups they are not! 
     
     Code is: [creates_attributes_sp_iucn.sql](./species_2020/creates_attributes_sp_iucn.sql).
     Output table is: **species_202001.attributes_sp_iucn**.
