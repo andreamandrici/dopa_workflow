@@ -87,6 +87,7 @@ Non-spatial data are normalized:
    
 	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
+
 	1.  v_mt_categories; v_lt_species_categories
 	2.  v_mt_conservation_needed; v_lt_species_conservation_needed
 	3.  v_mt_countries; v_lt_species_countries;
