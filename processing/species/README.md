@@ -80,7 +80,7 @@ Some of the species distribution ranges are too small to be (psuedo)rasterised a
 
 ### non-spatial
 
-Non-spatial data are normalized **directly in the final, output schema**:
+Non-spatial data are normalized **directly in the final, output schema (species)**:
 +  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
@@ -92,28 +92,32 @@ Non-spatial data are normalized **directly in the final, output schema**:
 Output schema contains
 
 +  main tables (mt_):
-   +  mt_categories; lt_species_categories
-   +  mt_conservation_needed; lt_species_conservation_needed
-   +  mt_countries; lt_species_countries;
-   +  mt_habitats; lt_species_habitats
-   +  mt_research_needed; lt_species_research_needed
-   +  mt_stresses; lt_species_stresses
-   +  mt_threats; lt_species_threats
-   +  mt_usetrade; lt_species_usetrade
+   +  mt_attributes
+   +  mt_categories
+   +  mt_conservation_needed
+   +  mt_countries
+   +  mt_habitats
+   +  mt_research_needed
+   +  mt_stresses
+   +  mt_threats
+   +  mt_usetrade
 
 +  lookup tables (lt_):
-   +  mt_categories; lt_species_categories
-   +  mt_conservation_needed; lt_species_conservation_needed
-   +  mt_countries; lt_species_countries;
-   +  mt_habitats; lt_species_habitats
-   +  mt_research_needed; lt_species_research_needed
-   +  mt_stresses; lt_species_stresses
-   +  mt_threats; lt_species_threats
-   +  mt_usetrade; lt_species_usetrade
+   +  lt_species_conservation_needed
+   +  lt_species_countries;
+   +  lt_species_habitats
+   +  lt_species_research_needed
+   +  lt_species_stresses
+   +  lt_species_threats
+   +  lt_species_usetrade
 
 +  derived tables (dt_):
+   +  dt_species_country_endemics
+   +  dt_species_threatened
 
-3 - Options for country filters are (**bold**=used; _italic_=to be reviewed):
+Options for country filters are (**bold**=used; _italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
+Above impacts the calculation of endemicity!
+

@@ -74,8 +74,8 @@ WHERE id_no IN (SELECT DISTINCT id_no FROM species_202001.attributes)
 ORDER BY id_no;
 
 ---- DT_COUNTRY_ENDEMICS
-DROP TABLE IF EXISTS species.dt_country_endemics CASCADE;
-CREATE TABLE species.dt_country_endemics AS
+DROP TABLE IF EXISTS species.dt_species_country_endemics CASCADE;
+CREATE TABLE species.dt_species_country_endemics AS
 SELECT id_no,code country,CARDINALITY(code) n_country,CASE CARDINALITY(code) WHEN 1 THEN 1::bool ELSE 0::bool END endemic
 FROM (
 	SELECT id_no,ARRAY_AGG(DISTINCT code ORDER BY code) code
