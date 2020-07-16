@@ -88,15 +88,30 @@ Non-spatial data are normalized **directly in the final, output schema**:
 	 
    
 	Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
-    Output is: 8 main tables (mt_) and 8 related lookup tables (lt_):
-1.  mt_categories; lt_species_categories
-2.  mt_conservation_needed; lt_species_conservation_needed
-3.  mt_countries; lt_species_countries;
-4.  mt_habitats; lt_species_habitats
-5.  mt_research_needed; lt_species_research_needed
-6.  mt_stresses; lt_species_stresses
-7.  mt_threats; lt_species_threats
-8.  mt_usetrade; lt_species_usetrade
+
+Output schema contains
+
++  main tables (mt_):
+   +  mt_categories; lt_species_categories
+   +  mt_conservation_needed; lt_species_conservation_needed
+   +  mt_countries; lt_species_countries;
+   +  mt_habitats; lt_species_habitats
+   +  mt_research_needed; lt_species_research_needed
+   +  mt_stresses; lt_species_stresses
+   +  mt_threats; lt_species_threats
+   +  mt_usetrade; lt_species_usetrade
+
++  lookup tables (lt_):
+   +  mt_categories; lt_species_categories
+   +  mt_conservation_needed; lt_species_conservation_needed
+   +  mt_countries; lt_species_countries;
+   +  mt_habitats; lt_species_habitats
+   +  mt_research_needed; lt_species_research_needed
+   +  mt_stresses; lt_species_stresses
+   +  mt_threats; lt_species_threats
+   +  mt_usetrade; lt_species_usetrade
+
++  derived tables (dt_):
 
 3 - Options for country filters are (**bold**=used; _italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
