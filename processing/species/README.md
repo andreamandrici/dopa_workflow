@@ -111,11 +111,11 @@ Output schema contains
    +  lt_species_threats
    +  lt_species_usetrade
 
-Options for **country** filters are (**bold**=used; _italic_=to be reviewed):
-+  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
-+  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
-+  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
-Above impacts the calculation of endemicity [check_countries.sql](./species_2020/check_countries.sql)!
+	Options for **country** filters are (**bold**=used; _italic_=to be reviewed):
+	+  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
+	+  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
+	+  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
+	Above impacts the calculation of endemicity [check_countries.sql](./species_2020/check_countries.sql)!
 
 +  derived tables (dt_):
    +  dt_species_conservation_needed
