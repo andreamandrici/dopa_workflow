@@ -96,7 +96,7 @@ Non-spatial data are normalized:
 	+  v_mt_threats; v_lt_species_threats
 	+  v_mt_usetrade; v_lt_species_usetrade
 
-Options for country filters are (**used**;_to be reviewed_):
+Options for country filters are (**bold**=used;_italic_=to be reviewed):
 +  presence: Extant,Extinct Post-1500,Possibly Extant,Possibly Extinct,Presence Uncertain
 +  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
