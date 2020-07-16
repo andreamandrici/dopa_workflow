@@ -101,13 +101,18 @@ Options for country filters are (**used**;_to be reviewed_):
 +  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
 
-```diff
 **presence**:
+```diff
 + Extant,
-- Extinct Post-1500,
-+ Possibly Extant,
-! Possibly Extinct, ! Presence Uncertain
-+  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
+- Extinct Post-1500
++ Possibly Extant
+! Possibly Extinct
+! Presence Uncertain
+```
+**origin**:
+```diff
+- Assisted Colonisation
+- Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
 ```
 
