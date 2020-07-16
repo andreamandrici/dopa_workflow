@@ -101,44 +101,19 @@ Options for country filters are (**used**;_to be reviewed_):
 +  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
 
-**presence**:
-```diff
-+ Extant,
-- Extinct Post-1500
-+ Possibly Extant
-! Possibly Extinct
-! Presence Uncertain
-```
-**origin**:
-```diff
-- Assisted Colonisation
-- Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
-+  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
-```
-
 **v_lt_species_countries is filtered on fields:
 +  `presence` ('Extant','Possibly Extant')(to review: 'Possibly Extinct','Presence Uncertain')
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
-```css
-<red>text in red</red>
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
-```json
-   // code for coloring
-```
-```html
-   // code for coloring
-```
-```js
-   // code for coloring
-```
-```css
-   // code for coloring
-```
-// etc.
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
