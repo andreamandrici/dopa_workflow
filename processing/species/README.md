@@ -83,8 +83,9 @@ Some of the species distribution ranges are too small to be (psuedo)rasterised a
 Non-spatial data are normalized **directly in the final, output schema (species)**:
 +  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
 +  splitting data in:
-   +  main tables (mt_): tables which contains static lists of categories
-   +  lookup tables (lt_): intermediate tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These table are propaedeutic for the next category (derived tables; dt_), and exist only to facilitate the filtering of the input tables. In the next future, they could be deleted, moving the related code in the derived tables sections.
+   +  main tables (mt_): tables which contains static lists of categories **existing in the current dataset** (they are derived from input tables).
+   +  lookup tables (lt_): intermediate tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These tables are propaedeutic for the next category (derived tables; dt_), and exist only to facilitate the filtering of the input tables. In the next future, they could be deleted, moving the related code in the derived tables sections.
+   +  derived tables (dt_): final tables which put in relation species (through `id_no`) with category tables (through arrays of `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These tables are derived from the previous intermediate category (lookup tables; lt_), which exist only to facilitate the filtering of the input tables. In the next future, lookup tables could be deleted, moving the related code in this section.
 	 
    Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
 
@@ -110,7 +111,7 @@ Output schema contains
    +  lt_species_threats
    +  lt_species_usetrade
 
-Options for country filters are (**bold**=used; _italic_=to be reviewed):
+Options for **country** filters are (**bold**=used; _italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
