@@ -79,24 +79,25 @@ Some of the species distribution ranges are too small to be (psuedo)rasterised a
 
 ### non-spatial
 
-Non-spatial data are normalized:
-+  creating views where fields are extracted and normalized (eg: each table contains a unique id=`code` and a category=`name`)
+Non-spatial data are normalized **directly in the final, output schema**:
++  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
-   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`).
+   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`). **Only id_no present in both datasets (spatial and non spatial) are included in the final selection**.
+	 
    
-	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
-    Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
-1.  v_mt_categories; v_lt_species_categories
-2.  v_mt_conservation_needed; v_lt_species_conservation_needed
-3.  v_mt_countries; v_lt_species_countries;
-4.  v_mt_habitats; v_lt_species_habitats
-5.  v_mt_research_needed; v_lt_species_research_needed
-6.  v_mt_stresses; v_lt_species_stresses
-7.  v_mt_threats; v_lt_species_threats
-8.  v_mt_usetrade; v_lt_species_usetrade
+	Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
+    Output is: 8 main tables (mt_) and 8 related lookup tables (lt_):
+1.  mt_categories; lt_species_categories
+2.  mt_conservation_needed; lt_species_conservation_needed
+3.  mt_countries; lt_species_countries;
+4.  mt_habitats; lt_species_habitats
+5.  mt_research_needed; lt_species_research_needed
+6.  mt_stresses; lt_species_stresses
+7.  mt_threats; lt_species_threats
+8.  mt_usetrade; lt_species_usetrade
 
 3 - Options for country filters are (**bold**=used;_italic_=to be reviewed):
-+  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _Possibly Extinct_, _Presence Uncertain_
++  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
