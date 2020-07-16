@@ -87,22 +87,16 @@ Non-spatial data are normalized:
    
 	Code is: [creates_attributes.sql](./species_2020/creates_views_nsp.sql).
     Output is: 8 views for main tables (v_mt_) and 8 for related lookup tables (lt_):
-	+  v_mt_categories; v_lt_species_categories
-	+  v_mt_conservation_needed; v_lt_species_conservation_needed
-	+  v_mt_countries; v_lt_species_countries;
-	+  v_mt_habitats; v_lt_species_habitats
-	+  v_mt_research_needed; v_lt_species_research_needed
-	+  v_mt_stresses; v_lt_species_stresses
-	+  v_mt_threats; v_lt_species_threats
-	+  v_mt_usetrade; v_lt_species_usetrade
+	1.  v_mt_categories; v_lt_species_categories
+	2.  v_mt_conservation_needed; v_lt_species_conservation_needed
+	3.  v_mt_countries; v_lt_species_countries;
+	4.  v_mt_habitats; v_lt_species_habitats
+	5.  v_mt_research_needed; v_lt_species_research_needed
+	6.  v_mt_stresses; v_lt_species_stresses
+	7.  v_mt_threats; v_lt_species_threats
+	8.  v_mt_usetrade; v_lt_species_usetrade
 
-Options for country filters are (**bold**=used;_italic_=to be reviewed):
+3 - Options for country filters are (**bold**=used;_italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _Possibly Extinct_, _Presence Uncertain_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
-
-**v_lt_species_countries is filtered on fields:
-+  `presence` ('Extant','Possibly Extant')(to review: 'Possibly Extinct','Presence Uncertain')
-+  `origin` ('Native','Reintroduced')
-+  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
-
