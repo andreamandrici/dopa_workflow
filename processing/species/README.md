@@ -75,6 +75,7 @@ Output tables are:
 [Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. STEP 0 (create infrastructure) and A (import input tables) are executed independently. If needed, geometry fix is applied after step A. All the other steps are executed inside `z_do_it_all.sh` script.
 [Environment](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/confs) and [log](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/logs) files are reported.
 [SQL](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/sql) files are also reported, when geometry fix was needed (at step a of flattening).
+
 Some of the species distribution ranges are too small to be (psuedo)rasterised at 1 Km (EG: 8 amphibians are left out, of which 3 are Data Deficient, 4 are Critically Endangered). They can be recovered assigning an artificial minimum range of 1 sqkm (the single pixel intersecting the centroid), then calculating the "boost" applied as ratio artificial/original. **This goes in the todo-list**
 
 ### non-spatial
@@ -97,7 +98,7 @@ Non-spatial data are normalized **directly in the final, output schema**:
 7.  mt_threats; lt_species_threats
 8.  mt_usetrade; lt_species_usetrade
 
-3 - Options for country filters are (**bold**=used;_italic_=to be reviewed):
+3 - Options for country filters are (**bold**=used; _italic_=to be reviewed):
 +  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
 +  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
 +  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain

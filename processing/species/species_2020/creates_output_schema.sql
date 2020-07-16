@@ -31,6 +31,13 @@ END AS code,
 a.redlistcategory AS name
 FROM (SELECT DISTINCT redlistcategory::text FROM species_202001.assessments) a
 ORDER BY code;
+---- DT_THREATENED
+DROP TABLE IF EXISTS species.dt_species_threatened CASCADE;
+CREATE TABLE species.dt_species_threatened AS
+SELECT id_no,true::bool threatened
+FROM species.mt_attributes
+WHERE category IN ('CR','EN','VU')
+ORDER BY id_no;
 
 --------- COUNTRIES ----------------------------------------------------
 ------ MT_COUNTRIES ----------------------------------------------------
