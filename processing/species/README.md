@@ -106,5 +106,10 @@ Options for country filters are:
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
-`#ffffff` 
-
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
