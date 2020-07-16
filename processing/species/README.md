@@ -83,7 +83,7 @@ Non-spatial data are normalized **directly in the final, output schema**:
 +  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
 +  splitting data in:
    +  main tables (mt_): tables which contains static lists of categories
-   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`). **Only id_no present in both datasets (spatial and non spatial) are included in the final selection**.
+   +  lookup tables (lt_): tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**.
 	 
    
 	Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
