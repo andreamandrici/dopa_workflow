@@ -106,18 +106,8 @@ Options for country filters are (**used**;_to be reviewed_):
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+Here's a simple footnote,[^1] and here's a longer one.[^2]
 
 [^1]: This is the first footnote.
 
-[^bignote]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
-    
- <span style="color:blue"> This text is blue.</span>
-<span style="color:red"> This text is red.</span>
-<span style="color:#59afe1"> This text is colored.</span>
+[^2]: This is the first footnote.
