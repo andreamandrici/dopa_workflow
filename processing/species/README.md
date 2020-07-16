@@ -102,7 +102,7 @@ Options for country filters are (**used**;_to be reviewed_):
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
 
 ```diff
-presence:
+**presence**:
 + Extant,
 - Extinct Post-1500,
 + Possibly Extant,
