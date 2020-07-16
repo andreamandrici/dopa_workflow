@@ -100,8 +100,9 @@ Options for country filters are:
 +  presence: Extant,Extinct Post-1500,Possibly Extant,Possibly Extinct,Presence Uncertain
 +  origin: Assisted Colonisation,Introduced,Native,Origin Uncertain,Reintroduced,Vagrant
 +  seasonality: NULL,Non-Breeding Season,Breeding Season,Resident,Passage,Seasonal Occurrence Uncertain
+
 **v_lt_species_countries is filtered on fields:
-+  `presence` ('Extant','Possibly Extant')
++  `presence` ('Extant','Possibly Extant')(to review: 'Possibly Extinct','Presence Uncertain')
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
