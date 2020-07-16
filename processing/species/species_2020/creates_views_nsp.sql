@@ -305,9 +305,10 @@ SELECT DISTINCT
 (internaltaxonid)::bigint AS id_no,
 code::text
 FROM species_202001.countries
-WHERE presence::text IN ('Extant','Possibly Extant')
+
+WHERE presence::text IN ('Extant','Possibly Extant')--,'Possibly Extinct')--,'Presence Uncertain')
 AND origin::text IN ('Native','Reintroduced')
-AND (seasonality::text IS NULL OR seasonality::text ILIKE '%Resident%' OR seasonality::text ILIKE '%Breeding Season%')
+AND (seasonality::text IS NULL OR seasonality::text ILIKE '%Resident%' OR seasonality::text ILIKE '%Breeding Season%' OR seasonality::text ILIKE '%Non-Breeding Season%')
 ORDER BY (internaltaxonid)::bigint,code::text;
 
 ------ LT_HABITATS ---------------------------------------------
