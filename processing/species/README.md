@@ -128,4 +128,7 @@ Output schema contains
    +  dt_species_threats
    +  dt_species_usetrade
 
+### Outputs
 
+
+   Code is: [creates_output_table_function.sql](./species_2020/creates_output_table_function.sql).
