@@ -111,3 +111,10 @@ Here's a simple footnote,[^1] and here's a longer one.[^2]
 [^1]: This is the first footnote.
 
 [^2]: This is the first footnote.
+
+
+Testing <sub>subscript</sub> and <sup>superscript</sup>
+
+Testing <sub>subscript <sub>subscript level 2</sub></sub>
+
+Testing <sup>superscript <sup>superscript level 2</sup></sup>
