@@ -106,7 +106,5 @@ Options for country filters are:
 +  `origin` ('Native','Reintroduced')
 +  `seasonality`(NULL,'%Resident%','%Breeding Season%','%Non-Breeding Season%')**;
 
-<div class="text-white bg-blue mb-2">
-  .text-white on .bg-blue
-</div>
+`#ffffff` 
 
