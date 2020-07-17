@@ -132,12 +132,16 @@ Output schema contains
 
 The final step creates:
 +  mt_species_output: this table rebuild relations within `mt_attributes` table and all  `dt_` tables.
-+  get_list_species_output: this function interrogates the above table, and allows filtering on columns
++  get_list_species_output: this function interrogates the above table, and returns a list of species, allowing filtering on columns
 +  The following functions interrogate the related main tables, and shows existing values that can be used as filters on the main funcion:
-	+  get_list_research_needed 
-	+  species.get_list_stresses
-	+  species.get_list_threats
-	+  species.get_list_usetrade
+   +  get_list_categories
+   +  get_list_conservation_needed
+   +  get_list_countries
+   +  get_list_habitats
+   +  get_list_research_needed 
+   +  species.get_list_stresses
+   +  species.get_list_threats
+   +  species.get_list_usetrade
 
 
    Code is: [creates_output_table_function.sql](./species_2020/creates_output_table_function.sql).

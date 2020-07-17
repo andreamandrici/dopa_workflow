@@ -64,6 +64,51 @@ END;
 $BODY$;
 COMMENT ON FUNCTION species.get_list_species_output() IS 'Shows all species direct and relate attributes';
 
+-------FN_GET_LIST_CATEGORIES--------------------------------
+CREATE OR REPLACE FUNCTION species.get_list_categories()
+RETURNS SETOF species.mt_categories
+LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+RETURN QUERY EXECUTE 'SELECT * FROM species.mt_categories;';
+END;
+$BODY$;
+COMMENT ON FUNCTION species.get_list_categories() IS 'Shows list of EXISTING categories';
+
+
+-------FN_GET_LIST_CONSERVATION_NEEDED--------------------------------
+CREATE OR REPLACE FUNCTION species.get_list_conservation_needed()
+RETURNS SETOF species.mt_conservation_needed
+LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+RETURN QUERY EXECUTE 'SELECT * FROM species.mt_conservation_needed;';
+END;
+$BODY$;
+COMMENT ON FUNCTION species.get_list_conservation_needed() IS 'Shows list of EXISTING conservation needed';
+
+-------FN_GET_LIST_COUNTRIES --------------------------------
+CREATE OR REPLACE FUNCTION species.get_list_countries()
+RETURNS SETOF species.mt_countries
+LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+RETURN QUERY EXECUTE 'SELECT * FROM species.mt_countries;';
+END;
+$BODY$;
+COMMENT ON FUNCTION species.get_list_countries() IS 'Shows list of EXISTING countries';
+
+-------FN_GET_LIST_HABITATS --------------------------------
+CREATE OR REPLACE FUNCTION species.get_list_habitats()
+RETURNS SETOF species.mt_habitats
+LANGUAGE 'plpgsql'
+AS $BODY$
+BEGIN
+RETURN QUERY EXECUTE 'SELECT * FROM species.mt_habitats;';
+END;
+$BODY$;
+COMMENT ON FUNCTION species.get_list_habitats() IS 'Shows list of EXISTING habitats;';
+
 -------FN_GET_LIST_RESEARCH_NEEDED--------------------------------
 CREATE OR REPLACE FUNCTION species.get_list_research_needed()
 RETURNS SETOF species.mt_research_needed

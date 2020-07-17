@@ -194,37 +194,37 @@ FROM species_202001.habitats
 ORDER BY code::text
 ),
 b AS (
-SELECT (split_part((a.code)::text, '.'::text, 1))::integer AS habitats_cl1,
+SELECT (split_part((a.code)::text, '.'::text, 1))::integer AS cl1,
 CASE
 WHEN ((a.code)::text ~~ '%.%'::text) THEN (split_part((a.code)::text, '.'::text, 2))::integer
 ELSE 0
-END AS habitats_cl2,
+END AS cl2,
 CASE
 WHEN ((a.code)::text ~~ '%.%.%'::text) THEN (split_part((a.code)::text, '.'::text, 3))::integer
 ELSE 0
-END AS habitats_cl3,
+END AS cl3,
 a.code,
 a.name
 FROM a
 ),
 habitats AS (
 SELECT
-b.habitats_cl1,
-b.habitats_cl2,
-b.habitats_cl3,
+b.cl1,
+b.cl2,
+b.cl3,
 b.code,
 b.name
 FROM b
-ORDER BY b.habitats_cl1, b.habitats_cl2, b.habitats_cl3
+ORDER BY b.cl1, b.cl2, b.cl3
 )
 SELECT
-habitats_cl1,
-habitats_cl2,
-habitats_cl3,
+cl1,
+cl2,
+cl3,
 code,
 name
 FROM habitats
-ORDER BY code;
+ORDER BY cl1,cl2,cl3;
 
 ------ LT_SPECIES_HABITATS ---------------------------------------------
 DROP TABLE IF EXISTS species.lt_species_habitats CASCADE; 
