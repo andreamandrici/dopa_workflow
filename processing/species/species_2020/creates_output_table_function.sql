@@ -33,36 +33,137 @@ LEFT JOIN species.dt_species_stresses j USING(id_no)
 ORDER BY a.id_no;
 
 -- CREATES FINAL FUNCTIONS ---------------------------------------------
--------FN_GET_LIST_SPECIES_OUTPUT--------------------------------
-CREATE OR REPLACE FUNCTION species.get_list_species_output()
+
+-------FN_GET_LIST_SPECIES_OUTPUT---------------------------------------
+DROP FUNCTION IF EXISTS species.get_list_species_output(bigint, text, text, text, text, text, text, boolean, text, text, text, boolean, text, text, text, text, text);
+CREATE OR REPLACE FUNCTION species.get_list_species_output(
+a_id_no bigint DEFAULT NULL::bigint,
+b_class text DEFAULT NULL::text,
+c_order text DEFAULT NULL::text,
+d_family text DEFAULT NULL::text,
+e_genus text DEFAULT NULL::text,
+f_binomial text DEFAULT NULL::text,
+g_category text DEFAULT NULL::text,
+h_threatened bool DEFAULT NULL::bool,
+i_ecosystems text DEFAULT NULL::text,
+j_habitats text DEFAULT NULL::text,
+k_country text DEFAULT NULL::text,
+l_endemic bool DEFAULT NULL::bool,
+m_stresses text DEFAULT NULL::text,
+n_threats text DEFAULT NULL::text,
+o_research_needed text DEFAULT NULL::text,
+p_conservation_needed text DEFAULT NULL::text,
+q_usetrade text DEFAULT NULL::text
+)
 RETURNS SETOF species.mt_species_output
+LANGUAGE 'plpgsql'
+AS $BODY$
+DECLARE
+mg_category text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(g_category, ',') AS a) tb);
+mi_ecosystems text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(LOWER(i_ecosystems), ',') AS a) tb);
+mj_habitats text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(j_habitats, ',') AS a) tb);
+mk_country text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(UPPER(k_country), ',') AS a) tb);
+mm_stresses text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(m_stresses, ',') AS a) tb);
+mn_threats text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(n_threats, ',') AS a) tb);
+mo_research_needed text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(o_research_needed, ',') AS a) tb);
+mp_conservation_needed text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(p_conservation_needed, ',') AS a) tb);
+mq_usetrade text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(a),',') FROM (SELECT a FROM regexp_split_to_table(q_usetrade, ',') AS a) tb);
+
+sql TEXT;
+BEGIN
+
+sql :='
+SELECT * FROM species.mt_species_output
+WHERE id_no IS NOT NULL';
+IF a_id_no IS NOT NULL THEN sql := sql || ' AND id_no = $1 '; END IF;
+IF b_class IS NOT NULL THEN sql := sql || ' AND class ILIKE '''||b_class||'%'' '; END IF;
+IF c_order IS NOT NULL THEN sql := sql || ' AND order_ ILIKE '''||c_order||'%'' '; END IF;
+IF d_family IS NOT NULL THEN sql := sql || ' AND family ILIKE '''||d_family||'%'' '; END IF;
+IF e_genus IS NOT NULL THEN sql := sql || ' AND genus ILIKE '''||d_family||'%'' '; END IF;
+IF f_binomial IS NOT NULL THEN sql := sql || ' AND binomial ILIKE '''||e_genus||'%''  '; END IF;
+IF g_category IS NOT NULL THEN sql := sql || ' AND category IN ('||mg_category||') '; END IF;
+IF h_threatened IS NOT NULL THEN sql := sql || ' AND threatened IS '||h_threatened||' '; END IF;
+IF i_ecosystems IS NOT NULL THEN sql := sql || ' AND ARRAY['||mi_ecosystems||'] && ecosystems  '; END IF;
+IF j_habitats IS NOT NULL THEN sql := sql || ' AND ARRAY['||mj_habitats||'] && habitats  '; END IF;
+IF k_country IS NOT NULL THEN sql := sql || ' AND ARRAY['||mk_country||'] && country  '; END IF;
+IF l_endemic IS NOT NULL THEN sql := sql || ' AND endemic IS '||l_endemic||' '; END IF;
+IF m_stresses IS NOT NULL THEN sql := sql || ' AND ARRAY['||mm_stresses||'] && stresses  '; END IF;
+IF n_threats IS NOT NULL THEN sql := sql || ' AND ARRAY['||mn_threats||'] && threats  '; END IF;
+IF o_research_needed IS NOT NULL THEN sql := sql || ' AND ARRAY['||mo_research_needed||'] && research_needed  '; END IF;
+IF p_conservation_needed IS NOT NULL THEN sql := sql || ' AND ARRAY['||mp_conservation_needed||'] && conservation_needed  '; END IF;
+IF q_usetrade IS NOT NULL THEN sql := sql || ' AND ARRAY['||mq_usetrade||']::integer[] && usetrade  '; END IF;
+
+
+sql := sql || ' ORDER BY id_no;';
+RETURN QUERY EXECUTE sql;
+END;
+$BODY$;
+COMMENT ON FUNCTION species.get_list_species_output(bigint, text, text, text, text, text, text, boolean, text, text, text, boolean, text, text, text, text, text)
+IS 'Shows all species direct and relate attributes';
+
+-------FN_GET_LIST_SPECIES_OUTPUT---------------------------------------
+CREATE OR REPLACE FUNCTION species.get_single_species_output(a_id_no bigint DEFAULT 219)
+RETURNS TABLE (
+id_no bigint,
+class text,
+order_ text,
+family text,
+genus text,
+binomial text,
+category text,
+threatened bool,
+n_country integer,
+endemic bool,
+ecosystems text,
+habitat_code text,
+habitat_name text,
+country_code text,
+country_name text,
+stress_code text,
+stress_name text,
+threat_code text,
+threat_name text,
+research_needed_code text,
+research_needed_name text,
+conservation_needed_code text,
+conservation_needed_name text,
+usetrade_code integer,
+usetrade_name text
+)
 LANGUAGE 'plpgsql'
 AS $BODY$
 BEGIN
 RETURN QUERY EXECUTE '
-SELECT * FROM species.mt_species_output
-WHERE id_no IS NOT NULL
--- AND id_no=18
--- AND class ILIKE ''mammalia''
--- AND order_ ILIKE ''carnivora''
--- AND family ILIKE ''FELIDAE''
--- AND genus ILIKE ''felis''
--- AND binomial ILIKE ''Abrocoma%''
--- AND category IN (''VU'')
--- AND threatened IS TRUE
--- AND ARRAY[''marine''] && ecosystems
--- AND ARRAY[''IT''] && country
--- AND endemic IS TRUE
--- AND ARRAY[''1.2.0''] && stresses
--- AND ARRAY[''2.4.3''] && threats
--- AND ARRAY[''2.1''] && conservation_needed
--- AND ARRAY[''2.1''] && research_needed
--- AND ARRAY[1,5] && usetrade
-ORDER BY id_no;
-';
+WITH
+a AS (
+SELECT
+id_no,class,order_,family,genus,binomial,category,threatened,n_country,endemic,t.*
+FROM species.mt_species_output, UNNEST(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade) t(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade)
+WHERE id_no = 219
+)
+SELECT
+a.id_no,a.class,a.order_,a.family,a.genus,a.binomial,a.category,a.threatened,a.n_country,a.endemic,a.ecosystems,
+b.code habitat_code,b.name habitat_name,
+c.code country_code,c.name country_name,
+d.code stress_code,d.name stress_name,
+e.code threat_code,e.name threat_name,
+f.code research_needed_code,f.name research_needed_name,
+g.code conservation_needed_code,g.name conservation_needed_name,
+h.code usetrade_code,h.name usetrade_name
+FROM a
+LEFT JOIN species.mt_habitats b ON a.habitats=b.code
+LEFT JOIN species.mt_countries c ON a.country=c.code
+LEFT JOIN species.mt_stresses d ON a.stresses=d.code
+LEFT JOIN species.mt_threats e ON a.threats=e.code
+LEFT JOIN species.mt_research_needed f ON a.research_needed=f.code
+LEFT JOIN species.mt_conservation_needed g ON a.conservation_needed=g.code
+LEFT JOIN species.mt_usetrade h ON a.usetrade=h.code
+WHERE id_no = '||a_id_no||'
+ORDER BY ecosystems,habitat_code,country_code,stress_code,threat_code,research_needed_code,conservation_needed_code,usetrade_code
+;';
 END;
 $BODY$;
-COMMENT ON FUNCTION species.get_list_species_output() IS 'Shows all species direct and relate attributes';
+COMMENT ON FUNCTION species.get_single_species_output(bigint) IS 'Shows for a single species direct and related detailed attributes';
 
 -------FN_GET_LIST_CATEGORIES--------------------------------
 CREATE OR REPLACE FUNCTION species.get_list_categories()
