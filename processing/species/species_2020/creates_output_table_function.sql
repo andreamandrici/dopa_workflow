@@ -178,7 +178,7 @@ a AS (
 SELECT
 id_no,class,order_,family,genus,binomial,category,threatened,n_country,endemic,t.*
 FROM species.mt_species_output, UNNEST(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade) t(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade)
-WHERE id_no = 219
+WHERE id_no = '||a_id_no||'
 )
 SELECT
 a.id_no,a.class,a.order_,a.family,a.genus,a.binomial,a.category,a.threatened,a.n_country,a.endemic,a.ecosystems,
@@ -197,7 +197,6 @@ LEFT JOIN species.mt_threats e ON a.threats=e.code
 LEFT JOIN species.mt_research_needed f ON a.research_needed=f.code
 LEFT JOIN species.mt_conservation_needed g ON a.conservation_needed=g.code
 LEFT JOIN species.mt_usetrade h ON a.usetrade=h.code
-WHERE id_no = '||a_id_no||'
 ORDER BY ecosystems,habitat_code,country_code,stress_code,threat_code,research_needed_code,conservation_needed_code,usetrade_code
 ;';
 END;

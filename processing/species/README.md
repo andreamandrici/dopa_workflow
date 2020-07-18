@@ -140,9 +140,9 @@ The final step creates:
    +  get_list_countries
    +  get_list_habitats
    +  get_list_research_needed 
-   +  species.get_list_stresses
-   +  species.get_list_threats
-   +  species.get_list_usetrade
+   +  get_list_stresses
+   +  get_list_threats
+   +  get_list_usetrade
 
 
    Code is: [creates_output_table_function.sql](./species_2020/creates_output_table_function.sql).
