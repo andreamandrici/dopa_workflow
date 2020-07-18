@@ -59,7 +59,7 @@ RETURNS SETOF species.mt_species_output
 LANGUAGE 'plpgsql'
 AS $BODY$
 DECLARE
-mg_category text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(g_category, ',') AS a) tb);
+mg_category text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(UPPER(g_category), ',') AS a) tb);
 mi_ecosystems text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(LOWER(i_ecosystems), ',') AS a) tb);
 mj_habitats text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(j_habitats, ',') AS a) tb);
 mk_country text := (SELECT ARRAY_TO_STRING(ARRAY_AGG(''''||a||''''),',') FROM (SELECT a FROM regexp_split_to_table(UPPER(k_country), ',') AS a) tb);
@@ -75,12 +75,12 @@ BEGIN
 sql :='
 SELECT * FROM species.mt_species_output
 WHERE id_no IS NOT NULL';
-IF a_id_no IS NOT NULL THEN sql := sql || ' AND id_no = $1 '; END IF;
+IF a_id_no IS NOT NULL THEN sql := sql || ' AND id_no = '||a_id_no||' '; END IF;
 IF b_class IS NOT NULL THEN sql := sql || ' AND class ILIKE '''||b_class||'%'' '; END IF;
 IF c_order IS NOT NULL THEN sql := sql || ' AND order_ ILIKE '''||c_order||'%'' '; END IF;
 IF d_family IS NOT NULL THEN sql := sql || ' AND family ILIKE '''||d_family||'%'' '; END IF;
-IF e_genus IS NOT NULL THEN sql := sql || ' AND genus ILIKE '''||d_family||'%'' '; END IF;
-IF f_binomial IS NOT NULL THEN sql := sql || ' AND binomial ILIKE '''||e_genus||'%''  '; END IF;
+IF e_genus IS NOT NULL THEN sql := sql || ' AND genus ILIKE '''||e_genus||'%'' '; END IF;
+IF f_binomial IS NOT NULL THEN sql := sql || ' AND binomial ILIKE '''||f_binomial||'%''  '; END IF;
 IF g_category IS NOT NULL THEN sql := sql || ' AND category IN ('||mg_category||') '; END IF;
 IF h_threatened IS NOT NULL THEN sql := sql || ' AND threatened IS '||h_threatened||' '; END IF;
 IF i_ecosystems IS NOT NULL THEN sql := sql || ' AND ARRAY['||mi_ecosystems||'] && ecosystems  '; END IF;
@@ -99,7 +99,46 @@ RETURN QUERY EXECUTE sql;
 END;
 $BODY$;
 COMMENT ON FUNCTION species.get_list_species_output(bigint, text, text, text, text, text, text, boolean, text, text, text, boolean, text, text, text, text, text)
-IS 'Shows all species direct and relate attributes';
+IS '
+Shows all species direct and relate attributes.
+Input parameters are:
+- a_id_no bigint (default: NULL): filters by one single species id 
+- b_class text (default: NULL): filters by class. Is not case sensitive, and accepts partial values (eg: ''MAMMALIA'', ''Mammalia'' or ''mamm'' are all valid)
+- c_order text (default: NULL): filters by order. Is not case sensitive, and accepts partial values (eg: ''CARNIVORA'', ''Carnivora'' or ''carn'' are all valid)
+- d_family text (default: NULL): filters by family. Is not case sensitive, and accepts partial values (eg: ''CANIDAE'', ''Canidae'' or ''can'' are all valid)
+- e_genus text (default: NULL): filters by genus. Is not case sensitive, and accepts partial values (eg: ''CANIS'', ''Canis'' or ''can'' are all valid)
+- f_binomial text (default: NULL): filters by species. Is not case sensitive, and accepts partial values (eg: ''Canis lupus'', ''canis lupus'' or ''canis lup'' are all valid)
+- g_category text (default: NULL): filters by IUCN category. Is not case sensitive, and accepts single values or lists (eg: ''CR'',''Vu'' or ''CR,vu'' are all valid). The service "get_list_categories" returns the list of used categories
+- h_threatened boolean (default: NULL): filters by threatened species (Critically Endangered, Endangered and Vulnerable IUCN categories). Is not case sensitive (eg: TRUE or false are both valid)
+- i_ecosystems text (default: NULL): filters by ecosystem (marine, terrestrial, freshwater). Is not case sensitive, accepts single values or lists and uses overlap operator (eg: ''marine'',''Terrestrial'' or ''terrestrial,Freshwater'' are all valid; ''marine'' returns {marine},{marine,terrestrial},etc...; ''marine,terrestrial'' returns: {marine},{terrestrial},{marine,terrestrial},etc...)
+- j_habitats text (default: NULL): filters by habitat code. Accepts single values or lists and uses overlap operator (eg: ''1.6'' or ''1.6,14.4'' are both valid; ''1.6'' returns: {1.6},{1.6,1.14},etc...; ''1.6,1.14'' returns: {1.6},{1.14},{1.6,1.14},etc...). The service "get_list_habitats" returns the code/names pairs for used habitats
+- k_country text (default: NULL): filters by country code. Is not case sensitive, accepts single values or lists and uses overlap operator (eg: ''IT'', ''fr'' or ''It,FR'' are all valid; ''IT'' returns: {IT},{IT,FR},etc...; ''IT,FR'' returns: {IT},{FR},{IT,FR},etc...). The service "get_list_countries" returns the code/names pairs for used countries
+- l_endemic boolean (default: NULL): filters by threatened species (n_country=1). Is not case sensitive (eg: TRUE or false are both valid)
+- m_stresses text (default: NULL): filters by stress code. Accepts single values or lists and uses overlap operator (eg: ''1.2'' or ''1.2,2.1'' are both valid; ''1.2'' returns: {1.2},{1.2,2.1},etc...; ''1.2,2.1'' returns: {1.2},{2.1},{1.2,2.1},etc...). The service "get_list_stresses" returns the code/names pairs for used stresses
+- n_threats text (default: NULL): filters by threat code. Accepts single values or lists and uses overlap operator (eg: ''1.2'' or ''1.2,2.1'' are both valid; ''1.2'' returns: {1.2},{1.2,2.1},etc...; ''1.2,2.1'' returns: {1.2},{2.1},{1.2,2.1},etc...). The service "get_list_threats" returns the code/names pairs for used threats
+- o_research_needed text (default: NULL): filters by research needed code. Accepts single values or lists and uses overlap operator (eg: ''1.2'' or ''1.2,2.1'' are both valid; ''1.2'' returns: {1.2},{1.2,2.1},etc...; ''1.2,2.1'' returns: {1.2},{2.1},{1.2,2.1},etc...). The service "get_list_research_needed" returns the code/names pairs for used research needed
+- p_conservation_needed text (default: NULL): filters by conservation needed code. Accepts single values or lists and uses overlap operator (eg: ''1.2'' or ''1.2,2.1'' are both valid; ''1.2'' returns: {1.2},{1.2,2.1},etc...; ''1.2,2.1'' returns: {1.2},{2.1},{1.2,2.1},etc...). The service "get_list_conservation_needed" returns the code/names pairs for used conservation needed
+- q_usetrade text (default: NULL): filters by usetrade code. Accepts single values or lists and uses overlap operator (eg: ''1'' or ''15'' are both valid; ''1'' returns: {1},{1,15},etc...; ''1,15'' returns: {1},{15},{1,15},etc...). The service "get_list_usetrade" returns the code/names pairs for used usetrade
+Output parameters are:
+- id_no bigint
+- class text
+- order_ text
+- family text
+- genus text
+- binomial text
+- category text
+- threatened boolean
+- ecosystems text[]
+- habitats text[]
+- country text[]
+- n_country integer
+- endemic boolean
+- stresses text[]
+- threats text[]
+- research_needed text[]
+- conservation_needed text[]
+- usetrade integer[]
+';
 
 -------FN_GET_LIST_SPECIES_OUTPUT---------------------------------------
 CREATE OR REPLACE FUNCTION species.get_single_species_output(a_id_no bigint DEFAULT 219)
