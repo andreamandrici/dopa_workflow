@@ -141,44 +141,24 @@ Output parameters are:
 ';
 
 -------FN_GET_LIST_SPECIES_OUTPUT---------------------------------------
-CREATE OR REPLACE FUNCTION species.get_single_species_output(a_id_no bigint DEFAULT 219)
-RETURNS TABLE (
-id_no bigint,
-class text,
-order_ text,
-family text,
-genus text,
-binomial text,
-category text,
-threatened bool,
-n_country integer,
-endemic bool,
-ecosystems text,
-habitat_code text,
-habitat_name text,
-country_code text,
-country_name text,
-stress_code text,
-stress_name text,
-threat_code text,
-threat_name text,
-research_needed_code text,
-research_needed_name text,
-conservation_needed_code text,
-conservation_needed_name text,
-usetrade_code integer,
-usetrade_name text
-)
-LANGUAGE 'plpgsql'
+CREATE OR REPLACE FUNCTION species.get_single_species_output(
+	a_id_no bigint DEFAULT NULL::bigint)
+    RETURNS TABLE(id_no bigint, class text, order_ text, family text, genus text, binomial text, category text, threatened boolean, n_country integer, endemic boolean, ecosystems text, habitat_code text, habitat_name text, country_code text, country_name text, stress_code text, stress_name text, threat_code text, threat_name text, research_needed_code text, research_needed_name text, conservation_needed_code text, conservation_needed_name text, usetrade_code integer, usetrade_name text) 
+    LANGUAGE 'plpgsql'    
 AS $BODY$
+DECLARE
+sql TEXT;
 BEGIN
-RETURN QUERY EXECUTE '
+sql := '
 WITH
 a AS (
 SELECT
 id_no,class,order_,family,genus,binomial,category,threatened,n_country,endemic,t.*
-FROM species.mt_species_output, UNNEST(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade) t(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade)
-WHERE id_no = '||a_id_no||'
+FROM species.mt_species_output, UNNEST(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade) t(ecosystems,habitats,country,stresses,threats,research_needed,conservation_needed,usetrade)';
+IF a_id_no IS NOT NULL THEN sql := sql || ' WHERE id_no = '||a_id_no||' ';
+ELSE	sql := sql || ' WHERE id_no = 219 ';
+END IF;
+sql := sql || '
 )
 SELECT
 a.id_no,a.class,a.order_,a.family,a.genus,a.binomial,a.category,a.threatened,a.n_country,a.endemic,a.ecosystems,
@@ -199,10 +179,16 @@ LEFT JOIN species.mt_conservation_needed g ON a.conservation_needed=g.code
 LEFT JOIN species.mt_usetrade h ON a.usetrade=h.code
 ORDER BY ecosystems,habitat_code,country_code,stress_code,threat_code,research_needed_code,conservation_needed_code,usetrade_code
 ;';
+RETURN QUERY EXECUTE sql;
 END;
 $BODY$;
-COMMENT ON FUNCTION species.get_single_species_output(bigint) IS 'Shows for a single species direct and related detailed attributes';
 
+ALTER FUNCTION species.get_single_species_output(bigint)
+    OWNER TO h05ibex;
+
+COMMENT ON FUNCTION species.get_single_species_output(bigint)
+    IS 'Shows for a single species direct and related detailed attributes';
+    
 -------FN_GET_LIST_CATEGORIES--------------------------------
 CREATE OR REPLACE FUNCTION species.get_list_categories()
 RETURNS SETOF species.mt_categories
