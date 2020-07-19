@@ -90,7 +90,7 @@ gdalbuildvrt -input_file_list list.txt raster_output.vrt
 wait
 gdalinfo -stats raster_output.vrt
 
-psql ${dbpar2} -t -c "\COPY (SELECT * FROM ${SCH}.fb_atts_all) TO '${outpath}/attribute_list.csv' DELIMITER '|' CSV HEADER;"
+psql ${dbpar2} -t -c "\COPY (SELECT * FROM ${SCH}.fb_atts_all) TO '${outpath}/raster_output_attibutes.csv' DELIMITER '|' CSV HEADER;"
 
 echo "analysis done"
 # stop timer
