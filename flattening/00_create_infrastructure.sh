@@ -152,6 +152,19 @@ CREATE TABLE ${SCH}.da_tiled_${!TOPIC}
 CREATE INDEX ON ${SCH}.da_tiled_${!TOPIC} USING GIST(geom);
 EOF
 )
+
+# TABLE OUTPUT RASTER TOPIC PREPARATION
+sql_output_raster=$(cat<<EOF
+DROP TABLE IF EXISTS ${SCH}.o_raster;
+CREATE TABLE ${SCH}.o_raster
+(
+    qid integer PRIMARY KEY,
+	rast raster
+);
+CREATE INDEX ON ${SCH}.o_raster USING gist(ST_ConvexHull(rast));
+EOF
+)
+
 ####################################################################################################################################################
 ### END PREPARING TOPIC TABLES
 ####################################################################################################################################################
@@ -171,6 +184,9 @@ psql ${dbpar2} -c "$sql_raster_topic"
 
 # TABLE TILED TOPIC CREATION
 psql ${dbpar2} -c "$sql_tiled_topic"
+
+# TABLE OUTPUT RASTER CREATION
+psql ${dbpar2} -c "$sql_output_raster"
 
 done
 
@@ -252,6 +268,31 @@ END;
 
 COMMENT ON FUNCTION ${SCH}.f_pop_z_grid() IS
 'Populates grid table; no inputs parameters'
+EOF
+)
+
+# FUNCTION POPULATE_O_GRID PREPARATION
+sql_f_pop_o_grid=$(cat<<EOF
+DROP FUNCTION IF EXISTS ${SCH}.f_pop_o_grid();
+CREATE FUNCTION ${SCH}.f_pop_o_grid ()
+    RETURNS void
+    LANGUAGE 'plpgsql'
+AS \$BODY\$
+
+BEGIN
+
+INSERT INTO ${SCH}.o_grid(row,col,geom)
+SELECT
+row,
+col,
+geom
+FROM (SELECT row,col,ST_SetSrid(geom,4326) geom FROM ${SCH}.ST_CreateFishnet(${RWS}/10,${CLS}/10,${GS}*10,${GS}*10,-180,-90) cells
+ORDER BY row,col) v;
+END;
+\$BODY\$;
+
+COMMENT ON FUNCTION ${SCH}.f_pop_o_grid() IS
+'Populates output grid table; no inputs parameters'
 EOF
 )
 
@@ -573,6 +614,28 @@ read from current_schema_name.flat_all and current_schema_name.tiled_all tables,
 EOF
 )
 
+# FUNCTION EXPORT RASTER PREPARATION
+sql_f_pop_o_raster=$(cat<<EOF
+DROP FUNCTION IF EXISTS ${SCH}.f_pop_o_raster(integer,text);
+CREATE OR REPLACE FUNCTION ${SCH}.f_pop_o_raster(iqid integer,bbit text DEFAULT '16BUI'::text)
+    RETURNS void
+    LANGUAGE 'plpgsql'
+AS \$BODY\$
+DECLARE
+rrast raster := (SELECT ST_MakeEmptyRaster(${RCCT},${RCCT},-180,90,(1/${RCC}::double precision),(-1/${RCC}::double precision),0,0,4326) AS rast);
+BEGIN
+INSERT INTO ${SCH}.o_raster(qid,rast)
+SELECT iqid,* FROM
+(SELECT ST_UNION(ST_AsRaster(geom,rrast,bbit,cid,0)) rast
+FROM ${SCH}.h_flat WHERE qid=iqid) a;
+END;
+\$BODY\$;
+COMMENT ON FUNCTION ${SCH}.f_pop_o_raster(integer,text) IS
+'rasterize final vector table by tile/cid, at same resolution of input rasterization; inputs parameters are:
+iqid - integer - input qid: tile unique id - number';
+EOF
+)
+
 ####################################################################################################################################################
 ### END PREPARING FUNCTIONS
 ####################################################################################################################################################
@@ -587,6 +650,9 @@ wait
 
 # FUNCTION POPULATE_Z_GRID CREATION
 psql ${dbpar2} -c "$sql_f_pop_z_grid"
+
+# FUNCTION POPULATE_O_GRID CREATION
+psql ${dbpar2} -c "$sql_f_pop_o_grid"
 
 # FUNCTION POPULATE INPUT CREATION
 psql ${dbpar2} -c "$sql_f_pop_input"
@@ -611,6 +677,9 @@ psql ${dbpar2} -c "$sql_f_pop_atts_tile"
 
 # FUNCTION RECODE FLAT CREATION
 psql ${dbpar2} -c "$sql_f_flat_recode"
+
+# FUNCTION POPULATE OUTPUT RASTER CREATION
+psql ${dbpar2} -c "$sql_f_pop_o_raster"
 
 ####################################################################################################################################################
 ### END CREATING FUNCTIONS
@@ -637,8 +706,22 @@ col integer,
 row integer,
 geom geometry(Polygon,4326),
 sqkm double precision,
-qfilter boolean);
+qfilter boolean,
+eid integer);
 CREATE INDEX ON ${SCH}.z_grid USING gist(geom);
+EOF
+)
+
+# TABLE OUTPUT GRID PREPARATION
+sql_o_grid=$(cat<<EOF
+DROP TABLE IF EXISTS ${SCH}.o_grid;
+CREATE TABLE ${SCH}.o_grid (
+qid serial PRIMARY KEY,
+col integer,
+row integer,
+geom geometry(Polygon,4326)
+);
+CREATE INDEX ON ${SCH}.o_grid USING gist(geom);
 EOF
 )
 
@@ -745,6 +828,10 @@ EOF
 psql ${dbpar2} -c "$sql_z_grid"
 wait
 
+# TABLE OUTPUT GRID CREATION
+psql ${dbpar2} -c "$sql_o_grid"
+wait
+
 # TABLE DB_TILED_TEMP CREATION
 psql ${dbpar2} -c "$sql_db_tiled_temp"
 
@@ -778,11 +865,20 @@ fi
 ####################################################################################################################################################
 ### POPULATING GRID TABLE
 ####################################################################################################################################################
-
+### POPULATE OGRID
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_o_grid();"
+wait
+### POPULATE ZGRID
 psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_z_grid();"
 wait
 psql ${dbpar2} -t -c "UPDATE ${SCH}.z_grid SET sqkm=(ST_Area(geom::geography)/1000000);" &
 wait
+psql ${dbpar2} -t -c "
+WITH e AS (SELECT DISTINCT a.qid,b.qid eid FROM ${SCH}.z_grid a,${SCH}.o_grid b WHERE ST_CONTAINS(b.geom,ST_CENTROID(a.geom)) ORDER BY b.qid,a.qid)
+UPDATE ${SCH}.z_grid SET eid=e.eid FROM e WHERE z_grid.qid=e.qid;
+"
+wait
+
 ####################################################################################################################################################
 ### END STATIC TABLES
 ####################################################################################################################################################
@@ -852,16 +948,26 @@ cat ./templates/f_attributes_all.template > f_attributes_all.sh
 sed -i 's/REORDERS_T/'"${REORDERS}"'/' f_attributes_all.sh
 chmod +x f_attributes_all.sh
 
-# create script f_attributes_all.sh
+# create script g_final_all.sh
 rm g_final_all.sh
 cat ./templates/g_final_all.template > g_final_all.sh
 chmod +x g_final_all.sh
 
-# create script f_attributes_all.sh
+# create script h_output_all.sh
 rm h_output.sh
 cat ./templates/h_output.template > h_output.sh
 sed -i 's/REORDERS_T/'"${REORDERS}"'/' h_output.sh
 chmod +x h_output.sh
+
+# create script o_raster.sh
+rm o_raster.sh
+cat ./templates/o_raster.template > o_raster.sh
+chmod +x o_raster.sh
+
+# create script p_export_raster.sh
+rm p_export_raster.sh
+cat ./templates/p_export_raster.template > p_export_raster.sh
+chmod +x p_export_raster.sh
 
 echo "
 ${GS} # GRID SIZE IN DEGREES

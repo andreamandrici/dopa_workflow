@@ -76,6 +76,13 @@ ncores=72
 ## populates flat
 ./h_output.sh > logs/h_output_log.txt 2>&1 wait
 
+# RAST_FINAL
+## populates output rast
+./o_raster.sh ${ncores} > logs/o_raster_log.txt 2>&1 wait
+
+## export rast
+./p_export_raster.sh ${ncores} > logs/p_export_raster_log.txt 2>&1 wait
+
 # USEFUL COMMANDS
 #------------------------------------------------------------------------
 
