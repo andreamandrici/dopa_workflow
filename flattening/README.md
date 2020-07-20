@@ -90,11 +90,9 @@ It can be applied as-it-is to pre-process other datasets (eg IUCN species).
 
 #### 0.  Prerequisites
 
-It works for me on Xubuntu 18.04 amd64, with installed:
-
-+  postgresql-10-postgis-3/bionic,now 3.0.1+dfsg-2~bionic0
-+  postgis/bionic,now 3.0.1+dfsg-2~bionic0
-+  gdal-bin/bionic,now 3.0.4+dfsg-1~bionic0
+It is tested on 
++  Xubuntu 18.04 amd64 - postgresql 10 - postgis 3.0.1 - gdal (3.0.4)
++  Ubuntu Mate 20.04 amd64 - postgresql 12 - postgis 3.0.1 - gdal (3.0.4)
 
 A [.pgpass file](https://www.postgresql.org/docs/10/libpq-pgpass.html) is required.
 As alternative, add the line:
@@ -140,8 +138,11 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
   +  `f_attributes_all.sh` calcultate and define numeric id (CID) for unique combinations of topics within the whole dataset; 
   +  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes;
   +  `h_output.sh` exports the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
+3.   If needed, output is exported as raster with two additional steps:
+  +  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
+  +  `p_export_raster` export the flat layer as external raster: vrt (gdal virtual raster) made out of tif files (which in turn are made by 10x10 blocks of original vector tiles). It also exports an attribute table (cid=pixel value=unique combination of input topics).
 
-All the scripts from `a_*` to `g_*` must run in parallel, launching them in background.
+All the scripts from `a_*` to `g_*` (and `o_`, `p_`) must run in parallel, launching them in background.
 
 EG: `./a_input_country.sh Ncores > logs/a_input_country_log.txt 2>&1`
 
