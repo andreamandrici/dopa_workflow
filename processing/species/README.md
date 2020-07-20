@@ -72,7 +72,11 @@ Output tables are:
 
 #### groups flattening
 
-[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. STEP 0 (create infrastructure) and A (import input tables) are executed independently. If needed, geometry fix is applied after step A. All the other steps are executed inside `z_do_it_all.sh` script.
+[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
+If needed, geometry fix is applied after step `a_`.
+All the other steps are executed inside `z_do_it_all.sh` script.
+Outputs are exported as raster.
+
 [Environment](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/confs) and [log](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/logs) files are reported.
 [SQL](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/sql) files are also reported, when geometry fix was needed (at step a of flattening).
 
