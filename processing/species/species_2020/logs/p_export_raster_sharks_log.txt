@@ -1,0 +1,2419 @@
+/home/felixwolf/wip/code/species/flattening_sharks/raster_output
+removing /home/felixwolf/wip/code/species/flattening_sharks/raster_output
+creating /home/felixwolf/wip/code/species/flattening_sharks/raster_output
+NOTICE:  table "export_raster_onprocess" does not exist, skipping
+number of elements: 474
+number of objects in each step: 67
+number of dedicated threads: 7
+processing 54
+processing 149
+processing 216
+processing 286
+Input file size is 407, 98
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 54 ended
+processing 62
+Input file size is 1200, 1200
+0processing 355
+...10...20...30.processing 429
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0..40...50...60.....10...20...30.processing 515
+...10...20...30.Input file size is 90, 6
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 149 ended
+processing 150
+..40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 62 ended
+processing 71
+..40...50...60.....10...20...30.processing 633
+Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 216 ended
+processing 217
+.70...80...90...100 - done.
+processing of 286 ended
+processing 287
+...10...20...30.Input file size is 115, 95
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 515 ended
+processing 516
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0..40...50...60..Input file size is 693, 353
+0processing of 355 ended
+processing 356
+...10...20...30...40...50...60...70...80...90...100 - done.
+...10...20...30.processing of 71 ended
+Input file size is 1200, 285
+0processing 72
+.70...80...90...100 - done.
+processing of 429 ended
+processing 430
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 633 ended
+processing 634
+..40...50...60.....10...20...30.Input file size is 1200, 1200
+0Input file size is 1064, 1200
+0...10...20...30...40...50...60.....10...20...30....10...20...30..70...80...90...100 - done.
+..40...50...60..processing of 150 ended
+processing 151
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 83, 191
+0.70...80...90...100 - done.
+processing of 516 ended
+processing 517
+..40...50...60...70...80...90...100 - done.
+processing of 217 ended
+processing 218
+...10...20...30...40...50...60...70...80...90...100 - done.
+Input file size is 1200, 286
+0processing of 72 ended
+processing 73
+.70...80...90...100 - done.
+...10...20...30.processing of 287 ended
+processing 288
+...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 634 ended
+processing 635
+processing of 356 ended
+processing 357
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 430 ended
+processing 431
+Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 26
+0...10...20...30.Input file size is 1200, 383
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 73 ended
+processing 74
+Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 151 ended
+processing 152
+...10...20...30....10...20...30....10...20...30..70...80...90...100 - done.
+..40...50...60..processing of 517 ended
+processing 518
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 635 ended
+processing 636
+..40...50...60..Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 24
+0...10...20...30..70...80...90...100 - done.
+...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 74 ended
+processing 75
+processing of 357 ended
+processing 358
+processing of 218 ended
+processing 219
+.70...80...90...100 - done.
+processing of 288 ended
+processing 289
+Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 419
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 636 ended
+processing 637
+..40...50...60.....10...20...30.Input file size is 1200, 21
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 431 ended
+processing 432
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 75 ended
+processing 76
+.70...80...90...100 - done.
+processing of 152 ended
+processing 153
+..40...50...60.....10...20...30....10...20...30...40...50...60....40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 518 ended
+processing 519
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1037, 822
+0.70...80...90...100 - done.
+processing of 289 ended
+processing 290
+.70...80...90...100 - done.
+processing of 358 ended
+processing 359
+...10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 19
+0.70...80...90...100 - done.
+...10...20...30.processing of 219 ended
+processing 220
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 76 ended
+processing 77
+...60...70...80...90...100 - done.
+processing of 637 ended
+...10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 432 ended
+processing 433
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 153 ended
+processing 154
+Input file size is 1200, 17
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 77 ended
+processing 78
+..40...50...60...70...80...90...100 - done.
+processing of 519 ended
+processing 520
+...10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 359 ended
+processing 360
+.70...80...90...100 - done.
+processing of 290 ended
+processing 291
+Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 220 ended
+processing 221
+Input file size is 1200, 14
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 78 ended
+processing 79
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 433 ended
+processing 434
+..40...50...60...70...80...90...100 - done.
+processing of 154 ended
+processing 155
+Input file size is 1200, 1200
+0...10...20...30....10...20...30..70...80...90...100 - done.
+..40...50...60..processing of 520 ended
+processing 521
+Input file size is 1200, 12
+0...10...20...30...40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 79 ended
+processing 80
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 291 ended
+processing 292
+.70...80...90...100 - done.
+processing of 360 ended
+processing 361
+Input file size is 926, 1200
+0.70...80...90...100 - done.
+processing of 221 ended
+processing 222
+...10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30...40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 10
+0.70...80...90...100 - done.
+processing of 434 ended
+processing 435
+..40...50...60..Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 80 ended
+processing 81
+.70...80...90...100 - done.
+processing of 155 ended
+processing 156
+...10...20...30....10...20...30....10...20...30..70...80...90...100 - done.
+processing of 521 ended
+processing 522
+..40...50...60....40...50...60...70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 292 ended
+processing 293
+.70...80...90...100 - done.
+..40...50...60..processing of 361 ended
+processing 362
+Input file size is 1032, 1200
+0Input file size is 1200, 8
+0...10...20...30..70...80...90...100 - done.
+processing of 222 ended
+processing 223
+...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 81 ended
+processing 82
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 156 ended
+processing 157
+processing of 435 ended
+processing 436
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 5
+0...10...20...30..70...80...90...100 - done.
+processing of 522 ended
+processing 523
+..40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 82 ended
+processing 83
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 293 ended
+processing 294
+.70...80...90...100 - done.
+processing of 362 ended
+processing 363
+.70...80...90...100 - done.
+processing of 223 ended
+processing 224
+...10...20...30....10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 3
+0..40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 83 ended
+processing 84
+...10...20...30..70...80...90...100 - done.
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0processing of 436 ended
+processing 437
+..40...50...60...70...80...90...100 - done.
+processing of 157 ended
+processing 158
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+...10...20...30.processing of 523 ended
+processing 524
+...10...20...30....10...20...30.Input file size is 1200, 810
+0..40...50...60.....10...20...30...40...50..40...50...60....40...50...60..Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 84 ended
+processing 85
+.70...80...90...100 - done.
+processing of 294 ended
+processing 295
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 224 ended
+processing 225
+.70...80...90...100 - done.
+processing of 363 ended
+processing 364
+Input file size is 1200, 769
+0...10...20...30....10...20...30....10...20...30...40...50..40...50...60.....60...70...80...90...100 - done.
+..40...50...60..processing of 524 ended
+processing 525
+Input file size is 1157, 785
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 437 ended
+processing 438
+Input file size is 1200, 1200
+0processing of 158 ended
+processing 159
+...10...20...30...40...50...10...20...30....10...20...30....10...20...30....60...70...80...90...100 - done.
+processing of 85 ended
+processing 86
+..40...50...60....40...50...60..Input file size is 1200, 654
+0..40...50...60.....10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 364 ended
+processing 365
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 295 ended
+processing 296
+processing of 225 ended
+processing 226
+...60...70...80...90...100 - done.
+processing of 525 ended
+processing 526
+...10...20...30....10...20...30.Input file size is 630, 268
+0..40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 86 ended
+processing 90
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0processing of 159 ended
+Input file size is 30, 17
+0processing 160
+.70...80...90...100 - done.
+processing of 438 ended
+Input file size is 1200, 1200
+0processing 439
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 526 ended
+processing 536
+...10...20...30....10...20...30....10...20...30...40...50...60....40...50...60....40...50...60..Input file size is 323, 28
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 90 ended
+processing 94
+Input file size is 872, 535
+0.70...80...90...100 - done.
+processing of 296 ended
+processing 297
+.70...80...90...100 - done.
+processing of 226 ended
+processing 227
+.70...80...90...100 - done.
+Input file size is 579, 503
+0processing of 365 ended
+processing 366
+...10...20...30...40...50...10...20...30....60...70...80...90...100 - done.
+processing of 439 ended
+processing 441
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 536 ended
+processing 537
+..40...50...60..Input file size is 262, 157
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 160 ended
+processing 161
+Input file size is 1193, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 94 ended
+processing 98
+Input file size is 401, 47
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 441 ended
+processing 442
+Input file size is 1200, 1171
+0...10...20...30....10...20...30...40...50...60.....10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 203, 165
+0.70...80...90...100 - done.
+..40...50...60..processing of 297 ended
+processing 298
+.70...80...90...100 - done.
+processing of 366 ended
+processing 367
+...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 98 ended
+processing 99
+processing of 227 ended
+processing 228
+...10...20...30.Input file size is 1200, 317
+0.70...80...90...100 - done.
+processing of 537 ended
+processing 538
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 442 ended
+processing 443
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 698, 18
+0processing of 161 ended
+processing 162
+Input file size is 1200, 1200
+0Input file size is 849, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 99 ended
+processing 100
+Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30...40...50...60..Input file size is 1200, 1200
+0...10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 228 ended
+processing 229
+..40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 298 ended
+processing 299
+.70...80...90...100 - done.
+processing of 367 ended
+processing 368
+Input file size is 1200, 17
+0.70...80...90...100 - done.
+..40...50...60..processing of 538 ended
+processing 539
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 100 ended
+processing 101
+...10...20...30..70...80...90...100 - done.
+processing of 443 ended
+processing 444
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 162 ended
+processing 163
+..40...50...60..Input file size is 1200, 16
+0...10...20...30....10...20...30....10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 229 ended
+processing 230
+processing of 101 ended
+processing 102
+..40...50...60....40...50...60....40...50...60.....10...20...30.Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 539 ended
+processing 540
+processing of 368 ended
+processing 369
+.70...80...90...100 - done.
+processing of 299 ended
+processing 300
+...10...20...30.Input file size is 1200, 15
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 444 ended
+processing 445
+...10...20...30...40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 102 ended
+processing 103
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 163 ended
+processing 164
+Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 230 ended
+processing 231
+Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 14
+0..40...50...60.....10...20...30...40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 103 ended
+processing 104
+Input file size is 1200, 1098
+0.70...80...90...100 - done.
+processing of 369 ended
+processing 370
+.70...80...90...100 - done.
+processing of 300 ended
+processing 301
+.70...80...90...100 - done.
+processing of 540 ended
+processing 541
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0..40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 445 ended
+processing 446
+Input file size is 1200, 13
+0.70...80...90...100 - done.
+..40...50...60..processing of 164 ended
+processing 165
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 104 ended
+processing 105
+Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+...10...20...30.processing of 231 ended
+processing 232
+...10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 541 ended
+processing 542
+.70...80...90...100 - done.
+processing of 301 ended
+processing 302
+...10...20...30.Input file size is 1200, 11
+0.70...80...90...100 - done.
+...10...20...30.processing of 370 ended
+processing 371
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 105 ended
+processing 106
+Input file size is 1200, 1200
+0..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 446 ended
+processing 447
+...10...20...30..70...80...90...100 - done.
+processing of 165 ended
+processing 166
+Input file size is 1200, 1200
+0Input file size is 1109, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 10
+0..40...50...60....40...50...60.....10...20...30..70...80...90...100 - done.
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 106 ended
+processing 107
+processing of 232 ended
+processing 233
+Input file size is 1200, 1200
+0Input file size is 1200, 997
+0.70...80...90...100 - done.
+processing of 302 ended
+processing 303
+..40...50...60...70...80...90...100 - done.
+processing of 542 ended
+processing 543
+...10...20...30...40...50...10...20...30..70...80...90...100 - done.
+processing of 371 ended
+processing 372
+..40...50...60.....60...70...80...90...100 - done.
+processing of 166 ended
+processing 167
+Input file size is 1200, 9
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 447 ended
+processing 448
+Input file size is 330, 157
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 107 ended
+processing 108
+Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 543 ended
+processing 544
+...10...20...30....10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 939
+0Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 8
+0.70...80...90...100 - done.
+processing of 233 ended
+processing 234
+.70...80...90...100 - done.
+processing of 303 ended
+processing 304
+...10...20...30...40...50...60...70...80...90...100 - done.
+Input file size is 1047, 181
+0processing of 108 ended
+processing 109
+...10...20...30....10...20...30...40...50..40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 544 ended
+processing 545
+..40...50...60...70...80...90...100 - done.
+processing of 372 ended
+processing 373
+...60...70...80...90...100 - done.
+processing of 167 ended
+processing 168
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 448 ended
+processing 449
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 17, 6
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 545 ended
+processing 551
+..40...50...60..Input file size is 1200, 1089
+0..40...50...60..Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30..70...80...90...100 - done.
+processing of 234 ended
+processing 235
+.70...80...90...100 - done.
+processing of 109 ended
+processing 110
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 304 ended
+processing 305
+..40...50...60..Input file size is 1070, 1036
+0..40...50...60...70...80...90...100 - done.
+processing of 373 ended
+processing 374
+...10...20...30..70...80...90...100 - done.
+processing of 168 ended
+processing 169
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 551 ended
+processing 552
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 449 ended
+processing 450
+Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0..40...50...60....40...50...60....40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 235 ended
+processing 236
+.70...80...90...100 - done.
+processing of 305 ended
+processing 306
+...10...20...30..70...80...90...100 - done.
+processing of 110 ended
+processing 111
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 374 ended
+processing 375
+..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 552 ended
+processing 553
+.70...80...90...100 - done.
+processing of 450 ended
+processing 451
+Input file size is 859, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 169 ended
+processing 170
+...10...20...30....10...20...30...40...50...60.....10...20...30.Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 236 ended
+processing 238
+..40...50...60..Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 498
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 111 ended
+processing 112
+..40...50...60...70...80...90...100 - done.
+processing of 306 ended
+processing 307
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 451 ended
+processing 452
+...10...20...30..70...80...90...100 - done.
+processing of 375 ended
+processing 376
+Input file size is 1086, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 553 ended
+processing 554
+...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 170 ended
+processing 171
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1168
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 925
+0..40...50...60...70...80...90...100 - done.
+...10...20...30...40...50processing of 238 ended
+processing 239
+..40...50...60....40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 452 ended
+processing 453
+...60...70...80...90...100 - done.
+processing of 554 ended
+processing 555
+..40...50...60...70...80...90...100 - done.
+processing of 307 ended
+.70...80...90...100 - done.
+processing 308
+processing of 112 ended
+processing 113
+...10...20...30..70...80...90...100 - done.
+processing of 376 ended
+processing 377
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1106
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 171 ended
+processing 172
+Input file size is 1200, 1034
+0..40...50...60..Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30....10...20...30....10...20...30.Input file size is 718, 1200
+0.70...80...90...100 - done.
+processing of 239 ended
+processing 240
+...10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 308 ended
+processing 309
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 555 ended
+processing 556
+processing of 453 ended
+processing 454
+...10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 113 ended
+processing 114
+processing of 377 ended
+processing 382
+Input file size is 1200, 1200
+0..40...50...60..Input file size is 857, 1193
+0.70...80...90...100 - done.
+processing of 172 ended
+processing 173
+...10...20...30....10...20...30.Input file size is 1200, 1200
+0Input file size is 746, 709
+0Input file size is 1200, 1200
+0..40...50...60..Input file size is 337, 593
+0..40...50...60.....10...20...30...40...50...10...20...30...40...50.70...80...90...100 - done.
+processing of 309 ended
+processing 310
+...10...20...30....10...20...30....60...70...80...90...100 - done.
+processing of 382 ended
+processing 383
+...60...70...80...90...100 - done.
+processing of 454 ended
+processing 455
+.70...80...90...100 - done.
+processing of 240 ended
+processing 241
+..40...50...60..Input file size is 1200, 1200
+0..40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 114 ended
+processing 115
+Input file size is 146, 802
+0.70...80...90...100 - done.
+Input file size is 1200, 1154
+0processing of 556 ended
+processing 557
+...10...20...30...40...50Input file size is 1200, 1200
+0..40...50...60..Input file size is 248, 62
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+...60...70...80...90...100 - done.
+processing of 310 ended
+processing 311
+processing of 455 ended
+processing 456
+..40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 173 ended
+processing 174
+Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 383 ended
+processing 384
+Input file size is 1200, 1200
+0Input file size is 20, 26
+0...10...20...30....10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 456 ended
+processing 462
+.70...80...90...100 - done.
+processing of 241 ended
+processing 242
+Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+..40...50...60...70...80...90...100 - done.
+processing of 557 ended
+processing 558
+processing of 115 ended
+processing 116
+Input file size is 1200, 1200
+0Input file size is 297, 669
+0..40...50...60.....10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 462 ended
+processing 463
+...10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 174 ended
+processing 175
+processing of 311 ended
+processing 312
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 384 ended
+processing 385
+...10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 242 ended
+processing 243
+...10...20...30...40...50...60....40...50...60.....10...20...30....10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 116 ended
+processing 117
+.70...80...90...100 - done.
+processing of 558 ended
+processing 559
+.70...80...90...100 - done.
+processing of 463 ended
+processing 464
+.70...80...90...100 - done.
+...10...20...30.processing of 175 ended
+processing 176
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 312 ended
+processing 313
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1184
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 385 ended
+processing 386
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 243 ended
+processing 244
+..40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30...40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 117 ended
+processing 118
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 176 ended
+processing 177
+.70...80...90...100 - done.
+processing of 464 ended
+processing 465
+.70...80...90...100 - done.
+processing of 559 ended
+processing 560
+...10...20...30..70...80...90...100 - done.
+...10...20...30.processing of 313 ended
+processing 314
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 386 ended
+processing 387
+.70...80...90...100 - done.
+processing of 244 ended
+processing 245
+Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60.....10...20...30...40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 118 ended
+processing 119
+processing of 560 ended
+processing 561
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 465 ended
+processing 466
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 177 ended
+processing 178
+.70...80...90...100 - done.
+processing of 314 ended
+processing 315
+...10...20...30....10...20...30...40...50...60..Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 245 ended
+processing 246
+..40...50...60...70...80...90...100 - done.
+processing of 387 ended
+processing 388
+...10...20...30...40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 561 ended
+processing 562
+.70...80...90...100 - done.
+..40...50...60..processing of 119 ended
+processing 120
+...10...20...30...40...50...60..Input file size is 1169, 1200
+0..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 466 ended
+processing 467
+.70...80...90...100 - done.
+processing of 178 ended
+processing 179
+...10...20...30.Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 315 ended
+processing 316
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 246 ended
+processing 249
+...10...20...30..70...80...90...100 - done.
+processing of 562 ended
+processing 563
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 388 ended
+processing 389
+..40...50...60..Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 120 ended
+processing 121
+Input file size is 1200, 658
+0..40...50...60....40...50...60.....10...20...30.Input file size is 213, 313
+0...10...20...30...40...50Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 467 ended
+processing 468
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 249 ended
+processing 250
+..40...50...60.....60...70...80...90...100 - done.
+processing of 563 ended
+processing 564
+.70...80...90...100 - done.
+processing of 179 ended
+processing 180
+...10...20...30.Input file size is 1200, 1199
+0..40...50...60...70...80...90...100 - done.
+processing of 316 ended
+processing 317
+...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 389 ended
+processing 390
+Input file size is 1200, 241
+0..40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+...10...20...30.processing of 564 ended
+processing 565
+...10...20...30..70...80...90...100 - done.
+processing of 121 ended
+processing 122
+Input file size is 1200, 1200
+0..40...50...60....40...50...60....40...50...60.....10...20...30..70...80...90...100 - done.
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 250 ended
+processing 251
+..40...50...60...70...80...90...100 - done.
+Input file size is 147, 132
+0processing of 180 ended
+processing 181
+processing of 468 ended
+processing 469
+Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 565 ended
+processing 574
+...10...20...30..70...80...90...100 - done.
+processing of 317 ended
+processing 318
+...10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 390 ended
+processing 391
+.70...80...90...100 - done.
+processing of 122 ended
+processing 123
+Input file size is 670, 230
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 574 ended
+processing 575
+...10...20...30...40...50...60....40...50...60....40...50...60....40...50...60..Input file size is 1200, 1194
+0.70...80...90...100 - done.
+processing of 251 ended
+processing 252
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 469 ended
+processing 470
+processing of 181 ended
+processing 182
+...10...20...30..70...80...90...100 - done.
+processing of 318 ended
+processing 319
+Input file size is 1200, 322
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 575 ended
+processing 576
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 391 ended
+processing 392
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0processing of 123 ended
+processing 124
+Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 603
+0...10...20...30....10...20...30....10...20...30...40...50..40...50...60....40...50...60....40...50...60....40...50...60..Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 576 ended
+processing 577
+processing of 252 ended
+processing 253
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 470 ended
+processing of 182 ended
+processing 471
+processing 183
+processing of 319 ended
+processing 320
+Input file size is 1200, 1192
+0...10...20...30....10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 207, 1019
+0.70...80...90...100 - done.
+processing of 392 ended
+processing 393
+...10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30..70...80...90...100 - done.
+...60...70...80...90...100 - done.
+processing of 124 ended
+processing 125
+processing of 577 ended
+processing 578
+...10...20...30....10...20...30...40...50...60....40...50...60....40...50...60....40...50...60...70...80...90...100 - done.
+processing of 253 ended
+processing 254
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 320 ended
+processing 321
+Input file size is 1200, 988
+0.70...80...90...100 - done.
+processing of 183 ended
+processing 184
+Input file size is 1200, 1197
+0.70...80...90...100 - done.
+processing of 471 ended
+processing 472
+...10...20...30....10...20...30...40...50...10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 125 ended
+processing 126
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 393 ended
+processing 394
+.70...80...90...100 - done.
+processing of 578 ended
+processing 579
+...10...20...30.Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60.....10...20...30...40...50...60....40...50...60....40...50...60..Input file size is 1200, 566
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 321 ended
+processing 322
+processing of 254 ended
+processing 255
+Input file size is 502, 897
+0.70...80...90...100 - done.
+processing of 184 ended
+processing 185
+Input file size is 1200, 1200
+0...10...20...30...40...50...10...20...30...40...50.70...80...90...100 - done.
+processing of 472 ended
+processing 473
+...10...20...30....60...70...80...90...100 - done.
+processing of 126 ended
+processing 127
+...60...70...80...90...100 - done.
+processing of 579 ended
+processing 586
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 394 ended
+processing 395
+Input file size is 733, 160
+0...10...20...30....10...20...30....10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 127 ended
+processing 129
+..40...50...60..Input file size is 108, 645
+0...10...20...30...40...50..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 255 ended
+processing 256
+...60...70...80...90...100 - done.
+processing of 586 ended
+processing 587
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 473 ended
+processing 474
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 322 ended
+processing 323
+processing of 185 ended
+processing 186
+Input file size is 477, 307
+0...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 129 ended
+processing 133
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1199
+0Input file size is 1030, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 395 ended
+processing 396
+...10...20...30....10...20...30....10...20...30....10...20...30...40...50...60....40...50...60.....10...20...30...40...50...60....40...50...60..Input file size is 735, 230
+0.70...80...90...100 - done.
+processing of 587 ended
+processing 588
+..40...50...60...70...80...90...100 - done.
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 256 ended
+processing 257
+Input file size is 1200, 1200
+0processing of 133 ended
+processing 134
+.70...80...90...100 - done.
+processing of 323 ended
+processing 324
+.70...80...90...100 - done.
+processing of 474 ended
+processing 479
+.70...80...90...100 - done.
+processing of 186 ended
+processing 187
+...10...20...30.Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 829
+0.70...80...90...100 - done.
+Input file size is 513, 464
+0processing of 396 ended
+processing 397
+Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 479 ended
+processing 480
+processing of 588 ended
+processing 589
+...10...20...30...40...50...60.....60...70...80...90...100 - done.
+..40...50...60..processing of 134 ended
+processing 135
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 324 ended
+processing 325
+.70...80...90...100 - done.
+processing of 257 ended
+processing 258
+.70...80...90...100 - done.
+processing of 187 ended
+processing 188
+Input file size is 1200, 1200
+0...10...20...30.Input file size is 1172, 717
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50..40...50...60.....10...20...30...40...50...60.....60...70...80...90...100 - done.
+processing of 589 ended
+processing 592
+..40...50...60...70...80...90...100 - done.
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 397 ended
+processing 398
+processing of 480 ended
+processing 481
+...10...20...30..70...80...90...100 - done.
+processing of 135 ended
+processing 136
+...10...20...30....10...20...30...40...50...60....40...50...60....40...50...60..Input file size is 1111, 1200
+0Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 325 ended
+processing 326
+Input file size is 1200, 1200
+0processing of 258 ended
+processing 259
+.70...80...90...100 - done.
+processing of 188 ended
+processing 189
+Input file size is 1200, 1200
+0..40...50...60.....10...20...30....10...20...30...40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 592 ended
+processing 593
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 398 ended
+processing 399
+Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 481 ended
+processing 482
+...10...20...30....10...20...30..70...80...90...100 - done.
+processing of 136 ended
+processing 137
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 259 ended
+processing 260
+.70...80...90...100 - done.
+processing of 326 ended
+processing 327
+...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 189 ended
+processing 190
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 593 ended
+processing 594
+..40...50...60..Input file size is 1200, 1200
+0..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 399 ended
+processing 400
+Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 137 ended
+processing 138
+processing of 482 ended
+processing 483
+..40...50...60..Input file size is 728, 1200
+0..40...50...60.....10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 260 ended
+processing 261
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 594 ended
+processing 595
+processing of 190 ended
+processing 191
+.70...80...90...100 - done.
+processing of 327 ended
+processing 328
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30....10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60....40...50...60..Input file size is 873, 880
+0Input file size is 1200, 1200
+0...10...20...30...40...50...10...20...30....60...70...80...90...100 - done.
+Input file size is 1035, 1200
+0processing of 595 ended
+processing 596
+.70...80...90...100 - done.
+...10...20...30.processing of 400 ended
+processing 401
+.70...80...90...100 - done.
+processing of 138 ended
+processing 139
+..40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 483 ended
+processing 484
+..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 261 ended
+processing 262
+.70...80...90...100 - done.
+processing of 328 ended
+processing 329
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 191 ended
+processing 192
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 1200, 1200
+0..40...50...60.....10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60....40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 596 ended
+processing 597
+Input file size is 1200, 1200
+0Input file size is 1013, 1200
+0..40...50...60....40...50...60.....10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 139 ended
+processing 140
+..40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 484 ended
+processing 485
+processing of 401 ended
+processing 402
+.70...80...90...100 - done.
+processing of 262 ended
+processing 263
+.70...80...90...100 - done.
+processing of 192 ended
+processing 193
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 329 ended
+processing 330
+...10...20...30...40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30..70...80...90...100 - done.
+processing of 597 ended
+processing 598
+Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30....10...20...30...40...50...60....40...50...60.....10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 140 ended
+processing 141
+.70...80...90...100 - done.
+processing of 263 ended
+processing 264
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 193 ended
+processing 194
+processing of 485 ended
+processing 486
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 402 ended
+processing 403
+...10...20...30..70...80...90...100 - done.
+processing of 330 ended
+processing 331
+..40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 598 ended
+processing 599
+Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60..Input file size is 1200, 1200
+0...10...20...30....10...20...30...40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 264 ended
+processing 265
+processing of 141 ended
+processing 142
+..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 194 ended
+processing 195
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 486 ended
+processing 487
+.70...80...90...100 - done.
+processing of 403 ended
+processing 404
+processing of 331 ended
+processing 332
+...10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0..40...50...60..Input file size is 576, 854
+0Input file size is 1200, 1200
+0..40...50...60.....10...20...30...40...50...10...20...30....10...20...30.Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 599 ended
+processing 600
+...10...20...30...40...50...60.....60...70...80...90...100 - done.
+..40...50...60..processing of 404 ended
+processing 405
+..40...50...60...70...80...90...100 - done.
+processing of 265 ended
+processing 266
+..40...50...60...70...80...90...100 - done.
+processing of 142 ended
+processing 143
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 195 ended
+processing 196
+processing of 487 ended
+processing 488
+.70...80...90...100 - done.
+processing of 332 ended
+processing 333
+Input file size is 1200, 1200
+0Input file size is 944, 1200
+0...10...20...30.Input file size is 1200, 1200
+0...10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1187, 696
+0..40...50...60.....10...20...30...40...50Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+.70...80...90...100 - done.
+...10...20...30.processing of 600 ended
+processing 601
+.70...80...90...100 - done.
+processing of 266 ended
+processing of 405 ended
+processing 267
+processing 406
+...60...70...80...90...100 - done.
+processing of 488 ended
+processing 489
+...10...20...30...40...50...60....40...50...60....40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 196 ended
+processing 197
+processing of 143 ended
+processing 144
+Input file size is 989, 485
+0.70...80...90...100 - done.
+processing of 333 ended
+processing 334
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 893, 699
+0...10...20...30...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 601 ended
+processing 623
+...10...20...30....10...20...30....60...70...80...90...100 - done.
+processing of 489 ended
+processing 490
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 267 ended
+processing 268
+...10...20...30....10...20...30.Input file size is 1100, 656
+0...10...20...30.Input file size is 1200, 766
+0.70...80...90...100 - done.
+processing of 406 ended
+processing 407
+...10...20...30...40...50..40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 623 ended
+processing 624
+.70...80...90...100 - done.
+processing of 144 ended
+processing 145
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 197 ended
+processing 198
+...60...70...80...90...100 - done.
+processing of 490 ended
+processing 491
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 334 ended
+processing 335
+...10...20...30....10...20...30.Input file size is 1200, 803
+0Input file size is 1200, 1200
+0..40...50...60.....10...20...30...40...50..40...50...60..Input file size is 213, 297
+0...10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 491 ended
+processing 498
+...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 624 ended
+processing 625
+..40...50...60..processing of 268 ended
+processing 269
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 407 ended
+processing 408
+...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 145 ended
+processing 146
+..40...50...60..Input file size is 14, 7
+0Input file size is 1200, 670
+0.70...80...90...100 - done.
+processing of 198 ended
+processing 199
+.70...80...90...100 - done.
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0processing of 335 ended
+processing 336
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 498 ended
+processing 499
+...10...20...30...40...50...10...20...30....10...20...30.Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 625 ended
+processing 626
+..40...50...60....40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 408 ended
+processing 409
+Input file size is 1200, 239
+0Input file size is 1200, 1200
+0..40...50...60...70...80...90...100 - done.
+processing of 269 ended
+processing 270
+...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 499 ended
+processing 500
+..40...50...60.....10...20...30..70...80...90...100 - done.
+processing of 146 ended
+processing 147
+Input file size is 1200, 371
+0..40...50...60...70...80...90...100 - done.
+processing of 199 ended
+processing 200
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 626 ended
+processing 627
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 336 ended
+processing 337
+Input file size is 1200, 999
+0...10...20...30....10...20...30....10...20...30...40...50Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 500 ended
+processing 501
+Input file size is 1200, 413
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+...10...20...30.processing of 270 ended
+processing 271
+.70...80...90...100 - done.
+processing of 409 ended
+processing 410
+...10...20...30....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 627 ended
+processing 628
+...10...20...30...40...50...60....40...50...60....40...50...60...70...80...90...100 - done.
+processing of 147 ended
+processing 148
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 337 ended
+processing 338
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 200 ended
+processing 201
+Input file size is 1200, 615
+0...10...20...30....10...20...30...40...50...10...20...30....10...20...30...40...50...60.....60...70...80...90...100 - done.
+processing of 628 ended
+processing 629
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 501 ended
+processing 502
+.70...80...90...100 - done.
+processing of 271 ended
+processing 272
+Input file size is 1200, 1043
+0...10...20...30....10...20...30..70...80...90...100 - done.
+processing of 410 ended
+processing 411
+...10...20...30...40...50...60....40...50...60..Input file size is 1200, 634
+0..40...50...60..Input file size is 1200, 1200
+0Input file size is 464, 1200
+0...10...20...30...40...50.70...80...90...100 - done.
+processing of 201 ended
+processing 202
+.70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 148 ended
+processing of 338 ended
+processing 339
+...10...20...30...40...50...60...70...80...90...100 - done.
+...10...20...30.processing of 629 ended
+processing 630
+Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 272 ended
+processing 273
+..40...50...60.....10...20...30..70...80...90...100 - done.
+..40...50...60..Input file size is 1200, 1200
+0processing of 502 ended
+processing 503
+Input file size is 1200, 1200
+0Input file size is 956, 485
+0Input file size is 282, 243
+0...10...20...30....10...20...30..70...80...90...100 - done.
+processing of 411 ended
+processing 412
+...10...20...30...40...50...60...70...80...90...100 - done.
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 273 ended
+processing 274
+processing of 630 ended
+processing 631
+..40...50...60....40...50...60...70...80...90...100 - done.
+Input file size is 1200, 1200
+0processing of 202 ended
+processing 203
+.70...80...90...100 - done.
+processing of 339 ended
+processing 340
+Input file size is 644, 1200
+0...10...20...30.Input file size is 957, 299
+0...10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 631 ended
+processing 632
+...10...20...30..70...80...90...100 - done.
+processing of 274 ended
+processing 275
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 503 ended
+processing 504
+..40...50...60.....10...20...30....10...20...30..70...80...90...100 - done.
+processing of 412 ended
+processing 413
+Input file size is 1200, 322
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 632 ended
+processing of 340 ended
+processing 341
+.70...80...90...100 - done.
+processing of 203 ended
+processing 204
+...10...20...30...40...50...60.....10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 275 ended
+processing 276
+..40...50...60.....10...20...30...40...50...60..Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 504 ended
+processing 505
+.70...80...90...100 - done.
+processing of 413 ended
+processing 414
+...10...20...30....10...20...30...40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 204 ended
+processing 205
+...10...20...30.Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 341 ended
+processing 342
+Input file size is 33, 43
+0...10...20...30...40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 414 ended
+processing 418
+..40...50...60...70...80...90...100 - done.
+processing of 276 ended
+processing 277
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 505 ended
+processing 506
+Input file size is 1200, 697
+0...10...20...30.Input file size is 919, 1200
+0...10...20...30...40...50...10...20...30....60...70...80...90...100 - done.
+processing of 342 ended
+processing 343
+..40...50...60....40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 418 ended
+processing 419
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 205 ended
+processing 206
+...10...20...30....10...20...30...40...50...60..Input file size is 1200, 1014
+0...10...20...30...40...50..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 277 ended
+processing 278
+.70...80...90...100 - done.
+processing of 506 ended
+processing 507
+Input file size is 1200, 1200
+0...10...20...30...40...50...60.....60...70...80...90...100 - done.
+processing of 343 ended
+processing 344
+.70...80...90...100 - done.
+...10...20...30.processing of 419 ended
+processing 420
+..40...50...60...70...80...90...100 - done.
+processing of 206 ended
+processing 207
+Input file size is 1087, 760
+0Input file size is 1200, 1200
+0...10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....60...70...80...90...100 - done.
+processing of 344 ended
+processing 347
+...10...20...30....10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 420 ended
+processing 421
+..40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 507 ended
+processing 508
+.70...80...90...100 - done.
+processing of 278 ended
+processing 279
+Input file size is 852, 972
+0...10...20...30....10...20...30...40...50..40...50...60.....60...70...80...90...100 - done.
+processing of 347 ended
+processing 348
+Input file size is 1200, 677
+0.70...80...90...100 - done.
+processing of 207 ended
+processing 208
+...10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 421 ended
+processing 422
+...10...20...30....10...20...30.Input file size is 1200, 1200
+0..40...50...60....40...50...60..Input file size is 1200, 1200
+0...10...20...30..70...80...90...100 - done.
+processing of 508 ended
+processing 509
+.70...80...90...100 - done.
+processing of 279 ended
+processing 280
+...10...20...30...40...50...60..Input file size is 373, 370
+0...10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 422 ended
+processing 423
+.70...80...90...100 - done.
+processing of 348 ended
+processing 349
+.70...80...90...100 - done.
+processing of 208 ended
+processing 209
+Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30....10...20...30.Input file size is 432, 669
+0Input file size is 1200, 1200
+0...10...20...30...40...50..40...50...60....40...50...60..Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+.70...80...90...100 - done.
+processing of 509 ended
+processing 510
+processing of 423 ended
+processing 424
+...10...20...30..70...80...90...100 - done.
+processing of 280 ended
+processing 281
+...10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 349 ended
+processing 350
+Input file size is 801, 711
+0.70...80...90...100 - done.
+processing of 209 ended
+processing 210
+Input file size is 878, 827
+0...10...20...30...40...50...10...20...30...40...50Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 510 ended
+processing 514
+...60...70...80...90...100 - done.
+processing of 424 ended
+processing 425
+...10...20...30.Input file size is 1200, 1200
+0Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30.Input file size is 431, 180
+0..40...50...60...70...80...90...100 - done.
+processing of 281 ended
+processing 282
+Input file size is 1151, 232
+0..40...50...60.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 514 ended
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 425 ended
+processing 426
+.70...80...90...100 - done.
+processing of 350 ended
+processing 351
+.70...80...90...100 - done.
+processing of 210 ended
+processing 211
+Input file size is 1200, 1200
+0Input file size is 1200, 823
+0...10...20...30....10...20...30...40...50Input file size is 1200, 1200
+0Input file size is 1200, 1009
+0...10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 426 ended
+processing 427
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 282 ended
+processing 283
+...60...70...80...90...100 - done.
+processing of 211 ended
+processing 212
+.70...80...90...100 - done.
+processing of 351 ended
+processing 352
+Input file size is 1200, 1200
+0Input file size is 1200, 1024
+0Input file size is 1200, 1192
+0...10...20...30....10...20...30...40...50Input file size is 1200, 1200
+0...10...20...30...40...50...60.....10...20...30....60...70...80...90...100 - done.
+processing of 212 ended
+processing 213
+..40...50...60....40...50...60...70...80...90...100 - done.
+processing of 427 ended
+processing 428
+.70...80...90...100 - done.
+processing of 283 ended
+processing 284
+.70...80...90...100 - done.
+processing of 352 ended
+processing 353
+Input file size is 1200, 853
+0...10...20...30...40...50Input file size is 1200, 925
+0Input file size is 1200, 1200
+0...60...70...80...90...100 - done.
+processing of 213 ended
+processing 214
+...10...20...30...40...50Input file size is 1200, 1200
+0...10...20...30....60...70...80...90...100 - done.
+processing of 284 ended
+processing 285
+...10...20...30...40...50...60...70...80...90...100 - done.
+..40...50...60..processing of 428 ended
+Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 353 ended
+processing 354
+...10...20...30.Input file size is 1200, 1200
+0...10...20...30...40...50...60....40...50...60...70...80...90...100 - done.
+processing of 214 ended
+processing 215
+.70...80...90...100 - done.
+processing of 285 ended
+Input file size is 1200, 1200
+0...10...20...30...40...50...60..Input file size is 1200, 1200
+0.70...80...90...100 - done.
+processing of 354 ended
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 215 ended
+NOTICE:  table "o_raster_onprocess" does not exist, skipping
+DROP TABLE
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Driver: VRT/Virtual Raster
+Files: raster_output.vrt
+       ./tiles/100.tiff
+       ./tiles/101.tiff
+       ./tiles/102.tiff
+       ./tiles/103.tiff
+       ./tiles/104.tiff
+       ./tiles/105.tiff
+       ./tiles/106.tiff
+       ./tiles/107.tiff
+       ./tiles/108.tiff
+       ./tiles/109.tiff
+       ./tiles/110.tiff
+       ./tiles/111.tiff
+       ./tiles/112.tiff
+       ./tiles/113.tiff
+       ./tiles/114.tiff
+       ./tiles/115.tiff
+       ./tiles/116.tiff
+       ./tiles/117.tiff
+       ./tiles/118.tiff
+       ./tiles/119.tiff
+       ./tiles/120.tiff
+       ./tiles/121.tiff
+       ./tiles/122.tiff
+       ./tiles/123.tiff
+       ./tiles/124.tiff
+       ./tiles/125.tiff
+       ./tiles/126.tiff
+       ./tiles/127.tiff
+       ./tiles/129.tiff
+       ./tiles/133.tiff
+       ./tiles/134.tiff
+       ./tiles/135.tiff
+       ./tiles/136.tiff
+       ./tiles/137.tiff
+       ./tiles/138.tiff
+       ./tiles/139.tiff
+       ./tiles/140.tiff
+       ./tiles/141.tiff
+       ./tiles/142.tiff
+       ./tiles/143.tiff
+       ./tiles/144.tiff
+       ./tiles/145.tiff
+       ./tiles/146.tiff
+       ./tiles/147.tiff
+       ./tiles/148.tiff
+       ./tiles/149.tiff
+       ./tiles/150.tiff
+       ./tiles/151.tiff
+       ./tiles/152.tiff
+       ./tiles/153.tiff
+       ./tiles/154.tiff
+       ./tiles/155.tiff
+       ./tiles/156.tiff
+       ./tiles/157.tiff
+       ./tiles/158.tiff
+       ./tiles/159.tiff
+       ./tiles/160.tiff
+       ./tiles/161.tiff
+       ./tiles/162.tiff
+       ./tiles/163.tiff
+       ./tiles/164.tiff
+       ./tiles/165.tiff
+       ./tiles/166.tiff
+       ./tiles/167.tiff
+       ./tiles/168.tiff
+       ./tiles/169.tiff
+       ./tiles/170.tiff
+       ./tiles/171.tiff
+       ./tiles/172.tiff
+       ./tiles/173.tiff
+       ./tiles/174.tiff
+       ./tiles/175.tiff
+       ./tiles/176.tiff
+       ./tiles/177.tiff
+       ./tiles/178.tiff
+       ./tiles/179.tiff
+       ./tiles/180.tiff
+       ./tiles/181.tiff
+       ./tiles/182.tiff
+       ./tiles/183.tiff
+       ./tiles/184.tiff
+       ./tiles/185.tiff
+       ./tiles/186.tiff
+       ./tiles/187.tiff
+       ./tiles/188.tiff
+       ./tiles/189.tiff
+       ./tiles/190.tiff
+       ./tiles/191.tiff
+       ./tiles/192.tiff
+       ./tiles/193.tiff
+       ./tiles/194.tiff
+       ./tiles/195.tiff
+       ./tiles/196.tiff
+       ./tiles/197.tiff
+       ./tiles/198.tiff
+       ./tiles/199.tiff
+       ./tiles/200.tiff
+       ./tiles/201.tiff
+       ./tiles/202.tiff
+       ./tiles/203.tiff
+       ./tiles/204.tiff
+       ./tiles/205.tiff
+       ./tiles/206.tiff
+       ./tiles/207.tiff
+       ./tiles/208.tiff
+       ./tiles/209.tiff
+       ./tiles/210.tiff
+       ./tiles/211.tiff
+       ./tiles/212.tiff
+       ./tiles/213.tiff
+       ./tiles/214.tiff
+       ./tiles/215.tiff
+       ./tiles/216.tiff
+       ./tiles/217.tiff
+       ./tiles/218.tiff
+       ./tiles/219.tiff
+       ./tiles/220.tiff
+       ./tiles/221.tiff
+       ./tiles/222.tiff
+       ./tiles/223.tiff
+       ./tiles/224.tiff
+       ./tiles/225.tiff
+       ./tiles/226.tiff
+       ./tiles/227.tiff
+       ./tiles/228.tiff
+       ./tiles/229.tiff
+       ./tiles/230.tiff
+       ./tiles/231.tiff
+       ./tiles/232.tiff
+       ./tiles/233.tiff
+       ./tiles/234.tiff
+       ./tiles/235.tiff
+       ./tiles/236.tiff
+       ./tiles/238.tiff
+       ./tiles/239.tiff
+       ./tiles/240.tiff
+       ./tiles/241.tiff
+       ./tiles/242.tiff
+       ./tiles/243.tiff
+       ./tiles/244.tiff
+       ./tiles/245.tiff
+       ./tiles/246.tiff
+       ./tiles/249.tiff
+       ./tiles/250.tiff
+       ./tiles/251.tiff
+       ./tiles/252.tiff
+       ./tiles/253.tiff
+       ./tiles/254.tiff
+       ./tiles/255.tiff
+       ./tiles/256.tiff
+       ./tiles/257.tiff
+       ./tiles/258.tiff
+       ./tiles/259.tiff
+       ./tiles/260.tiff
+       ./tiles/261.tiff
+       ./tiles/262.tiff
+       ./tiles/263.tiff
+       ./tiles/264.tiff
+       ./tiles/265.tiff
+       ./tiles/266.tiff
+       ./tiles/267.tiff
+       ./tiles/268.tiff
+       ./tiles/269.tiff
+       ./tiles/270.tiff
+       ./tiles/271.tiff
+       ./tiles/272.tiff
+       ./tiles/273.tiff
+       ./tiles/274.tiff
+       ./tiles/275.tiff
+       ./tiles/276.tiff
+       ./tiles/277.tiff
+       ./tiles/278.tiff
+       ./tiles/279.tiff
+       ./tiles/280.tiff
+       ./tiles/281.tiff
+       ./tiles/282.tiff
+       ./tiles/283.tiff
+       ./tiles/284.tiff
+       ./tiles/285.tiff
+       ./tiles/286.tiff
+       ./tiles/287.tiff
+       ./tiles/288.tiff
+       ./tiles/289.tiff
+       ./tiles/290.tiff
+       ./tiles/291.tiff
+       ./tiles/292.tiff
+       ./tiles/293.tiff
+       ./tiles/294.tiff
+       ./tiles/295.tiff
+       ./tiles/296.tiff
+       ./tiles/297.tiff
+       ./tiles/298.tiff
+       ./tiles/299.tiff
+       ./tiles/300.tiff
+       ./tiles/301.tiff
+       ./tiles/302.tiff
+       ./tiles/303.tiff
+       ./tiles/304.tiff
+       ./tiles/305.tiff
+       ./tiles/306.tiff
+       ./tiles/307.tiff
+       ./tiles/308.tiff
+       ./tiles/309.tiff
+       ./tiles/310.tiff
+       ./tiles/311.tiff
+       ./tiles/312.tiff
+       ./tiles/313.tiff
+       ./tiles/314.tiff
+       ./tiles/315.tiff
+       ./tiles/316.tiff
+       ./tiles/317.tiff
+       ./tiles/318.tiff
+       ./tiles/319.tiff
+       ./tiles/320.tiff
+       ./tiles/321.tiff
+       ./tiles/322.tiff
+       ./tiles/323.tiff
+       ./tiles/324.tiff
+       ./tiles/325.tiff
+       ./tiles/326.tiff
+       ./tiles/327.tiff
+       ./tiles/328.tiff
+       ./tiles/329.tiff
+       ./tiles/330.tiff
+       ./tiles/331.tiff
+       ./tiles/332.tiff
+       ./tiles/333.tiff
+       ./tiles/334.tiff
+       ./tiles/335.tiff
+       ./tiles/336.tiff
+       ./tiles/337.tiff
+       ./tiles/338.tiff
+       ./tiles/339.tiff
+       ./tiles/340.tiff
+       ./tiles/341.tiff
+       ./tiles/342.tiff
+       ./tiles/343.tiff
+       ./tiles/344.tiff
+       ./tiles/347.tiff
+       ./tiles/348.tiff
+       ./tiles/349.tiff
+       ./tiles/350.tiff
+       ./tiles/351.tiff
+       ./tiles/352.tiff
+       ./tiles/353.tiff
+       ./tiles/354.tiff
+       ./tiles/355.tiff
+       ./tiles/356.tiff
+       ./tiles/357.tiff
+       ./tiles/358.tiff
+       ./tiles/359.tiff
+       ./tiles/360.tiff
+       ./tiles/361.tiff
+       ./tiles/362.tiff
+       ./tiles/363.tiff
+       ./tiles/364.tiff
+       ./tiles/365.tiff
+       ./tiles/366.tiff
+       ./tiles/367.tiff
+       ./tiles/368.tiff
+       ./tiles/369.tiff
+       ./tiles/370.tiff
+       ./tiles/371.tiff
+       ./tiles/372.tiff
+       ./tiles/373.tiff
+       ./tiles/374.tiff
+       ./tiles/375.tiff
+       ./tiles/376.tiff
+       ./tiles/377.tiff
+       ./tiles/382.tiff
+       ./tiles/383.tiff
+       ./tiles/384.tiff
+       ./tiles/385.tiff
+       ./tiles/386.tiff
+       ./tiles/387.tiff
+       ./tiles/388.tiff
+       ./tiles/389.tiff
+       ./tiles/390.tiff
+       ./tiles/391.tiff
+       ./tiles/392.tiff
+       ./tiles/393.tiff
+       ./tiles/394.tiff
+       ./tiles/395.tiff
+       ./tiles/396.tiff
+       ./tiles/397.tiff
+       ./tiles/398.tiff
+       ./tiles/399.tiff
+       ./tiles/400.tiff
+       ./tiles/401.tiff
+       ./tiles/402.tiff
+       ./tiles/403.tiff
+       ./tiles/404.tiff
+       ./tiles/405.tiff
+       ./tiles/406.tiff
+       ./tiles/407.tiff
+       ./tiles/408.tiff
+       ./tiles/409.tiff
+       ./tiles/410.tiff
+       ./tiles/411.tiff
+       ./tiles/412.tiff
+       ./tiles/413.tiff
+       ./tiles/414.tiff
+       ./tiles/418.tiff
+       ./tiles/419.tiff
+       ./tiles/420.tiff
+       ./tiles/421.tiff
+       ./tiles/422.tiff
+       ./tiles/423.tiff
+       ./tiles/424.tiff
+       ./tiles/425.tiff
+       ./tiles/426.tiff
+       ./tiles/427.tiff
+       ./tiles/428.tiff
+       ./tiles/429.tiff
+       ./tiles/430.tiff
+       ./tiles/431.tiff
+       ./tiles/432.tiff
+       ./tiles/433.tiff
+       ./tiles/434.tiff
+       ./tiles/435.tiff
+       ./tiles/436.tiff
+       ./tiles/437.tiff
+       ./tiles/438.tiff
+       ./tiles/439.tiff
+       ./tiles/441.tiff
+       ./tiles/442.tiff
+       ./tiles/443.tiff
+       ./tiles/444.tiff
+       ./tiles/445.tiff
+       ./tiles/446.tiff
+       ./tiles/447.tiff
+       ./tiles/448.tiff
+       ./tiles/449.tiff
+       ./tiles/450.tiff
+       ./tiles/451.tiff
+       ./tiles/452.tiff
+       ./tiles/453.tiff
+       ./tiles/454.tiff
+       ./tiles/455.tiff
+       ./tiles/456.tiff
+       ./tiles/462.tiff
+       ./tiles/463.tiff
+       ./tiles/464.tiff
+       ./tiles/465.tiff
+       ./tiles/466.tiff
+       ./tiles/467.tiff
+       ./tiles/468.tiff
+       ./tiles/469.tiff
+       ./tiles/470.tiff
+       ./tiles/471.tiff
+       ./tiles/472.tiff
+       ./tiles/473.tiff
+       ./tiles/474.tiff
+       ./tiles/479.tiff
+       ./tiles/480.tiff
+       ./tiles/481.tiff
+       ./tiles/482.tiff
+       ./tiles/483.tiff
+       ./tiles/484.tiff
+       ./tiles/485.tiff
+       ./tiles/486.tiff
+       ./tiles/487.tiff
+       ./tiles/488.tiff
+       ./tiles/489.tiff
+       ./tiles/490.tiff
+       ./tiles/491.tiff
+       ./tiles/498.tiff
+       ./tiles/499.tiff
+       ./tiles/500.tiff
+       ./tiles/501.tiff
+       ./tiles/502.tiff
+       ./tiles/503.tiff
+       ./tiles/504.tiff
+       ./tiles/505.tiff
+       ./tiles/506.tiff
+       ./tiles/507.tiff
+       ./tiles/508.tiff
+       ./tiles/509.tiff
+       ./tiles/510.tiff
+       ./tiles/514.tiff
+       ./tiles/515.tiff
+       ./tiles/516.tiff
+       ./tiles/517.tiff
+       ./tiles/518.tiff
+       ./tiles/519.tiff
+       ./tiles/520.tiff
+       ./tiles/521.tiff
+       ./tiles/522.tiff
+       ./tiles/523.tiff
+       ./tiles/524.tiff
+       ./tiles/525.tiff
+       ./tiles/526.tiff
+       ./tiles/536.tiff
+       ./tiles/537.tiff
+       ./tiles/538.tiff
+       ./tiles/539.tiff
+       ./tiles/540.tiff
+       ./tiles/541.tiff
+       ./tiles/542.tiff
+       ./tiles/543.tiff
+       ./tiles/544.tiff
+       ./tiles/545.tiff
+       ./tiles/54.tiff
+       ./tiles/551.tiff
+       ./tiles/552.tiff
+       ./tiles/553.tiff
+       ./tiles/554.tiff
+       ./tiles/555.tiff
+       ./tiles/556.tiff
+       ./tiles/557.tiff
+       ./tiles/558.tiff
+       ./tiles/559.tiff
+       ./tiles/560.tiff
+       ./tiles/561.tiff
+       ./tiles/562.tiff
+       ./tiles/563.tiff
+       ./tiles/564.tiff
+       ./tiles/565.tiff
+       ./tiles/574.tiff
+       ./tiles/575.tiff
+       ./tiles/576.tiff
+       ./tiles/577.tiff
+       ./tiles/578.tiff
+       ./tiles/579.tiff
+       ./tiles/586.tiff
+       ./tiles/587.tiff
+       ./tiles/588.tiff
+       ./tiles/589.tiff
+       ./tiles/592.tiff
+       ./tiles/593.tiff
+       ./tiles/594.tiff
+       ./tiles/595.tiff
+       ./tiles/596.tiff
+       ./tiles/597.tiff
+       ./tiles/598.tiff
+       ./tiles/599.tiff
+       ./tiles/600.tiff
+       ./tiles/601.tiff
+       ./tiles/623.tiff
+       ./tiles/624.tiff
+       ./tiles/625.tiff
+       ./tiles/626.tiff
+       ./tiles/627.tiff
+       ./tiles/628.tiff
+       ./tiles/629.tiff
+       ./tiles/62.tiff
+       ./tiles/630.tiff
+       ./tiles/631.tiff
+       ./tiles/632.tiff
+       ./tiles/633.tiff
+       ./tiles/634.tiff
+       ./tiles/635.tiff
+       ./tiles/636.tiff
+       ./tiles/637.tiff
+       ./tiles/71.tiff
+       ./tiles/72.tiff
+       ./tiles/73.tiff
+       ./tiles/74.tiff
+       ./tiles/75.tiff
+       ./tiles/76.tiff
+       ./tiles/77.tiff
+       ./tiles/78.tiff
+       ./tiles/79.tiff
+       ./tiles/80.tiff
+       ./tiles/81.tiff
+       ./tiles/82.tiff
+       ./tiles/83.tiff
+       ./tiles/84.tiff
+       ./tiles/85.tiff
+       ./tiles/86.tiff
+       ./tiles/90.tiff
+       ./tiles/94.tiff
+       ./tiles/98.tiff
+       ./tiles/99.tiff
+Size is 43200, 19592
+Coordinate System is:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["geodetic latitude (Lat)",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["geodetic longitude (Lon)",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4326]]
+Data axis to CRS axis mapping: 2,1
+Origin = (-180.000000000000000,86.908333333333331)
+Pixel Size = (0.008333333333333,-0.008333333333333)
+Corner Coordinates:
+Upper Left  (-180.0000000,  86.9083333) (180d 0' 0.00"W, 86d54'30.00"N)
+Lower Left  (-180.0000000, -76.3583333) (180d 0' 0.00"W, 76d21'30.00"S)
+Upper Right ( 180.0000000,  86.9083333) (180d 0' 0.00"E, 86d54'30.00"N)
+Lower Right ( 180.0000000, -76.3583333) (180d 0' 0.00"E, 76d21'30.00"S)
+Center      (  -0.0000000,   5.2750000) (  0d 0' 0.00"W,  5d16'30.00"N)
+Band 1 Block=128x128 Type=UInt32, ColorInterp=Gray
+  Minimum=1.000, Maximum=256893.000, Mean=229684.363, StdDev=42547.704
+  NoData Value=0
+  Metadata:
+    STATISTICS_MAXIMUM=256893
+    STATISTICS_MEAN=229684.36280211
+    STATISTICS_MINIMUM=1
+    STATISTICS_STDDEV=42547.703818752
+    STATISTICS_VALID_PERCENT=56.77
+COPY 256893
+analysis done
+TOTAL SCRIPT TIME: 64
