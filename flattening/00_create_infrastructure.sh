@@ -355,8 +355,14 @@ THEN
 ELSE
 	FOR rec IN SELECT fid,geom FROM iselect ORDER BY fid
 	LOOP
+	BEGIN
 	INSERT INTO iout
 	SELECT fid,UNNEST(path) path,geom FROM (SELECT fid,(ST_DUMP(ST_MULTI(geom))).* FROM (SELECT fid,ST_INTERSECTION(ttile,geom) geom FROM iselect WHERE fid=rec.fid) c) d;
+	EXCEPTION
+	WHEN OTHERS THEN
+	INSERT INTO iout
+	SELECT fid,UNNEST(path) path,geom FROM (SELECT fid,(ST_DUMP(ST_MULTI(geom))).* FROM (SELECT fid,ST_INTERSECTION(ttile,st_buffer(geom,0)) geom FROM iselect WHERE fid=rec.fid) c) d;
+	END;
 	END LOOP;
 END IF;
 EXECUTE FORMAT ('INSERT INTO %s(qid,fid,path,geom) SELECT %s,* FROM iout order by fid,path;',otbl,iqid);
