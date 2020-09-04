@@ -1,0 +1,150 @@
+/globes/processing_current/cep/flat_cep_202009/raster_output
+removing /globes/processing_current/cep/flat_cep_202009/raster_output
+creating /globes/processing_current/cep/flat_cep_202009/raster_output
+number of elements: 22
+number of objects in each step: 1
+number of dedicated threads: 24
+processing 1
+processing 19
+processing 46
+processing 55
+processing 64
+processing 82
+processing 91
+processing 109
+processing 127
+processing 145
+processing 181
+processing 190
+processing 199
+processing 226
+processing 262
+processing 271
+processing 325
+processing 397
+processing 451
+processing 469
+processing 505
+processing 532
+Input file size is 36000, 35611
+0Input file size is 36000, 35611
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0Input file size is 36000, 36000
+0..............10............10.......................................10.10101010101010101010101010101010101010.....20............................20.................................2020202020202020202020202020202020202020..............30...............30.....................................3030303030303030303030303030303030303030.........40...........40..............................................4040404040404040404040404040404040404040............5050......................................................5050505050505050505050505050505050505050............60.60.....................................................606060606060606060606060606060606060.60..60...........7070....................................................7070707070707070.70707070...7070707070......80.7070..70.80....................................................80.8080.808080...80808080...8080..80.80.8090.80.....90.80....80.........80.....80.............................90.........9090909090...9090..9090.90.90..90..90......90...90......90....90....90......90..........100 - done.
+processing of 127 ended
+.......100 - done.
+processing of 19 ended
+100 - done.
+processing of 271 ended
+100 - done.
+processing of 226 ended
+100 - done.
+processing of 145 ended
+100 - done.
+processing of 91 ended
+100 - done.
+processing of 1 ended
+100 - done.
+processing of 397 ended
+100 - done.
+processing of 64 ended
+100 - done.
+processing of 55 ended
+100 - done.
+processing of 199 ended
+100 - done.
+processing of 505 ended
+100 - done.
+processing of 190 ended
+100 - done.
+processing of 325 ended
+100 - done.
+processing of 46 ended
+100 - done.
+processing of 181 ended
+100 - done.
+processing of 451 ended
+100 - done.
+processing of 109 ended
+100 - done.
+processing of 532 ended
+100 - done.
+processing of 82 ended
+100 - done.
+processing of 262 ended
+100 - done.
+processing of 469 ended
+NOTICE:  table "o_raster_onprocess" does not exist, skipping
+DROP TABLE
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Driver: VRT/Virtual Raster
+Files: raster_output.vrt
+       ./tiles/1.tiff
+       ./tiles/19.tiff
+       ./tiles/46.tiff
+       ./tiles/55.tiff
+       ./tiles/64.tiff
+       ./tiles/82.tiff
+       ./tiles/91.tiff
+       ./tiles/109.tiff
+       ./tiles/127.tiff
+       ./tiles/145.tiff
+       ./tiles/181.tiff
+       ./tiles/190.tiff
+       ./tiles/199.tiff
+       ./tiles/226.tiff
+       ./tiles/262.tiff
+       ./tiles/271.tiff
+       ./tiles/325.tiff
+       ./tiles/397.tiff
+       ./tiles/451.tiff
+       ./tiles/469.tiff
+       ./tiles/505.tiff
+       ./tiles/532.tiff
+Size is 1008000, 539611
+Coordinate System is:
+GEOGCS["WGS 84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS 84",6378137,298.257223563,
+            AUTHORITY["EPSG","7030"]],
+        AUTHORITY["EPSG","6326"]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    AUTHORITY["EPSG","4326"]]
+Origin = (-180.000000000000000,60.000000000000000)
+Pixel Size = (0.000277777777778,-0.000277777777778)
+Corner Coordinates:
+Upper Left  (-180.0000000,  60.0000000) (180d 0' 0.00"W, 60d 0' 0.00"N)
+Lower Left  (-180.0000000, -89.8919444) (180d 0' 0.00"W, 89d53'31.00"S)
+Upper Right ( 100.0000000,  60.0000000) (100d 0' 0.00"E, 60d 0' 0.00"N)
+Lower Right ( 100.0000000, -89.8919444) (100d 0' 0.00"E, 89d53'31.00"S)
+Center      ( -40.0000000, -14.9459722) ( 40d 0' 0.00"W, 14d56'45.50"S)
+Band 1 Block=128x128 Type=UInt32, ColorInterp=Gray
+  Minimum=1.000, Maximum=393658.000, Mean=76107.941, StdDev=138567.436
+  NoData Value=0
+  Metadata:
+    STATISTICS_MAXIMUM=393658
+    STATISTICS_MEAN=76107.941321203
+    STATISTICS_MINIMUM=1
+    STATISTICS_STDDEV=138567.43631311
+COPY 448518
+analysis done
+TOTAL SCRIPT TIME: 242
