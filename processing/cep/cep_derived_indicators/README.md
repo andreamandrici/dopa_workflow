@@ -3,16 +3,13 @@
 
 ### Countries statistics
 
-#### Protection Coverage: [country protection coverage sql](./country_coverage.sql) to be manually executed. Fully commented.
-
-#### Thematic Coverage (discrete classes; eg: landcover): [country thematic discrete coverage sql](./country_thematic_discrete_coverage.sql) to be manually executed. Fully commented.
++  Protection Coverage: [country protection coverage sql](./country_coverage.sql) to be manually executed. Fully commented.
++  Thematic Coverage (discrete classes; eg: landcover): [country thematic discrete coverage sql](./country_thematic_discrete_coverage.sql) to be manually executed. Fully commented.
 
 ### Ecoregions statistics
 
-#### Protection Coverage: [ecoregion protection coverage sql](./ecoregion_coverage.sql) to be manually executed. Fully commented.
-
-#### Thematic Coverage (discrete classes; eg: landcover): [country thematic discrete coverage sql](./country_thematic_discrete_coverage.sql) to be manually executed. Fully commented.
-
++  Protection Coverage: [ecoregion protection coverage sql](./ecoregion_coverage.sql) to be manually executed. Fully commented.
++  Thematic Coverage (discrete classes; eg: landcover): [country thematic discrete coverage sql](./country_thematic_discrete_coverage.sql) to be manually executed. Fully commented.
 
 ### Protected areas statistics
 
