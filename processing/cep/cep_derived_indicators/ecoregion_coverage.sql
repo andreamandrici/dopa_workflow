@@ -1,6 +1,8 @@
-WITH
+DROP TABLE IF EXISTS cep202009.ecoregion_stats;CREATE TABLE cep202009.ecoregion_stats AS -- this defines output table; change it accordingly
 -- current ecoregions
-current_ecoregion AS (SELECT * FROM habitats_and_biotopes.ecoregions_2019),--this defines current attributes 
+WITH current_ecoregion AS (SELECT * FROM habitats_and_biotopes.ecoregions_2020_atts),-- this defines current attributes; change it accordingly
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 -- raster total surface
 a1 AS (SELECT ecoregion fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(eco) ecoregion,sqkm FROM cep.cep_last) a GROUP BY ecoregion ORDER BY ecoregion),
 -- raster protected surface

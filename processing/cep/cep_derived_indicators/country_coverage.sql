@@ -1,26 +1,32 @@
+-- current output table; change this one to change the output
+DROP TABLE IF EXISTS cep202009.country_stats;CREATE TABLE cep202009.country_stats AS
 WITH
 -- current country; change this one to update data sources
 current_country AS (SELECT * FROM administrative_units.gaul_eez_dissolved_201912),
+-- current ecoregion; change this one to update data sources
+current_ecoregion AS (SELECT * FROM habitats_and_biotopes.ecoregions_2020_atts),
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 -- terrestrial
-ter AS (SELECT DISTINCT cid FROM cep.cep_202003 a,
-(SELECT ARRAY_AGG(DISTINCT first_level_code ORDER BY first_level_code) f FROM habitats_and_biotopes.ecoregions_2019 WHERE "source" IN ('teow','eeow')) b WHERE b.f && a.eco
+ter AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT first_level_code ORDER BY first_level_code) f FROM current_ecoregion WHERE "source" IN ('teow','eeow')) b WHERE b.f && a.eco
 ),
 -- marine
-mar AS (SELECT DISTINCT cid FROM cep.cep_202003 a,
-(SELECT ARRAY_AGG(DISTINCT first_level_code ORDER BY first_level_code) f FROM habitats_and_biotopes.ecoregions_2019 WHERE "source" IN ('meow','ppow')) b WHERE b.f && a.eco
+mar AS (SELECT DISTINCT cid FROM cep.cep_last a,
+(SELECT ARRAY_AGG(DISTINCT first_level_code ORDER BY first_level_code) f FROM current_ecoregion WHERE "source" IN ('meow','ppow')) b WHERE b.f && a.eco
 ),
 -- raster total surface
-a1 AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003) a GROUP BY country ORDER BY country),
+a1 AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last) a GROUP BY country ORDER BY country),
 -- raster protected surface
-a2 AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003 WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
+a2 AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
 -- raster total terrestrial surface
-a1_ter AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003 NATURAL JOIN ter) a GROUP BY country ORDER BY country),
+a1_ter AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN ter) a GROUP BY country ORDER BY country),
 -- raster protected terrestrial surface
-a2_ter AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003 NATURAL JOIN ter WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
+a2_ter AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN ter WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
 -- raster total marine surface
-a1_mar AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003 NATURAL JOIN mar) a GROUP BY country ORDER BY country),
+a1_mar AS (SELECT country fid,SUM(a.sqkm) rtotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN mar) a GROUP BY country ORDER BY country),
 -- raster protected marine surface
-a2_mar AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_202003 NATURAL JOIN mar WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
+a2_mar AS (SELECT country fid,SUM(a.sqkm) rprotsqkm FROM (SELECT UNNEST(country) country,sqkm FROM cep.cep_last NATURAL JOIN mar WHERE NOT (ARRAY[0] && pa)) a GROUP BY country ORDER BY country),
 -- country attributes
 b AS (SELECT country_id fid,country_name "name",iso3,iso2,un_m49,status,sqkm FROM current_country ORDER BY fid),
 -- raster statistics by country
@@ -38,6 +44,4 @@ JOIN d USING(fid)
 LEFT JOIN d_ter USING(fid)
 LEFT JOIN d_mar USING(fid)
 ORDER BY d.fid)
-SELECT * FROM e
---SELECT *,tot_sqkm-(ter_sqkm+mar_sqkm) d FROM e ORDER BY d DESC NULLS LAST
-
+SELECT * FROM e;
