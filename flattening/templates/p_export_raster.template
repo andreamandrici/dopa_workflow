@@ -81,7 +81,7 @@ for ((OFF=0 ; OFF<=${elements}; OFF+=${objects}))
 	done 
 wait
 
-psql ${dbpar2} -t -c "DROP TABLE IF EXISTS ${SCH}.o_raster_onprocess;"
+psql ${dbpar2} -t -c "DROP TABLE IF EXISTS ${SCH}.export_raster_onprocess;"
 
 cd ${outpath}
 #find ./tiles/*.tiff | sort -n > list.txt
