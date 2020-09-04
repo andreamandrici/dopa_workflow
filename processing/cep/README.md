@@ -19,8 +19,8 @@ The resulting dataset is a pseudo-topology where each polygon keeps the informat
 To obtain the above, the user is requested only to:
 
 1.  download [this](https://github.com/andreamandrici/dopa_workflow) code, move in the [flattening](../../flattening/) folder.
-2.  setup few parameters in an env file ([workflow_parameters.conf](./202003_workflow_parameters.conf) used for **version 202003**), and
-3.  run a sequence of bash script ([z_do_it_all.sh](./202003_z_do_it_all.sh) used for **version 202003**).
+2.  setup few parameters in an env file ([workflow_parameters.conf](.cep_202003/202003_workflow_parameters.conf) used for **version 202003**), and
+3.  run a sequence of bash script ([z_do_it_all.sh](.cep_202003/202003_z_do_it_all.sh) used for **version 202003**).
 
 The output is always exported in:
 
@@ -59,10 +59,15 @@ The script:
 
 ### Version 202003
 
-+  [workflow_parameters.conf](./202003_workflow_parameters.conf) env file.
-+  [z_do_it_all.sh](./202003_z_do_it_all.sh) bash script. Runs in about 40 hours.
++  [workflow_parameters.conf](.cep_202003/202003_workflow_parameters.conf) env file.
++  [z_do_it_all.sh](.cep_202003/202003_z_do_it_all.sh) bash script. Runs in about 40 hours.
 +  **patch**: 100 cids (all single pixel, 30x30) resulted with multiple (2) country (1) or ecoregion (99), due to overlapping original geometries (which shouldn't). The total surface involved is non-significant, but to make the next steps (aggregations and disaggregations) process easier, they have been randomly assigned to one or the other original fid (it could also be fixed with rasterization at lower resolution: more expensive). The sequence to get the above fixed is:
-    +  [patch sql sequence](./202003_fix_cep_overlaps.sql): to be manually executed, point by point. Fully commented.
-    +  [patch bash sequence](./202003_fix_cep_overlaps.sh): bash script. Can be executed in one step. Runs in about 4 hours.
-+  [cep_last](./cep.sh): bash script, executed at the end of the flattening script to create the tables cep.cep_202003,cep.cep_index_202003 and to update the tables cep.cep_last, cep.cep_last_index.
+    +  [patch sql sequence](.cep_202003/202003_fix_cep_overlaps.sql): to be manually executed, point by point. Fully commented.
+    +  [patch bash sequence](.cep_202003/202003_fix_cep_overlaps.sh): bash script. Can be executed in one step. Runs in about 4 hours.
++  [cep_last](.cep_202003/cep.sh): bash script, executed at the end of the flattening script to create the tables cep.cep_202003,cep.cep_index_202003 and to update the tables cep.cep_last, cep.cep_last_index.
 
+### Version 202009
+
+Full parameters, logs and additional commands reported in [cep_202003](.cep_202003/)
+Due to code improvements, it runs in 17 hours only.
+A recurrent country overlap (0/171 and 188/234) is fixed with specific sql script.
