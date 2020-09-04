@@ -68,6 +68,6 @@ The script:
 
 ### Version 202009
 
-Full parameters, logs and additional commands reported in [cep_202009](./cep_202009/)
+Full parameters, logs and additional commands reported in [cep_202009](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/cep/cep_202009/)
 Due to code improvements, it runs in 17 hours only.
 A recurrent country overlap (0/171 and 188/234) is fixed with specific sql script.
