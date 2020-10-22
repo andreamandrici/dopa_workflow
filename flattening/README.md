@@ -145,8 +145,8 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
         + 2) `g_flat_temp` (this is actually the result, just not ordered);
     5.  `h_output.sh` exports the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
 3.   If needed, output is exported as raster with two additional steps:
-  1.  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
-  2.  `p_export_raster` export the flat layer as external raster: vrt (gdal virtual raster) made out of tif files (which in turn are made by 10x10 blocks of original vector tiles). It also exports an attribute table (cid=pixel value=unique combination of input topics).
+    1.  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
+    2.  `p_export_raster` export the flat layer as external raster: vrt (gdal virtual raster) made out of tif files (which in turn are made by 10x10 blocks of original vector tiles). It also exports an attribute table (cid=pixel value=unique combination of input topics).
 
 All the scripts from `a_*` to `g_*` (and `o_`, `p_`) must run in parallel, launching them in background.
 
