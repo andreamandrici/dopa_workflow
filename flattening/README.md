@@ -138,13 +138,15 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
         + for all the topics, in the table `dc_tiled_all`;
     2.  `e_flat_all.sh` flat all above polygons by tile: breaks polygons at intersections, collects unique geometries, then calculates the centroid; it starts the function `f_flatter()`, which will write results on the table `e_flat_all` (except the field cid; see later);
 	3.  `f_attributes_all.sh` calculate and define numeric id (CID) for unique combinations of topics within the whole dataset; it starts the function `f_pop_atts_tile()`, which will write results:
-	  + on the table `fa_atts_tile` (all combinations of qid,tid,topic-array);
+	    + on the table `fa_atts_tile` (all combinations of qid,tid,topic-array);
 	    + `fb_atts_all` (all the unique combinations of topic-arry, with unique id-cid);  
-    4.  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes; it starts the function `f_flat_recode()`, which will write results: 1) on the table `e_flat_all` (UPDATE only the field CID); 2) `g_flat_temp` (this is actually the result, just not ordered);
+    4.  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes; it starts the function `f_flat_recode()`, which will write results:
+        + on the table `e_flat_all` (UPDATE only the field CID);
+        + 2) `g_flat_temp` (this is actually the result, just not ordered);
     5.  `h_output.sh` exports the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
 3.   If needed, output is exported as raster with two additional steps:
-  +  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
-  +  `p_export_raster` export the flat layer as external raster: vrt (gdal virtual raster) made out of tif files (which in turn are made by 10x10 blocks of original vector tiles). It also exports an attribute table (cid=pixel value=unique combination of input topics).
+  1.  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
+  2.  `p_export_raster` export the flat layer as external raster: vrt (gdal virtual raster) made out of tif files (which in turn are made by 10x10 blocks of original vector tiles). It also exports an attribute table (cid=pixel value=unique combination of input topics).
 
 All the scripts from `a_*` to `g_*` (and `o_`, `p_`) must run in parallel, launching them in background.
 
