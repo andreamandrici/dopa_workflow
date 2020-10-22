@@ -134,8 +134,8 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
     4.  `da_tiled_topic_n.sh` dumps and checks above geometries to single part, by tile, by topic; it starts the function `f_pop_tiled()`, which will write results on the table `da_tiled_topic_n`;
 2.  For aggregated results from above steps;
     1.  `db_tiled_all.sh` collects above geometries by tile in a single table; it starts the function `f_pop_tiled_temp()`, which will write results:
-        + for each topic, on the table `db_tiled_temp`;
-        + for all the topics, in the table `dc_tiled_all`;
+      + for each topic, on the table `db_tiled_temp`;
+      + for all the topics, in the table `dc_tiled_all`;
     2.  `e_flat_all.sh` flat all above polygons by tile: breaks polygons at intersections, collects unique geometries, then calculates the centroid; it starts the function `f_flatter()`, which will write results on the table `e_flat_all` (except the field cid; see later);
 	3.  `f_attributes_all.sh` calculate and define numeric id (CID) for unique combinations of topics within the whole dataset; it starts the function `f_pop_atts_tile()`, which will write results:
 	  + on the table `fa_atts_tile` (all combinations of qid,tid,topic-array);
