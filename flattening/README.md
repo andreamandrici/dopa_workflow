@@ -128,7 +128,7 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
 #### 3.  Run scripts
 
 1.  For each topic defined in **workflow_parameters.conf**
-  +  `a_input_topic_n.sh` populates input tables: copies data inside the working schema; dumps them as single Polygons (redundant by FID) and check geometries; 
+  +  `a_input_topic_n.sh` populates input tables: copies data inside the working schema; dumps them as single Polygons (redundant by FID) and check geometries; it starts the function **f_pop_input()**, which will write results on the table **a_input_topic**;
   +  `b_clip_topic_n.sh` clips input geometries according to grid tile size;
   +  `c_rast_topic_n.sh` pseudo-rasterizes above clipped data: rasterize at cell size, then vectorize back collecting as MultiPolygons;
   +  `da_tiled_topic_n.sh` dumps and checks above geometries to single part, by tile, by topic;
