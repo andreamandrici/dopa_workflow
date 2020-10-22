@@ -133,9 +133,7 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
   +  `c_rast_topic_n.sh` pseudo-rasterizes above clipped data: rasterize at cell size, then vectorize back collecting as MultiPolygons; it starts the function `f_raster()`, which will write results on the table `c_raster_topic_n`;
   +  `da_tiled_topic_n.sh` dumps and checks above geometries to single part, by tile, by topic; it starts the function `f_pop_tiled()`, which will write results on the table `da_tiled_topic_n`;
 2.  For aggregated results from above steps;
-  +  `db_tiled_all.sh` collects above geometries by tile in a single table; it starts the function `f_pop_tiled_temp()`, which will write results:
-    +  for each topic, on the table `db_tiled_temp`
-    +  then will collect all the topics in the table `dc_tiled_all`;
+  +  `db_tiled_all.sh` collects above geometries by tile in a single table; it starts the function `f_pop_tiled_temp()`, which will write results: 1) for each topic, on the table `db_tiled_temp`; 2) for all the topics, in the table `dc_tiled_all`;
   +  `e_flat_all.sh` flat all above polygons by tile: breaks polygons at intersections, collects unique geometries;
   +  `f_attributes_all.sh` calcultate and define numeric id (CID) for unique combinations of topics within the whole dataset; 
   +  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes;
