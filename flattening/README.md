@@ -142,7 +142,7 @@ Run **`./00_create_infrastructure.sh`**, which will create from scratch the foll
 	    + `fb_atts_all` (all the unique combinations of topic-arry, with unique id-cid);  
     4.  `g_final_all.sh` JOINS flat geometries to unique combinations of attributes; it starts the function `f_flat_recode()`, which will write results:
         + on the table `e_flat_all` (UPDATE only the field CID);
-        + 2) `g_flat_temp` (this is actually the result, just not ordered);
+        + on the table `g_flat_temp` (this is actually the result, just not ordered);
     5.  `h_output.sh` exports the flat final layer. **This is the only single core process, the rest is parallelized on multicores.**
 3.   If needed, output is exported as raster with two additional steps:
     1.  `o_raster.sh` rasterize the flat layer at the same resolution of the pseudo-rasterization step
