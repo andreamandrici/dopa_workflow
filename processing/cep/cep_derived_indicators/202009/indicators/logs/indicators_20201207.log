@@ -1,0 +1,173 @@
+psql:./sql/cep_r_univar.sql:2: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 420831
+psql:./sql/cep_r_univar.sql:4: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:5: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:6: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 962772
+psql:./sql/cep_r_univar.sql:20: NOTICE:  table "country_tot" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/cep_r_univar.sql:26: NOTICE:  table "country_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 265
+psql:./sql/cep_r_univar.sql:32: NOTICE:  table "country_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 298
+psql:./sql/cep_r_univar.sql:38: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 276
+psql:./sql/cep_r_univar.sql:44: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 257
+psql:./sql/cep_r_univar.sql:50: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 267
+psql:./sql/cep_r_univar.sql:56: NOTICE:  table "country_marine" does not exist, skipping
+DROP TABLE
+SELECT 252
+psql:./sql/cep_r_univar.sql:62: NOTICE:  table "country_marine_prot" does not exist, skipping
+DROP TABLE
+SELECT 212
+psql:./sql/cep_r_univar.sql:68: NOTICE:  table "country_marine_unprot" does not exist, skipping
+DROP TABLE
+SELECT 249
+psql:./sql/cep_r_univar.sql:77: NOTICE:  table "ecoregion_tot" does not exist, skipping
+DROP TABLE
+SELECT 1097
+psql:./sql/cep_r_univar.sql:83: NOTICE:  table "ecoregion_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 1064
+psql:./sql/cep_r_univar.sql:89: NOTICE:  table "ecoregion_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 1067
+psql:./sql/cep_r_univar.sql:97: NOTICE:  table "pa" does not exist, skipping
+DROP TABLE
+SELECT 183198
+DROP TABLE
+SELECT 300
+DROP TABLE
+SELECT 1097
+DROP TABLE
+SELECT 183198
+psql:./sql/cep_r_univar.sql:2: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 476811
+psql:./sql/cep_r_univar.sql:4: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:5: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:6: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 962772
+psql:./sql/cep_r_univar.sql:20: NOTICE:  table "country_tot" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/cep_r_univar.sql:26: NOTICE:  table "country_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 267
+psql:./sql/cep_r_univar.sql:32: NOTICE:  table "country_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 298
+psql:./sql/cep_r_univar.sql:38: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 277
+psql:./sql/cep_r_univar.sql:44: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 258
+psql:./sql/cep_r_univar.sql:50: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 269
+psql:./sql/cep_r_univar.sql:56: NOTICE:  table "country_marine" does not exist, skipping
+DROP TABLE
+SELECT 252
+psql:./sql/cep_r_univar.sql:62: NOTICE:  table "country_marine_prot" does not exist, skipping
+DROP TABLE
+SELECT 215
+psql:./sql/cep_r_univar.sql:68: NOTICE:  table "country_marine_unprot" does not exist, skipping
+DROP TABLE
+SELECT 249
+psql:./sql/cep_r_univar.sql:77: NOTICE:  table "ecoregion_tot" does not exist, skipping
+DROP TABLE
+SELECT 1097
+psql:./sql/cep_r_univar.sql:83: NOTICE:  table "ecoregion_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 1064
+psql:./sql/cep_r_univar.sql:89: NOTICE:  table "ecoregion_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 1067
+psql:./sql/cep_r_univar.sql:97: NOTICE:  table "pa" does not exist, skipping
+DROP TABLE
+SELECT 209701
+DROP TABLE
+SELECT 300
+DROP TABLE
+SELECT 1097
+DROP TABLE
+SELECT 209701
+psql:./sql/cep_r_univar.sql:2: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 476811
+psql:./sql/cep_r_univar.sql:4: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:5: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623714
+psql:./sql/cep_r_univar.sql:6: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 962772
+psql:./sql/cep_r_univar.sql:20: NOTICE:  table "country_tot" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/cep_r_univar.sql:26: NOTICE:  table "country_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 267
+psql:./sql/cep_r_univar.sql:32: NOTICE:  table "country_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 298
+psql:./sql/cep_r_univar.sql:38: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 277
+psql:./sql/cep_r_univar.sql:44: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 258
+psql:./sql/cep_r_univar.sql:50: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 269
+psql:./sql/cep_r_univar.sql:56: NOTICE:  table "country_marine" does not exist, skipping
+DROP TABLE
+SELECT 252
+psql:./sql/cep_r_univar.sql:62: NOTICE:  table "country_marine_prot" does not exist, skipping
+DROP TABLE
+SELECT 215
+psql:./sql/cep_r_univar.sql:68: NOTICE:  table "country_marine_unprot" does not exist, skipping
+DROP TABLE
+SELECT 249
+psql:./sql/cep_r_univar.sql:77: NOTICE:  table "ecoregion_tot" does not exist, skipping
+DROP TABLE
+SELECT 1097
+psql:./sql/cep_r_univar.sql:83: NOTICE:  table "ecoregion_tot_prot" does not exist, skipping
+DROP TABLE
+SELECT 1064
+psql:./sql/cep_r_univar.sql:89: NOTICE:  table "ecoregion_tot_unprot" does not exist, skipping
+DROP TABLE
+SELECT 1067
+psql:./sql/cep_r_univar.sql:97: NOTICE:  table "pa" does not exist, skipping
+DROP TABLE
+SELECT 209701
+DROP TABLE
+SELECT 300
+DROP TABLE
+SELECT 1097
+DROP TABLE
+SELECT 209701
+analysis done
+TOTAL SCRIPT TIME: 58

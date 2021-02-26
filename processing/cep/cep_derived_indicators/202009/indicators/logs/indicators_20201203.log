@@ -1,0 +1,52 @@
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:5: NOTICE:  table "t_country_tot" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:7: NOTICE:  table "t_country_land" does not exist, skipping
+DROP TABLE
+SELECT 277
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:9: NOTICE:  table "t_country_marine" does not exist, skipping
+DROP TABLE
+SELECT 252
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:11: NOTICE:  table "t_country_prot" does not exist, skipping
+DROP TABLE
+SELECT 268
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:13: NOTICE:  table "t_country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 259
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:15: NOTICE:  table "t_country_marine_prot" does not exist, skipping
+DROP TABLE
+SELECT 220
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:20: NOTICE:  table "t_ecoregion_tot" does not exist, skipping
+DROP TABLE
+SELECT 1097
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:22: NOTICE:  table "t_ecoregion_prot" does not exist, skipping
+DROP TABLE
+SELECT 1064
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:28: NOTICE:  table "celmp" does not exist, skipping
+DROP TABLE
+SELECT 5509
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:33: NOTICE:  table "t_country_eco" does not exist, skipping
+DROP TABLE
+SELECT 3024
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:39: NOTICE:  table "t_country_eco_all" does not exist, skipping
+DROP TABLE
+SELECT 3024
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:54: NOTICE:  table "output_country" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:68: NOTICE:  table "output_ecoregion_in_country" does not exist, skipping
+DROP TABLE
+SELECT 3024
+psql:./sql/100_200b_cep_information_conservation_aggregations.sql:117: NOTICE:  table "output_ecoregion" does not exist, skipping
+DROP TABLE
+SELECT 1097
+DROP TABLE
+SELECT 300
+DROP TABLE
+SELECT 3024
+DROP TABLE
+SELECT 1097
+DROP TABLE
+SELECT 250941
+analysis done
+TOTAL SCRIPT TIME: 7
