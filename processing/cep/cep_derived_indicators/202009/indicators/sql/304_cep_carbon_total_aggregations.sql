@@ -2,7 +2,7 @@
 -- SELECT THE THEME;
 DROP TABLE IF EXISTS theme; CREATE TEMPORARY TABLE theme AS SELECT * FROM :v1.:v2;
 -- SELECT THE GRID;
-DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM :v3.z_grid ORDER BY qid,eid;
+DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM cep.grid_vector ORDER BY qid,eid;
 -- SELECT THE AREA;
 DROP TABLE IF EXISTS area_index; CREATE TEMPORARY TABLE area_index AS SELECT eid,cid,area_m2 FROM :v1.cid_area_by_tile ORDER BY eid,cid;
 ------------------------------------------------------------
@@ -69,8 +69,8 @@ SELECT pa,MIN(min),MAX(max),SUM(mean*area_m2)/SUM(area_m2) mean,SUM(sum) sum FRO
 -- OUTPUTS
 -------------------------------------------------------------
 -- country
-DROP TABLE IF EXISTS results_aggregated.country_carbon_total;
-CREATE TABLE results_aggregated.country_carbon_total AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_carbon_total;
+CREATE TABLE results_202009_cep_out.country_carbon_total AS
 SELECT
 a.country country_id,a.min carbon_min_c_mg_total,a.max carbon_max_c_mg_total,a.mean carbon_mean_c_mg_total,a.sum/1000000000 carbon_tot_c_pg_total,
 b.min carbon_min_c_mg_prot,b.max carbon_max_c_mg_prot,b.mean carbon_mean_c_mg_prot,b.sum/1000000000 carbon_tot_c_pg_prot,
@@ -79,8 +79,8 @@ FROM country_land a
 LEFT JOIN country_land_prot b USING(country)
 LEFT JOIN country_land_unprot c USING(country);
 -- ecoregion
-DROP TABLE IF EXISTS results_aggregated.ecoregion_carbon_total;
-CREATE TABLE results_aggregated.ecoregion_carbon_total AS
+DROP TABLE IF EXISTS results_202009_cep_out.ecoregion_carbon_total;
+CREATE TABLE results_202009_cep_out.ecoregion_carbon_total AS
 SELECT
 a.ecoregion eco_id,a.min carbon_min_c_mg_total,a.max carbon_max_c_mg_total,a.mean carbon_mean_c_mg_total,a.sum/1000000000 carbon_tot_c_pg_total,
 b.min carbon_min_c_mg_prot,b.max carbon_max_c_mg_prot,b.mean carbon_mean_c_mg_prot,b.sum/1000000000 carbon_tot_c_pg_prot,
@@ -89,6 +89,6 @@ FROM eco_land a
 LEFT JOIN eco_land_prot b USING(ecoregion)
 LEFT JOIN eco_land_unprot c USING(ecoregion);
 -- pa
-DROP TABLE IF EXISTS results_aggregated.wdpa_carbon_total;
-CREATE TABLE results_aggregated.wdpa_carbon_total AS
+DROP TABLE IF EXISTS results_202009_cep_out.wdpa_carbon_total;
+CREATE TABLE results_202009_cep_out.wdpa_carbon_total AS
 SELECT pa wdpaid,min carbon_min_c_mg,max carbon_max_c_mg,mean carbon_mean_c_mg,sum carbon_tot_c_mg FROM pa_land;

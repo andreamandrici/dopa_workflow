@@ -104,12 +104,12 @@ FROM a;
 -- OUTPUT
 --------------------------------------------
 -- country
-DROP TABLE IF EXISTS results_aggregated.country_global_forest_cover_loss; CREATE TABLE results_aggregated.country_global_forest_cover_loss AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_global_forest_cover_loss; CREATE TABLE results_202009_cep_out.country_global_forest_cover_loss AS
 SELECT * FROM country_change_in_forest_cover_loss;
 -- ecoregion
-DROP TABLE IF EXISTS results_aggregated.ecoregion_global_forest_cover_loss; CREATE TABLE results_aggregated.ecoregion_global_forest_cover_loss AS
+DROP TABLE IF EXISTS results_202009_cep_out.ecoregion_global_forest_cover_loss; CREATE TABLE results_202009_cep_out.ecoregion_global_forest_cover_loss AS
 SELECT * FROM ecoregion_change_in_forest_cover_loss;
 -- protection
-DROP TABLE IF EXISTS results_aggregated.wdpa_global_forest_cover_loss; CREATE TABLE results_aggregated.wdpa_global_forest_cover_loss AS
+DROP TABLE IF EXISTS results_202009_cep_out.wdpa_global_forest_cover_loss; CREATE TABLE results_202009_cep_out.wdpa_global_forest_cover_loss AS
 SELECT * FROM protection_change_in_forest_cover_loss;
 

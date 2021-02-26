@@ -31,7 +31,6 @@ FROM b
 LEFT JOIN c USING(country)
 LEFT JOIN d USING(country,cat)
 ORDER BY country,cat;
-SELECT * FROM country_theme;
 -- country_theme_output
 DROP TABLE IF EXISTS cep_202009_country_gsw_output; CREATE TEMPORARY TABLE cep_202009_country_gsw_output AS
 WITH
@@ -150,7 +149,6 @@ SELECT * FROM b
 LEFT JOIN c USING(pa)
 LEFT JOIN d USING(pa,cat)
 ORDER BY pa,cat;
-SELECT * FROM protection_theme;
 -- protection_theme_output
 DROP TABLE IF EXISTS cep_202009_pa_gsw_output; CREATE TEMPORARY TABLE cep_202009_pa_gsw_output AS
 WITH
@@ -200,14 +198,14 @@ ORDER BY z.pa;
 -- OUTPUT TABLES
 --------------------------------------------
 
-DROP TABLE IF EXISTS results_aggregated.country_water_surface_inland;
-CREATE TABLE results_aggregated.country_water_surface_inland AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_water_surface_inland;
+CREATE TABLE results_202009_cep_out.country_water_surface_inland AS
 SELECT * FROM cep_202009_country_gsw_output;
 
-DROP TABLE IF EXISTS results_aggregated.ecoregion_water_surface_inland;
-CREATE TABLE results_aggregated.ecoregion_water_surface_inland AS
+DROP TABLE IF EXISTS results_202009_cep_out.ecoregion_water_surface_inland;
+CREATE TABLE results_202009_cep_out.ecoregion_water_surface_inland AS
 SELECT * FROM cep_202009_eco_gsw_output WHERE eco_id IN (SELECT ecoregion FROM ecoregion_index WHERE is_marine IS FALSE);
 
-DROP TABLE IF EXISTS results_aggregated.wdpa_water_surface_inland;
-CREATE TABLE results_aggregated.wdpa_water_surface_inland AS
+DROP TABLE IF EXISTS results_202009_cep_out.wdpa_water_surface_inland;
+CREATE TABLE results_202009_cep_out.wdpa_water_surface_inland AS
 SELECT * FROM cep_202009_pa_gsw_output;

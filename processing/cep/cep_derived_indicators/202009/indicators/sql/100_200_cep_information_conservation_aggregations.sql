@@ -127,19 +127,19 @@ ORDER BY ecoregion;
 -- OUTPUT BLOC --SET OUTPUT SCHEME
 --------------------------------------------------------------------------------------
 -- country table
-DROP TABLE IF EXISTS results_aggregated.country_conservation_coverage CASCADE;CREATE TABLE results_aggregated.country_conservation_coverage AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_conservation_coverage CASCADE;CREATE TABLE results_202009_cep_out.country_conservation_coverage AS
 SELECT * FROM output_country ORDER BY country_id;
 
 -- ecoregion_in_country table
-DROP TABLE IF EXISTS results_aggregated.country_conservation_coverage_ecoregions_stats CASCADE;CREATE TABLE results_aggregated.country_conservation_coverage_ecoregions_stats AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_conservation_coverage_ecoregions_stats CASCADE;CREATE TABLE results_202009_cep_out.country_conservation_coverage_ecoregions_stats AS
 SELECT * FROM output_ecoregion_in_country ORDER BY country_id,eco_id;
 
 -- ecoregion table
-DROP TABLE IF EXISTS results_aggregated.ecoregion_conservation_coverage CASCADE;CREATE TABLE results_aggregated.ecoregion_conservation_coverage AS
+DROP TABLE IF EXISTS results_202009_cep_out.ecoregion_conservation_coverage CASCADE;CREATE TABLE results_202009_cep_out.ecoregion_conservation_coverage AS
 SELECT * FROM output_ecoregion a ORDER BY eco_id;
 
 -- pa table
-DROP TABLE IF EXISTS results_aggregated.wdpa_conservation_coverage CASCADE;CREATE TABLE results_aggregated.wdpa_conservation_coverage AS
+DROP TABLE IF EXISTS results_202009_cep_out.wdpa_conservation_coverage CASCADE;CREATE TABLE results_202009_cep_out.wdpa_conservation_coverage AS
 SELECT a.pa wdpaid,a.pa_name,a.desig_eng,a.iucn_cat,a.marine,a.is_n2k,a.iso3,a.type,a.area_geo FROM cep.atts_pa_last a ORDER BY wdpaid;
 
 

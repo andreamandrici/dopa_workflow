@@ -29,7 +29,6 @@ WHERE ST_INTERSECTS(a.geom,b.rast) GROUP BY eid ORDER BY eid;
 ALTER TABLE cep.grid_raster ADD PRIMARY KEY(eid);
 CREATE INDEX ON cep.grid_raster USING gist(ST_ConvexHull(rast));
 SELECT AddRasterConstraints('cep'::name,'grid_raster'::name,'rast'::name);
-SELECT (ST_MetaData(rast)).* FROM cep.grid_raster;
 ---------------------------------------------------------------------------------------
 DROP TABLE IF EXISTS country_eco;CREATE TEMPORARY TABLE country_eco AS
 WITH

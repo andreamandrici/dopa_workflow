@@ -1,98 +1,107 @@
+-- reports by land only
+\set vinput 'results_':v1'_cep_in'
 -- SELECT THE THEME;
-DROP TABLE IF EXISTS theme; CREATE TEMPORARY TABLE theme AS SELECT * FROM :v1.r_univar_cep_gfc_treecover_over30;
+DROP TABLE IF EXISTS theme; CREATE TEMPORARY TABLE theme AS SELECT * FROM :vinput.:v2;
 -- SELECT THE GRID;
-DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM :v3.z_grid ORDER BY qid,eid;
--- SELECT THE AREA;
-DROP TABLE IF EXISTS area_index; CREATE TEMPORARY TABLE area_index AS SELECT eid,cid,(area_m2/1000000) sqkm FROM :v1.cid_area_by_tile ORDER BY eid,cid;
+DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM cep.grid_vector ORDER BY qid,eid;
 ------------------------------------------------------------
-DROP TABLE IF EXISTS country_index; CREATE TEMPORARY TABLE country_index AS
-SELECT *
-FROM cep.index_country_cep_last
-JOIN grid_index USING (qid);
+DROP TABLE IF EXISTS country_index; CREATE TEMPORARY TABLE country_index AS SELECT * FROM cep.index_country_cep_last JOIN grid_index USING (qid);
 DROP TABLE IF EXISTS ecoregion_index; CREATE TEMPORARY TABLE ecoregion_index AS SELECT * FROM cep.index_ecoregion_cep_last JOIN grid_index USING (qid);
 DROP TABLE IF EXISTS pa_index; CREATE TEMPORARY TABLE pa_index AS SELECT * FROM cep.index_pa_cep_last JOIN grid_index USING (qid);
-
 ------------------------------------------------------------------
 -- COUNTRY
-DROP TABLE IF EXISTS country_land_theme; CREATE TEMPORARY TABLE country_land_theme AS
+DROP TABLE IF EXISTS country_land; CREATE TEMPORARY TABLE country_land AS
 WITH
-country_eid_cid_land AS (SELECT country,eid,cid,SUM(sqkm) sqkm FROM country_index WHERE is_marine = FALSE GROUP BY country,eid,cid),
-country_eid_cid_prot_land AS (SELECT DISTINCT country,eid,cid,SUM(sqkm) sqkm FROM country_index WHERE is_marine = FALSE AND is_protected = TRUE GROUP BY country,eid,cid),
-country_land AS (SELECT country,SUM(sqkm) tot_sqkm FROM country_eid_cid_land GROUP BY country),
-b AS (SELECT eid,cid,mean FROM theme),
-c AS (SELECT eid,cid,sqkm tsqkm FROM area_index),
-d AS (SELECT country,SUM(tsqkm*mean/100) sqkm FROM country_eid_cid_land a JOIN b USING(eid,cid) JOIN c USING(eid,cid) GROUP BY country ORDER BY country),
-e AS (SELECT country,SUM(tsqkm*mean/100) prot_sqkm FROM country_eid_cid_prot_land a JOIN b USING(eid,cid) JOIN c USING(eid,cid) GROUP BY country ORDER BY country)
+a AS (SELECT country,qid,cid,SUM(sqkm) country_land_sqkm FROM country_index WHERE is_marine = FALSE GROUP BY country,qid,cid),
+b AS (SELECT country,a.qid,a.cid,a.country_land_sqkm,b.mean FROM a JOIN theme b USING(qid,cid))
+SELECT country,SUM(country_land_sqkm)country_land_sqkm,SUM(country_land_sqkm*mean/100) theme_land_sqkm FROM b GROUP BY country ORDER BY country;
+
+DROP TABLE IF EXISTS country_land_prot; CREATE TEMPORARY TABLE country_land_prot AS
+WITH
+a AS (SELECT country,qid,cid,SUM(sqkm) country_land_prot_sqkm FROM country_index WHERE is_marine = FALSE AND is_protected = TRUE GROUP BY country,qid,cid),
+b AS (SELECT country,a.qid,a.cid,a.country_land_prot_sqkm,b.mean FROM a JOIN theme b USING(qid,cid))
+SELECT country,SUM(country_land_prot_sqkm)country_land_prot_sqkm,SUM(country_land_prot_sqkm*mean/100) theme_land_prot_sqkm FROM b GROUP BY country ORDER BY country;
+
+DROP TABLE IF EXISTS country_indicator; CREATE TEMPORARY TABLE country_indicator AS
 SELECT
 country,
-sqkm,
-prot_sqkm,
-(sqkm/tot_sqkm*100) perc,
-(prot_sqkm/tot_sqkm*100) prot_perc
-FROM country_land a LEFT JOIN d USING(country) LEFT JOIN e USING(country);
+theme_land_sqkm,
+(theme_land_sqkm/country_land_sqkm*100) theme_land_perc_country_land,
+theme_land_prot_sqkm,
+(theme_land_prot_sqkm/country_land_sqkm*100) theme_land_prot_perc_country_land,
+(theme_land_prot_sqkm/country_land_prot_sqkm*100) theme_land_prot_perc_country_land_prot,
+(theme_land_prot_sqkm/NULLIF(theme_land_sqkm,0)*100) theme_land_prot_perc_theme_land
+FROM country_land LEFT JOIN country_land_prot USING(country) ORDER BY country;
 
 ----------------------------------------
 -- ECOREGION
-DROP TABLE IF EXISTS ecoregion_land_theme; CREATE TEMPORARY TABLE ecoregion_land_theme AS
+DROP TABLE IF EXISTS eco_land; CREATE TEMPORARY TABLE eco_land AS
 WITH
-ecoregion_eid_cid_land AS (SELECT ecoregion,eid,cid,SUM(sqkm) sqkm FROM ecoregion_index WHERE is_marine = FALSE GROUP BY ecoregion,eid,cid),
-ecoregion_eid_cid_prot_land AS (SELECT DISTINCT ecoregion,eid,cid,SUM(sqkm) sqkm FROM ecoregion_index WHERE is_marine = FALSE AND is_protected = TRUE GROUP BY ecoregion,eid,cid),
-ecoregion_land AS (SELECT ecoregion,SUM(sqkm) tot_sqkm FROM ecoregion_eid_cid_land GROUP BY ecoregion),
-b AS (SELECT eid,cid,mean FROM theme),
-c AS (SELECT eid,cid,sqkm tsqkm FROM area_index),
-d AS (SELECT ecoregion,SUM(tsqkm*mean/100) sqkm FROM ecoregion_eid_cid_land a JOIN b USING(eid,cid) JOIN c USING(eid,cid) GROUP BY ecoregion ORDER BY ecoregion),
-e AS (SELECT ecoregion,SUM(tsqkm*mean/100) prot_sqkm FROM ecoregion_eid_cid_prot_land a JOIN b USING(eid,cid) JOIN c USING(eid,cid) GROUP BY ecoregion ORDER BY ecoregion)
+a AS (SELECT ecoregion,qid,cid,SUM(sqkm) ecoregion_land_sqkm FROM ecoregion_index WHERE is_marine IS FALSE GROUP BY ecoregion,qid,cid),
+b AS (SELECT ecoregion,a.qid,a.cid,a.ecoregion_land_sqkm,b.mean FROM a JOIN theme b USING(qid,cid))
+SELECT ecoregion,SUM(ecoregion_land_sqkm)ecoregion_land_sqkm,SUM(ecoregion_land_sqkm*mean/100) theme_land_sqkm FROM b GROUP BY ecoregion ORDER BY ecoregion;
+
+DROP TABLE IF EXISTS eco_land_prot; CREATE TEMPORARY TABLE eco_land_prot AS
+WITH
+a AS (SELECT ecoregion,qid,cid,SUM(sqkm) ecoregion_land_sqkm FROM ecoregion_index WHERE is_marine IS FALSE AND is_protected = TRUE GROUP BY ecoregion,qid,cid),
+b AS (SELECT ecoregion,a.qid,a.cid,a.ecoregion_land_sqkm,b.mean FROM a JOIN theme b USING(qid,cid))
+SELECT ecoregion,SUM(ecoregion_land_sqkm)ecoregion_land_prot_sqkm,SUM(ecoregion_land_sqkm*mean/100) theme_land_prot_sqkm FROM b GROUP BY ecoregion ORDER BY ecoregion;
+
+DROP TABLE IF EXISTS ecoregion_indicator; CREATE TEMPORARY TABLE ecoregion_indicator AS
 SELECT
 ecoregion,
-sqkm,
-prot_sqkm,
-(sqkm/tot_sqkm*100) perc,
-(prot_sqkm/tot_sqkm*100) prot_perc
-FROM ecoregion_land a LEFT JOIN d USING(ecoregion) LEFT JOIN e USING(ecoregion);
+theme_land_sqkm,
+(theme_land_sqkm/ecoregion_land_sqkm*100) theme_land_perc_ecoregion_land,
+theme_land_prot_sqkm,
+(theme_land_prot_sqkm/ecoregion_land_sqkm*100) theme_land_prot_perc_ecoregion_land,
+(theme_land_prot_sqkm/ecoregion_land_prot_sqkm*100) theme_land_prot_perc_ecoregion_land_prot,
+(theme_land_prot_sqkm/NULLIF(theme_land_sqkm,0)*100) theme_land_prot_perc_theme_land
+FROM eco_land LEFT JOIN eco_land_prot USING(ecoregion) ORDER BY ecoregion;
+
 ----------------------------------------
 -- PROTECTION
-DROP TABLE IF EXISTS pa_land_theme; CREATE TEMPORARY TABLE pa_land_theme AS
+DROP TABLE IF EXISTS pa_land; CREATE TEMPORARY TABLE pa_land AS
 WITH
-pa_eid_cid_land AS (SELECT pa,eid,cid,SUM(sqkm) sqkm FROM pa_index WHERE marine IN (0,1) GROUP BY pa,eid,cid),
-pa_land AS (SELECT pa,SUM(sqkm) tot_sqkm FROM pa_eid_cid_land GROUP BY pa),
-b AS (SELECT eid,cid,mean FROM theme),
-c AS (SELECT eid,cid,sqkm tsqkm FROM area_index),
-d AS (SELECT pa,SUM(tsqkm*mean/100) sqkm FROM pa_eid_cid_land a JOIN b USING(eid,cid) JOIN c USING(eid,cid) GROUP BY pa ORDER BY pa)
-SELECT
-pa,
-sqkm,
-(sqkm/tot_sqkm*100) perc
-FROM pa_land a LEFT JOIN d USING(pa);
+a AS (SELECT pa,qid,cid,SUM(sqkm) pa_land_sqkm FROM pa_index WHERE marine IN (0,1) GROUP BY pa,qid,cid),
+b AS (SELECT pa,a.qid,a.cid,a.pa_land_sqkm,b.mean FROM a JOIN theme b USING(qid,cid)),
+c AS (SELECT pa,SUM(pa_land_sqkm)pa_land_sqkm,SUM(pa_land_sqkm*mean/100) theme_land_sqkm FROM b GROUP BY pa ORDER BY pa)
+SELECT pa,theme_land_sqkm,(theme_land_sqkm/pa_land_sqkm*100) theme_land_perc_pa_land FROM c;
 
 -------------------------------------------------------------
 -- OUTPUTS
 -------------------------------------------------------------
 -- country
-DROP TABLE IF EXISTS results_aggregated.country_global_forest_cover_treecover;
-CREATE TABLE results_aggregated.country_global_forest_cover_treecover AS
+DROP TABLE IF EXISTS results_202009_cep_out.country_global_forest_cover_treecover;
+CREATE TABLE results_202009_cep_out.country_global_forest_cover_treecover AS
 SELECT
 country country_id,
-sqkm gfc_treecover_km2,
-prot_sqkm gfc_treecover_prot_km2,
-perc gfc_treecover_perc,
-prot_perc gfc_treecover_prot_perc
-FROM country_land_theme;
+theme_land_sqkm gfc_treecover_land_sqkm,
+theme_land_perc_country_land gfc_treecover_land_perc_country_land,
+theme_land_prot_sqkm gfc_treecover_land_prot_sqkm,
+theme_land_prot_perc_country_land gfc_treecover_land_prot_perc_country_land,
+theme_land_prot_perc_country_land_prot gfc_treecover_land_prot_perc_country_land_prot,
+theme_land_prot_perc_theme_land gfc_treecover_land_prot_perc_gfc_treecover_land
+FROM country_indicator a;
 -- ecoregion
-DROP TABLE IF EXISTS results_aggregated.ecoregion_global_forest_cover_treecover;
-CREATE TABLE results_aggregated.ecoregion_global_forest_cover_treecover AS
+DROP TABLE IF EXISTS results_202009_cep_out.ecoregion_global_forest_cover_treecover;
+CREATE TABLE results_202009_cep_out.ecoregion_global_forest_cover_treecover AS
 SELECT
 ecoregion eco_id,
-sqkm gfc_treecover_km2,
-prot_sqkm gfc_treecover_prot_km2,
-perc gfc_treecover_perc,
-prot_perc gfc_treecover_prot_perc
-FROM ecoregion_land_theme;
+theme_land_sqkm gfc_treecover_land_sqkm,
+theme_land_perc_ecoregion_land gfc_treecover_land_perc_ecoregion_land,
+theme_land_prot_sqkm gfc_treecover_land_prot_sqkm,
+theme_land_prot_perc_ecoregion_land gfc_treecover_land_prot_perc_ecoregion_land,
+theme_land_prot_perc_ecoregion_land_prot gfc_treecover_land_prot_perc_ecoregion_land_prot,
+theme_land_prot_perc_theme_land gfc_treecover_land_prot_perc_gfc_treecover_land
+FROM ecoregion_indicator a;
 -- pa
-DROP TABLE IF EXISTS results_aggregated.wdpa_global_forest_cover_treecover;
-CREATE TABLE results_aggregated.wdpa_global_forest_cover_treecover AS
+DROP TABLE IF EXISTS results_202009_cep_out.wdpa_global_forest_cover_treecover;
+CREATE TABLE results_202009_cep_out.wdpa_global_forest_cover_treecover AS
 SELECT
 pa wdpaid,
-sqkm gfc_treecover_km2,
-perc gfc_treecover_perc
-FROM pa_land_theme;
+theme_land_sqkm gfc_treecover_land_sqkm,
+theme_land_perc_pa_land gfc_treecover_land_perc_pa_land
+FROM pa_land;
+
+
 
