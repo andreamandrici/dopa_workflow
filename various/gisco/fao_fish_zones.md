@@ -11,6 +11,7 @@ Hierarchical naming is used to join the nested levels one to another.
 *Processing*
 +  Imported in PostGIS and joined geoms+atts
 +  geometry fixed (27 geometries had ESRI flag)
++  geometry with attribute X (overlapping division 47.1.1) is removed
 +  attributes modified in both :
    +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code has only 4 elements. They are interpreted as sub-elements of subdivision 21.5.Z.e, and renamed as ='21.5.Z.e.c','21.5.Z.e.u'
    +  f_code='27.3.b, c' is renamed as '27.3.b,c';
