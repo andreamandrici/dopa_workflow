@@ -9,16 +9,53 @@ The target is to get a topology (single flat layer, where for each object all la
 Hierarchical naming is used to join the nested levels one to another.
 
 *Processing*
-+  Imported in PostGIS
++  Imported in PostGIS and joined geoms+atts
 +  geometry fixed (27 geometries had ESRI flag)
-+  attributes modified:
-   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code have been moved ='21.5.Z.e.c'
-UPDATE fao_fish_dopa_attributes SET f_code='21.5.Z.e.u' WHERE f_code='21.5.Z.u';
-UPDATE fao_fish_dopa_attributes SET f_code='27.3.b,c' WHERE f_code='27.3.b, c';
-UPDATE fao_fish_dopa_attributes SET f_code='27.3.b,c.23' WHERE f_code='27.3.b.23';
-UPDATE fao_fish_dopa_attributes SET f_code='27.3.b,c.22' WHERE f_code='27.3.c.22';
-UPDATE fao_fish_dopa_attributes
-SET f_code=SPLIT_PART(f_code,'.',1)||'.'||SPLIT_PART(f_code,'.',2)||'.'||(SPLIT_PART(f_code,'.',3)::double precision/10)::text
-WHERE f_code IN ('34.1.11','34.1.12','34.1.13','34.1.31','34.1.32','34.3.11','34.3.12','34.3.13','87.1.11','87.1.12','87.1.13','87.1.14','87.1.15','87.1.21','87.1.22','87.1.23','87.1.24','87.1.25','87.2.11','87.2.12','87.2.13','87.2.14','87.2.15','87.2.16','87.2.17','87.2.21','87.2.22','87.2.23','87.2.24','87.2.25','87.2.26','87.2.27','87.3.11','87.3.12','87.3.13','87.3.21','87.3.22','87.3.23');
-  
++  attributes modified in both :
+   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code has only 4 elements. They are interpreted as sub-elements of subdivision 21.5.Z.e, and renamed as ='21.5.Z.e.c','21.5.Z.e.u'
+   +  f_code='27.3.b, c' is renamed as '27.3.b,c';
+   +  f_code='27.3.b.23' and '27.3.c.22' are interpreted as sub-elements of division '27.3.b,c', and renamed as '27.3.b,c.22','27.3.b,c.23'
+   +  f_code: '34.1.11','34.1.12','34.1.13','34.1.31','34.1.32','34.3.11','34.3.12','34.3.13','87.1.11','87.1.12','87.1.13','87.1.14','87.1.15','87.1.21','87.1.22','87.1.23','87.1.24','87.1.25','87.2.11','87.2.12','87.2.13','87.2.14','87.2.15','87.2.16','87.2.17','87.2.21','87.2.22','87.2.23','87.2.24','87.2.25','87.2.26','87.2.27','87.3.11','87.3.12','87.3.13','87.3.21','87.3.22','87.3.23' are declared subdivisions (IV level) but code has only 3 elements (the french name is correct). The third level in the code is split, and the objects are nested in the higher level (eg: '34.1.11' becomes '34.1.1.1'; consequently the division '34.1.1' is created). The result is the following:
+     
+       division_code | old_subdivision_code | new_subdivision_code |
+|---------------|----------------------|----------------------|
+| 34.1.1        | 34.1.11              | 34.1.1.1             |
+| 34.1.1        | 34.1.12              | 34.1.1.2             |
+| 34.1.1        | 34.1.13              | 34.1.1.3             |
+| 34.1.3        | 34.1.31              | 34.1.3.1             |
+| 34.1.3        | 34.1.32              | 34.1.3.2             |
+| 34.3.1        | 34.3.11              | 34.3.1.1             |
+| 34.3.1        | 34.3.12              | 34.3.1.2             |
+| 34.3.1        | 34.3.13              | 34.3.1.3             |
+| 87.1.1        | 87.1.11              | 87.1.1.1             |
+| 87.1.1        | 87.1.12              | 87.1.1.2             |
+| 87.1.1        | 87.1.13              | 87.1.1.3             |
+| 87.1.1        | 87.1.14              | 87.1.1.4             |
+| 87.1.1        | 87.1.15              | 87.1.1.5             |
+| 87.1.2        | 87.1.21              | 87.1.2.1             |
+| 87.1.2        | 87.1.22              | 87.1.2.2             |
+| 87.1.2        | 87.1.23              | 87.1.2.3             |
+| 87.1.2        | 87.1.24              | 87.1.2.4             |
+| 87.1.2        | 87.1.25              | 87.1.2.5             |
+| 87.2.1        | 87.2.11              | 87.2.1.1             |
+| 87.2.1        | 87.2.12              | 87.2.1.2             |
+| 87.2.1        | 87.2.13              | 87.2.1.3             |
+| 87.2.1        | 87.2.14              | 87.2.1.4             |
+| 87.2.1        | 87.2.15              | 87.2.1.5             |
+| 87.2.1        | 87.2.16              | 87.2.1.6             |
+| 87.2.1        | 87.2.17              | 87.2.1.7             |
+| 87.2.2        | 87.2.21              | 87.2.2.1             |
+| 87.2.2        | 87.2.22              | 87.2.2.2             |
+| 87.2.2        | 87.2.23              | 87.2.2.3             |
+| 87.2.2        | 87.2.24              | 87.2.2.4             |
+| 87.2.2        | 87.2.25              | 87.2.2.5             |
+| 87.2.2        | 87.2.26              | 87.2.2.6             |
+| 87.2.2        | 87.2.27              | 87.2.2.7             |
+| 87.3.1        | 87.3.11              | 87.3.1.1             |
+| 87.3.1        | 87.3.12              | 87.3.1.2             |
+| 87.3.1        | 87.3.13              | 87.3.1.3             |
+| 87.3.2        | 87.3.21              | 87.3.2.1             |
+| 87.3.2        | 87.3.22              | 87.3.2.2             |
+| 87.3.2        | 87.3.23              | 87.3.2.3             |
+   
 
