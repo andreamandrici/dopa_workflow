@@ -6,12 +6,13 @@ Used GISCO restricted version FAO_FISH 2020
 
 The global geographic object is hierarchical at 5 levels (major, subarea, division, subdivision, subunit - this last undocumented), but is redundant (all the layers are present in the same object).
 The target is to get a topology (single flat layer, where for each object all layers are present as attributes).
+Hierarchical naming is used to join the nested levels one to another.
 
 *Processing*
 +  Imported in PostGIS
 +  geometry fixed (27 geometries had ESRI flag)
 +  attributes modified:
-   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) have been moved ='21.5.Z.e.c'
+   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code have been moved ='21.5.Z.e.c'
 UPDATE fao_fish_dopa_attributes SET f_code='21.5.Z.e.u' WHERE f_code='21.5.Z.u';
 UPDATE fao_fish_dopa_attributes SET f_code='27.3.b,c' WHERE f_code='27.3.b, c';
 UPDATE fao_fish_dopa_attributes SET f_code='27.3.b,c.23' WHERE f_code='27.3.b.23';
