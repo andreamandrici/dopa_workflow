@@ -41,6 +41,8 @@ The following sections are currently present:
 +  [non-spatial workflow](./processing/species/#non_spatial)
 +  [Irreplaceability Index](./processing/species/irreplaceability/)
 
+## Various
+
 ## Authors
 
 *  Andrea Mandrici.
