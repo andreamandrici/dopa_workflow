@@ -42,7 +42,7 @@ The following sections are currently present:
 +  [Irreplaceability Index](./processing/species/irreplaceability/)
 
 ## Various
-+  various/gisco/.fao_fish_zones.md
++  [gisco fao fish zones] (./various/gisco/fao_fish_zones)
 
 ## Authors
 
