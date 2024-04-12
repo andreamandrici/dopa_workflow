@@ -13,7 +13,11 @@ Hierarchical naming is used to join the nested levels one to another.
 +  geometry fixed (27 geometries had ESRI flag)
 +  geometry with attribute X (overlapping division 47.1.1) is removed
 +  attributes modified in both :
-   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code has only 4 elements. They are interpreted as sub-elements of subdivision 21.5.Z.e, and renamed as ='21.5.Z.e.c','21.5.Z.e.u'
+   +  f_code '21.5.Z.c' and '21.5.Z.u' are declared subunits (V level in the hierarchy) but code has only 4 elements. They are geographically interpreted as sub-elements of subdivision 21.5.Z.e, and renamed as ='21.5.Z.e.c','21.5.Z.e.u'
+      | subdivision | old_subunit_code | new_subunit_code |
+      |-------------|------------------|------------------|
+      | 21.5.Z.e | 21.5.Z.c | 21.5.Z.e.c |
+      | 21.5.Z.e | 21.5.Z.u | 21.5.Z.e.u |
    +  f_code='27.3.b, c' is renamed as '27.3.b,c';
    +  f_code='27.3.b.23' and '27.3.c.22' are interpreted as sub-elements of division '27.3.b,c', and renamed as '27.3.b,c.22','27.3.b,c.23'
    +  f_code: '34.1.11','34.1.12','34.1.13','34.1.31','34.1.32','34.3.11','34.3.12','34.3.13','87.1.11','87.1.12','87.1.13','87.1.14','87.1.15','87.1.21','87.1.22','87.1.23','87.1.24','87.1.25','87.2.11','87.2.12','87.2.13','87.2.14','87.2.15','87.2.16','87.2.17','87.2.21','87.2.22','87.2.23','87.2.24','87.2.25','87.2.26','87.2.27','87.3.11','87.3.12','87.3.13','87.3.21','87.3.22','87.3.23' are declared subdivisions (IV level) but code has only 3 elements (the french name is correct). The third level in the code is split, and the objects are nested in the higher level (eg: '34.1.11' becomes '34.1.1.1'; consequently the division '34.1.1' is created). The result is the following:
