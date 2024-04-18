@@ -43,6 +43,7 @@ The following sections are currently present:
 
 ## Various
 +  [gisco fao fish zones](./various/gisco/fao_fish_zones.md)
++  [IUCN Global Ecosystem Typology](./various/IUCN_GET/iucn_get.md)
 
 ## Authors
 
