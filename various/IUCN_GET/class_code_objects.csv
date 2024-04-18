@@ -1,0 +1,221 @@
+"cn","c0","c0t","c0_class_realm","c1","c1_class_biome","c2","ct","c2_class_ecosystem_functional_group","c3","c3_class_occurrence","raster","vector","tname","note"
+11011,1,"T","Terrestrial",1,"Tropical-subtropical forests",1,"T1.1","Tropical-subtropical lowland rainforests",1,"major","T1.1.web.mix_v2.0.tif","T1.1.web.mix_v2.0.json","t1_1_web_mix_v2_0",NULL
+11012,1,"T","Terrestrial",1,"Tropical-subtropical forests",1,"T1.1","Tropical-subtropical lowland rainforests",2,"minor","T1.1.web.mix_v2.0.tif","T1.1.web.mix_v2.0.json","t1_1_web_mix_v2_0",NULL
+11021,1,"T","Terrestrial",1,"Tropical-subtropical forests",2,"T1.2","Tropical-subtropical dry forests and thickets",1,"major","T1.2.web.mix_v1.0.tif","T1.2.web.mix_v1.0.json","t1_2_web_mix_v1_0",NULL
+11022,1,"T","Terrestrial",1,"Tropical-subtropical forests",2,"T1.2","Tropical-subtropical dry forests and thickets",2,"minor","T1.2.web.mix_v1.0.tif","T1.2.web.mix_v1.0.json","t1_2_web_mix_v1_0",NULL
+11031,1,"T","Terrestrial",1,"Tropical-subtropical forests",3,"T1.3","Tropical-subtropical montane rainforests",1,"major","T1.3.WM.nwx_v1.0.tif","T1.3.WM.nwx_v1.0.json","t1_3_wm_nwx_v1_0",NULL
+11032,1,"T","Terrestrial",1,"Tropical-subtropical forests",3,"T1.3","Tropical-subtropical montane rainforests",2,"minor","T1.3.WM.nwx_v1.0.tif","T1.3.WM.nwx_v1.0.json","t1_3_wm_nwx_v1_0",NULL
+11041,1,"T","Terrestrial",1,"Tropical-subtropical forests",4,"T1.4","Tropical heath forests",1,"major","T1.4.web.orig_v2.0.tif","T1.4.web.orig_v2.0.json","t1_4_web_orig_v2_0",NULL
+11042,1,"T","Terrestrial",1,"Tropical-subtropical forests",4,"T1.4","Tropical heath forests",2,"minor","T1.4.web.orig_v2.0.tif","T1.4.web.orig_v2.0.json","t1_4_web_orig_v2_0",NULL
+12011,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",1,"T2.1","Boreal and temperate montane forests and woodlands",1,"major","T2.1.web.mix_v1.0.tif","T2.1.web.mix_v1.0.json","t2_1_web_mix_v1_0",NULL
+12012,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",1,"T2.1","Boreal and temperate montane forests and woodlands",2,"minor","T2.1.web.mix_v1.0.tif","T2.1.web.mix_v1.0.json","t2_1_web_mix_v1_0",NULL
+12021,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",2,"T2.2","Deciduous temperate forests",1,"major","T2.2.web.mix_v1.0.tif","T2.2.web.mix_v1.0.json","t2_2_web_mix_v1_0",NULL
+12022,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",2,"T2.2","Deciduous temperate forests",2,"minor","T2.2.web.mix_v1.0.tif","T2.2.web.mix_v1.0.json","t2_2_web_mix_v1_0",NULL
+12031,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",3,"T2.3","Oceanic cool temperate rainforests",1,"major","T2.3.web.orig_v1.0.tif","T2.3.web.orig_v1.0.json","t2_3_web_orig_v1_0",NULL
+12032,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",3,"T2.3","Oceanic cool temperate rainforests",2,"minor","T2.3.web.orig_v1.0.tif","T2.3.web.orig_v1.0.json","t2_3_web_orig_v1_0",NULL
+12041,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",4,"T2.4","Warm temperate laurophyll forests",1,"major","T2.4.web.orig_v2.0.tif","T2.4.web.orig_v2.0.json","t2_4_web_orig_v2_0",NULL
+12042,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",4,"T2.4","Warm temperate laurophyll forests",2,"minor","T2.4.web.orig_v2.0.tif","T2.4.web.orig_v2.0.json","t2_4_web_orig_v2_0",NULL
+12051,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",5,"T2.5","Temperate pyric humid forests",1,"major","T2.5.web.alt_v2.0.tif","T2.5.web.alt_v2.0.json","t2_5_web_alt_v2_0",NULL
+12052,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",5,"T2.5","Temperate pyric humid forests",2,"minor","T2.5.web.alt_v2.0.tif","T2.5.web.alt_v2.0.json","t2_5_web_alt_v2_0",NULL
+12061,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",6,"T2.6","Temperate pyric sclerophyll forests and woodlands",1,"major","T2.6.web.mix_v1.0.tif","T2.6.web.mix_v1.0.json","t2_6_web_mix_v1_0",NULL
+12062,1,"T","Terrestrial",2,"Temperate-boreal forests & woodlands",6,"T2.6","Temperate pyric sclerophyll forests and woodlands",2,"minor","T2.6.web.mix_v1.0.tif","T2.6.web.mix_v1.0.json","t2_6_web_mix_v1_0",NULL
+13011,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",1,"T3.1","Seasonally dry tropical shrublands",1,"major","T3.1.web.orig_v2.0.tif","T3.1.web.orig_v2.0.json","t3_1_web_orig_v2_0",NULL
+13012,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",1,"T3.1","Seasonally dry tropical shrublands",2,"minor","T3.1.web.orig_v2.0.tif","T3.1.web.orig_v2.0.json","t3_1_web_orig_v2_0",NULL
+13021,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",2,"T3.2","Seasonally dry temperate heaths and shrublands",1,"major","T3.2.web.orig_v1.0.tif","T3.2.web.orig_v1.0.json","t3_2_web_orig_v1_0",NULL
+13022,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",2,"T3.2","Seasonally dry temperate heaths and shrublands",2,"minor","T3.2.web.orig_v1.0.tif","T3.2.web.orig_v1.0.json","t3_2_web_orig_v1_0",NULL
+13031,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",3,"T3.3","Cool temperate heathlands",1,"major","T3.3.web.alt_v4.0.tif","T3.3.web.alt_v4.0.json","t3_3_web_alt_v4_0",NULL
+13032,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",3,"T3.3","Cool temperate heathlands",2,"minor","T3.3.web.alt_v4.0.tif","T3.3.web.alt_v4.0.json","t3_3_web_alt_v4_0",NULL
+13041,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",4,"T3.4","Rocky pavements, screes and lava flows",1,"major","T3.4.web.mix_v1.0.tif","T3.4.web.mix_v1.0.json","t3_4_web_mix_v1_0",NULL
+13042,1,"T","Terrestrial",3,"Shrublands & shrubby woodlands",4,"T3.4","Rocky pavements, screes and lava flows",2,"minor","T3.4.web.mix_v1.0.tif","T3.4.web.mix_v1.0.json","t3_4_web_mix_v1_0",NULL
+14011,1,"T","Terrestrial",4,"Savannas and grasslands",1,"T4.1","Trophic savannas",1,"major","T4.1.web.mix_v1.0.tif","T4.1.web.mix_v1.0.json","t4_1_web_mix_v1_0",NULL
+14012,1,"T","Terrestrial",4,"Savannas and grasslands",1,"T4.1","Trophic savannas",2,"minor","T4.1.web.mix_v1.0.tif","T4.1.web.mix_v1.0.json","t4_1_web_mix_v1_0",NULL
+14021,1,"T","Terrestrial",4,"Savannas and grasslands",2,"T4.2","Pyric tussock savannas",1,"major","T4.2.web.orig_v1.0.tif","T4.2.web.orig_v1.0.json","t4_2_web_orig_v1_0",NULL
+14022,1,"T","Terrestrial",4,"Savannas and grasslands",2,"T4.2","Pyric tussock savannas",2,"minor","T4.2.web.orig_v1.0.tif","T4.2.web.orig_v1.0.json","t4_2_web_orig_v1_0",NULL
+14031,1,"T","Terrestrial",4,"Savannas and grasslands",3,"T4.3","Hummock savannas",1,"major","T4.3.web.orig_v1.0.tif","T4.3.web.orig_v1.0.json","t4_3_web_orig_v1_0",NULL
+14032,1,"T","Terrestrial",4,"Savannas and grasslands",3,"T4.3","Hummock savannas",2,"minor","T4.3.web.orig_v1.0.tif","T4.3.web.orig_v1.0.json","t4_3_web_orig_v1_0",NULL
+14041,1,"T","Terrestrial",4,"Savannas and grasslands",4,"T4.4","Temperate woodlands",1,"major","T4.4.web.orig_v1.0.tif","T4.4.web.orig_v1.0.json","t4_4_web_orig_v1_0",NULL
+14042,1,"T","Terrestrial",4,"Savannas and grasslands",4,"T4.4","Temperate woodlands",2,"minor","T4.4.web.orig_v1.0.tif","T4.4.web.orig_v1.0.json","t4_4_web_orig_v1_0",NULL
+14051,1,"T","Terrestrial",4,"Savannas and grasslands",5,"T4.5","Temperate tussock grasslands",1,"major","T4.5.web.orig_v1.0.tif","T4.5.web.orig_v1.0.json","t4_5_web_orig_v1_0",NULL
+14052,1,"T","Terrestrial",4,"Savannas and grasslands",5,"T4.5","Temperate tussock grasslands",2,"minor","T4.5.web.orig_v1.0.tif","T4.5.web.orig_v1.0.json","t4_5_web_orig_v1_0",NULL
+15011,1,"T","Terrestrial",5,"Deserts and semi-deserts",1,"T5.1","Semi-desert steppes",1,"major","T5.1.web.mix_v1.0.tif","T5.1.web.mix_v1.0.json","t5_1_web_mix_v1_0",NULL
+15012,1,"T","Terrestrial",5,"Deserts and semi-deserts",1,"T5.1","Semi-desert steppes",2,"minor","T5.1.web.mix_v1.0.tif","T5.1.web.mix_v1.0.json","t5_1_web_mix_v1_0",NULL
+15021,1,"T","Terrestrial",5,"Deserts and semi-deserts",2,"T5.2","Thorny deserts and semi-deserts",1,"major","T5.2.web.mix_v1.0.tif","T5.2.web.mix_v1.0.json","t5_2_web_mix_v1_0",NULL
+15022,1,"T","Terrestrial",5,"Deserts and semi-deserts",2,"T5.2","Thorny deserts and semi-deserts",2,"minor","T5.2.web.mix_v1.0.tif","T5.2.web.mix_v1.0.json","t5_2_web_mix_v1_0",NULL
+15031,1,"T","Terrestrial",5,"Deserts and semi-deserts",3,"T5.3","Sclerophyll hot deserts and semi-deserts",1,"major","T5.3.web.mix_v1.0.tif","T5.3.web.mix_v1.0.json","t5_3_web_mix_v1_0",NULL
+15032,1,"T","Terrestrial",5,"Deserts and semi-deserts",3,"T5.3","Sclerophyll hot deserts and semi-deserts",2,"minor","T5.3.web.mix_v1.0.tif","T5.3.web.mix_v1.0.json","t5_3_web_mix_v1_0",NULL
+15041,1,"T","Terrestrial",5,"Deserts and semi-deserts",4,"T5.4","Cool deserts and semi-deserts",1,"major","T5.4.web.mix_v1.0.tif","T5.4.web.mix_v1.0.json","t5_4_web_mix_v1_0",NULL
+15042,1,"T","Terrestrial",5,"Deserts and semi-deserts",4,"T5.4","Cool deserts and semi-deserts",2,"minor","T5.4.web.mix_v1.0.tif","T5.4.web.mix_v1.0.json","t5_4_web_mix_v1_0",NULL
+15051,1,"T","Terrestrial",5,"Deserts and semi-deserts",5,"T5.5","Hyper-arid deserts",1,"major","T5.5.web.mix_v1.0.tif","T5.5.web.mix_v1.0.json","t5_5_web_mix_v1_0",NULL
+15052,1,"T","Terrestrial",5,"Deserts and semi-deserts",5,"T5.5","Hyper-arid deserts",2,"minor","T5.5.web.mix_v1.0.tif","T5.5.web.mix_v1.0.json","t5_5_web_mix_v1_0",NULL
+16011,1,"T","Terrestrial",6,"Polar-alpine",1,"T6.1","Ice sheets, glaciers and perennial snowfields",1,"major","T6.1.web.map_v1.0.tif","T6.1.web.map_v1.0.json","t6_1_web_map_v1_0",NULL
+16012,1,"T","Terrestrial",6,"Polar-alpine",1,"T6.1","Ice sheets, glaciers and perennial snowfields",2,"minor","T6.1.web.map_v1.0.tif","T6.1.web.map_v1.0.json","t6_1_web_map_v1_0",NULL
+16021,1,"T","Terrestrial",6,"Polar-alpine",2,"T6.2","Polar-alpine rocky outcrops",1,"major","T6.2.web.alt_v2.0.tif","T6.2.web.alt_v2.0.json","t6_2_web_alt_v2_0",NULL
+16022,1,"T","Terrestrial",6,"Polar-alpine",2,"T6.2","Polar-alpine rocky outcrops",2,"minor","T6.2.web.alt_v2.0.tif","T6.2.web.alt_v2.0.json","t6_2_web_alt_v2_0",NULL
+16031,1,"T","Terrestrial",6,"Polar-alpine",3,"T6.3","Polar tundra and deserts",1,"major","T6.3.web.map_v1.0.tif","T6.3.web.map_v1.0.json","t6_3_web_map_v1_0",NULL
+16032,1,"T","Terrestrial",6,"Polar-alpine",3,"T6.3","Polar tundra and deserts",2,"minor","T6.3.web.map_v1.0.tif","T6.3.web.map_v1.0.json","t6_3_web_map_v1_0",NULL
+16041,1,"T","Terrestrial",6,"Polar-alpine",4,"T6.4","Temperate alpine grasslands and shrublands",1,"major","T6.4.web.orig_v1.0.tif","T6.4.web.orig_v1.0.json","t6_4_web_orig_v1_0",NULL
+16042,1,"T","Terrestrial",6,"Polar-alpine",4,"T6.4","Temperate alpine grasslands and shrublands",2,"minor","T6.4.web.orig_v1.0.tif","T6.4.web.orig_v1.0.json","t6_4_web_orig_v1_0",NULL
+16051,1,"T","Terrestrial",6,"Polar-alpine",5,"T6.5","Tropical alpine grasslands and shrublands",1,"major","T6.5.web.mix_v1.0.tif","T6.5.web.mix_v1.0.json","t6_5_web_mix_v1_0",NULL
+16052,1,"T","Terrestrial",6,"Polar-alpine",5,"T6.5","Tropical alpine grasslands and shrublands",2,"minor","T6.5.web.mix_v1.0.tif","T6.5.web.mix_v1.0.json","t6_5_web_mix_v1_0",NULL
+17011,1,"T","Terrestrial",7,"Intensive land-use systems",1,"T7.1","Croplands",1,"major","T7.1.web.alt_v2.0.tif","T7.1.web.alt_v2.0.json","t7_1_web_alt_v2_0",NULL
+17012,1,"T","Terrestrial",7,"Intensive land-use systems",1,"T7.1","Croplands",2,"minor","T7.1.web.alt_v2.0.tif","T7.1.web.alt_v2.0.json","t7_1_web_alt_v2_0",NULL
+17021,1,"T","Terrestrial",7,"Intensive land-use systems",2,"T7.2","Intensive livestock pastures",1,"major","T7.2.web.map_v1.0.tif","T7.2.web.map_v1.0.json","t7_2_web_map_v1_0",NULL
+17022,1,"T","Terrestrial",7,"Intensive land-use systems",2,"T7.2","Intensive livestock pastures",2,"minor","T7.2.web.map_v1.0.tif","T7.2.web.map_v1.0.json","t7_2_web_map_v1_0",NULL
+17031,1,"T","Terrestrial",7,"Intensive land-use systems",3,"T7.3","Plantations",1,"major","T7.3.web.alt_v2.0.tif","T7.3.web.alt_v2.0.json","t7_3_web_alt_v2_0",NULL
+17032,1,"T","Terrestrial",7,"Intensive land-use systems",3,"T7.3","Plantations",2,"minor","T7.3.web.alt_v2.0.tif","T7.3.web.alt_v2.0.json","t7_3_web_alt_v2_0",NULL
+17041,1,"T","Terrestrial",7,"Intensive land-use systems",4,"T7.4","Cities, villages and infrastructure",1,"major","T7.4.web.orig_v1.0.tif","T7.4.web.orig_v1.0.json","t7_4_web_orig_v1_0",NULL
+17042,1,"T","Terrestrial",7,"Intensive land-use systems",4,"T7.4","Cities, villages and infrastructure",2,"minor","T7.4.web.orig_v1.0.tif","T7.4.web.orig_v1.0.json","t7_4_web_orig_v1_0",NULL
+17051,1,"T","Terrestrial",7,"Intensive land-use systems",5,"T7.5","Derived semi-natural pastures and oldfields",1,"major","T7.5.web.mix_v1.0.tif","T7.5.web.mix_v1.0.json","t7_5_web_mix_v1_0",NULL
+17052,1,"T","Terrestrial",7,"Intensive land-use systems",5,"T7.5","Derived semi-natural pastures and oldfields",2,"minor","T7.5.web.mix_v1.0.tif","T7.5.web.mix_v1.0.json","t7_5_web_mix_v1_0",NULL
+21011,2,"S","Subterranean",1,"Subterranean lithic systems",1,"S1.1","Aerobic caves",1,"major","S1.1.web.orig_v1.0.tif","S1.1.web.orig_v1.0.json","s1_1_web_orig_v1_0",NULL
+21012,2,"S","Subterranean",1,"Subterranean lithic systems",1,"S1.1","Aerobic caves",2,"minor","S1.1.web.orig_v1.0.tif","S1.1.web.orig_v1.0.json","s1_1_web_orig_v1_0",NULL
+21021,2,"S","Subterranean",1,"Subterranean lithic systems",2,"S1.2","Endolithic systems",1,"major","S1_2_Endolithic_systems.tif","S1_2_Endolithic_systems.json","s1_2_endolithic_systems","old version used"
+21022,2,"S","Subterranean",1,"Subterranean lithic systems",2,"S1.2","Endolithic systems",2,"minor","S1_2_Endolithic_systems.tif","S1_2_Endolithic_systems.json","s1_2_endolithic_systems","old version used"
+22011,2,"S","Subterranean",2,"Anthropogenic subterranean voids",1,"S2.1","Anthropogenic subterranean voids",1,"major","S2.1.web.orig_v1.0.tif","S2.1.web.orig_v1.0.json","s2_1_web_orig_v1_0",NULL
+22012,2,"S","Subterranean",2,"Anthropogenic subterranean voids",1,"S2.1","Anthropogenic subterranean voids",2,"minor","S2.1.web.orig_v1.0.tif","S2.1.web.orig_v1.0.json","s2_1_web_orig_v1_0",NULL
+31011,3,"SF","Subterranean-Freshwater",1,"Subterranean freshwaters",1,"SF1.1","Underground streams and pools",1,"major","SF1.1.web.orig_v1.0.tif","SF1.1.web.orig_v1.0.json","sf1_1_web_orig_v1_0",NULL
+31012,3,"SF","Subterranean-Freshwater",1,"Subterranean freshwaters",1,"SF1.1","Underground streams and pools",2,"minor","SF1.1.web.orig_v1.0.tif","SF1.1.web.orig_v1.0.json","sf1_1_web_orig_v1_0",NULL
+31021,3,"SF","Subterranean-Freshwater",1,"Subterranean freshwaters",2,"SF1.2","Groundwater ecosystems",1,"major","SF1.2.web.orig_v1.0.tif","SF1.2.web.orig_v1.0.json","sf1_2_web_orig_v1_0",NULL
+31022,3,"SF","Subterranean-Freshwater",1,"Subterranean freshwaters",2,"SF1.2","Groundwater ecosystems",2,"minor","SF1.2.web.orig_v1.0.tif","SF1.2.web.orig_v1.0.json","sf1_2_web_orig_v1_0",NULL
+32011,3,"SF","Subterranean-Freshwater",2,"Anthropogenic subterranean freshwaters",1,"SF2.1","Water pipes and subterranean canals",1,"major","SF2.1.web.orig_v1.0.tif","SF2.1.web.orig_v1.0.json","sf2_1_web_orig_v1_0",NULL
+32012,3,"SF","Subterranean-Freshwater",2,"Anthropogenic subterranean freshwaters",1,"SF2.1","Water pipes and subterranean canals",2,"minor","SF2.1.web.orig_v1.0.tif","SF2.1.web.orig_v1.0.json","sf2_1_web_orig_v1_0",NULL
+32021,3,"SF","Subterranean-Freshwater",2,"Anthropogenic subterranean freshwaters",2,"SF2.2","Flooded mines and other voids",1,"major","SF2.2.web.orig_v1.0.tif","SF2.2.web.orig_v1.0.json","sf2_2_web_orig_v1_0",NULL
+32022,3,"SF","Subterranean-Freshwater",2,"Anthropogenic subterranean freshwaters",2,"SF2.2","Flooded mines and other voids",2,"minor","SF2.2.web.orig_v1.0.tif","SF2.2.web.orig_v1.0.json","sf2_2_web_orig_v1_0",NULL
+41011,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",1,"SM1.1","Anchialine caves",1,"major","SM1.1.web.grid_v3.0.tif","SM1.1.web.grid_v3.0.json","sm1_1_web_grid_v3_0",NULL
+41012,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",1,"SM1.1","Anchialine caves",2,"minor","SM1.1.web.grid_v3.0.tif","SM1.1.web.grid_v3.0.json","sm1_1_web_grid_v3_0",NULL
+41021,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",2,"SM1.2","Anchialine pools",1,"major","SM1.2.web.grid_v3.0.tif","SM1.2.web.grid_v3.0.json","sm1_2_web_grid_v3_0",NULL
+41022,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",2,"SM1.2","Anchialine pools",2,"minor","SM1.2.web.grid_v3.0.tif","SM1.2.web.grid_v3.0.json","sm1_2_web_grid_v3_0",NULL
+41031,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",3,"SM1.3","Sea caves",1,"major","SM1.3.web.grid_v3.0.tif","SM1.3.web.grid_v3.0.json","sm1_3_web_grid_v3_0",NULL
+41032,4,"SM","Subterranean-Marine",1,"Tidal subterranean systems",3,"SM1.3","Sea caves",2,"minor","SM1.3.web.grid_v3.0.tif","SM1.3.web.grid_v3.0.json","sm1_3_web_grid_v3_0",NULL
+51011,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",1,"TF1.1","Tropical flooded forests and peat forests",1,"major","TF1.1.web.map_v1.0.tif","TF1.1.web.map_v1.0.json","tf1_1_web_map_v1_0",NULL
+51012,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",1,"TF1.1","Tropical flooded forests and peat forests",2,"minor","TF1.1.web.map_v1.0.tif","TF1.1.web.map_v1.0.json","tf1_1_web_map_v1_0",NULL
+51021,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",2,"TF1.2","Subtropical/temperate forested wetlands",1,"major","TF1.2.web.orig_v2.0.tif","TF1.2.web.orig_v2.0.json","tf1_2_web_orig_v2_0",NULL
+51022,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",2,"TF1.2","Subtropical/temperate forested wetlands",2,"minor","TF1.2.web.orig_v2.0.tif","TF1.2.web.orig_v2.0.json","tf1_2_web_orig_v2_0",NULL
+51031,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",3,"TF1.3","Permanent marshes",1,"major","TF1.3.web.orig_v1.0.tif","TF1.3.web.orig_v1.0.json","tf1_3_web_orig_v1_0",NULL
+51032,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",3,"TF1.3","Permanent marshes",2,"minor","TF1.3.web.orig_v1.0.tif","TF1.3.web.orig_v1.0.json","tf1_3_web_orig_v1_0",NULL
+51041,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",4,"TF1.4","Seasonal floodplain marshes",1,"major","TF1.4.web.map_v1.0.tif","TF1.4.web.map_v1.0.json","tf1_4_web_map_v1_0",NULL
+51042,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",4,"TF1.4","Seasonal floodplain marshes",2,"minor","TF1.4.web.map_v1.0.tif","TF1.4.web.map_v1.0.json","tf1_4_web_map_v1_0",NULL
+51051,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",5,"TF1.5","Episodic arid floodplains",1,"major","TF1.5.web.map_v2.0.tif","TF1.5.web.map_v2.0.json","tf1_5_web_map_v2_0",NULL
+51052,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",5,"TF1.5","Episodic arid floodplains",2,"minor","TF1.5.web.map_v2.0.tif","TF1.5.web.map_v2.0.json","tf1_5_web_map_v2_0",NULL
+51061,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",6,"TF1.6","Boreal, temperate and montane peat bogs",1,"major","TF1.6.web.orig_v1.0.tif","TF1.6.web.orig_v1.0.json","tf1_6_web_orig_v1_0",NULL
+51062,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",6,"TF1.6","Boreal, temperate and montane peat bogs",2,"minor","TF1.6.web.orig_v1.0.tif","TF1.6.web.orig_v1.0.json","tf1_6_web_orig_v1_0",NULL
+51071,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",7,"TF1.7","Boreal and temperate fens",1,"major","TF1.7.web.orig_v1.0.tif","TF1.7.web.orig_v1.0.json","tf1_7_web_orig_v1_0",NULL
+51072,5,"TF","Freshwater-Terrestrial",1,"Palustrine wetlands",7,"TF1.7","Boreal and temperate fens",2,"minor","TF1.7.web.orig_v1.0.tif","TF1.7.web.orig_v1.0.json","tf1_7_web_orig_v1_0",NULL
+61011,6,"F","Freshwater",1,"Rivers and streams",1,"F1.1","Permanent upland streams",1,"major","F1.1.web.mix_v2.0.tif","F1.1.web.mix_v2.0.json","f1_1_web_mix_v2_0",NULL
+61012,6,"F","Freshwater",1,"Rivers and streams",1,"F1.1","Permanent upland streams",2,"minor","F1.1.web.mix_v2.0.tif","F1.1.web.mix_v2.0.json","f1_1_web_mix_v2_0",NULL
+61021,6,"F","Freshwater",1,"Rivers and streams",2,"F1.2","Permanent lowland rivers",1,"major","F1.2.web.map_v1.0.tif","F1.2.web.map_v1.0.json","f1_2_web_map_v1_0",NULL
+61022,6,"F","Freshwater",1,"Rivers and streams",2,"F1.2","Permanent lowland rivers",2,"minor","F1.2.web.map_v1.0.tif","F1.2.web.map_v1.0.json","f1_2_web_map_v1_0",NULL
+61031,6,"F","Freshwater",1,"Rivers and streams",3,"F1.3","Freeze-thaw rivers and streams",1,"major","F1.3.web.map_v1.0.tif","F1.3.web.map_v1.0.json","f1_3_web_map_v1_0",NULL
+61032,6,"F","Freshwater",1,"Rivers and streams",3,"F1.3","Freeze-thaw rivers and streams",2,"minor","F1.3.web.map_v1.0.tif","F1.3.web.map_v1.0.json","f1_3_web_map_v1_0",NULL
+61041,6,"F","Freshwater",1,"Rivers and streams",4,"F1.4","Seasonal upland streams",1,"major","F1.4.web.map_v1.0.tif","F1.4.web.map_v1.0.json","f1_4_web_map_v1_0",NULL
+61042,6,"F","Freshwater",1,"Rivers and streams",4,"F1.4","Seasonal upland streams",2,"minor","F1.4.web.map_v1.0.tif","F1.4.web.map_v1.0.json","f1_4_web_map_v1_0",NULL
+61051,6,"F","Freshwater",1,"Rivers and streams",5,"F1.5","Seasonal lowland rivers",1,"major","F1.5.web.map_v1.0.tif","F1.5.web.map_v1.0.json","f1_5_web_map_v1_0",NULL
+61052,6,"F","Freshwater",1,"Rivers and streams",5,"F1.5","Seasonal lowland rivers",2,"minor","F1.5.web.map_v1.0.tif","F1.5.web.map_v1.0.json","f1_5_web_map_v1_0",NULL
+61061,6,"F","Freshwater",1,"Rivers and streams",6,"F1.6","Episodic arid rivers",1,"major","F1.6.web.mix_v1.0.tif","F1.6.web.mix_v1.0.json","f1_6_web_mix_v1_0",NULL
+61062,6,"F","Freshwater",1,"Rivers and streams",6,"F1.6","Episodic arid rivers",2,"minor","F1.6.web.mix_v1.0.tif","F1.6.web.mix_v1.0.json","f1_6_web_mix_v1_0",NULL
+61071,6,"F","Freshwater",1,"Rivers and streams",7,"F1.7","Large lowland rivers",1,"major","F1.7.web.orig_v2.0.tif","F1.7.web.orig_v2.0.json","f1_7_web_orig_v2_0",NULL
+61072,6,"F","Freshwater",1,"Rivers and streams",7,"F1.7","Large lowland rivers",2,"minor","F1.7.web.orig_v2.0.tif","F1.7.web.orig_v2.0.json","f1_7_web_orig_v2_0",NULL
+62011,6,"F","Freshwater",2,"Lakes",1,"F2.1","Large permanent freshwater lakes",1,"major","F2.1.web.alt_v4.0.tif","F2.1.web.alt_v4.0.json","f2_1_web_alt_v4_0",NULL
+62012,6,"F","Freshwater",2,"Lakes",1,"F2.1","Large permanent freshwater lakes",2,"minor","F2.1.web.alt_v4.0.tif","F2.1.web.alt_v4.0.json","f2_1_web_alt_v4_0",NULL
+62021,6,"F","Freshwater",2,"Lakes",2,"F2.2","Small permanent freshwater lakes",1,"major","F2.2.web.mix_v2.0.tif","F2.2.web.mix_v2.0.json","f2_2_web_mix_v2_0",NULL
+62022,6,"F","Freshwater",2,"Lakes",2,"F2.2","Small permanent freshwater lakes",2,"minor","F2.2.web.mix_v2.0.tif","F2.2.web.mix_v2.0.json","f2_2_web_mix_v2_0",NULL
+62031,6,"F","Freshwater",2,"Lakes",3,"F2.3","Seasonal freshwater lakes",1,"major","F2.3.web.mix_v2.0.tif","F2.3.web.mix_v2.0.json","f2_3_web_mix_v2_0",NULL
+62032,6,"F","Freshwater",2,"Lakes",3,"F2.3","Seasonal freshwater lakes",2,"minor","F2.3.web.mix_v2.0.tif","F2.3.web.mix_v2.0.json","f2_3_web_mix_v2_0",NULL
+62041,6,"F","Freshwater",2,"Lakes",4,"F2.4","Freeze-thaw freshwater lakes",1,"major","F2.4.web.mix_v1.0.tif","F2.4.web.mix_v1.0.json","f2_4_web_mix_v1_0",NULL
+62042,6,"F","Freshwater",2,"Lakes",4,"F2.4","Freeze-thaw freshwater lakes",2,"minor","F2.4.web.mix_v1.0.tif","F2.4.web.mix_v1.0.json","f2_4_web_mix_v1_0",NULL
+62051,6,"F","Freshwater",2,"Lakes",5,"F2.5","Ephemeral freshwater lakes",1,"major","F2.5.web.mix_v1.0.tif","F2.5.web.mix_v1.0.json","f2_5_web_mix_v1_0",NULL
+62052,6,"F","Freshwater",2,"Lakes",5,"F2.5","Ephemeral freshwater lakes",2,"minor","F2.5.web.mix_v1.0.tif","F2.5.web.mix_v1.0.json","f2_5_web_mix_v1_0",NULL
+62061,6,"F","Freshwater",2,"Lakes",6,"F2.6","Permanent salt and soda lakes",1,"major","F2.6.web.mix_v4.0.tif","F2.6.web.mix_v4.0.json","f2_6_web_mix_v4_0",NULL
+62062,6,"F","Freshwater",2,"Lakes",6,"F2.6","Permanent salt and soda lakes",2,"minor","F2.6.web.mix_v4.0.tif","F2.6.web.mix_v4.0.json","f2_6_web_mix_v4_0",NULL
+62071,6,"F","Freshwater",2,"Lakes",7,"F2.7","Ephemeral salt lakes",1,"major","F2.7.web.mix_v1.0.tif","F2.7.web.mix_v1.0.json","f2_7_web_mix_v1_0",NULL
+62072,6,"F","Freshwater",2,"Lakes",7,"F2.7","Ephemeral salt lakes",2,"minor","F2.7.web.mix_v1.0.tif","F2.7.web.mix_v1.0.json","f2_7_web_mix_v1_0",NULL
+62081,6,"F","Freshwater",2,"Lakes",8,"F2.8","Artesian springs and oases",1,"major","F2.8.web.mix_v1.0.tif","F2.8.web.mix_v1.0.json","f2_8_web_mix_v1_0",NULL
+62082,6,"F","Freshwater",2,"Lakes",8,"F2.8","Artesian springs and oases",2,"minor","F2.8.web.mix_v1.0.tif","F2.8.web.mix_v1.0.json","f2_8_web_mix_v1_0",NULL
+62091,6,"F","Freshwater",2,"Lakes",9,"F2.9","Geothermal pools and wetlands",1,"major","F2.9.web.mix_v1.0.tif","F2.9.web.mix_v1.0.json","f2_9_web_mix_v1_0",NULL
+62092,6,"F","Freshwater",2,"Lakes",9,"F2.9","Geothermal pools and wetlands",2,"minor","F2.9.web.mix_v1.0.tif","F2.9.web.mix_v1.0.json","f2_9_web_mix_v1_0",NULL
+62101,6,"F","Freshwater",2,"Lakes",10,"F2.10","Subglacial lakes",1,"major","F2.10.web.mix_v2.0.tif","F2.10.web.mix_v2.0.json","f2_10_web_mix_v2_0",NULL
+62102,6,"F","Freshwater",2,"Lakes",10,"F2.10","Subglacial lakes",2,"minor","F2.10.web.mix_v2.0.tif","F2.10.web.mix_v2.0.json","f2_10_web_mix_v2_0",NULL
+63011,6,"F","Freshwater",3,"Artificial fresh waters",1,"F3.1","Large reservoirs",1,"major","F3.1.web.orig_v1.0.tif","F3.1.web.orig_v1.0.json","f3_1_web_orig_v1_0",NULL
+63012,6,"F","Freshwater",3,"Artificial fresh waters",1,"F3.1","Large reservoirs",2,"minor","F3.1.web.orig_v1.0.tif","F3.1.web.orig_v1.0.json","f3_1_web_orig_v1_0",NULL
+63021,6,"F","Freshwater",3,"Artificial fresh waters",2,"F3.2","Constructed lacustrine wetlands",1,"major","F3.2.web.orig_v1.0.tif","F3.2.web.orig_v1.0.json","f3_2_web_orig_v1_0",NULL
+63022,6,"F","Freshwater",3,"Artificial fresh waters",2,"F3.2","Constructed lacustrine wetlands",2,"minor","F3.2.web.orig_v1.0.tif","F3.2.web.orig_v1.0.json","f3_2_web_orig_v1_0",NULL
+63031,6,"F","Freshwater",3,"Artificial fresh waters",3,"F3.3","Rice paddies",1,"major","F3.3.web.alt_v2.0.tif","F3.3.web.alt_v2.0.json","f3_3_web_alt_v2_0",NULL
+63032,6,"F","Freshwater",3,"Artificial fresh waters",3,"F3.3","Rice paddies",2,"minor","F3.3.web.alt_v2.0.tif","F3.3.web.alt_v2.0.json","f3_3_web_alt_v2_0",NULL
+63041,6,"F","Freshwater",3,"Artificial fresh waters",4,"F3.4","Freshwater aquafarms",1,"major","F3.4.web.orig_v1.0.tif","F3.4.web.orig_v1.0.json","f3_4_web_orig_v1_0",NULL
+63042,6,"F","Freshwater",3,"Artificial fresh waters",4,"F3.4","Freshwater aquafarms",2,"minor","F3.4.web.orig_v1.0.tif","F3.4.web.orig_v1.0.json","f3_4_web_orig_v1_0",NULL
+63051,6,"F","Freshwater",3,"Artificial fresh waters",5,"F3.5","Canals, ditches and drains",1,"major","F3.5.web.orig_v1.0.tif","F3.5.web.orig_v1.0.json","f3_5_web_orig_v1_0",NULL
+63052,6,"F","Freshwater",3,"Artificial fresh waters",5,"F3.5","Canals, ditches and drains",2,"minor","F3.5.web.orig_v1.0.tif","F3.5.web.orig_v1.0.json","f3_5_web_orig_v1_0",NULL
+71011,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",1,"FM1.1","Deepwater coastal inlets",1,"major","FM1.1.web.map_v1.0.tif","FM1.1.web.map_v1.0.json","fm1_1_web_map_v1_0",NULL
+71012,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",1,"FM1.1","Deepwater coastal inlets",2,"minor","FM1.1.web.map_v1.0.tif","FM1.1.web.map_v1.0.json","fm1_1_web_map_v1_0",NULL
+71021,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",2,"FM1.2","Permanently open riverine estuaries and bays",1,"major","FM1.2.web.map_v1.0.tif","FM1.2.web.map_v1.0.json","fm1_2_web_map_v1_0",NULL
+71022,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",2,"FM1.2","Permanently open riverine estuaries and bays",2,"minor","FM1.2.web.map_v1.0.tif","FM1.2.web.map_v1.0.json","fm1_2_web_map_v1_0",NULL
+71031,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",3,"FM1.3","Intermittently closed and open lakes and lagoons",1,"major","FM1.3.web.orig_v2.0.tif","FM1.3.web.orig_v2.0.json","fm1_3_web_orig_v2_0",NULL
+71032,7,"FM","Freshwater-Marine",1,"Semi-confined transitional waters",3,"FM1.3","Intermittently closed and open lakes and lagoons",2,"minor","FM1.3.web.orig_v2.0.tif","FM1.3.web.orig_v2.0.json","fm1_3_web_orig_v2_0",NULL
+81011,8,"M","Marine",1,"Marine shelves",1,"M1.1","Seagrass meadows",1,"major","M1.1.web.orig_v1.0.tif","M1.1.web.orig_v1.0.json","m1_1_web_orig_v1_0",NULL
+81012,8,"M","Marine",1,"Marine shelves",1,"M1.1","Seagrass meadows",2,"minor","M1.1.web.orig_v1.0.tif","M1.1.web.orig_v1.0.json","m1_1_web_orig_v1_0",NULL
+81021,8,"M","Marine",1,"Marine shelves",2,"M1.2","Kelp forests",1,"major","M1.2.web.orig_v2.2.tif","M1.2.web.orig_v2.2.json","m1_2_web_orig_v2_2",NULL
+81022,8,"M","Marine",1,"Marine shelves",2,"M1.2","Kelp forests",2,"minor","M1.2.web.orig_v2.2.tif","M1.2.web.orig_v2.2.json","m1_2_web_orig_v2_2",NULL
+81031,8,"M","Marine",1,"Marine shelves",3,"M1.3","Photic coral reefs",1,"major","M1.3.web.orig_v1.0.tif","M1.3.web.orig_v1.0.json","m1_3_web_orig_v1_0",NULL
+81032,8,"M","Marine",1,"Marine shelves",3,"M1.3","Photic coral reefs",2,"minor","M1.3.web.orig_v1.0.tif","M1.3.web.orig_v1.0.json","m1_3_web_orig_v1_0",NULL
+81041,8,"M","Marine",1,"Marine shelves",4,"M1.4","Shellfish beds and reefs",1,"major","M1.4.web.orig_v1.0.tif","M1.4.web.orig_v1.0.json","m1_4_web_orig_v1_0",NULL
+81042,8,"M","Marine",1,"Marine shelves",4,"M1.4","Shellfish beds and reefs",2,"minor","M1.4.web.orig_v1.0.tif","M1.4.web.orig_v1.0.json","m1_4_web_orig_v1_0",NULL
+81051,8,"M","Marine",1,"Marine shelves",5,"M1.5","Photo-limited marine animal forests",1,"major","M1.5.web.orig_v1.0.tif","M1.5.web.orig_v1.0.json","m1_5_web_orig_v1_0",NULL
+81052,8,"M","Marine",1,"Marine shelves",5,"M1.5","Photo-limited marine animal forests",2,"minor","M1.5.web.orig_v1.0.tif","M1.5.web.orig_v1.0.json","m1_5_web_orig_v1_0",NULL
+81061,8,"M","Marine",1,"Marine shelves",6,"M1.6","Subtidal rocky reefs",1,"major","M1.6.web.orig_v1.0.tif","M1.6.web.orig_v1.0.json","m1_6_web_orig_v1_0",NULL
+81062,8,"M","Marine",1,"Marine shelves",6,"M1.6","Subtidal rocky reefs",2,"minor","M1.6.web.orig_v1.0.tif","M1.6.web.orig_v1.0.json","m1_6_web_orig_v1_0",NULL
+81071,8,"M","Marine",1,"Marine shelves",7,"M1.7","Subtidal sand beds",1,"major","M1.7.web.orig_v1.0.tif","M1.7.web.orig_v1.0.json","m1_7_web_orig_v1_0",NULL
+81072,8,"M","Marine",1,"Marine shelves",7,"M1.7","Subtidal sand beds",2,"minor","M1.7.web.orig_v1.0.tif","M1.7.web.orig_v1.0.json","m1_7_web_orig_v1_0",NULL
+81081,8,"M","Marine",1,"Marine shelves",8,"M1.8","Subtidal mud plains",1,"major","M1.8.web.orig_v1.0.tif","M1.8.web.orig_v1.0.json","m1_8_web_orig_v1_0",NULL
+81082,8,"M","Marine",1,"Marine shelves",8,"M1.8","Subtidal mud plains",2,"minor","M1.8.web.orig_v1.0.tif","M1.8.web.orig_v1.0.json","m1_8_web_orig_v1_0",NULL
+81091,8,"M","Marine",1,"Marine shelves",9,"M1.9","Upwelling zones",1,"major","M1.9.web.orig_v1.0.tif","M1.9.web.orig_v1.0.json","m1_9_web_orig_v1_0",NULL
+81092,8,"M","Marine",1,"Marine shelves",9,"M1.9","Upwelling zones",2,"minor","M1.9.web.orig_v1.0.tif","M1.9.web.orig_v1.0.json","m1_9_web_orig_v1_0",NULL
+81101,8,"M","Marine",1,"Marine shelves",10,"M1.10","Rhodolith/Maërl beds",1,"major","M1.10.WM.nwx_v1.0.tif","M1.10.WM.nwx_v1.0.json","m1_10_wm_nwx_v1_0",NULL
+81102,8,"M","Marine",1,"Marine shelves",10,"M1.10","Rhodolith/Maërl beds",2,"minor","M1.10.WM.nwx_v1.0.tif","M1.10.WM.nwx_v1.0.json","m1_10_wm_nwx_v1_0",NULL
+82011,8,"M","Marine",2,"Pelagic ocean waters",1,"M2.1","Epipelagic ocean waters",1,"major","M2.1.web.orig_v2.1.tif","M2.1.web.orig_v2.1.json","m2_1_web_orig_v2_1",NULL
+82012,8,"M","Marine",2,"Pelagic ocean waters",1,"M2.1","Epipelagic ocean waters",2,"minor","M2.1.web.orig_v2.1.tif","M2.1.web.orig_v2.1.json","m2_1_web_orig_v2_1",NULL
+82021,8,"M","Marine",2,"Pelagic ocean waters",2,"M2.2","Mesopelagic ocean waters",1,"major","M2.2.web.orig_v2.0.tif","M2.2.web.orig_v2.0.json","m2_2_web_orig_v2_0",NULL
+82022,8,"M","Marine",2,"Pelagic ocean waters",2,"M2.2","Mesopelagic ocean waters",2,"minor","M2.2.web.orig_v2.0.tif","M2.2.web.orig_v2.0.json","m2_2_web_orig_v2_0",NULL
+82031,8,"M","Marine",2,"Pelagic ocean waters",3,"M2.3","Bathypelagic ocean waters",1,"major","M2.3.web.orig_v1.0.tif","M2.3.web.orig_v1.0.json","m2_3_web_orig_v1_0",NULL
+82032,8,"M","Marine",2,"Pelagic ocean waters",3,"M2.3","Bathypelagic ocean waters",2,"minor","M2.3.web.orig_v1.0.tif","M2.3.web.orig_v1.0.json","m2_3_web_orig_v1_0",NULL
+82041,8,"M","Marine",2,"Pelagic ocean waters",4,"M2.4","Abyssopelagic ocean waters",1,"major","M2.4.web.orig_v1.0.tif","M2.4.web.orig_v1.0.json","m2_4_web_orig_v1_0",NULL
+82042,8,"M","Marine",2,"Pelagic ocean waters",4,"M2.4","Abyssopelagic ocean waters",2,"minor","M2.4.web.orig_v1.0.tif","M2.4.web.orig_v1.0.json","m2_4_web_orig_v1_0",NULL
+82051,8,"M","Marine",2,"Pelagic ocean waters",5,"M2.5","Sea ice",1,"major","M2.5.web.orig_v1.0.tif","M2.5.web.orig_v1.0.json","m2_5_web_orig_v1_0",NULL
+82052,8,"M","Marine",2,"Pelagic ocean waters",5,"M2.5","Sea ice",2,"minor","M2.5.web.orig_v1.0.tif","M2.5.web.orig_v1.0.json","m2_5_web_orig_v1_0",NULL
+83011,8,"M","Marine",3,"Deep sea floors",1,"M3.1","Continental and island slopes",1,"major","M3.1.web.orig_v1.0.tif","M3.1.web.orig_v1.0.json","m3_1_web_orig_v1_0",NULL
+83012,8,"M","Marine",3,"Deep sea floors",1,"M3.1","Continental and island slopes",2,"minor","M3.1.web.orig_v1.0.tif","M3.1.web.orig_v1.0.json","m3_1_web_orig_v1_0",NULL
+83021,8,"M","Marine",3,"Deep sea floors",2,"M3.2","Marine canyons",1,"major","M3.2.web.orig_v1.0.tif","M3.2.web.orig_v1.0.json","m3_2_web_orig_v1_0",NULL
+83022,8,"M","Marine",3,"Deep sea floors",2,"M3.2","Marine canyons",2,"minor","M3.2.web.orig_v1.0.tif","M3.2.web.orig_v1.0.json","m3_2_web_orig_v1_0",NULL
+83031,8,"M","Marine",3,"Deep sea floors",3,"M3.3","Abyssal plains",1,"major","M3.3.web.orig_v1.0.tif","M3.3.web.orig_v1.0.json","m3_3_web_orig_v1_0",NULL
+83032,8,"M","Marine",3,"Deep sea floors",3,"M3.3","Abyssal plains",2,"minor","M3.3.web.orig_v1.0.tif","M3.3.web.orig_v1.0.json","m3_3_web_orig_v1_0",NULL
+83041,8,"M","Marine",3,"Deep sea floors",4,"M3.4","Seamounts, ridges and plateaus",1,"major","M3.4.web.orig_v2.0.tif","M3.4.web.orig_v2.0.json","m3_4_web_orig_v2_0",NULL
+83042,8,"M","Marine",3,"Deep sea floors",4,"M3.4","Seamounts, ridges and plateaus",2,"minor","M3.4.web.orig_v2.0.tif","M3.4.web.orig_v2.0.json","m3_4_web_orig_v2_0",NULL
+83051,8,"M","Marine",3,"Deep sea floors",5,"M3.5","Deepwater biogenic beds",1,"major","M3.5.web.orig_v1.0.tif","M3.5.web.orig_v1.0.json","m3_5_web_orig_v1_0",NULL
+83052,8,"M","Marine",3,"Deep sea floors",5,"M3.5","Deepwater biogenic beds",2,"minor","M3.5.web.orig_v1.0.tif","M3.5.web.orig_v1.0.json","m3_5_web_orig_v1_0",NULL
+83061,8,"M","Marine",3,"Deep sea floors",6,"M3.6","Hadal trenches and troughs",1,"major","M3.6.web.orig_v1.0.tif","M3.6.web.orig_v1.0.json","m3_6_web_orig_v1_0",NULL
+83062,8,"M","Marine",3,"Deep sea floors",6,"M3.6","Hadal trenches and troughs",2,"minor","M3.6.web.orig_v1.0.tif","M3.6.web.orig_v1.0.json","m3_6_web_orig_v1_0",NULL
+83071,8,"M","Marine",3,"Deep sea floors",7,"M3.7","Chemosynthetically-based ecosystems",1,"major","M3.7.web.orig_v1.0.tif","M3.7.web.orig_v1.0.json","m3_7_web_orig_v1_0",NULL
+83072,8,"M","Marine",3,"Deep sea floors",7,"M3.7","Chemosynthetically-based ecosystems",2,"minor","M3.7.web.orig_v1.0.tif","M3.7.web.orig_v1.0.json","m3_7_web_orig_v1_0",NULL
+84011,8,"M","Marine",4,"Anthropogenic marine systems",1,"M4.1","Submerged artificial structures systems",1,"major","M4.1.web.orig_v1.0.tif","M4.1.web.orig_v1.0.json","m4_1_web_orig_v1_0",NULL
+84012,8,"M","Marine",4,"Anthropogenic marine systems",1,"M4.1","Submerged artificial structures systems",2,"minor","M4.1.web.orig_v1.0.tif","M4.1.web.orig_v1.0.json","m4_1_web_orig_v1_0",NULL
+84021,8,"M","Marine",4,"Anthropogenic marine systems",2,"M4.2","Marine aquafarms",1,"major","M4.2.web.orig_v1.0.tif","M4.2.web.orig_v1.0.json","m4_2_web_orig_v1_0",NULL
+84022,8,"M","Marine",4,"Anthropogenic marine systems",2,"M4.2","Marine aquafarms",2,"minor","M4.2.web.orig_v1.0.tif","M4.2.web.orig_v1.0.json","m4_2_web_orig_v1_0",NULL
+91011,9,"MT","Marine-Terrestrial",1,"Shoreline systems",1,"MT1.1","Rocky shores",1,"major","MT1.1.web.map_v1.0.tif","MT1.1.web.map_v1.0.json","mt1_1_web_map_v1_0",NULL
+91012,9,"MT","Marine-Terrestrial",1,"Shoreline systems",1,"MT1.1","Rocky shores",2,"minor","MT1.1.web.map_v1.0.tif","MT1.1.web.map_v1.0.json","mt1_1_web_map_v1_0",NULL
+91021,9,"MT","Marine-Terrestrial",1,"Shoreline systems",2,"MT1.2","Muddy shores",1,"major","MT1.2.IM.orig_v1.0.tif","MT1.2.IM.orig_v1.0.json","mt1_2_im_orig_v1_0",NULL
+91022,9,"MT","Marine-Terrestrial",1,"Shoreline systems",2,"MT1.2","Muddy shores",2,"minor","MT1.2.IM.orig_v1.0.tif","MT1.2.IM.orig_v1.0.json","mt1_2_im_orig_v1_0",NULL
+91031,9,"MT","Marine-Terrestrial",1,"Shoreline systems",3,"MT1.3","Sandy shores",1,"major","MT1.3.web.map_v1.0.tif","MT1.3.web.map_v1.0.json","mt1_3_web_map_v1_0",NULL
+91032,9,"MT","Marine-Terrestrial",1,"Shoreline systems",3,"MT1.3","Sandy shores",2,"minor","MT1.3.web.map_v1.0.tif","MT1.3.web.map_v1.0.json","mt1_3_web_map_v1_0",NULL
+91041,9,"MT","Marine-Terrestrial",1,"Shoreline systems",4,"MT1.4","Boulder and cobble shores",1,"major","MT1.4.web.map_v1.0.tif","MT1.4.web.map_v1.0.json","mt1_4_web_map_v1_0",NULL
+91042,9,"MT","Marine-Terrestrial",1,"Shoreline systems",4,"MT1.4","Boulder and cobble shores",2,"minor","MT1.4.web.map_v1.0.tif","MT1.4.web.map_v1.0.json","mt1_4_web_map_v1_0",NULL
+92011,9,"MT","Marine-Terrestrial",2,"Supralittoral coastal systems",1,"MT2.1","Coastal shrublands and grasslands",1,"major","MT2.1.web.map_v1.0.tif","MT2.1.web.map_v1.0.json","mt2_1_web_map_v1_0",NULL
+92012,9,"MT","Marine-Terrestrial",2,"Supralittoral coastal systems",1,"MT2.1","Coastal shrublands and grasslands",2,"minor","MT2.1.web.map_v1.0.tif","MT2.1.web.map_v1.0.json","mt2_1_web_map_v1_0",NULL
+92021,9,"MT","Marine-Terrestrial",2,"Supralittoral coastal systems",2,"MT2.2","Large seabird and pinniped colonies",1,"major","MT2.2.IM.orig_v1.0.tif","MT2.2.IM.orig_v1.0.json","mt2_2_im_orig_v1_0",NULL
+92022,9,"MT","Marine-Terrestrial",2,"Supralittoral coastal systems",2,"MT2.2","Large seabird and pinniped colonies",2,"minor","MT2.2.IM.orig_v1.0.tif","MT2.2.IM.orig_v1.0.json","mt2_2_im_orig_v1_0",NULL
+93011,9,"MT","Marine-Terrestrial",3,"Anthropogenic shorelines",1,"MT3.1","Artificial shores",1,"major","MT3.1.web.map_v1.0.tif","MT3.1.web.map_v1.0.json","mt3_1_web_map_v1_0",NULL
+93012,9,"MT","Marine-Terrestrial",3,"Anthropogenic shorelines",1,"MT3.1","Artificial shores",2,"minor","MT3.1.web.map_v1.0.tif","MT3.1.web.map_v1.0.json","mt3_1_web_map_v1_0",NULL
+101011,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",1,"MFT1.1","Coastal river deltas",1,"major","MFT1.1.map.orig_v1.0.tif","MFT1.1.map.orig_v1.0.json","mft1_1_map_orig_v1_0",NULL
+101012,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",1,"MFT1.1","Coastal river deltas",2,"minor","MFT1.1.map.orig_v1.0.tif","MFT1.1.map.orig_v1.0.json","mft1_1_map_orig_v1_0",NULL
+101021,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",2,"MFT1.2","Intertidal forests and shrublands",1,"major","MFT1.2.web.orig_v2.0.tif","MFT1.2.web.orig_v2.0.json","mft1_2_web_orig_v2_0",NULL
+101022,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",2,"MFT1.2","Intertidal forests and shrublands",2,"minor","MFT1.2.web.orig_v2.0.tif","MFT1.2.web.orig_v2.0.json","mft1_2_web_orig_v2_0",NULL
+101031,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",3,"MFT1.3","Coastal saltmarshes and reedbeds",1,"major","MFT1.3.web.orig_v2.0.tif","MFT1.3.web.orig_v2.0.json","mft1_3_web_orig_v2_0",NULL
+101032,10,"MFT","Marine-Freshwater-Terrestrial",1,"Brackish tidal systems",3,"MFT1.3","Coastal saltmarshes and reedbeds",2,"minor","MFT1.3.web.orig_v2.0.tif","MFT1.3.web.orig_v2.0.json","mft1_3_web_orig_v2_0",NULL
