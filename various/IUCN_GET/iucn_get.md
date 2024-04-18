@@ -18,7 +18,10 @@ Vectors (geojson format...) have been imported in PostGIS with the script [impor
 
 PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn_get.sql).
 
+The original categories have been reorganized as by [class_code_objects.csv](./class_code_objects.csv).
+
 Flat version has been obtained with the dopa flattening sequence, with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
+
 
 =======================================
 
