@@ -14,6 +14,15 @@ Several downloads (20231005, 20231021, 20231023, 20240415, 20240412) and contact
 +  T7.1.web.alt_v2.0.json.bz2 has been obtained by the author
 +  S1_2_Endolithic_systems.json exists only in one of the old release.
 
+Vectors (geojson format...) have been imported in PostGIS with the script [import.sh](./import.sh).
+
+PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn_get.sql).
+
+
+
+
+
+
 =======================================
 
 Citation:
