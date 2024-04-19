@@ -31,7 +31,7 @@ The result is a PostGIS table exported as raster, where the atomic object/pixel 
 There are 10505 cid made exclusively by combinations of major EFJ, and 1887129 made by combinations of major and minor EFG.
 There is a maximum of 40 (21 major+19 minor) EFG overlapping (major max 22, min 1; minor max 25, min 0).
 
-![GET ouput_c](ouput_c.png)
+![GET ouput_c](output_c.png)
 
-![GET ouput_bw](ouput_bw.png)
+![GET ouput_bw](output_bw.png)
 
