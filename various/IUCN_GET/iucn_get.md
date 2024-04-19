@@ -26,6 +26,6 @@ The original categories have been reorganized as by [class_code_objects.csv](./c
 
 Flat version has been obtained (10 hours processing with 140 threads dedicated) with the [DOPA flattening sequence](../../flattening/README.md), with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
 The result is a PostGIS table exported as raster, where the atomic object/pixel (cid) is a unique combination (1897634 cid in total) of **ecosystem functional groups (EFG)** overlapping each other.
-There are 10505 cid made exclusively by combinations of **major EFJ**, and 1887129 made by combinations of **major and minor EFG**.
+There are 10505 cid made exclusively by combinations of major EFJ, and 1887129 made by combinations of major and minor EFG.
 There is a maximum of 40 (21 major+19 minor) EFG overlapping (major max 22, min 1; minor max 25, min 0).
 
