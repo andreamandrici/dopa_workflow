@@ -1,4 +1,4 @@
-IUCN Global Ecosystem Typology
+IUCN Global Ecosystem Typology - Andrea Mandrici, Giacomo Delli 20240418
 
 Downloaded from:
 +  https://global-ecosystems.org/ (website)
@@ -24,13 +24,4 @@ The original categories have been reorganized as by [class_code_objects.csv](./c
 
 Flat version has been obtained with the dopa flattening sequence, with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
 
-=======================================
 
-Citation:
-=========
-- David A. Keith, José R. Ferrer-Paris, Emily Nicholson and Richard T. Kingsford (eds.) (2020) The IUCN Global Ecosystem Typology 2.0: Descriptive profiles for biomes and ecosystem functional groups. Gland, Switzerland: IUCN. ISBN: 978-2-8317-2077-7. DOI:10.2305/IUCN.CH.2020.13.en
-- Keith, David et al. (2022) 'A function-based typology for Earth's ecosystems'. Nature DOI:10.1038/s41586-022-05318-4
-
-Data set citation:
-=================
-Keith, David A., Ferrer-Paris, Jose R., Nicholson, Emily, ..., Kingsford, Richard T. (2020). Indicative distribution maps for Ecological Functional Groups - Level 3 of IUCN Global Ecosystem Typology [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3546513
