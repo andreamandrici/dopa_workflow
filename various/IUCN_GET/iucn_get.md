@@ -1,4 +1,6 @@
-IUCN Global Ecosystem Typology - Andrea Mandrici, Giacomo Delli 20240418
+IUCN Global Ecosystem Typology 
+
+Andrea Mandrici, Giacomo Delli 20240418
 
 Downloaded from:
 +  https://global-ecosystems.org/ (website)
