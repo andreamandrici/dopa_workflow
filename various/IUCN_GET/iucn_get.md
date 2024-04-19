@@ -24,6 +24,6 @@ PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn
 
 The original categories have been reorganized as by [class_code_objects.csv](./class_code_objects.csv).
 
-Flat version has been obtained (10 hours processing with 140 threads dedicated) with the [DOPA flattening sequence](../flattening/README.md), with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
+Flat version has been obtained (10 hours processing with 140 threads dedicated) with the [DOPA flattening sequence](../../flattening/README.md), with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
 
 
