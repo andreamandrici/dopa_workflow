@@ -20,6 +20,8 @@ Within the various releases:
 
 Vectors (geojson format...) have been imported in PostGIS with the script [import.sh](./import.sh).
 
+![GET input](input.png)
+
 PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn_get.sql).
 
 The original categories have been reorganized as by [class_code_objects.csv](./class_code_objects.csv).
@@ -28,4 +30,8 @@ Flat version has been obtained (10 hours processing with 140 threads dedicated) 
 The result is a PostGIS table exported as raster, where the atomic object/pixel (cid) is a unique combination (1897634 cid in total) of **ecosystem functional groups (EFG)** overlapping each other.
 There are 10505 cid made exclusively by combinations of major EFJ, and 1887129 made by combinations of major and minor EFG.
 There is a maximum of 40 (21 major+19 minor) EFG overlapping (major max 22, min 1; minor max 25, min 0).
+
+![GET ouput_c](ouput_c.png)
+
+![GET ouput_bw](ouput_bw.png)
 
