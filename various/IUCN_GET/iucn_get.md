@@ -24,7 +24,11 @@ Vectors (geojson format...) have been imported in PostGIS with the script [impor
 
 PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn_get.sql).
 
-The original categories have been reorganized as by [class_code_objects.csv](./class_code_objects.csv).
+The original categories have been organized into 220 codes representing:
+* 10 kingdoms (4 main, 6 transitional)
+* 25 biomes
+* 110 functional groups (major or minor occurrence)
+of which 171 are currently present [class_code_objects.csv](./class_code_objects.csv). 
 
 Flat version has been obtained (10 hours processing with 140 threads dedicated) with the [DOPA flattening sequence](../../flattening/README.md), with configuration as by [workflow_parameters.conf](./workflow_parameters.conf).
 The result is a PostGIS table exported as raster, where the atomic object/pixel (cid) is a unique combination (1897634 cid in total) of **ecosystem functional groups (EFG)** overlapping each other.
