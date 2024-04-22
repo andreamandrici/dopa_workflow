@@ -37,5 +37,5 @@ There is a maximum of 40 (21 major+19 minor) EFG overlapping (major max 22, min 
 
 ![GET ouput_c](output_c.png)
 
-![GET ouput_bw](output_bw.png)
+![GET ouput_v](output_v.png)
 
