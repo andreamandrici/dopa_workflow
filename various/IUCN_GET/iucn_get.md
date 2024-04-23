@@ -7,7 +7,7 @@ Downloaded from:
 +  [https://www.nature.com/articles/s41586-022-05318-4](https://www.nature.com/articles/s41586-022-05318-4) (paper)
 +  [https://doi.org/10.5281/zenodo.3546513](https://doi.org/10.5281/zenodo.3546513) (all datasets)
 
-Several downloads (20231005, 20231021, 20231023, 20240415, 20240412) and contacts with the author (David Keith <david.keith@unsw.edu.au>) were required.
+Several downloads (20231005, 20231021, 20231023, 20240415, 20240412) and contacts with the authors (David Keith <david.keith@unsw.edu.au>, Jose Ferrer Paris <j.ferrer@unsw.edu.au>) were required.
 
 Within the various releases:
 +  All the objects have been renamed
