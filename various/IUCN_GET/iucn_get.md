@@ -25,7 +25,7 @@ Vectors (geojson format...) have been imported in PostGIS with the script [impor
 PostGIS geometries have been pre-processed with the script [iucn_get.sql](./iucn_get.sql).
 
 The original categories have been organized into 220 codes representing:
-* 10 kingdoms (4 main, 6 transitional)
+* 10 realms (4 main, 6 transitional)
 * 25 biomes
 * 110 functional groups (major or minor occurrence)
 of which 171 are currently present [class_code_objects.csv](./class_code_objects.csv). 
