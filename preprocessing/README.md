@@ -80,6 +80,6 @@ The final version is exported as geopackage, wich includes:
 
 ## preprocessing
 
-+   [preprocessing](./ecoregions_2024/ecoregions_2017.sql)
++   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
 
 
