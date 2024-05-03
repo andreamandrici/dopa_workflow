@@ -79,6 +79,6 @@ The final version is exported as geopackage, wich includes:
 # ECOREGIONS (V2024)
 
 ## preprocessing
-
+ [preprocessing](./ecoregions_2024/eco2024_readme.md)
 
 
