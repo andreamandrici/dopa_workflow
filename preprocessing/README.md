@@ -82,6 +82,7 @@ The final version is exported as geopackage, wich includes:
 
 +   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
 +   [freshwater_ecoregions](./ecoregions_2024/freshwater_ecoregions.sql)
++   [marine+pelagic_ecoregions](./ecoregions_2024/meow_ppow.sql)
 
 
 
