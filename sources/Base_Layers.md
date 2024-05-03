@@ -33,5 +33,10 @@ Downloaded on 20160720.
 
 Downloaded on 20240423 from link reported in [Announcing the release of Ecoregion Snapshots](https://www.oneearth.org/announcing-the-release-of-ecoregion-snapshots/).
 
++[FRESHWATER ECOREGIONS OF THE WORLD - WWF AND TNC (The Nature Conservancy)-2008](https://www.feow.org/)
+
+Downloaded on 20230419 from:
+https://geospatial.tnc.org/datasets/TNC::freshwater-ecoregions-of-the-world-feow/about
+
 ### WDPA
 
