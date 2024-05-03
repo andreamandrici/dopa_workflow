@@ -75,3 +75,10 @@ The final version is exported as geopackage, wich includes:
 +  ecoregions_2019 multipart
 +  ecoregions_2019_raw (undissolved, single part polygons)
 +  lookup_attribute_table (correspondence table within original fields and final attributes).
+
+# ECOREGIONS (V2024)
+
+## preprocessing
+
+
+
