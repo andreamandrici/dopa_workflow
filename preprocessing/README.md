@@ -11,8 +11,6 @@ Dataset is given by intersection of (more details in [Sources/Base Layers](https
 + Marine Ecoregions of the World (ME)
 + Pelagic Provinces Of the World (PE)
 + Freshwater Ecoregions of the World (FE).
-+
-+   (gap filling big lakes).
 
 The version of MEOW/PPOW without coastline is used.
 TEOW is overlayed on top of MEOW/PPOW, and MEOW is clipped by TEOW's coastline.
@@ -26,10 +24,19 @@ After the intersections, the overlapping classes are assigned as:
 
 ## preprocessing scripts
 
+### inputs
+
 +   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
 +   [freshwater_ecoregions](./ecoregions_2024/freshwater_ecoregions.sql)
 +   [marine+pelagic_ecoregions](./ecoregions_2024/meow_ppow.sql)
-+   
+
+### flattening 
+
++   [flattening sequence and mods](./ecoregions_2024/flattening_sequence_and_mods.sql)
++   [workflow parameters](./ecoregions_2024/workflow_parameters.conf)
++   [f_revector postigs function](./ecoregions_2024/f_revector.sql)
++   [f_revector bash launcher](./ecoregions_2024/q_revector.sh)
+
 
 
 # ECOREGIONS (V2020)
