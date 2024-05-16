@@ -5,7 +5,7 @@ Update of Countries is pending since November 2019, waiting for decision on Land
 
 # ECOREGIONS (V2024)
 
-Dataset is given by intersection of (more details in :
+Dataset is given by intersection of (more details in [Sources/Base Layers](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html):
 
 + OneEarth Terrestrial Ecoregions (TE)
 + Marine Ecoregions of the World (ME)
@@ -14,33 +14,22 @@ Dataset is given by intersection of (more details in :
 +
 +   (gap filling big lakes).
 
-+  the version of MEOW/PPOW with complete coastline version is used
-+  MEOW/PPOW is overlayed on topo of TEOW, and MEOW coastline substitutes TEOW's one
-+  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
+The version of MEOW/PPOW without coastline is used.
+TEOW is overlayed on top of MEOW/PPOW, and MEOW is clipped by TEOW's coastline.
+"Holes" (big lakes) are filled by FEOW.
 
-To simplify the outputs and the following processing steps, few classes have been recoded:
+After the intersections, the overlapping classes are assigned as:
 
-+  PPOW code 0 reclassed to 37
-+  TEOW code -9998 reclassed to 9998
-+  TEOW code -9999 to 9999.
++  TEOW⋂MEOW/PPOW/FEOW=TEOW
++  MEOW⋂PPOW/FEOW=MEOW
++  PPOW⋂FEOW=PPOW;
 
-After the intersections, the classes are assigned as:
-
-+  MEOW⋂EEOW=MEOW
-+  MEOW⋂TEOW=MEOW; exception: 2 MEOW objects in classes 20073,20077 have been respectively assigned to the intersecting TEOW classes 61318,60172
-+  PPOW⋂EEOW=PPOW; exception: 1 PPOW object in class 9 has been assigned to the intersecting TEOW class 61318
-+  PPOW⋂TEOW=PPOW
-+  TEOW⋂EEOW=TEOW
-+  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (**differently from Ecoregions V2019**) have not been partially assigned to adjoining TEOW classes.
-
-Detailed step-by-step description is in [ecoregions_2020](./ecoregions_2020).
-
-
-## preprocessing
+## preprocessing scripts
 
 +   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
 +   [freshwater_ecoregions](./ecoregions_2024/freshwater_ecoregions.sql)
 +   [marine+pelagic_ecoregions](./ecoregions_2024/meow_ppow.sql)
++   
 
 
 # ECOREGIONS (V2020)
