@@ -3,6 +3,46 @@
 A flat topological corrected layer for EEZ has been obtained in PostGIS, using the SQL script [eez_2019](./eez_2019.sql).
 Update of Countries is pending since November 2019, waiting for decision on Land dataset.
 
+# ECOREGIONS (V2024)
+
+Dataset is given by intersection of (more details in :
+
++ OneEarth Terrestrial Ecoregions (TE)
++ Marine Ecoregions of the World (ME)
++ Pelagic Provinces Of the World (PE)
++ Freshwater Ecoregions of the World (FE).
++
++   (gap filling big lakes).
+
++  the version of MEOW/PPOW with complete coastline version is used
++  MEOW/PPOW is overlayed on topo of TEOW, and MEOW coastline substitutes TEOW's one
++  "holes" are filled by an empty layer covering the whole globe, named EEOW (Empty Ecoregions of the World!), flagged as "unassigned land ecoregion".
+
+To simplify the outputs and the following processing steps, few classes have been recoded:
+
++  PPOW code 0 reclassed to 37
++  TEOW code -9998 reclassed to 9998
++  TEOW code -9999 to 9999.
+
+After the intersections, the classes are assigned as:
+
++  MEOW⋂EEOW=MEOW
++  MEOW⋂TEOW=MEOW; exception: 2 MEOW objects in classes 20073,20077 have been respectively assigned to the intersecting TEOW classes 61318,60172
++  PPOW⋂EEOW=PPOW; exception: 1 PPOW object in class 9 has been assigned to the intersecting TEOW class 61318
++  PPOW⋂TEOW=PPOW
++  TEOW⋂EEOW=TEOW
++  EEOW⋂=EEOW; these have been considered "unassigned land ecoregion", and (**differently from Ecoregions V2019**) have not been partially assigned to adjoining TEOW classes.
+
+Detailed step-by-step description is in [ecoregions_2020](./ecoregions_2020).
+
+
+## preprocessing
+
++   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
++   [freshwater_ecoregions](./ecoregions_2024/freshwater_ecoregions.sql)
++   [marine+pelagic_ecoregions](./ecoregions_2024/meow_ppow.sql)
+
+
 # ECOREGIONS (V2020)
 Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a post-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
 To avoid endlessly replicating the application of the above patch, ecoregions dataset has been regenerated from scratch, resolving the topological problems, abandoning ArcGIS and using the [flattening](../flattening/) scripts chain.
@@ -75,14 +115,6 @@ The final version is exported as geopackage, wich includes:
 +  ecoregions_2019 multipart
 +  ecoregions_2019_raw (undissolved, single part polygons)
 +  lookup_attribute_table (correspondence table within original fields and final attributes).
-
-# ECOREGIONS (V2024)
-
-## preprocessing
-
-+   [ecoregions_2017](./ecoregions_2024/ecoregions_2017.sql)
-+   [freshwater_ecoregions](./ecoregions_2024/freshwater_ecoregions.sql)
-+   [marine+pelagic_ecoregions](./ecoregions_2024/meow_ppow.sql)
 
 
 
