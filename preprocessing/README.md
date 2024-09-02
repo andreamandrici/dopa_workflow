@@ -62,6 +62,7 @@ The following GISCO LAND objects do not match standard UN codes:
  
 The following standard UN codes do not match GISCO LAND objects 
 |country_name|iso3|iso2|note|
+|------------|----|----|----|
 |Greece|GRC|GR|different iso2
 |United Kingdom of Great Britain and Northern Ireland|GBR|GB|different iso2|
 |Åland Islands|ALA|AX||
