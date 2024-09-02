@@ -1,6 +1,25 @@
 # Sources
 
 ## Base Layers
+### COUNTRIES (2024)
+
++ [LAND](https://webgate.ec.europa.eu/fpfis/wikis/display/GISCO/Countries+2024+%5BCNTR_2024%5D+_DRAFT)
+  + GISCO CNTR_RG_01M_2024
+  + GISCO CNTR_AT
++ [MARINE](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=577143923)
+  + GISCO EEZ_RG_01M_2020
+
++ 
+
+I have already checked that the following problems happens also on
+o   1:100K version
+o   2020 version
+therefore, using one of the above older/higher resolution cannot be a solution.
+If we manually correct all the inconsistencies described below, we will again end up with "correct" but not shared data.
+
++
+
+
 
 ### COUNTRIES (2019)
 
