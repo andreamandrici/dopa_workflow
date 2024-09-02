@@ -1,0 +1,41 @@
+# FLATTENING WORKFLOW PARAMETERS (workflow_parameters.conf)
+
+#!/bin/bash
+# SET SOME VARIABLES
+TOPICS=3
+
+TOPIC_1="land"
+VERSION_TOPIC_1="gisco.input_land"
+FID_TOPIC_1="fidl"
+
+TOPIC_2="marine"
+VERSION_TOPIC_2="gisco.input_marine"
+FID_TOPIC_2="fidm"
+
+TOPIC_3="abnj"
+VERSION_TOPIC_3="gisco.input_abnj"
+FID_TOPIC_3="fida"
+
+# GRID SIZE IN DEGREES, INTEGER SUBMULTIPLE OF 180
+GS=1 #DEFAULT is 1 DEGREE
+
+# CELL SIZE IN ARCSEC, INTEGER SUBMULTIPLE OF 3600
+CS=1 #DEFAULT is 1 ARCSEC
+
+# FOLDER TO KEEP EXTRA SQL
+SQL="sql"
+
+## database parameters
+HOST="xxx"
+USER="xxx"
+DB="xxx"
+SCH="gisco_2024"
+PO=xxx
+
+# DO NOT TOUCH THE FOLLOWING VALUES
+dbpar1="host=${HOST} user=${USER} dbname=${DB} port=${PO}"
+dbpar2="-h ${HOST} -U ${USER} -d ${DB} -p ${PO}"
+RWS=$((180/GS)) # NUMBER OF ROWS IN THE GRID
+CLS=$((360/GS)) # NUMBER OF COLUMNS IN THE GRID
+RCC=$((3600/CS)) # NUMBER OF ROWS/COLUMNS FOR CELL
+RCCT=$((RCC*GS)) # NUMBER OF ROWS/COLUMNS FOR TILE
