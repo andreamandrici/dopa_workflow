@@ -7,9 +7,32 @@ A flat topological corrected admin layer has been obtained in PostGIS, using the
 
 ## problems
 
-abc
+DOPA needs a global geographic object using iso2,iso3,un_m49 codes.
+ 
+I have worked with version CNTR_REG 2024 (documented by GISCO as DRAFT) 1:1M, and related CNTR_AT, AND EEZ 2020 1:1M.
 
+I have already checked that the following problems happen also on
 
+  +  1:100K version
+  +  2020 version
+    
+therefore, using one of the above older/higher resolutions cannot be a solution.
+The target is to NOT manually correct any inconsistency, to avoid ending up again with "correct", but not shared data.
+ 
+  +  The coastaline within LAND (CNTR) and MARINE (EEZ) are not harmonized:
+     +  each other
+     +  with the additional COAS_REG 2020 object (global land polygon) 
+There are numerous holes in the derived ABNJ object, made as difference between global surface (-180,180,-90,90) and union of  land and marine.
+
+  +  The field POLI_ORG_CODE (Political Organisation Code)
+     +  According to documentation should contain 4 codes (1,2,3,99); the real table contains 5 codes (1,2,3, 4,99) (code 4 is missing in the documentation)
+     +  According to documentation should be linked to lookup table POLI_ORG_DOM; Table POLI_ORG_DOM does not exist
+  +  Country coding using:
+     +  UA (User assigned code elements)
+        +  do not match any UN object
+        +  almost all of them use 2 characters for ISO3 code (this will break our REST services)
+  +  ER (Exceptionally reserved code element):
+        +  Clipperton Island: does not exists in UN standard coding.
 
 
 # COUNTRIES (V2019)
