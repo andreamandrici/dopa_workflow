@@ -1,3 +1,8 @@
+# COUNTRIES (V2024)
+
+A flat topological corrected admin layer has been obtained in PostGIS, using the SQL script [xxx](./xxx.sql).
+
+
 # COUNTRIES (V2019)
 
 A flat topological corrected layer for EEZ has been obtained in PostGIS, using the SQL script [eez_2019](./eez_2019.sql).
