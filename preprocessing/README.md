@@ -477,6 +477,20 @@ ZA	South Africa	South Africa
 ZM	Zambia	
 ZW	Zimbabwe	
 
+The main differences within GISCO CNTR/EEZ and GAUL/EEZ are given by: 
++  the many officially registered UN codes present in CEP (eg: Guadeloupe, Mayotte, Martinique, Guyana, Reunion, etc…), and reassigned to the sovereign country in GISCO (eg: France). 
++  the non-officially registred UN codes present in GISCO
++  Inconsistencies within GISCO itself, land and marine:
+   +  CODES: I have deeply checked only UMI code, which is thousands of times smaller in GISCO respect to CEP: this because it is assigned to US in GISCO-EEZ, and to UMI in GISCO-LAND (in GAUL/EEZ both land and marine are assigned to UMI)… The same happens (I see it graphically, on the map) with Heard and McDonald Islands/Australia, French Southern and Antarctic Lands/France, New Caledonia/France, etc..
+   +  COASTLINE: non matching coastline produce holes, which
+      +  will slow a lot every intersection
+      +  produce an ABNJ which should not exists south and over Antarctica.
+
+Results won’t be comparable with previous releases, there won’t be correspondence with WDPA (WCMC for protected areas correctly reports both country and sovereign country code, using only UN officially registered codes).
+
+We will need to adapt ALL the REST functions (it will be a long task) to the different and missing fields (EG: UN_M49), and records (the already listed missing officially registered codes).
+
+
 
 # COUNTRIES (V2019)
 
