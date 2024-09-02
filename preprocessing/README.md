@@ -34,29 +34,31 @@ There are numerous holes in the derived ABNJ object, made as difference between 
   +  ER (Exceptionally reserved code element):
         +  Clipperton Island: does not exists in UN standard coding.
 
-The following GISCO LAND objects do not match standard UN codes
-name_engl	svrg_un	cntr_id	iso3_code	
-Greece	UN Member State	EL	GRC	different iso2
-United Kingdom	UN Member State	UK	GBR	different iso2
-Clipperton Island	FR Territory	CP	CPT	
-Paracel Islands	Sovereignty unsettled	XA	XA	
-Spratly Islands	Sovereignty unsettled	XB	XB	
-Aksai Chin	Sovereignty unsettled	XC	XC	
-Arunachal Pradesh	Sovereignty unsettled	XD	XD	
-China/India	Sovereignty unsettled	XE	XE	
-Hala'Ib Triangle	Sovereignty unsettled	XF	XF	
-Ilemi Triangle	Sovereignty unsettled	XG	XG	
-Jammu Kashmir	Sovereignty unsettled	XH	XH	
-Kuril Islands	Sovereignty unsettled	XI	XI	
-No mans land	Sovereignty unsettled	XJL	XJL	
-Navassa Island	US Territory	XL	XL	
-Scarborough Reef	Sovereignty unsettled	XM	XM	
-Senkaku Islands	Sovereignty unsettled	XN	XN	
-Bassas Da India	FR Territory	XO	XO	
-Abyei	Sovereignty unsettled	XU	XU	
-Bir Tawil (Disputed Territory)	Sovereignty unsettled	XV	XV	
-Equatorial Guinea/Gabon (disputed territory) 	Sovereignty unsettled	XXR	XXR	
-Chagos Islands (disputed territory)	Sovereignty unsettled	XXS	XXS	
+The following GISCO LAND objects do not match standard UN codes:
+
+|name_engl|svrg_un|cntr_id|iso3_code|note|
+|---------|-------|-------|--------|-----|
+|Greece|UN Member State|EL|GRC|different iso2|
+|United Kingdom|UN Member State|UK|GBR|different iso2|
+|Clipperton Island|FR Territory|CP|CPT||
+|Paracel Islands|Sovereignty unsettled|XA|XA||
+|Spratly Islands|Sovereignty unsettled|XB|XB||
+|Aksai Chin|Sovereignty unsettled|XC|XC||
+|Arunachal Pradesh|Sovereignty unsettled|XD|XD||
+|China/India|Sovereignty unsettled|XE|XE||
+|Hala'Ib Triangle|Sovereignty unsettled|XF|XF||
+|Ilemi Triangle|Sovereignty unsettled|XG|XG||
+|Jammu Kashmir|Sovereignty unsettled|XH|XH||
+|Kuril Islands|Sovereignty unsettled|XI|XI||
+|No mans land|Sovereignty unsettled|XJL|XJL||
+|Navassa Island|US Territory|XL|XL||	
+|Scarborough Reef|Sovereignty unsettled|XM|XM||
+|Senkaku Islands|Sovereignty unsettled|XN|XN||
+|Bassas Da India|FR Territory|XO|XO||	
+|Abyei|Sovereignty unsettled|XU|XU||
+|Bir Tawil (Disputed Territory)|Sovereignty unsettled|XV|XV||
+|Equatorial Guinea/Gabon (disputed territory)|Sovereignty unsettled|XXR|XXR||
+|Chagos Islands (disputed territory)|Sovereignty unsettled|XXS|XXS||
  
 The following standard UN codes do not match GISCO LAND objects 
 country_name	iso3	iso2	
@@ -490,7 +492,12 @@ Results won’t be comparable with previous releases, there won’t be correspon
 
 We will need to adapt ALL the REST functions (it will be a long task) to the different and missing fields (EG: UN_M49), and records (the already listed missing officially registered codes).
 
+Specific inconsistencies are:
 
++  DOM-COM: is a geometry error in GISCO-EEZ (missing DOM marine)
++  TWN-CHN: inconsistence within GISCO-LAND/MARINE (Taiwan: CHI in Land, TWN in Marine)
++  PRI-USA: inconsistence within GISCO-LAND/MARINE (Puerto Rico: PRI in Land, USA in Marine).
+ 
 
 # COUNTRIES (V2019)
 
