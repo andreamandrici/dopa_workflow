@@ -34,6 +34,7 @@ There are numerous holes in the derived ABNJ object, made as difference between 
   +  ER (Exceptionally reserved code element):
         +  Clipperton Island: does not exists in UN standard coding.
 
+
 The following GISCO LAND objects do not match standard UN codes:
 
 |name_engl|svrg_un|cntr_id|iso3_code|note|
@@ -59,7 +60,8 @@ The following GISCO LAND objects do not match standard UN codes:
 |Bir Tawil (Disputed Territory)|Sovereignty unsettled|XV|XV||
 |Equatorial Guinea/Gabon (disputed territory)|Sovereignty unsettled|XXR|XXR||
 |Chagos Islands (disputed territory)|Sovereignty unsettled|XXS|XXS||
- 
+
+
 The following standard UN codes do not match GISCO LAND objects 
 |country_name|iso3|iso2|note|
 |------------|----|----|----|
@@ -73,8 +75,9 @@ The following standard UN codes do not match GISCO LAND objects
 |Mayotte|MYT|YT||
 |Réunion|REU|RE||
 |Saint Martin (French Part)|MAF|MF||	
- 
-The following GISCO MARINE objects present a unique ISO2 (EEZ_ID), but are redundant by descriptions; some of these objects exists with different code in GISCO LAND (EG: Bassas da India exists as object, with code XO) and/or in UN Codes (EG: Reunion has official iso codes RE/REU, and sovereign iso code FR)
+
+
+The following GISCO MARINE objects present a unique ISO2 (EEZ_ID), but are redundant by descriptions; some of these objects exist with different code in GISCO LAND (EG: Bassas da India exists as object, with code XO) and/or in UN Codes (EG: Reunion has official iso codes RE/REU, and sovereign iso code FR)
 eez_id	svrg_flag	description
 FR		Amsterdam Island & St. Paul Island Exclusive Economic Zone
 FR		Bassas da India Exclusive Economic Zone
