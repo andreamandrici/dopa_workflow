@@ -9,18 +9,6 @@
 + [MARINE](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=577143923)
   + GISCO EEZ_RG_01M_2020
 
-+ 
-
-I have already checked that the following problems happens also on
-o   1:100K version
-o   2020 version
-therefore, using one of the above older/higher resolution cannot be a solution.
-If we manually correct all the inconsistencies described below, we will again end up with "correct" but not shared data.
-
-+
-
-
-
 ### COUNTRIES (2019)
 
 +  [COUNTRY CODES (ISO 3166-1 AND ISO 3166-3)](https://www.iso.org/obp/ui/#search).
