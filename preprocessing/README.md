@@ -1,9 +1,11 @@
 # COUNTRIES (V2024)
 
 A flat topological corrected admin layer has been obtained in PostGIS, using the SQL scripts:
-  +  [preprocessing](./admin_2024/preprocessing.sql)
-  +  [flattening](./admin_2024/flattening.sql)
-  +  [postprocessing](./admin_2024/postprocessing.sql)
+  +  [admin 2024 preprocessing](./admin_2024/preprocessing.sql)
+  +  [admin 2024 flattening](./admin_2024/flattening.sql)
+  +  [admin 2024 postprocessing](./admin_2024/postprocessing.sql).
+
+
 
 # COUNTRIES (V2019)
 
