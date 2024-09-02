@@ -3,7 +3,12 @@
 A flat topological corrected admin layer has been obtained in PostGIS, using the SQL scripts:
   +  [admin 2024 preprocessing](./admin_2024/preprocessing.sql)
   +  [admin 2024 flattening](./admin_2024/flattening)
-  +  [admin 2024 postprocessing](./admin_2024/postprocessing.sql).
+  +  [admin 2024 postprocessing](./admin_2024/postprocessing.sql)
+
+## problems
+
+abc
+
 
 
 
