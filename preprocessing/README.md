@@ -1034,12 +1034,12 @@ Update of Countries is pending since November 2019, waiting for decision on Land
 
 # ECOREGIONS (V2024)
 
-Dataset is given by intersection of (more details in [Sources/Base Layers](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html):
+Dataset is given by intersection of (more details in [Sources/Base Layers](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html)):
 
 + OneEarth Terrestrial Ecoregions (TE)
++ Freshwater Ecoregions of the World (FE)
 + Marine Ecoregions of the World (ME)
-+ Pelagic Provinces Of the World (PE)
-+ Freshwater Ecoregions of the World (FE).
++ Pelagic Provinces Of the World (PE).
 
 The version of MEOW/PPOW without coastline is used.
 TEOW is overlayed on top of MEOW/PPOW, and MEOW is clipped by TEOW's coastline.
