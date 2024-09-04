@@ -60,7 +60,6 @@ The following GISCO LAND objects do not match standard UN codes:
 |Equatorial Guinea/Gabon (disputed territory)|Sovereignty unsettled|XXR|XXR||
 |Chagos Islands (disputed territory)|Sovereignty unsettled|XXS|XXS||
 
-
 The following standard UN codes do not match GISCO LAND objects:
 
 |country_name|iso3|iso2|note|
@@ -77,7 +76,11 @@ The following standard UN codes do not match GISCO LAND objects:
 |Saint Martin (French Part)|MAF|MF||	
 
 
-The following GISCO MARINE objects present a unique ISO2 (EEZ_ID), but are redundant by descriptions; some of these objects exist with different code in GISCO LAND (EG: Bassas da India exists as object, with code XO) and/or in UN Codes (EG: Reunion has official iso codes RE/REU, and sovereign iso code FR).
+The following GISCO MARINE objects
++  present a unique verbose description,but are redundant by ISO2 (EEZ_ID)
++  some of these objects exist with different code
+   +  in GISCO LAND (EG: Bassas da India exists as object in GISCO LAND with code XO, in GISCO MARINE with code FR) and/or
+   +  in UN Codes (EG: Reunion has official iso codes RE/REU, and sovereign iso code FR):
 
 | eez_id | svrg_flag | description                                                                                |
 | ------ | --------- | ------------------------------------------------------------------------------------------ |
