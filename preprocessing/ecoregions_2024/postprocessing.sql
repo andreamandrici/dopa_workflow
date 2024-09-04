@@ -72,3 +72,15 @@ SELECT qid,eco_id,eco_name,ord,source,geom,sqkm FROM habitats_and_biotopes.ecore
 ORDER BY qid,ord,eco_id;
 ALTER TABLE habitats_and_biotopes.ecoregions_2024 ADD PRIMARY KEY(qid,eco_id);
 CREATE INDEX ON habitats_and_biotopes.ecoregions_2024 USING GIST(geom);
+
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check1;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check1_1;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check1_2;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check2;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check2_1;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_check2_2;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg1;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg2;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg3;
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg4;
+
