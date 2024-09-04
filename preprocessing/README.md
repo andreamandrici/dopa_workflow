@@ -34,6 +34,8 @@ therefore, using one of the above older/higher resolutions cannot be a solution.
   +  ER (Exceptionally reserved code element):
         +  Clipperton Island: does not exists in UN standard coding.
 
+### GISCO-LAND non-matching officially-registered UN Codes 
+
 The following GISCO LAND objects do not match standard UN codes:
 
 |name_engl|svrg_un|cntr_id|iso3_code|note|
@@ -60,6 +62,8 @@ The following GISCO LAND objects do not match standard UN codes:
 |Equatorial Guinea/Gabon (disputed territory)|Sovereignty unsettled|XXR|XXR||
 |Chagos Islands (disputed territory)|Sovereignty unsettled|XXS|XXS||
 
+### Missing officially-registered UN Codes in GISCO-LAND
+
 The following standard UN codes do not match GISCO LAND objects:
 
 |country_name|iso3|iso2|note|
@@ -75,6 +79,7 @@ The following standard UN codes do not match GISCO LAND objects:
 |Réunion|REU|RE||
 |Saint Martin (French Part)|MAF|MF||	
 
+### GISCO-MARINE redundant objects
 
 The following GISCO MARINE objects
 +  present a unique verbose description,but are redundant by ISO2 (EEZ_ID)
@@ -179,6 +184,8 @@ The following GISCO MARINE objects
 | UK_AR  | D         | Overlapping claim South Georgia and South Sandwich Exclusive Economic Zone: UK / Argentina |
 | ZA     |           | South African Exclusive Economic Zone                                                      |
 | ZA     |           | South African Exclusive Economic Zone (Prince Edward Islands)                              |
+
+### Comparison within GISCO-LAND and GISCO-MARINE
  
 The following is the comparison of the two sources (GISCO LAND and MARINE), joined by common fields cntr_id/eez_id (iso2).
 Source of land/marine names is gisco land; rendundant codes in marine values are aggregated  by code (this could be managed differently: EG CP-Clipperton Island code exists in land, but do not exists in marine; anyway the geographical marine object exists, and it is characterized by the description; This condition may not be homogeneous with other geographic objects and codes). 
@@ -490,7 +497,7 @@ Source of land/marine names is gisco land; rendundant codes in marine values are
 | ZM       | Zambia                                       |                                         |
 | ZW       | Zimbabwe                                     |                                         |
 
-
+### Comparison within DOPA-GISCO and DOPA-GAUL_EEZ
 
 The main differences within GISCO CNTR/EEZ and GAUL/EEZ are given by: 
 +  the many officially registered UN codes present in CEP (eg: Guadeloupe, Mayotte, Martinique, Guyana, Reunion, etc…), and reassigned to the sovereign country in GISCO (eg: France). 
@@ -1066,7 +1073,10 @@ After the intersections, the overlapping classes are assigned as:
 +   [f_revector postigs function](./ecoregions_2024/f_revector.sql)
 +   [f_revector bash launcher](./ecoregions_2024/q_revector.sh)
 
+### postprocessing
++   [final_postprocessing](./ecoregions_2024/postprocessing.sql)
 
+### results
 
 # ECOREGIONS (V2020)
 Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a post-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
