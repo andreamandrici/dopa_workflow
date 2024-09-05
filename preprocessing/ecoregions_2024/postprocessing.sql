@@ -84,3 +84,24 @@ DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg2;
 DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg3;
 DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_reagg4;
 
+-----------------------------------------------------------------------------------------
+--- IMPORT IN PLACE
+--- EXECUTE FROM FINAL SERVER (postgres_fdw Foreign Server and User must be already mapped) 
+-------------------------------------------------------------------------------------------
+DROP FOREIGN TABLE IF EXISTS remote_wolfe.ecoregions_2024;
+DROP FOREIGN TABLE IF EXISTS remote_wolfe.ecoregions_2024_atts;
+
+IMPORT FOREIGN SCHEMA habitats_and_biotopes LIMIT TO (ecoregions_2024,ecoregions_2024_atts)
+FROM SERVER wolfe_321 INTO remote_wolfe;
+
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024_atts;CREATE TABLE habitats_and_biotopes.ecoregions_2024_atts AS
+SELECT * FROM remote_wolfe.ecoregions_2024_atts;
+ALTER TABLE habitats_and_biotopes.ecoregions_2024_atts ADD PRIMARY KEY(eco_id);
+
+DROP TABLE IF EXISTS habitats_and_biotopes.ecoregions_2024;CREATE TABLE habitats_and_biotopes.ecoregions_2024 AS
+SELECT * FROM remote_wolfe.ecoregions_2024;
+ALTER TABLE habitats_and_biotopes.ecoregions_2024 ADD PRIMARY KEY(qid,eco_id);
+CREATE INDEX ON habitats_and_biotopes.ecoregions_2024 USING GIST(geom);
+
+
+
