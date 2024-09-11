@@ -1058,6 +1058,8 @@ After the intersections, the overlapping classes are assigned as:
 +  MEOW⋂PPOW/FEOW=MEOW
 +  PPOW⋂FEOW=PPOW;
 
+**NB: Original sources do not reach -90 South. An additional band is addedd as eco_id 1144-hole, source=DOPA as difference within global surface and final ecoregions.**
+
 ## preprocessing scripts
 
 ### inputs
@@ -1075,8 +1077,6 @@ After the intersections, the overlapping classes are assigned as:
 
 ### postprocessing
 +   [final_postprocessing](./ecoregions_2024/postprocessing.sql)
-
-### results
 
 # ECOREGIONS (V2020)
 Calculation of [Country/Ecoregion/Protection (CEP) layer for March 2020](https://andreamandrici.github.io/dopa_workflow/processing/cep/#version-202003) highlighted several (incorrect) geometric overlaps in the original [Terrestrial Ecoregions Dataset](https://andreamandrici.github.io/dopa_workflow/sources/Base_Layers.html#ecoregions-v2019), not identified by the relaxed ArcGIS PRO topological model, which led to the inclusion of a post-processing  [patch](../processing/cep/202003_fix_cep_overlaps.sql) to correct the data.
