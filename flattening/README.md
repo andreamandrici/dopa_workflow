@@ -164,6 +164,25 @@ Further ancillary scripts for specific tasks should be self-explanatory:
 
 EG: `01_create_filter.sh` gives the option to filter only few tiles (EG: specific BIOPAMA needs).
 
+| level      	| step 	| script              	| function           	| w_table                     	| w_fields                                      	| r_table 	| cores 	| description 	|
+|------------	|------	|---------------------	|--------------------	|-----------------------------	|-----------------------------------------------	|---------	|-------	|-------------	|
+|  by topic  	| 1    	| a_input_topic_n.sh  	| f_pop_input()      	| a_input_topic_n_            	| fid, geom                                     	|         	|       	|             	|
+|            	| 2    	| b_clip_topic_n.sh   	| f_clip()           	| b_clip_topic_n              	| fid, geom                                     	|         	|       	|             	|
+|            	| 3    	| c_rast_topic_n.sh   	| f_raster()         	| c_raster_topic_n            	| fid, rast, geom                               	|         	|       	|             	|
+|            	| 4    	| da_tiled_topic_n.sh 	| f_pop_tiled()      	| da_tiled_topic_n            	| fid, geom                                     	|         	|       	|             	|
+| aggregated 	| 5a   	| db_tiled_all.sh     	| f_pop_tiled_temp() 	| db_tiled_temp               	| fid, source, geom                             	|         	|       	|             	|
+|            	| 5b   	| db_tiled_all.sh     	| SELECT             	| dc_tiled_all                	| fid, source, geom                             	|         	|       	|             	|
+|            	| 6    	| e_flat_all.sh       	| f_flatter()        	| e_flat_all                  	| tid, geom, point                              	|         	|       	|             	|
+|            	| 7    	| f_attributes_all.sh 	| f_pop_atts_tile()  	| fa_atts_tile                	| tid, topic1, topicN                           	|         	|       	|             	|
+|            	| 8    	| g_final_all.sh      	| f_flat_recode()    	| e_flat_all                  	| cid                                           	|         	|       	|             	|
+|            	|      	| g_final_all.sh      	| SELECT             	| g_flat_temp                 	| qid, cid, geom,   country,ecoregion,wdpa,sqkm 	|         	|       	|             	|
+|            	| 9    	| h_output.sh         	| SELECT             	| h_flat                      	| qid, cid, geom,   country,ecoregion,wdpa,sqkm 	|         	|       	|             	|
+|            	| 10   	| o_raster.sh         	| f_pop_o_raster()   	| o_raster                    	| qid, rast                                     	|         	|       	|             	|
+|            	| 11   	| p_export_raster.sh  	| GDAL               	| raster_output.vrt           	|                                               	|         	|       	|             	|
+|            	|      	| p_export_raster.sh  	| COPY               	| raster_output_attibutes.csv 	|                                               	|         	|       	|             	|
+|            	|      	|                     	|                    	|                             	|                                               	|         	|       	|             	|
+
+
 DOPA CEP has been generated using:
 
 +  administrative_units.gaul_eez_dissolved_201912 (300 MultiPolygons)
