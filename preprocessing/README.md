@@ -68,6 +68,8 @@ The following GISCO MARINE objects
 The following is the comparison of the two sources (GISCO LAND and MARINE), joined by common fields cntr_id/eez_id (iso2).
 Source of land/marine names is gisco land; rendundant codes in marine values are aggregated  by code (this could be managed differently: EG CP-Clipperton Island code exists in land, but do not exists in marine; anyway the geographical marine object exists, and it is characterized by the description; This condition may not be homogeneous with other geographic objects and codes). 
 
++  [GISCO-LAND-MARINE comparison](./admin_2024/gl_gm_comparison.csv)
+
 | cntr_id  | land                                         | marine                                  |
 | -------- | -------------------------------------------- | --------------------------------------- |
 | AD       | Andorra                                      |                                         |
