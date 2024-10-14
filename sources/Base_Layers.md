@@ -9,6 +9,15 @@
 + [MARINE](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=577143923)
   + GISCO EEZ_RG_01M_2020
 
+### COUNTRIES (2020)
+
++ [LAND](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=443752931)
+  + GISCO CNTR_RG_100K_2020
+  + GISCO CNTR_AT
++ [MARINE](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=577143923)
+  + GISCO EEZ_RG_100K_2020
+
+
 ### COUNTRIES (2019)
 
 +  [COUNTRY CODES (ISO 3166-1 AND ISO 3166-3)](https://www.iso.org/obp/ui/#search).
