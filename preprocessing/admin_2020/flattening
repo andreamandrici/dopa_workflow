@@ -1,0 +1,46 @@
+# FLATTENING WORKFLOW PARAMETERS (workflow_parameters.conf)
+
+#!/bin/bash
+# SET SOME VARIABLES
+TOPICS=4
+
+TOPIC_1="land"
+VERSION_TOPIC_1="gisco_2020.input_land"
+FID_TOPIC_1="pid"
+
+TOPIC_2="marine"
+VERSION_TOPIC_2="gisco_2020.input_marine"
+FID_TOPIC_2="pid"
+
+TOPIC_3="abnj"
+VERSION_TOPIC_3="gisco_2020.input_abnj"
+FID_TOPIC_3="cat"
+
+TOPIC_4="grid"
+VERSION_TOPIC_4="gisco_2020.input_grid"
+FID_TOPIC_4="id"
+
+# GRID SIZE IN DEGREES, INTEGER SUBMULTIPLE OF 180
+GS=1 #DEFAULT is 1 DEGREE
+
+# CELL SIZE IN ARCSEC, INTEGER SUBMULTIPLE OF 3600
+CS=1 #DEFAULT is 1 ARCSEC
+
+# FOLDER TO KEEP EXTRA SQL
+SQL="sql"
+
+## database parameters
+HOST="dopaprc"
+USER="h05ibex"
+DB="wolfe"
+SCH="gisco_2020_flat"
+PO=5432
+
+# DO NOT TOUCH THE FOLLOWING VALUES
+dbpar1="host=${HOST} user=${USER} dbname=${DB} port=${PO}"
+dbpar2="-h ${HOST} -U ${USER} -d ${DB} -p ${PO}"
+RWS=$((180/GS)) # NUMBER OF ROWS IN THE GRID
+CLS=$((360/GS)) # NUMBER OF COLUMNS IN THE GRID
+RCC=$((3600/CS)) # NUMBER OF ROWS/COLUMNS FOR CELL
+RCCT=$((RCC*GS)) # NUMBER OF ROWS/COLUMNS FOR TILE
+
