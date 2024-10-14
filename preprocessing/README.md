@@ -51,6 +51,7 @@ The following GISCO LAND objects do not match standard UN codes:
 ### Missing officially-registered UN Codes in GISCO-LAND
 
 The following standard UN codes do not match GISCO LAND objects:
+ +  [Missing officially-registered UN Codes in GISCO-LAND](./admin_2024/officially_registered_un_codes_missing_in_gl.csv)
 
 |country_name|iso3|iso2|note|
 |------------|----|----|----|
