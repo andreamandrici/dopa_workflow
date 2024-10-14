@@ -53,19 +53,6 @@ The following GISCO LAND objects do not match standard UN codes:
 The following standard UN codes do not match GISCO LAND objects:
  +  [Missing officially-registered UN Codes in GISCO-LAND](./admin_2024/officially_registered_un_codes_missing_in_gl.csv)
 
-|country_name|iso3|iso2|note|
-|------------|----|----|----|
-|Greece|GRC|GR|different iso2
-|United Kingdom of Great Britain and Northern Ireland|GBR|GB|different iso2|
-|Åland Islands|ALA|AX||
-|British Indian Ocean Territory|IOT|IO||
-|French Guiana|GUF|GF||
-|Guadeloupe|GLP|GP||
-|Martinique|MTQ|MQ||
-|Mayotte|MYT|YT||
-|Réunion|REU|RE||
-|Saint Martin (French Part)|MAF|MF||	
-
 ### GISCO-MARINE redundant objects
 
 The following GISCO MARINE objects
@@ -73,6 +60,8 @@ The following GISCO MARINE objects
 +  some of these objects exist with different code
    +  in GISCO LAND (EG: Bassas da India exists as object in GISCO LAND with code XO, in GISCO MARINE with code FR) and/or
    +  in UN Codes (EG: Reunion has official iso codes RE/REU, and sovereign iso code FR):
+
++  [GISCO-MARINE redundant objects](./admin_2024/gm_redundant_objects.csv)
 
 | eez_id | svrg_flag | description                                                                                |
 | ------ | --------- | ------------------------------------------------------------------------------------------ |
