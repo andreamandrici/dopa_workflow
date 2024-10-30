@@ -4,7 +4,7 @@ A flat topological corrected admin layer has been obtained in PostGIS, using the
   +  [admin 2020 preprocessing](./admin_2020/preprocessing.sql)
   +  [admin 2020 flattening](./admin_2020/flattening)
   +  [admin 2020 preprocessing results: country attributes (land-marine)](./admin_2020/gisco_admin_2020_atts.csv)
-  +  [admin 2020 preprocessing results: country attributes (land-marine dissolved)](./admin_2020/gisco_admin_2020_atts_lmd.csv)
+  +  [admin 2020 preprocessing results: country attributes (land-marine dissolved)](./admin_2020/gisco_admin_2020_lmd_atts.csv)
   +  [admin 2020 postprocessing](./admin_2020/postprocessing.sql)
 
 # COUNTRIES (V2024)
