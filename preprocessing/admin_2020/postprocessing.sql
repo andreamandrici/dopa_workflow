@@ -49,11 +49,23 @@ UPDATE problems SET final_class=a.final_class
 FROM (SELECT cid,464+UNNEST(abnj) final_class FROM problems WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}')) a
 WHERE problems.cid=a.cid;
 
-SELECT * FROM problems WHERE final_class > 464;
-WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}');
-	
+SELECT DISTINCT ido,deso FROM problems WHERE ido IS NOT NULL AND final_class IS NULL;
+SELECT ido,deso,COUNT(*) FROM problems WHERE ido IS NOT NULL AND final_class IS NULL GROUP BY ido,deso;
+
+SELECT * FROM problems WHERE ido = 1;
+UPDATE problems SET final_class=464
+WHERE  ido = 1;
+
+SELECT * FROM problems WHERE ido = 5;
+UPDATE problems SET final_class=a.final_class
+FROM (SELECT cid,UNNEST(marine) final_class FROM problems WHERE ido = 5) a
+WHERE problems.cid=a.cid;
+
 DROP TABLE IF EXISTS gisco_2020.gisco_flat1;CREATE TABLE gisco_2020.gisco_flat1 AS
 SELECT a.*,b.ido,b.deso,b.final_class FROM gisco_2020_flat.h_flat a JOIN problems b USING(cid) ORDER BY qid,cid;
 
 DROP TABLE IF EXISTS gisco_2020.gisco_flat1_atts;CREATE TABLE gisco_2020.gisco_flat1_atts AS
 SELECT * FROM problems ORDER BY cid;
+
+SELECT ido,deso,COUNT(*) FROM gisco_2020.gisco_flat1
+WHERE ido != 1 AND ido IS NOT NULL AND final_class IS NULL GROUP BY ido,deso;
