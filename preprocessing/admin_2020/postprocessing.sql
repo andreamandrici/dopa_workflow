@@ -27,26 +27,30 @@ less_problems AS (SELECT DISTINCT cid,ido,deso FROM problems ORDER BY cid,ido)
 SELECT *,NULL::integer final_class FROM gisco_2020_flat.fb_atts_all LEFT JOIN less_problems USING(cid) ORDER BY cid;
 
 SELECT * FROM problems
-WHERE ido IS NULL AND final_class IS NULL AND NOT (land && '{0}')
+WHERE ido IS NULL AND final_class IS NULL AND NOT (land && '{0}');
 
 UPDATE problems SET final_class=a.final_class
 FROM (SELECT cid,UNNEST(land) final_class FROM problems WHERE ido IS NULL AND final_class IS NULL AND NOT (land && '{0}')) a
 WHERE problems.cid=a.cid;
 
 SELECT * FROM problems
-WHERE ido IS NULL AND final_class IS NULL AND NOT (marine && '{0}')
+WHERE ido IS NULL AND final_class IS NULL AND NOT (marine && '{0}');
 
 UPDATE problems SET final_class=a.final_class
 FROM (SELECT cid,UNNEST(marine) final_class FROM problems WHERE ido IS NULL AND final_class IS NULL AND NOT (marine && '{0}')) a
 WHERE problems.cid=a.cid;
 
 SELECT * FROM problems
-WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}')
+WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}');
 
+SELECT MAX(id) FROM (SELECT DISTINCT UNNEST(land) id FROM problems UNION SELECT DISTINCT UNNEST(marine) id FROM problems ORDER BY id) a;
+	
 UPDATE problems SET final_class=a.final_class
-FROM (SELECT cid,1000+UNNEST(abnj) final_class FROM problems WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}')) a
+FROM (SELECT cid,464+UNNEST(abnj) final_class FROM problems WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}')) a
 WHERE problems.cid=a.cid;
 
+SELECT * FROM problems WHERE final_class > 464;
+WHERE ido IS NULL AND final_class IS NULL AND NOT (abnj && '{0}');
 	
 DROP TABLE IF EXISTS gisco_2020.gisco_flat1;CREATE TABLE gisco_2020.gisco_flat1 AS
 SELECT a.*,b.ido,b.deso,b.final_class FROM gisco_2020_flat.h_flat a JOIN problems b USING(cid) ORDER BY qid,cid;
