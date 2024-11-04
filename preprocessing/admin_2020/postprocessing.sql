@@ -61,11 +61,44 @@ UPDATE problems SET final_class=a.final_class
 FROM (SELECT cid,UNNEST(marine) final_class FROM problems WHERE ido = 5) a
 WHERE problems.cid=a.cid;
 
+SELECT * FROM problems WHERE ido = 4;
+UPDATE problems SET final_class=a.final_class
+FROM (SELECT cid,UNNEST(land) final_class FROM problems WHERE ido = 4) a
+WHERE problems.cid=a.cid;
+
+SELECT * FROM problems WHERE ido = 3;
+UPDATE problems SET final_class=a.final_class
+FROM (SELECT cid,UNNEST(land) final_class FROM problems WHERE ido = 3) a
+WHERE problems.cid=a.cid;
+
 DROP TABLE IF EXISTS gisco_2020.gisco_flat1;CREATE TABLE gisco_2020.gisco_flat1 AS
 SELECT a.*,b.ido,b.deso,b.final_class FROM gisco_2020_flat.h_flat a JOIN problems b USING(cid) ORDER BY qid,cid;
 
 DROP TABLE IF EXISTS gisco_2020.gisco_flat1_atts;CREATE TABLE gisco_2020.gisco_flat1_atts AS
 SELECT * FROM problems ORDER BY cid;
+-------------------------------------------------------------------------------------------------------------------
+DROP TABLE IF EXISTS hole;CREATE TEMPORARY TABLE hole AS
+SELECT qid,ido,geom,sqkm FROM gisco_2020.gisco_flat1 WHERE ido = 2 ORDER BY qid,sqkm;
+CREATE INDEX ON hole USING GIST(geom);
 
-SELECT ido,deso,COUNT(*) FROM gisco_2020.gisco_flat1
-WHERE ido != 1 AND ido IS NOT NULL AND final_class IS NULL GROUP BY ido,deso;
+DROP TABLE IF EXISTS checkz;CREATE TEMPORARY TABLE checkz AS
+SELECT qid,final_class,geom,sqkm FROM gisco_2020.gisco_flat1 WHERE ido != 2 OR ido IS NULL ORDER BY qid,final_class,sqkm;
+CREATE INDEX ON checkz USING GIST(geom);
+
+DROP TABLE IF EXISTS holecheckz;CREATE TEMPORARY TABLE holecheckz AS
+SELECT a.qid,a.sqkm,b.final_class FROM hole a,checkz b WHERE ST_TOUCHES(a.geom,b.geom) ORDER BY a.qid,b.qid,a.sqkm;
+
+SELECT * FROM holecheckz WHERE final_class = 465;
+
+UPDATE gisco_2020.gisco_flat1 SET final_class=a.final_class
+FROM holecheckz a
+WHERE gisco_flat1.ido=2  AND a.final_class=465 AND gisco_flat1.qid=a.qid AND gisco_flat1.sqkm=a.sqkm;
+
+UPDATE gisco_2020.gisco_flat1 SET final_class=466
+WHERE ido=2  AND final_class IS NULL;
+
+DROP TABLE IF EXISTS gisco_2020.gisco_flat2a;CREATE TABLE gisco_2020.gisco_flat2a AS
+SELECT qid,final_class,(ST_DUMP(geom)).* FROM gisco_2020.gisco_flat1 ORDER BY qid,final_class;
+
+DROP TABLE IF EXISTS gisco_2020.gisco_flat2;CREATE TABLE gisco_2020.gisco_flat2 AS
+SELECT qid,final_class,ST_MULTI(ST_UNION(geom)) geom FROM gisco_2020.gisco_flat2a GROUP BY qid,final_class ORDER BY qid,final_class;
