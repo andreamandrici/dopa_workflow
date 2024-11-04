@@ -102,3 +102,15 @@ SELECT qid,final_class,(ST_DUMP(geom)).* FROM gisco_2020.gisco_flat1 ORDER BY qi
 
 DROP TABLE IF EXISTS gisco_2020.gisco_flat2;CREATE TABLE gisco_2020.gisco_flat2 AS
 SELECT qid,final_class,ST_MULTI(ST_UNION(geom)) geom FROM gisco_2020.gisco_flat2a GROUP BY qid,final_class ORDER BY qid,final_class;
+
+SELECT DISTINCT final_class FROM gisco_2020.gisco_flat2 ORDER BY final_class;
+SELECT DISTINCT ST_GEOMETRYTYPE(geom) FROM gisco_2020.gisco_flat2;
+SELECT DISTINCT ST_ISVALID(geom) FROM gisco_2020.gisco_flat2;
+
+DROP TABLE IF EXISTS gisco_2020.gisco_flat3a;CREATE TABLE gisco_2020.gisco_flat3a AS
+SELECT qid,final_class pid,geom,(ST_AREA(geom::geography)/1000000) sqkm FROM gisco_2020.gisco_flat2a ORDER BY qid,pid;
+
+DROP TABLE IF EXISTS gisco_2020.gisco_flat3atts;CREATE TABLE gisco_2020.gisco_flat3atts AS
+SELECT pid,SUM(sqkm) sqkm FROM gisco_2020.gisco_flat3a GROUP BY pid ORDER BY pid;
+
+SELECT * FROM gisco_2020.gisco_flat3atts;
