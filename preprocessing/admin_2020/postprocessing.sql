@@ -146,4 +146,24 @@ SELECT a.*,b.sqkm rsqkm FROM a JOIN gisco_2020.gisco_flat3atts b ON a.country_pi
 
 SELECT * FROM updated_countryt_atts;
 
+------------------------------------------------------
+-----------------------------------------------------
+DROP TABLE IF EXISTS check_abnj1;CREATE TEMPORARY TABLE check_abnj1 AS
+SELECT 464+cat country_pid,ST_POINTONSURFACE(geom) point,sqkm FROM gisco_2020.input_abnj ORDER BY cat;
+CREATE INDEX ON check_abnj1 USING GIST(point);
 
+DROP TABLE IF EXISTS check_abnj2;CREATE TEMPORARY TABLE check_abnj2 AS
+SELECT * FROM gisco_2020.gisco_flat3a WHERE pid > 464;
+CREATE INDEX ON check_abnj2 USING GIST(geom);
+
+DROP TABLE IF EXISTS check_abnj3;CREATE TEMPORARY TABLE check_abnj3 AS
+SELECT a.*,b.qid,b.pid FROM check_abnj1 a,check_abnj2 b WHERE ST_INTERSECTS(a.point,b.geom);
+
+DROP TABLE IF EXISTS check_abnj4;CREATE TEMPORARY TABLE check_abnj4 AS
+WITH
+a AS (SELECT qid,pid,country_pid FROM check_abnj2 LEFT JOIN check_abnj3 USING(qid,pid)),
+b AS (SELECT qid,pid FROM a WHERE country_pid IS NULL AND pid=467)
+SELECT * FROM check_abnj2 NATURAL JOIN b;
+
+SELECT * FROM check_abnj4
+	
