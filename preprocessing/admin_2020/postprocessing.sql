@@ -114,3 +114,36 @@ DROP TABLE IF EXISTS gisco_2020.gisco_flat3atts;CREATE TABLE gisco_2020.gisco_fl
 SELECT pid,SUM(sqkm) sqkm FROM gisco_2020.gisco_flat3a GROUP BY pid ORDER BY pid;
 
 SELECT * FROM gisco_2020.gisco_flat3atts;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS vector_abnj;CREATE TEMPORARY TABLE vector_abnj AS
+SELECT 304+cat country_id,464+cat country_pid,ST_COLLECT(geom) geom,SUM(sqkm) sqkm FROM gisco_2020.input_abnj GROUP BY cat ORDER BY cat;
+
+INSERT INTO gisco_2020.gisco_admin_2020(country_id,country_pid,geom,sqkm) SELECT * FROM vector_abnj ORDER BY country_pid;
+
+SELECT * FROM gisco_2020.gisco_admin_2020 WHERE country_pid >=465;
+
+UPDATE gisco_2020.gisco_admin_2020 SET iso2='ABNJ',iso3='ABNJ',name_eng='Area Beyond National Jurisdiction',source='dopa' WHERE country_pid=465;
+UPDATE gisco_2020.gisco_admin_2020 SET iso2='INCO',iso3='INCO',name_eng='Inconsistent Coastline',source='dopa' WHERE country_pid=466;
+UPDATE gisco_2020.gisco_admin_2020 SET iso2='MICO',iso3='MICO',name_eng='Missing Coverage',source='dopa' WHERE country_pid=467;
+	
+
+DROP TABLE IF EXISTS updated_countryt_atts;CREATE TEMPORARY TABLE updated_countryt_atts AS
+WITH
+a AS (
+SELECT
+country_id,country_pid,iso2,iso3,name_eng,status,source,
+CASE
+	WHEN source='gisco' THEN FALSE
+	WHEN source='eez' THEN TRUE
+	WHEN source='dopa' AND iso2='ABNJ' THEN TRUE
+	WHEN source='dopa' AND iso2='MICO' THEN FALSE
+END is_marine,
+cntr_code_stat,name_gaul,poli_org_code,descriptions,tids,sqkm
+FROM gisco_2020.gisco_admin_2020)
+SELECT a.*,b.sqkm rsqkm FROM a JOIN gisco_2020.gisco_flat3atts b ON a.country_pid=b.pid ORDER BY country_pid;
+
+SELECT * FROM updated_countryt_atts;
+
+
