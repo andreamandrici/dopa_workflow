@@ -147,6 +147,11 @@ SELECT a.*,b.sqkm rsqkm FROM a JOIN gisco_2020.gisco_flat3atts b ON a.country_pi
 ALTER TABLE gisco_2020.gisco_admin_2020_atts RENAME TO gisco_admin_2020_atts_ori;
 CREATE TABLE gisco_2020.gisco_admin_2020_atts AS SELECT * FROM updated_countryt_atts;
 
+DROP TABLE IF EXISTS gisco_admin_2020_single_poly1;CREATE TEMPORARY TABLE gisco_admin_2020_single_poly1 AS
+SELECT country_id,country_pid,(ST_DUMP(geom)).* FROM gisco_2020.gisco_admin_2020 ORDER BY country_id,country_pid;
+DROP TABLE IF EXISTS gisco_admin_2020_single_poly2;CREATE TEMPORARY TABLE gisco_admin_2020_single_poly2 AS
+SELECT * FROM gisco_admin_2020_single_poly1 JOIN gisco_2020.gisco_admin_2020_atts USING(country_id,country_pid) ORDER BY country_id,country_pid;
+
 ------------------------------------------------------
 -----------------------------------------------------
 DROP TABLE IF EXISTS check_abnj1;CREATE TEMPORARY TABLE check_abnj1 AS
