@@ -144,7 +144,8 @@ cntr_code_stat,name_gaul,poli_org_code,descriptions,tids,sqkm
 FROM gisco_2020.gisco_admin_2020)
 SELECT a.*,b.sqkm rsqkm FROM a JOIN gisco_2020.gisco_flat3atts b ON a.country_pid=b.pid ORDER BY country_pid;
 
-SELECT * FROM updated_countryt_atts;
+ALTER TABLE gisco_2020.gisco_admin_2020_atts RENAME TO gisco_admin_2020_atts_ori;
+CREATE TABLE gisco_2020.gisco_admin_2020_atts AS SELECT * FROM updated_countryt_atts;
 
 ------------------------------------------------------
 -----------------------------------------------------
