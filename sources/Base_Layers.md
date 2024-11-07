@@ -58,9 +58,9 @@ https://geospatial.tnc.org/datasets/TNC::freshwater-ecoregions-of-the-world-feow
 
 ### World Database of Protected Areas (WDPA) 
 
-UNEP-WCMC & IUCN (2024). Protected Planet: The World Database on Protected Areas (WDPA) [www.protectedplanet.net](www.protectedplanet.net), [August/2024], Cambridge, UK: UNEP-WCMC and IUCN.
+UNEP-WCMC & IUCN (2024). Protected Planet: The World Database on Protected Areas (WDPA) [www.protectedplanet.net](https://www.protectedplanet.net), [August/2024], Cambridge, UK: UNEP-WCMC and IUCN.
  
-WDPA database is downloaded monthly from [WCMC website](www.protected_planet.net). A script for download is controlled by a CRON command on server.
+WDPA database is downloaded monthly from [WCMC website](https://www.protected_planet.net). A script for download is controlled by a CRON command on server.
 The dataset downloaded consist of an ESRI geodatabase, including the following feature classes:
  
 - WDPA_WDOECM_point_Mmmyyyy
