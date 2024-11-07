@@ -1,6 +1,7 @@
 # DOPA workflow
 
 This is repo for [DOPA](https://dopa.jrc.ec.europa.eu/en) workflow.
+See also [DOPA](https://github.com/giacomo-gcad/dopa_workflow/)
 
 The following sections are currently present:
 
