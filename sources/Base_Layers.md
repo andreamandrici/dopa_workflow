@@ -53,8 +53,18 @@ Downloaded on 20240423 from link reported in [Announcing the release of Ecoregio
 
 +[FRESHWATER ECOREGIONS OF THE WORLD - WWF AND TNC (The Nature Conservancy)-2008](https://www.feow.org/)
 
-Downloaded on 20230419 from:
+Downloaded every month from:
 https://geospatial.tnc.org/datasets/TNC::freshwater-ecoregions-of-the-world-feow/about
 
-### WDPA
+### World Database of Protected Areas (WDPA) 
 
+UNEP-WCMC & IUCN (2023). Protected Planet: The World Database on Protected Areas (WDPA) [www.protectedplanet.net](www.protectedplanet.net), [February/2023], Cambridge, UK: UNEP-WCMC and IUCN.
+ 
+WDPA database is downloaded monthly from [WCMC website](www.protected_planet.net). A script for download is controlled by a CRON command on server.
+The dataset downloaded consist of an ESRI geodatabase, including the following feature classes:
+ 
+- WDPA_WDOECM_point_Mmmyyyy
+- WDPA_WDOECM_poly_Mmmyyyy
+ 
+Since May 2021 the gdb includes also OECM. The field pa_def is used to mark them: pa_def=1 for protected areas, pa_def=0 for OECM.
+Starting from July 2022, OECM are routinely included in the DOPA workflow.
