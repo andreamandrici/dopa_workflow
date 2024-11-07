@@ -47,9 +47,10 @@ The following sections are currently present:
 
 ## Authors
 
-*  Andrea Mandrici, Giacomo Delli.
+*  Andrea Mandrici
+*  Giacomo Delli
 
-Many thanks to Luca Marletta. 
+Many thanks to Luca Marletta, Lucy Bastin. 
 
 ____
 
