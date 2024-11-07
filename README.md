@@ -47,7 +47,7 @@ The following sections are currently present:
 
 ## Authors
 
-*  Andrea Mandrici.
+*  Andrea Mandrici, Giacomo Delli.
 
 Many thanks to Luca Marletta. 
 
