@@ -168,24 +168,25 @@ SELECT * FROM gisco_admin_2020_single_poly2;
 ALTER TABLE gisco_2020.gisco_admin_2020_single_poly ADD COLUMN psqkm double precision;
 UPDATE gisco_2020.gisco_admin_2020_single_poly SET psqkm = (ST_AREA(geom::geography))/1000000;
 
+DROP TABLE IF EXISTS gisco_2020.gisco_admin_2020_tiled;CREATE TABLE gisco_2020.gisco_admin_2020_tiled AS
+SELECT a.qid,b.*,a.geom,a.sqkm rpsqkm FROM gisco_2020.gisco_flat3a a JOIN administrative_units.gisco_admin_2020_atts b ON a.pid=b.country_pid ORDER BY qid,country_pid;
+
 ------------------------------------------------------
 -----------------------------------------------------
-DROP TABLE IF EXISTS check_abnj1;CREATE TEMPORARY TABLE check_abnj1 AS
-SELECT 464+cat country_pid,ST_POINTONSURFACE(geom) point,sqkm FROM gisco_2020.input_abnj ORDER BY cat;
-CREATE INDEX ON check_abnj1 USING GIST(point);
 
-DROP TABLE IF EXISTS check_abnj2;CREATE TEMPORARY TABLE check_abnj2 AS
-SELECT * FROM gisco_2020.gisco_flat3a WHERE pid > 464;
-CREATE INDEX ON check_abnj2 USING GIST(geom);
+DROP TABLE IF EXISTS administrative_units.gisco_admin_2020;CREATE TABLE administrative_units.gisco_admin_2020 AS
+SELECT * FROM gisco_2020.gisco_admin_2020 ORDER BY country_id,country_pid;
+ALTER TABLE administrative_units.gisco_admin_2020 ADD PRIMARY KEY (country_pid);
+CREATE INDEX ON administrative_units.gisco_admin_2020 USING GIST(geom);
 
-DROP TABLE IF EXISTS check_abnj3;CREATE TEMPORARY TABLE check_abnj3 AS
-SELECT a.*,b.qid,b.pid FROM check_abnj1 a,check_abnj2 b WHERE ST_INTERSECTS(a.point,b.geom);
+DROP TABLE IF EXISTS administrative_units.gisco_admin_2020_atts;CREATE TABLE administrative_units.gisco_admin_2020_atts AS
+SELECT * FROM gisco_2020.gisco_admin_2020_atts ORDER BY country_id,country_pid;
+ALTER TABLE administrative_units.gisco_admin_2020_atts ADD PRIMARY KEY (country_pid);
 
-DROP TABLE IF EXISTS check_abnj4;CREATE TEMPORARY TABLE check_abnj4 AS
-WITH
-a AS (SELECT qid,pid,country_pid FROM check_abnj2 LEFT JOIN check_abnj3 USING(qid,pid)),
-b AS (SELECT qid,pid FROM a WHERE country_pid IS NULL AND pid=467)
-SELECT * FROM check_abnj2 NATURAL JOIN b;
+DROP TABLE IF EXISTS administrative_units.gisco_admin_2020_single_poly;CREATE TABLE administrative_units.gisco_admin_2020_single_poly AS
+SELECT * FROM gisco_2020.gisco_admin_2020_single_poly ORDER BY country_id,country_pid,path;
+CREATE INDEX ON administrative_units.gisco_admin_2020_single_poly USING GIST(geom);
 
-SELECT * FROM check_abnj4
-	
+DROP TABLE IF EXISTS administrative_units.gisco_admin_2020_tiled;CREATE TABLE administrative_units.gisco_admin_2020_tiled AS
+SELECT * FROM gisco_2020.gisco_admin_2020_tiled ORDER BY qid,country_id,country_pid;
+CREATE INDEX ON administrative_units.gisco_admin_2020_tiled USING GIST(geom);
