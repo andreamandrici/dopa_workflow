@@ -165,6 +165,9 @@ SELECT * FROM gisco_admin_2020_single_poly1 JOIN gisco_2020.gisco_admin_2020_att
 DROP TABLE IF EXISTS gisco_2020.gisco_admin_2020_single_poly;CREATE TABLE gisco_2020.gisco_admin_2020_single_poly AS
 SELECT * FROM gisco_admin_2020_single_poly2;
 
+ALTER TABLE gisco_2020.gisco_admin_2020_single_poly ADD COLUMN psqkm double precision;
+UPDATE gisco_2020.gisco_admin_2020_single_poly SET psqkm = (ST_AREA(geom::geography))/1000000;
+
 ------------------------------------------------------
 -----------------------------------------------------
 DROP TABLE IF EXISTS check_abnj1;CREATE TEMPORARY TABLE check_abnj1 AS
