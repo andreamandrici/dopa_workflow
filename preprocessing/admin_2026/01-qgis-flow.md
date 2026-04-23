@@ -26,4 +26,6 @@
 * check validity (GEOS)
 * manual update fid to row
 * gdal buffer 0 (twice, the second run on the first step result)
+* check validity (GEOS)
+* imported in POSTGIS (797 multipolygons; reproject from 4258 to 4326; fid as numerical primary key)
 
