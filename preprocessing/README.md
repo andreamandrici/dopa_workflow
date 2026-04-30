@@ -1,3 +1,16 @@
+# COUNTRIES (V2026)
+
+A flat topological corrected admin layer has been obtained in PostGIS, using the following steps:
+  +  [admin 2026 01-qgis-flow](./admin_2026/01-qgis-flow.md)
+  +  [admin 2026 02-postgis-workflow-land](./admin_2026/02-postgis-workflow-land.sql)
+  +  [admin 2026 03-postgis-workflow-land](./admin_2026/03-postgis-workflow-marine.sql)
+
+# COUNTRIES (V2024)
+
+A flat topological corrected admin layer has been obtained in PostGIS, using the SQL scripts:
+  +  [admin 2026 preprocessing](./admin_2024/preprocessing.sql)
+
+
 # COUNTRIES (V2020)
 
 A flat topological corrected admin layer has been obtained in PostGIS, using the following:
@@ -7,12 +20,6 @@ A flat topological corrected admin layer has been obtained in PostGIS, using the
   +  [admin 2020 preprocessing results: country attributes (land-marine dissolved)](./admin_2020/gisco_admin_2020_lmd_atts.csv)
   +  [admin 2020 postprocessing](./admin_2020/postprocessing.sql)
 
-# COUNTRIES (V2024)
-
-A flat topological corrected admin layer has been obtained in PostGIS, using the SQL scripts:
-  +  [admin 2024 preprocessing](./admin_2024/preprocessing.sql)
-  +  [admin 2024 flattening](./admin_2024/flattening)
-  +  [admin 2024 postprocessing](./admin_2024/postprocessing.sql)
 
 ## problems
 
