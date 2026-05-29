@@ -79,24 +79,17 @@ cntr_code_stat::text,
 cntr_code_stat_desc,
 cntr_code_stat_note
 FROM gisco_26."CNTR_AT_2024" a JOIN country_code_stat b USING(cntr_code_stat) ORDER BY country_uri;
-
+-- FIX GREECE
+UPDATE country_land_atts SET country_uri = iso3_code WHERE iso3_code='GRC';
 
 DROP TABLE IF EXISTS country_land;CREATE TEMPORARY TABLE country_land AS
 SELECT * FROM country_land_atts JOIN country_land_geom USING(cntr_id) ORDER BY country_uri;
-
-
-
-SELECT svrg_un,ARRAY_AGG(DISTINCT country_uri ORDER BY country_uri) cu FROM country_land --WHERE svrg_un != 'UN Member State'
-GROUP BY svrg_un ORDER BY svrg_un;
 
 DROP TABLE IF EXISTS reference;CREATE TEMPORARY TABLE reference AS
 SELECT DISTINCT NULL::TEXT svrgn_country_uri,country_uri,iso3_code,name_engl,CASE WHEN country_uri!=iso3_code THEN true END different_code,cntr_id,svrg_un
 FROM country_land
 ORDER BY country_uri;
 
-SELECT * FROM reference WHERE svrg_un='UN Member State' AND different_code IS NULL;
-SELECT * FROM reference WHERE svrgn_country_uri IS NULL ORDER BY svrg_un;
-SELECT DISTINCT svrg_un FROM reference WHERE svrgn_country_uri IS NULL ORDER BY svrg_un;
 ----
 UPDATE reference SET svrgn_country_uri = country_uri WHERE svrg_un='UN Member State';
 UPDATE reference SET svrgn_country_uri = 'AUS' WHERE svrgn_country_uri IS NULL AND svrg_un = 'AU Territory';
@@ -110,9 +103,8 @@ UPDATE reference SET svrgn_country_uri = 'GBR' WHERE svrgn_country_uri IS NULL A
 UPDATE reference SET svrgn_country_uri = 'CHN' WHERE svrgn_country_uri IS NULL AND svrg_un ILIKE 'CN%';
 UPDATE reference SET svrgn_country_uri = 'VAT' WHERE svrgn_country_uri IS NULL AND svrg_un ILIKE '%VAT%';
 UPDATE reference SET svrgn_country_uri = 'PSE' WHERE svrgn_country_uri IS NULL AND svrg_un ILIKE 'Non-member observer state';
-----
-
-SELECT * FROM reference WHERE svrgn_country_uri IS NULL;
+---- the following to adapt to EEZ: ATA and ESH
+UPDATE reference SET svrgn_country_uri = country_uri WHERE svrgn_country_uri IS NULL AND country_uri IN ('ATA','ESH');
 
 DROP TABLE IF EXISTS gisco_26.country_land;CREATE TABLE gisco_26.country_land AS
 WITH
@@ -130,17 +122,5 @@ FROM a LEFT JOIN b USING(svrgn_country_uri)
 ORDER BY svrgn_country_uri,country_uri;
 ALTER TABLE gisco_26.country_land ADD PRImARY KEY(country_uri);
 CREATE INDEX ON gisco_26.country_land USING GIST(geom);
-SELECT DISTIncT ST_ISVALID(geom),ST_GeOMETRYTYPE(geom) FROM gisco_26.country_land;
-SELECT * FROM gisco_26.country_land;
+SELECT DISTIncT ST_ISVALID(geom),ST_GeOMETRYTYPE(geom) ,ST_SRID(geom) FROM gisco_26.country_land;
 
--------------------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS gisco_26.grid;CREATE TABLE gisco_26.grid AS
-SELECT 
-row_number() OVER (ORDER BY lat, lon) AS gid,
-ST_MakeEnvelope(lon, lat, lon+90, lat+90)::geometry(Polygon,4326) geom
-FROM generate_series(-180,  90, 90) AS lon,
-     generate_series( -90,   0, 90) AS lat;
-ALTeR TABLE gisco_26.grid ADD PRIMaRY KEY(gid);
-CReatE INDEX ON gisco_26.grid USING GIST(geom);
-SElEcT * FROM gisco_26.grid;
