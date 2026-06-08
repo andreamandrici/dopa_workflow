@@ -52,6 +52,16 @@ JOIN cep_data_202601.atts_pa b USING(pa)
 JOIN cep_data_202601.cep c USING(qid,cid)
 ORDER BY pa,qid,cid;
 ---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 -- PA_MASK
 DROP TABLE IF EXISTS cep_data_202601.pa_mask;CREATE TABLE cep_data_202601.pa_mask AS
 SELECT * FROM cep202601_pa_mask.o_vector ORDER BY qid,cid;
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+-- PA_BUFFERS
+DROP TABLE IF EXISTS cep_data_202601.pa_buffers;CREATE TABLE cep_data_202601.pa_buffers AS
+SELECT qid,cid,pa_buffers,geom,sqkm
+FROM cep_202601_pa_buff.h_flat
+ORDER BY qid,cid,pa_buffers;
+
+
