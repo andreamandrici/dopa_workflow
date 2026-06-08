@@ -31,4 +31,4 @@ Flat 2 layers:
 - import pa mask from 03_cep_pa_mask (sql/pop_cep_buffers.sql)
 - uses pa_buffers (over 1 sqkm)
 - run z_do_it_all.sh accordingly
-- remove pa from flat
+- remove pa from flat (sql/erase_cep_buffers.sql)
