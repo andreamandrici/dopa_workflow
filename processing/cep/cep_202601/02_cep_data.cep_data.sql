@@ -63,5 +63,8 @@ DROP TABLE IF EXISTS cep_data_202601.pa_buffers;CREATE TABLE cep_data_202601.pa_
 SELECT qid,cid,pa_buffers,geom,sqkm
 FROM cep_202601_pa_buff.h_flat
 ORDER BY qid,cid,pa_buffers;
-
-
+-- PA_BUFFERS INDEX
+DROP TABLE IF EXISTS cep_data_202601.index_pa_buffers;CREATE TABLE cep_data_202601.index_pa_buffers AS
+WITH
+a AS (SELECT qid,cid,UNNEST(pa_buffers)pa FROM cep_data_202601.pa_buffers)
+SELECT a.pa,qid,cid,sqkm FROM a JOIN cep_data_202601.pa_buffers USING(qid,cid) ORDER BY pa,qid,cid;
