@@ -7,4 +7,5 @@ PA = WCMC PA 202601
 
 1. *workflow_parameters.conf:* conf file for flattening
 2. *check_cep.sql:* check missing pixels in the output (not fixed)
-3. *cep_data.sql:* creates export schema 
+3. *cep_data.sql:* creates export schema
+4. *create_pa_mask.sql:* to be used with flat
