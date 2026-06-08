@@ -28,20 +28,19 @@ WITH
 a1 AS (SELECT qid,cid,UNNEST(country)country FROM cep_data_202601.cep),
 a2 AS (SELECT qid,cid,UNNEST(pa)pa FROM cep_data_202601.cep),
 a AS (SELECT qid,cid,a1.country,a2.pa,sqkm FROM cep_data_202601.cep a JOIN a1 USING(qid,cid) JOIN a2 USING(qid,cid))
-SELECT qid,cid,
-country,svrgn_country_uri,svrgn_country_name,country_uri,country_name,
+SELECT qid,cid,country_id,country country_pid,svrgn_country_uri,svrgn_country_name,country_uri,country_name,
 CASE WHEN source = 'land' THEN FALSE WHEN source = 'marine' THEN TRUE ELSE source::bool END is_marine,
 CASE WHEN pa = 0 THEN FALSE WHEN pa > 0 THEN TRUE ELSE pa::bool END is_protected,
 pa,pa_name,a.sqkm
 FROM a
 LEFT JOIN cep_data_202601.atts_country b ON a.country=b.country_pid
 LEFT JOIN cep_data_202601.atts_pa c USING(pa)
-ORDER BY qid,cid,country,pa;
+ORDER BY qid,cid,country_pid,pa;
 ---------------------------------------------------------------------------------------
 -- COUNTRY_CEP INDEX
 DROP TABLE IF EXISTS cep_data_202601.index_country_cep;CREATE TABLE cep_data_202601.index_country_cep AS
 WITH
-a AS (SELECT DISTINCT country,svrgn_country_uri,svrgn_country_name,country_uri,country_name,qid,cid FROM cep_data_202601.cep_index)
+a AS (SELECT DISTINCT country_id,country_pid,svrgn_country_uri,svrgn_country_name,country_uri,country_name,qid,cid FROM cep_data_202601.cep_index)
 SELECT a.*,b.sqkm FROM a JOIN cep_data_202601.cep b USING(qid,cid) ORDER BY country,qid,cid;
 ---------------------------------------------------------------------------------------
 -- PA_CEP INDEX
@@ -52,11 +51,7 @@ SELECT a.pa,pa_name,prnt_iso3,iso3,marine,type,is_n2k,qid,cid,sqkm FROM a
 JOIN cep_data_202601.atts_pa b USING(pa) 
 JOIN cep_data_202601.cep c USING(qid,cid)
 ORDER BY pa,qid,cid;
-
-
-
-
-
-
-
-
+---------------------------------------------------------------------------------------
+-- PA_MASK
+DROP TABLE IF EXISTS cep_data_202601.pa_mask;CREATE TABLE cep_data_202601.pa_mask AS
+SELECT * FROM cep202601_pa_mask.o_vector ORDER BY qid,cid;
