@@ -9,8 +9,9 @@ Flat 2 layers:
 
 ## 02_cep_data
 
-Generates (for export) sources, results and indexes.
-Execute according to the stage (eg: buffer index can be generated only after having generated buffers).
+- Generates (for export) sources, results and indexes.
+- Execute according to the stage (eg: buffer index can be generated only after having generated buffers).
+- Use import_schema_x.sql to move within servers.
 
 ## 03_flat_cep_protected_mask
 
