@@ -9,7 +9,8 @@ Flat 2 layers:
 
 ## 02_cep_data
 
-generates (for export) sources, results and indexes
+Generates (for export) sources, results and indexes.
+Execute according to the stage (eg: buffer index can be generated only after having generated buffers).
 
 ## 03_flat_cep_protected_mask
 
@@ -30,5 +31,14 @@ Flat 2 layers:
 - generate infrastructure
 - import pa mask from 03_cep_pa_mask (sql/pop_cep_buffers.sql)
 - uses pa_buffers (over 1 sqkm)
-- run z_do_it_all.sh accordingly
+- run z_do_it_all.sh accordingly:
+  -  db_tiled_all.sh
+  -  e_flat_all.sh
+  -  f_attributes_all.sh
+  -  g_final_all.sh
+  -  h_output.sh
 - remove pa from flat (sql/erase_cep_buffers.sql)
+- run z_do_it_all.sh accordingly:
+  -  o_raster.sh
+  -  p_export_raster.sh
+
