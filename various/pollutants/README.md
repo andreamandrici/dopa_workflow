@@ -8,10 +8,10 @@ Since this is the third round of calculations, we need to discard the illogical 
 ## DATASETS 
 20260212 – AM, GD 
 
-- EEA Natura2K and Pollutants - https://sdi.eea.europa.eu/datastore/public?path=/eea_v_3035_100_k_natura2000_p_2024_v01_r00 (spatial, vector) 
-- Industrial Emissions Directive 2010/75/EU and European Pollutant Release and Transfer Register Regulation (EC) No 166/2006 - ver. 15.0 Dec. 2025 (Tabular data, MSAccess) https://sdi.eea.europa.eu/webdav/datastore/public/eea_t_ied-eprtr_p_2007-2023_v15_r00 
-- Crnobrnja-Isailović et al. 2025. Measuring the Pulse of European Biodiversity. European Red List of Amphibians. The IUCN Red List of Threatened Species: European Amphibian Dataset. https://www.iucnredlist.org/resources/data-repository#ERL%20Amphibians 
-- EU DEM and related hydrologic model https://ec.europa.eu/eurostat/web/gisco/geodata/digital-elevation-model/eu-dem - https://gisco-services.ec.europa.eu/dem/5degree/mosaic/EU_DEM_mosaic_5deg.ZIP 
+- **Facilities 2024** - Industrial Emissions Directive 2010/75/EU and European Pollutant Release and Transfer Register Regulation (EC) No 166/2006 - ver. 15.0 Dec. 2025 (Tabular data, MSAccess) https://sdi.eea.europa.eu/webdav/datastore/public/eea_t_ied-eprtr_p_2007-2023_v15_r00 
+- **EEA Natura 2000 2024** - https://sdi.eea.europa.eu/datastore/public?path=/eea_v_3035_100_k_natura2000_p_2024_v01_r00 (spatial, vector) 
+- **IUCN PULSE Amphibians 2025** – species ranges/assessments - Crnobrnja-Isailović et al. 2025. Measuring the Pulse of European Biodiversity. European Red List of Amphibians. The IUCN Red List of Threatened Species: European Amphibian Dataset. https://www.iucnredlist.org/resources/data-repository#ERL%20Amphibians 
+- **EU DEM  30 m** and related hydrologic model https://ec.europa.eu/eurostat/web/gisco/geodata/digital-elevation-model/eu-dem - https://gisco-services.ec.europa.eu/dem/5degree/mosaic/EU_DEM_mosaic_5deg.ZIP 
 
 ## DATA PROCESSING
 
@@ -44,4 +44,14 @@ Each combination appears only once, in the lowest applicable category (if a N2K 
 
 From the EU‑DEM we extracted elevation for the facilities (absolute) and for the N2K polygons (minimum, maximum, mean). 
 We excluded N2K sites whose minimum elevation was higher than the related facility in the distances table at the previous step. 
+
+### Species
+
+From the N2K data we extracted the list of amphibians present in all the sites: SPECIES table reports for species in Habitat Directive, OTHERSPECIES reports for all the other species. 
+These tables shows big limits (mistakes, typos, old nomenclature, etc):
+
+- all plants, fishes, reptiles, mammals reported as Amphibians have been deleted. 
+- scientific names are not corrected, but  the information is integrated/recovered using PULSE dataset, from which list and the assessment of European amphibians is obtained. 
+
+Later we will perform a spatial correlation to see which species actually fall within the influence range of the facilities. 
 
