@@ -27,3 +27,17 @@ From this list we:
 - Selected the facilities that: 
   - emit compounds into the WATER medium, and 
   - have NOT NULL (0 is valid value) reports for 2018 and/or 2022. 
+
+### Natura2000 Sites
+
+We selected Natura 2000 sites within a maximum distance of 5 km from each facility (point‑to‑boundary). 
+For each facility–N2K pair we assigned a distance category: 
+- 0 = 0-100 m (coincident), 
+- 1 = ≤ 1 000 m, 
+- 2 = ≤ 2 000 m, 
+- 3 = ≤ 3 000 m, 
+- 5 = ≤ 5 000 m. 
+The facility–N2K relationship is many‑to‑many (one facility can impact more than one N2K; each N2K can be impacted by multiple facilities). 
+Each combination appears only once, in the lowest applicable category (if a N2K site is ≤ 100 m from a facility is in cat 0, and won’t appear also in the larger‑distance categories 1,2,3,5).
+
+
