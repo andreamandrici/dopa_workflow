@@ -40,4 +40,8 @@ For each facility–N2K pair we assigned a distance category:
 The facility–N2K relationship is many‑to‑many (one facility can impact more than one N2K; each N2K can be impacted by multiple facilities). 
 Each combination appears only once, in the lowest applicable category (if a N2K site is ≤ 100 m from a facility is in cat 0, and won’t appear also in the larger‑distance categories 1,2,3,5).
 
+### EU-DEM
+
+From the EU‑DEM we extracted elevation for the facilities (absolute) and for the N2K polygons (minimum, maximum, mean). 
+We excluded N2K sites whose minimum elevation was higher than the related facility in the distances table at the previous step. 
 
