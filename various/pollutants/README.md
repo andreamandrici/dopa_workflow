@@ -15,3 +15,15 @@ Since this is the third round of calculations, we need to discard the illogical 
 
 ## DATA PROCESSING
 
+### Facilities
+
+A georeferenced list of facilities (point locations) with variable resolution (the smallest is ~1 km) is provided. 
+
+From this list we: 
+- Use pollutantName as identifier 
+- Discarded those with georeferencing errors 
+  - coord 0,0 4 points 
+  - AQUADATA georeferenced wrong: 4 points 
+- Selected the facilities that: 
+  - emit compounds into the WATER medium, and 
+  - have NOT NULL (0 is valid value) reports for 2018 and/or 2022. 
