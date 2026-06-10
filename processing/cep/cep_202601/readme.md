@@ -43,7 +43,9 @@ Flat 2 layers:
   -  o_raster.sh
   -  p_export_raster.sh
  
-  ## 05_Indicators
+  ## Indicators
 
-  ### 051_country_all_inds
+  ### 05_country
+  - 051_country_all_inds.sql
+  - 052_country_conservation_pa_list_count.sql
 
