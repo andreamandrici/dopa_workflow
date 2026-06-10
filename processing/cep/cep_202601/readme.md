@@ -42,4 +42,8 @@ Flat 2 layers:
 - run z_do_it_all.sh accordingly:
   -  o_raster.sh
   -  p_export_raster.sh
+ 
+  ## 05_Indicators
+
+  ### 051_country_all_inds
 
