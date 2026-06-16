@@ -1,0 +1,93 @@
+flowchart LR
+
+%% =====================
+%% INPUT DATASETS
+%% =====================
+subgraph INPUT[INPUT DATASETS]
+direction TB
+
+LAND["LAND dataset (GISCO)"]
+MARINE["MARINE dataset (EEZ)"]
+WDPA[WDPA dataset]
+SPECIES["SPECIES dataset"]
+OTHER["OTHER THEMATIC datasets"]
+
+end
+
+%% =====================
+%% PREPROCESSING (PostGIS)
+%% =====================
+subgraph PRE[PREPROCESSING - PostGIS]
+direction TB
+
+P1[Preprocess COUNTRY]
+P2[Preprocess WDPA]
+P3[Build BASE dataset]
+P4["Preprocess SPECIES (thematic)"]
+
+LAND --> P1
+MARINE --> P1
+P1 --> P3
+
+WDPA --> P2
+P2 --> P3
+
+SPECIES --> P4
+
+end
+
+%% =====================
+%% PROCESSING (GRASS)
+%% =====================
+subgraph PROC[PROCESSING - GRASS]
+direction TB
+
+P5["Intersect BASE + THEMATIC datasets"]
+RAW[RAW DATA]
+
+P3 --> P5
+P4 --> P5
+OTHER --> P5
+P5 --> RAW
+
+end
+
+%% =====================
+%% POSTPROCESSING (PostgreSQL)
+%% =====================
+subgraph POST[POSTPROCESSING - PostgreSQL]
+direction TB
+
+P6[Aggregate RAW → indicator tables]
+IND[INDICATOR TABLES]
+
+RAW --> P6
+P6 --> IND
+
+end
+
+%% =====================
+%% PUBLICATION (PostgreSQL)
+%% =====================
+subgraph PUB[PUBLICATION - PostgreSQL]
+direction TB
+
+P7[Generate REST services + metadata]
+
+IND --> P7
+
+end
+
+%% =====================
+%% WEB PUBLICATION
+%% =====================
+subgraph WEB[WEB PUBLICATION]
+direction TB
+
+API[REST API]
+JS[JavaScript layer]
+
+P7 --> API
+API --> JS
+
+end
