@@ -124,3 +124,28 @@ LEFT JOIN LATERAL (
     ORDER BY f.point <-> pollutants.pa.geom
     LIMIT 1
 ) p ON TRUE;
+------------------------------------------------------------------
+DROP TABLE IF EXISTS pollutants.firm_n2k;
+
+CREATE TABLE pollutants.firm_n2k AS
+SELECT
+    fy.ffid,
+    fy.r_yr,
+    p.site_id,
+    p.site_type,
+    ST_Distance(f.point::geography, p.geom::geography) AS distance
+FROM pollutants.firm_years fy
+JOIN pollutants.firm_facility f
+    ON f.ffid = fy.ffid
+LEFT JOIN LATERAL (
+    SELECT
+        n.site_id,
+        n.site_type,
+        n.geom
+    FROM pollutants.n2k_year ny
+    JOIN pollutants.n2k n
+        ON n.site_id = ny.site_id
+    WHERE ny.r_yr = fy.r_yr
+    ORDER BY f.point <-> n.geom
+    LIMIT 1
+) p ON TRUE;
