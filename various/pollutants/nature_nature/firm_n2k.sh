@@ -1,5 +1,31 @@
 #!/bin/bash
-
+# ============================================================
+# firm_pa.sh
+#
+# ESECUZIONE
+#
+# In foreground:
+#     ./firm_n2k.sh
+#
+# In background:
+#     nohup ./firm_n2k.sh </dev/null > firm_n2k_main.log 2>&1 &
+#
+# Controllare il log:
+#     tail -f firm_n2k_main.log
+#
+# FERMARE IL PROCESSO
+#
+# Se eseguito in foreground:
+#     Ctrl+C
+#
+# Se eseguito in background:
+#     ps -ef | grep '[f]irm_n2k.sh'
+#     kill PID
+#
+# Se necessario, verificare/fermare i worker:
+#     ps aux | grep '[p]sql'
+#
+# ============================================================
 HOST="xxx"
 USER="xxx"
 DB="xxx"
