@@ -1,8 +1,8 @@
 #!/bin/bash
 
-HOST="gosling"
-USER="h05ibex"
-DB="wolfe"
+HOST="xxx"
+USER="xxx"
+DB="xxx"
 NWORKERS=72
 
 PSQL="psql -h $HOST -U $USER -d $DB -v ON_ERROR_STOP=1"
@@ -101,12 +101,12 @@ done
 
 
 # ------------------------------------------------------------
-# 4. Se un worker è fallito, stop
+# 4. Se un worker Ã¨ fallito, stop
 # ------------------------------------------------------------
 
 if [ "$ERROR" -ne 0 ]; then
     echo
-    echo "ERRORE: almeno un worker è fallito."
+    echo "ERRORE: almeno un worker Ã¨ fallito."
     echo "Il risultato finale NON viene creato."
     exit 1
 fi
