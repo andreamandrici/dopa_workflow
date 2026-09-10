@@ -3,8 +3,16 @@
 
 DROP TABLE IF EXISTS r_stats_cep_ecoreg_202601;CREATE TEMPORARY TABLE r_stats_cep_ecoreg_202601 AS 
 SELECT * FROM results_202601_cep_in.r_stats_cep_ecoreg_202601;
+-- there is a mistake in the attributes: cat 9999 is written as 999.
 UPDATE r_stats_cep_ecoreg_202601 SET cat = 9999 WHERE cat = 999; 
 
+-- there are overlapping objects. The following classes are added (also in the geometries)
+--"eco_id"	"eco_name"
+-- 1011	true	"Eastern Arc forests/Northern Acacia-Commiphora bushlands and thickets - (Overlapping eco_id: 9,51)"
+-- 1121	true	"Dronning Maud Land tundra/Rock and Ice - (Overlapping eco_id: 119,9999)"
+-- 1126	true	"Marie Byrd Land tundra/Rock and Ice - (Overlapping eco_id: 124,9999)"
+-- 1137	true	"Transantarctic Mountains tundra/Rock and Ice - (Overlapping eco_id: 134,9999)"
+-- 9999	true	"Rock and Ice"
 DROP TABLE IF EXISTS ecoregions_2017_export.ecoregions2017_original_atts;CREATE TABLE ecoregions_2017_export.ecoregions2017_original_atts AS
 WITH
 a AS (SELECT DISTINCT cat eco_id, TRUE p FROM r_stats_cep_ecoreg_202601 ORDER BY eco_id),
