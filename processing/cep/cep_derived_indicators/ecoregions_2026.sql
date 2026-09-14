@@ -91,7 +91,7 @@ JOIN country_land_prot b USING(country_id);
 
 DROP TABLE IF EXISTS ecoregions_2017_export.results_country_ecoregion;
 CREATE TABLE ecoregions_2017_export.results_country_ecoregion AS
-SELECT country_id,cat eco_id,d.eco_name,c.r_eco_tot_sqkm,a.sqkm,c.r_eco_prot_sqkm,b.sqkm p_sqkm
+SELECT country_id,cat eco_id,d.eco_name,c.r_eco_tot_sqkm ecoregion_tot_sqkm,a.sqkm country_eco_sqkm,c.r_eco_prot_sqkm ecoregion_prot_sqkm,b.sqkm country_eco_prot_sqkm
 FROM country_land_cat a
 LEFT JOIN country_prot_cat b USING(country_id,cat)
 JOIN eco_tot_prot c USING(cat)
