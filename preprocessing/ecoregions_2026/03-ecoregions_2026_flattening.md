@@ -49,9 +49,12 @@ RCCT=$((RCC*GS)) # NUMBER OF ROWS/COLUMNS FOR TILE
 
 ## sql correction
 
-### analysis
-
 ```
+---------------------------------------------------------------------------------------------
+SELECT * FROM flat_single_feature.e_flat_all LIMIT 10;
+SELECT * FROM flat_single_feature.fa_atts_tile LIMIT 10;
+SELECT DISTINCT feature FROM flat_single_feature.fb_atts_all; 
+----------------------------------------------------------------------------------------------
 SELECT * FROM 
 (SELECT cid,feature,SUM(sqkm) sqkm 
 FROM 
@@ -61,35 +64,23 @@ JOIN flat_single_feature.fb_atts_all b USING(feature)
 JOIN flat_single_feature.e_flat_all c USING(qid,tid)
 WHERE CARDINALITY(feature) > 1) a GROUP BY cid,feature) b
 ORDER BY sqkm DESC;
-```
-The output contains:
-
-|cid|feature|sqkm|
-|---|----------|-----------|
-|121|{119,1000}|5500.30188252813|
-|126|{124,1000}|1157.9310384276262|
-|10|{9,51}|107.23847924450509|
-|225|{220,313}|0.8953933445296743|
-|223|{219,220}|0.448573639916929|
-|137|{134,1000}|0.051530017384389254|
-|44|{42,65}|0.0009100735634490848|
-
-Consequentely, the following SQL fix is applied:
-```
 ---------------------------------------------------------------------------------------------
 UPDATE flat_single_feature.fb_atts_all SET cid=feature[1] WHERE CARDINALITY(feature) = 1;
-UPDATE flat_single_feature.fb_atts_all SET cid=feature[1]+feature[2] WHERE feature IN ('{119,1000}','{124,1000}');
-UPDATE flat_single_feature.fb_atts_all SET cid=(feature[1]::text || feature[2]::text)::int WHERE feature = '{9,51}';
-UPDATE flat_single_feature.fb_atts_all SET cid=feature[1] WHERE feature && '{42,65,134,219,313}' AND CARDINALITY(feature) > 1;
-UPDATE flat_single_feature.fb_atts_all SET feature = ARRAY[feature[1]] WHERE feature && '{42,65,134,219,313}' AND CARDINALITY(feature) > 1;
-UPDATE flat_single_feature.fa_atts_tile SET feature = ARRAY[feature[1]] WHERE feature && '{42,65,134,219,313}' AND CARDINALITY(feature) > 1;
+UPDATE flat_single_feature.fb_atts_all SET cid=feature[1]+feature[2] WHERE feature IN ('{119,1000}','{124,1000}','{134,1000}');
+UPDATE flat_single_feature.fb_atts_all SET cid=(feature[1]::text || feature[2]::text)::int WHERE feature && '{9,51,42,65,219,313}' AND CARDINALITY(feature) > 1;
 ```
+
 Getting:
+
 |cid|feature|sqkm|
 |---|---|---|
 |1119|{119,1000}|5500.30188252813|
-|1124|{124,1000}|1157.9310384276266|
-|951|{9,51}|107.23847924450507|
+|1124|{124,1000}|1157.9310384276264|
+|951|{9,51}|107.23847924450509|
+|220313|{220,313}|0.8953933445296746|
+|219220|{219,220}|0.448573639916929|
+|1134|{134,1000}|0.051530017384389254|
+|4265|{42,65}|0.0009100735634490848|
 
 The rest of the cid get original eco_id;
 
