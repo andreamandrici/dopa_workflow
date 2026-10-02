@@ -93,3 +93,21 @@ After sql correction, the rest of flattening sequence is executed:
 ./o_raster.sh ${ncores} > logs/o_raster_log.txt 2>&1 wait
 ./p_export_raster.sh $((ncores/3)) > logs/p_export_raster_log.txt 2>&1 wait
 ```
+## export
+Ecoregions flat are create as vector,raster,attributes.
+
+```
+DROP TABLE IF EXISTS flat_single_feature.ecoregions_2017_flat_attributes;
+CREATE TABLE flat_single_feature.ecoregions_2017_flat_attributes AS
+WITH
+a AS (SELECT * FROM flat_single_feature.fb_atts_all a),
+b AS (SELECT eco_id,eco_name,v_sqkm FROM flat_single_feature.ecoregions_2017),
+c AS (SELECT cid,UNNEST(feature) eco_id FROM a),
+d AS (SELECT cid,eco_id,eco_name FROM c JOIN b USING(eco_id)),
+e AS (SELECT cid,ARRAY_TO_STRING(ARRAY_AGG(eco_name ORDER BY eco_id),'/') eco_name FROM d GROUP BY cid ORDER BY cid),
+f AS (SELECT cid,CASE WHEN eco_name ILIKE '%/%' THEN 'Overlap: '||eco_name ELSE eco_name END eco_name FROM e),
+g AS (SELECT cid,SUM(sqkm) r_sqkm FROM flat_single_feature.h_flat GROUP BY cid),
+h AS (SELECT eco_id cid,v_sqkm FROM b)
+SELECT cid::integer,ARRAY_TO_STRING(feature,'/') ori_eco_id,eco_name,COALESCE(v_sqkm,0) v_sqkm,r_sqkm
+FROM a JOIN f USING(cid) JOIN g USING (cid) LEFT JOIN h USING(cid) ORDER BY cid;
+```
