@@ -1,0 +1,8 @@
+SHELL=/bin/bash
+23 17 8 * * sh /home/mandand/scripts/wdpa_downloader.sh >> /home/mandand/scripts/wdpa_downloader.log 2>&1
+
+
+00 03 2,5,10,15 * * /opt/wdpa_downloader/wdpa_downloader.sh >> /opt/wdpa_downloader/wdpa_downloader.log 2>&1
+
+*/5 * * * * /opt/wdpa_downloader/wdpa_downloader.sh >> /opt/wdpa_downloader/wdpa_downloader.log 2>&1
+
