@@ -1,0 +1,33 @@
+---------------------------------------------------
+- Script Started at Fri Oct  2 03:00:01 CEST 2026
+
+Local file 2610_WDPA_WDOECM_Oct2026_Public.zip does not exists
+Remote file WDPA_WDOECM_Oct2026_Public.zip exists, and its size is 2051430236.
+Local Directory /spatial_data/Original_Datasets/WDPA/archives/2026/ does not exists. Creating now.
+downloading https://pp-import-production.s3-eu-west-1.amazonaws.com/WDPA_WDOECM_Oct2026_Public.zip
+Remote file size is 2051430236, local file size is 2051430236. Sizes match. Repeating next month
+
+- Script Ended at Fri Oct  2 03:04:17 CEST 2026
+
+
+---------------------------------------------------
+- Script Started at Mon Oct  5 03:00:02 CEST 2026
+
+Remote file size: 2051430236
+Local file 2610_WDPA_WDOECM_Oct2026_Public.zip exists, and its size is 2051430236. Remote file size is 2051430236;
+Sizes match. Repeating next month
+
+- Script Ended at Mon Oct  5 03:00:03 CEST 2026
+
+
+---------------------------------------------------
+- Script Started at Sat Oct 10 03:00:02 CEST 2026
+
+Remote file size: 2051430236
+Local file 2610_WDPA_WDOECM_Oct2026_Public.zip exists, and its size is 2051430236. Remote file size is 2051430236;
+Sizes match. Repeating next month
+
+- Script Ended at Sat Oct 10 03:00:03 CEST 2026
+
+
+
